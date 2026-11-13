@@ -1,0 +1,75 @@
+{
+  "seeds": [
+    {
+      "q": "real footage from space",
+      "topic": "space"
+    },
+    {
+      "q": "ISS footage earth",
+      "topic": "space"
+    },
+    {
+      "q": "NASA real video",
+      "topic": "space"
+    },
+    {
+      "q": "ISRO launch",
+      "topic": "space"
+    },
+    {
+      "q": "earth from space real",
+      "topic": "earth"
+    },
+    {
+      "q": "aurora from space",
+      "topic": "earth"
+    },
+    {
+      "q": "अंतरिक्ष असली वीडियो",
+      "qEn": "space real video",
+      "topic": "space"
+    }
+  ],
+  "wikiWatch": [
+    {
+      "lang": "en",
+      "title": "International Space Station",
+      "topic": "space"
+    },
+    {
+      "lang": "en",
+      "title": "Indian Space Research Organisation",
+      "topic": "space"
+    },
+    {
+      "lang": "en",
+      "title": "Gaganyaan",
+      "topic": "space"
+    },
+    {
+      "lang": "en",
+      "title": "Aurora",
+      "topic": "earth"
+    },
+    {
+      "lang": "en",
+      "title": "Solar eclipse",
+      "topic": "space"
+    },
+    {
+      "lang": "en",
+      "title": "Meteor shower",
+      "topic": "space"
+    },
+    {
+      "lang": "hi",
+      "title": "भारतीय अन्तरिक्ष अनुसंधान संगठन",
+      "topic": "space"
+    },
+    {
+      "lang": "hi",
+      "title": "अन्तर्राष्ट्रीय अन्तरिक्ष स्टेशन",
+      "topic": "space"
+    }
+  ]
+}

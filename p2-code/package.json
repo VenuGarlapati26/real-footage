@@ -1,0 +1,31 @@
+{
+  "name": "real-footage-autopilot",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "description": "Project 2: real-footage explainers in English (+ Hindi, Spanish, Portuguese subtitles/dubs). Footage engine, motion graphics, writer + footage editor, autopilot.",
+  "scripts": {
+    "build:episode": "tsx engine/build.ts",
+    "sample": "tsx engine/build.ts episodes/E001-iss-16-sunrises.json --formats long,short",
+    "gates": "tsx engine/gates.ts",
+    "test": "tsx test/engine.test.ts && tsx test/gates.test.ts && tsx test/growth.test.ts && tsx test/stack.test.ts && tsx test/mograph.test.ts && tsx test/pillars.test.ts && tsx test/release.test.ts && tsx test/premium.test.ts",
+    "typecheck": "tsc --noEmit",
+    "auth": "tsx autopilot/auth.ts",
+    "autopilot": "tsx autopilot/daily.ts",
+    "weekly": "tsx autopilot/weekly.ts",
+    "write": "tsx growth/writer.ts",
+    "curate": "tsx engine/curate.ts"
+  },
+  "dependencies": {
+    "d3-array": "3.2.4",
+    "d3-geo": "3.1.1",
+    "playwright": "1.63.0",
+    "topojson-client": "3.1.0",
+    "tsx": "^4.19.0",
+    "world-atlas": "2.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}

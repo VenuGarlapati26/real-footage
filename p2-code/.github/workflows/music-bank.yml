@@ -1,0 +1,47 @@
+# MUSIC BANK (free): composes new original instrumental tracks with ACE-Step 1.5 (MIT licence) on this runner's
+# CPU, two per week, until every mood has enough (channel/music-bank.json), then it stops after a 10-second check.
+# Slow on CPU, which is why it runs ahead of time; daily videos just pick from music/bank/. A private repo gets
+# 2,000 free Actions minutes a month: this uses at most ~100 of them per week while the bank fills.
+name: Music bank (free, ACE-Step)
+on:
+  schedule: [{ cron: "30 20 * * 6" }]   # Saturdays, 02:00 IST
+  workflow_dispatch:
+    inputs:
+      budget: { description: "Minutes to spend composing", default: "90" }
+concurrency: { group: music-bank, cancel-in-progress: false }
+jobs:
+  compose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    permissions: { contents: write }
+    steps:
+      - uses: actions/checkout@v4
+      - name: Anything to do?
+        id: need
+        run: echo "n=$(python3 tools/musicbank.py --check)" >> "$GITHUB_OUTPUT"
+      - name: Make disk room for the model (~15 GB)
+        if: steps.need.outputs.n != '0'
+        run: sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL && df -h /
+      - uses: actions/setup-python@v5
+        if: steps.need.outputs.n != '0'
+        with: { python-version: "3.11" }
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg && pip install -q uv
+        if: steps.need.outputs.n != '0'
+      - uses: actions/cache@v4
+        if: steps.need.outputs.n != '0'
+        with: { path: "~/.cache/huggingface\nACE-Step-1.5/checkpoints", key: "acestep-15-v1" }
+      - name: ACE-Step 1.5
+        if: steps.need.outputs.n != '0'
+        run: |
+          mkdir -p ACE-Step-1.5 && [ -d ACE-Step-1.5/.git ] || { tmp=$(mktemp -d); git clone --depth 1 https://github.com/ace-step/ACE-Step-1.5.git "$tmp/a" && cp -rn "$tmp/a/." ACE-Step-1.5/; }
+          cd ACE-Step-1.5 && uv sync
+      - name: Compose
+        if: steps.need.outputs.n != '0'
+        env: { ACESTEP_OFFLOAD_TO_CPU: "false" }
+        run: python3 tools/musicbank.py --ace ACE-Step-1.5 --budget-min ${{ inputs.budget || '90' }}
+      - name: Keep the new tracks in the repo
+        if: always() && steps.need.outputs.n != '0'
+        run: |
+          git config user.name "p2-autopilot"; git config user.email "autopilot@users.noreply.github.com"
+          git add music/bank
+          git diff --cached --quiet || (git commit -m "music bank: $(ls music/bank/*/*.mp3 | wc -l) tracks" && for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done)

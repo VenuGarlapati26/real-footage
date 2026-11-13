@@ -1,0 +1,7 @@
+{
+  "note": "Weekly, the Music bank workflow composes new instrumental tracks with ACE-Step 1.5 (MIT licence, free, runs on the GitHub runner's CPU) until each mood has `perMood` tracks (then it stops using minutes). Videos then pick a track for their mood and line its climax up with the reveal.",
+  "perMood": 6,
+  "perRun": 2,
+  "seconds": 150,
+  "moods": ["awe", "mystery", "investigate", "tension", "triumph", "upbeat", "melancholy"]
+}

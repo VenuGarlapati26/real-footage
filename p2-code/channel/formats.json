@@ -1,0 +1,14 @@
+{
+  "note": "Story formats: HOW an episode tells its story (the pillar is WHAT it is about). Every week each format is scored like the pillars (7-day views on YouTube + Instagram + Facebook vs the channel median); winners get most new episodes, ~30% keep testing the rest. Add your own: id, name, recipe.",
+  "explore": 0.3,
+  "formats": [
+    { "id": "mystery", "name": "The mystery", "recipe": "Open on a strange real image and an unanswered question. Each scene adds a clue; the reveal lands in the second half (the music peak). The loop line re-opens the mystery." },
+    { "id": "scale", "name": "How big is it really", "recipe": "One number that is hard to imagine, made physical: compare it step by step with things the viewer knows (a city, a country, a lifetime). Use 'stat' overlays for each step and a 'compare' overlay when there are two sizes." },
+    { "id": "countdown", "name": "Countdown", "recipe": "A ranked list of 3 (Short) or 5 (long video) real examples, counting down to the most surprising one. Kicker label = the rank ('No. 3'). Never invent a ranking: rank by a number from the source." },
+    { "id": "then-now", "name": "Then vs now", "recipe": "The same place or thing at two moments in time. Alternate THEN and NOW scenes; label them in the kicker sub; end on what changed and why." },
+    { "id": "what-if", "name": "What happens if", "recipe": "A 'what would happen if...' question answered only with what really happened or what the source says. Build the chain of consequences scene by scene, the biggest consequence last." },
+    { "id": "myth", "name": "Myth vs fact", "recipe": "Start with what most people believe ('You've probably heard that...'), then show with real footage and the source why the truth is different and more interesting." },
+    { "id": "timeline", "name": "How it happened", "recipe": "A true event told in order as a mini-thriller: a 'chapter' overlay per stage, a date in each kicker sub, the turning point as the music peak." },
+    { "id": "record", "name": "The record holder", "recipe": "The fastest, deepest, biggest, oldest: one record, why it is so extreme, and what it took. A 'stat' overlay for the record number, a 'compare' overlay against the runner-up or an everyday thing." }
+  ]
+}

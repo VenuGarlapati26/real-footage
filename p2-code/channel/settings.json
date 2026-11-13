@@ -1,0 +1,69 @@
+{
+  "dev": {
+    "fullRenders": true,
+    "maxSeconds": 8
+  },
+  "brandTag": {
+    "en": "REAL FOOTAGE",
+    "hi": "असली फुटेज",
+    "es": "IMÁGENES REALES",
+    "pt": "IMAGENS REAIS"
+  },
+  "enabled": true,
+  "fullVideosConfirmed": true,
+  "mode": "live",
+  "channelHandle": "",
+  "timezone": "Asia/Kolkata",
+  "lang": "en",
+  "longDays": [
+    "Mon",
+    "Wed",
+    "Fri",
+    "Sun"
+  ],
+  "longTime": "19:30",
+  "shortTimes": [
+    "07:30",
+    "12:30",
+    "19:30"
+  ],
+  "shortsPerDay": 1,
+  "categoryId": "28",
+  "explore": 0.2,
+  "notify": {
+    "ntfyTopic": ""
+  },
+  "longAltTimes": [
+    "18:30",
+    "20:30"
+  ],
+  "subtitles": [
+    "en",
+    "hi",
+    "es",
+    "pt"
+  ],
+  "writer": {
+    "enabled": true,
+    "perWeek": 4,
+    "note": "Episodes written per weekly run (the review runs Mon + Thu = 8 a week; each episode gives 1 Short + 1 long; the schedule uses 7 Shorts and 4 long videos a week)."
+  },
+  "autoApprove": true,
+  "output": {
+    "long": "2160p",
+    "short": "1080p",
+    "fps": 30
+  },
+  "budget": {
+    "minutesPerMonth": 1300,
+    "longSeconds": 240,
+    "shortSeconds": 35,
+    "note": "Render minutes this channel's daily videos may use per month. Account allowance ~3,000 Linux minutes ($18, GitHub Pro): Project 1 ~600, this channel's weekly reviews ~170 and music bank ~390 (while it fills), daily renders 1,300 -> ~2,450 in total. Long videos drop from 4K to 1440p/1080p automatically when the month would not fit."
+  },
+  "social": {
+    "tiktok": true,
+    "snapchat": true,
+    "snapchatType": "spotlight",
+    "note": "YouTube, Facebook, TikTok and Snapchat are scheduled for the same moment; Instagram is published at that time by release.yml (its times must match shortTimes). TikTok/Snapchat need the ZERNIO_* secrets; without them they are skipped."
+  }
+}

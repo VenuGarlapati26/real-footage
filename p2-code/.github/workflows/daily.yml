@@ -1,0 +1,78 @@
+# Project 2 daily run: long episode on longDays + daily Shorts, built, gated, checked, uploaded, archived.
+# 13:00 UTC = 18:30 IST (videos are scheduled for the times in channel/settings.json). 16:00 UTC = catch-up.
+name: Daily videos (Project 2)
+on:
+  schedule: [{ cron: "0 13 * * *" }, { cron: "0 16 * * *" }]
+  workflow_dispatch:
+    inputs:
+      force: { description: "Run even if autopilot is OFF", type: boolean, default: true }
+      dry: { description: "Dry run (build, do not upload)", type: boolean, default: false }
+concurrency: { group: p2-autopilot, cancel-in-progress: false }
+permissions: { contents: write, issues: write }
+jobs:
+  videos:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330   # a 4-minute 4K long video can take ~2 h on the 2-core runner (see autopilot/budget.ts)
+    env:
+      YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+      YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+      YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+      NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+      PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+      PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+      GOOGLE_TTS_API_KEY: ${{ secrets.GOOGLE_TTS_API_KEY }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+      ELEVENLABS_VOICE_ID: ${{ secrets.ELEVENLABS_VOICE_ID }}
+      META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+      IG_USER_ID: ${{ secrets.IG_USER_ID }}
+      FB_PAGE_ID: ${{ secrets.FB_PAGE_ID }}
+      FB_PAGE_TOKEN: ${{ secrets.FB_PAGE_TOKEN }}
+      ZERNIO_API_KEY: ${{ secrets.ZERNIO_API_KEY }}
+      ZERNIO_TIKTOK_ID: ${{ secrets.ZERNIO_TIKTOK_ID }}
+      ZERNIO_SNAPCHAT_ID: ${{ secrets.ZERNIO_SNAPCHAT_ID }}
+      KOKORO_MODEL: ${{ github.workspace }}/.cache/kokoro/kokoro-v1.0.int8.onnx
+      KOKORO_VOICES: ${{ github.workspace }}/.cache/kokoro/voices-v1.0.bin
+      RENDER_DIR: ${{ github.workspace }}/renders
+      PACK_DIR: ${{ github.workspace }}/platform-pack
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - run: pip install -q kokoro-onnx soundfile
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium   # motion-graphics layer
+      - uses: actions/cache@v4
+        with: { path: .cache, key: "cache-${{ github.run_id }}", restore-keys: "cache-" }
+      - name: Free voice model (Kokoro-82M, Apache-2.0)
+        run: |
+          mkdir -p .cache/kokoro && cd .cache/kokoro
+          for f in kokoro-v1.0.int8.onnx voices-v1.0.bin; do [ -f $f ] || curl -sSLf -o $f "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/$f"; done
+      - name: Tests
+        run: npm test
+      - name: Make today's videos
+        shell: bash
+        run: |
+          set -o pipefail
+          npx tsx autopilot/daily.ts ${{ (github.event_name == 'workflow_dispatch' && inputs.force) && '--force' || '' }} ${{ (github.event_name == 'workflow_dispatch' && inputs.dry) && '--dry' || '' }} 2>&1 | tee run.log
+      - name: Platform-pack, the Short + captions for manual posting if ever needed (kept 7 days)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with: { name: "platform-pack-${{ github.run_id }}", path: platform-pack/, retention-days: 7, if-no-files-found: ignore }
+      - name: Rendered files (dry runs and failures only, kept 2 days)
+        if: failure() || (github.event_name == 'workflow_dispatch' && inputs.dry)
+        uses: actions/upload-artifact@v4
+        with: { name: "videos-${{ github.run_id }}", path: renders/, retention-days: 2, if-no-files-found: ignore }
+      - name: Archive ledger in the repo
+        if: always()
+        run: |
+          git config user.name "p2-autopilot"; git config user.email "autopilot@users.noreply.github.com"
+          git add channel assets/sfx 2>/dev/null || git add channel
+          git diff --cached --quiet || (git commit -m "autopilot: $(date -u +%F)" && for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done)
+      - name: Open an issue if something failed
+        if: failure()
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: gh issue create --title "Project 2 run failed on $(date -u +%F)" --body "$(tail -n 40 run.log 2>/dev/null)"$'\n\n'"${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"

@@ -1,0 +1,43 @@
+# 8-SECOND SAMPLES WITH REAL FOOTAGE (development mode). Runs when an episode file changes, or by hand.
+# Renders both formats capped at channel/settings.json -> dev.maxSeconds and keeps them as a downloadable artifact.
+name: Samples (8 s, real footage)
+on:
+  workflow_dispatch:
+    inputs:
+      episode: { description: "Episode file", default: "episodes/E001-iss-16-sunrises.json" }
+  push:
+    paths: ["episodes/**", "engine/**", "footage/**"]
+jobs:
+  sample:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+      PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+      GOOGLE_TTS_API_KEY: ${{ secrets.GOOGLE_TTS_API_KEY }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+      ELEVENLABS_VOICE_ID: ${{ secrets.ELEVENLABS_VOICE_ID }}
+      KOKORO_MODEL: ${{ github.workspace }}/.cache/kokoro/kokoro-v1.0.int8.onnx
+      KOKORO_VOICES: ${{ github.workspace }}/.cache/kokoro/voices-v1.0.bin
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - run: pip install -q kokoro-onnx soundfile && npm ci && npx playwright install --with-deps chromium
+      - uses: actions/cache@v4
+        with: { path: .cache, key: "cache-${{ hashFiles('episodes/**') }}", restore-keys: "cache-" }
+      - name: Kokoro fallback voice
+        run: |
+          mkdir -p .cache/kokoro && cd .cache/kokoro
+          for f in kokoro-v1.0.int8.onnx voices-v1.0.bin; do [ -f $f ] || curl -sSLf -o $f "https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/$f"; done
+      - run: npm test
+      - name: Gates
+        run: npx tsx engine/gates.ts ${{ inputs.episode || 'episodes/E001-iss-16-sunrises.json' }}
+      - name: Render 8-second samples (both formats)
+        run: npx tsx engine/build.ts ${{ inputs.episode || 'episodes/E001-iss-16-sunrises.json' }} --formats long,short --preview   # always a short preview, even after going live
+      - uses: actions/upload-artifact@v4
+        with: { name: "samples-${{ github.run_id }}", path: "out/**/*-dev.*", retention-days: 7 }

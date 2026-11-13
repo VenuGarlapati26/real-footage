@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!--
+  Motion graphics for every video, drawn by the browser over the real footage (engine/mograph/render.ts captures it
+  frame by frame with a transparent background). Deterministic: renderAt(t) sets every element from t alone, so a
+  frame always looks the same however it is rendered.
+  Type: Inter (variable), Playfair Display (variable), JetBrains Mono; Mukta + Noto Serif Devanagari for Hindi.
+-->
+<style>
+  @font-face { font-family: Inter; src: url(../../assets/fonts/Inter.ttf); font-weight: 100 900; }
+  @font-face { font-family: Playfair; src: url(../../assets/fonts/PlayfairDisplay.ttf); font-weight: 400 900; }
+  @font-face { font-family: Mono; src: url(../../assets/fonts/JetBrainsMono.ttf); font-weight: 100 800; }
+  @font-face { font-family: Mukta; src: url(../../assets/fonts/Mukta-ExtraBold.ttf); font-weight: 800; }
+  @font-face { font-family: Mukta; src: url(../../assets/fonts/Mukta-SemiBold.ttf); font-weight: 600; }
+  @font-face { font-family: Mukta; src: url(../../assets/fonts/Mukta-Regular.ttf); font-weight: 400; }
+  @font-face { font-family: NotoDeva; src: url(../../assets/fonts/NotoSerifDevanagari.ttf); font-weight: 100 900; }
+
+  :root { --u: 10.8px; --accent: #FFC94A; --ink: #F4F1EA; --cool: #BFD3E6; }
+  html, body { margin: 0; background: transparent; overflow: hidden; }
+  body { width: var(--W); height: var(--H); position: relative; color: var(--ink); font-family: Inter, Mukta, sans-serif;
+         -webkit-font-smoothing: antialiased; text-rendering: geometricPrecision; font-feature-settings: "tnum" 0, "ss01" 1, "cv11" 1; }
+  body.deva { --sans: Mukta; --serif: NotoDeva; } body.latin { --sans: Inter; --serif: Playfair; }
+  .abs { position: absolute; left: 0; top: 0; will-change: transform, opacity; }
+
+  /* readability scrims: graphics sit on dark edges, never on a flat plate */
+  #scrimTop { width: 100%; height: 22%; background: linear-gradient(rgba(0,0,0,.42), rgba(0,0,0,0)); }
+  #scrimBot { top: auto; bottom: 0; width: 100%; height: 42%; background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.38) 60%, rgba(0,0,0,.5)); }
+
+  /* brand tag + footage credit */
+  #tag { display: flex; align-items: center; gap: calc(var(--u) * .9); font: 600 calc(var(--u) * 2.15) / 1 Mono, Mukta; letter-spacing: .2em;
+         padding: calc(var(--u) * .95) calc(var(--u) * 1.5); border-radius: 999px; background: rgba(8,10,14,.42); border: 1px solid rgba(255,255,255,.16); }
+  body.deva #tag { letter-spacing: .04em; font: 600 calc(var(--u) * 2.2) / 1 Mukta; }
+  #tag i { width: calc(var(--u) * .9); height: calc(var(--u) * .9); border-radius: 50%; background: #FF5A4E; box-shadow: 0 0 calc(var(--u)) #FF5A4E; display: block; }
+  #credit { font: 500 calc(var(--u) * 1.95) / 1.3 Inter, Mukta; color: rgba(244,241,234,.8); letter-spacing: .02em; text-shadow: 0 1px 6px rgba(0,0,0,.6); white-space: nowrap; }
+
+  /* hook: the first two seconds of a Short */
+  #hook { width: 100%; text-align: center; }
+  #hook .line { display: block; overflow: hidden; padding: .06em 0 .1em; }
+  #hook .w { display: inline-block; margin: 0 .12em; font: 900 calc(var(--u) * 11.5) / .98 var(--sans); letter-spacing: -.025em; text-transform: uppercase;
+             text-shadow: 0 .04em .25em rgba(0,0,0,.55); }
+  body.deva #hook .w { text-transform: none; letter-spacing: 0; font-size: calc(var(--u) * 12.5); line-height: 1.15; }
+  #hook .w.hi { color: #111; background: var(--accent); padding: 0 .12em; border-radius: .08em; text-shadow: none; }
+
+  /* kicker: the scene's headline */
+  .kick { width: 100%; }
+  .kick .label { font: 600 calc(var(--u) * 1.9) / 1 Mono, Mukta; letter-spacing: .3em; color: var(--accent); text-transform: uppercase; white-space: nowrap; }
+  body.deva .kick .label { letter-spacing: .05em; font: 600 calc(var(--u) * 2.4) / 1.2 Mukta; }
+  .kick .label b { display: inline-block; width: .55em; height: .55em; border-radius: 50%; background: var(--accent); margin-right: .7em; vertical-align: .05em; }
+  .kick .title { margin-top: calc(var(--u) * 1.4); }
+  .kick .title .line { display: block; overflow: hidden; padding-bottom: .08em; }
+  .kick .title .in { display: inline-block; font: 600 calc(var(--u) * 8.6) / 1.04 var(--serif); letter-spacing: -.01em; text-shadow: 0 .03em .3em rgba(0,0,0,.45); }
+  body.deva .kick .title .in { font-weight: 700; line-height: 1.3; }
+  .kick .rule { height: calc(var(--u) * .32); background: var(--accent); margin-top: calc(var(--u) * 1.6); transform-origin: left; width: calc(var(--u) * 12); }
+  .kick.center { text-align: center; } .kick.center .rule { margin-left: auto; margin-right: auto; transform-origin: center; }
+
+  /* stat: a number that counts in */
+  .stat { width: 100%; text-align: center; }
+  .stat .glow { position: absolute; left: 50%; top: 50%; width: calc(var(--u) * 90); height: calc(var(--u) * 50); transform: translate(-50%, -50%);
+                background: radial-gradient(closest-side, rgba(0,0,0,.5), rgba(0,0,0,0)); }
+  .stat .num { position: relative; font: 800 calc(var(--u) * 21) / .9 Inter; letter-spacing: -.045em; font-feature-settings: "tnum" 1;
+               background: linear-gradient(#FFFFFF, #DCE6F0); -webkit-background-clip: text; background-clip: text; color: transparent;
+               filter: drop-shadow(0 .03em .12em rgba(0,0,0,.45)); }
+  .stat .unit { position: relative; margin-top: calc(var(--u) * 1.8); font: 700 calc(var(--u) * 2.5) / 1.2 Inter, Mukta; letter-spacing: .24em; text-transform: uppercase; color: var(--accent); }
+  body.deva .stat .unit { letter-spacing: .03em; font: 600 calc(var(--u) * 3.3) / 1.2 Mukta; }
+  .stat .bar { position: relative; height: calc(var(--u) * .3); width: calc(var(--u) * 18); margin: calc(var(--u) * 1.6) auto 0; background: rgba(255,255,255,.85); transform-origin: center; }
+
+  /* orbit diagram: Earth, the orbit, the station going round; sun ticks light up per lap */
+  .orbit { width: 100%; text-align: center; }
+  .orbit svg { overflow: visible; position: relative; } .orbit .count, .orbit .cap { position: relative; }
+  .orbit .glow { position: absolute; left: 50%; top: 50%; width: calc(var(--u) * 80); height: calc(var(--u) * 80); transform: translate(-50%, -50%); background: radial-gradient(closest-side, rgba(0,0,0,.55), rgba(0,0,0,0)); }
+  .orbit .count { font: 800 calc(var(--u) * 13) / 1 Inter; letter-spacing: -.04em; font-feature-settings: "tnum" 1; }
+  .orbit .cap { font: 700 calc(var(--u) * 2.2) / 1.2 Inter, Mukta; letter-spacing: .24em; text-transform: uppercase; color: var(--accent); margin-top: calc(var(--u) * .8); }
+  body.deva .orbit .cap { letter-spacing: .03em; font: 600 calc(var(--u) * 3) / 1.2 Mukta; }
+
+  /* lower third */
+  .lower { display: flex; align-items: center; gap: calc(var(--u) * 1.1); padding: calc(var(--u) * 1.1) calc(var(--u) * 1.8); border-radius: calc(var(--u) * .7);
+           background: rgba(8,10,14,.55); border-left: calc(var(--u) * .4) solid var(--accent); font: 600 calc(var(--u) * 2.4) / 1.2 Inter, Mukta; white-space: nowrap; }
+
+  /* captions (Shorts): three words at a time, the spoken word lit */
+  #cap { width: 100%; text-align: center; }
+  #cap .w { display: inline-block; margin: 0 .14em; font: 800 calc(var(--u) * 8.4) / 1.12 var(--sans); letter-spacing: -.01em;
+            color: #fff; -webkit-text-stroke: calc(var(--u) * .22) rgba(0,0,0,.85); paint-order: stroke fill; text-shadow: 0 .05em .2em rgba(0,0,0,.6); }
+  body.deva #cap .w { font-size: calc(var(--u) * 8); line-height: 1.35; }
+  #cap .w.on { color: var(--accent); }
+
+  /* the question at the end */
+  #ask { width: 84%; padding: calc(var(--u) * 3.6) calc(var(--u) * 4); border-radius: calc(var(--u) * 2.4); box-sizing: border-box; text-align: center;
+         background: linear-gradient(rgba(14,18,26,.82), rgba(10,12,18,.88)); border: 1px solid rgba(255,255,255,.14); box-shadow: 0 calc(var(--u) * 2) calc(var(--u) * 6) rgba(0,0,0,.45); }
+  #ask .label { font: 700 calc(var(--u) * 1.9) / 1 Mono, Mukta; letter-spacing: .28em; color: var(--accent); text-transform: uppercase; }
+  body.deva #ask .label { letter-spacing: .04em; font: 600 calc(var(--u) * 2.5) / 1.2 Mukta; }
+  #ask .q { margin-top: calc(var(--u) * 2.2); font: 600 calc(var(--u) * 5.4) / 1.22 var(--serif); }
+  #ask .bubble { width: calc(var(--u) * 5); height: calc(var(--u) * 5); margin: 0 auto calc(var(--u) * 2); }
+
+  /* globe locator */
+  .map { text-align: center; }
+  .map svg { overflow: visible; display: block; margin: 0 auto; }
+  .map .glow { position: absolute; left: 50%; top: 50%; width: 150%; height: 150%; transform: translate(-50%, -50%); background: radial-gradient(closest-side, rgba(0,0,0,.55), rgba(0,0,0,0)); }
+  .map .card { position: absolute; white-space: nowrap; text-align: left; padding: calc(var(--u) * 1.2) calc(var(--u) * 1.8); border-radius: calc(var(--u) * .8);
+               background: rgba(8,11,16,.78); border: 1px solid rgba(255,255,255,.16); }
+  .map .card .nm { font: 700 calc(var(--u) * 3) / 1.15 var(--sans); }
+  .map .card .co { font: 500 calc(var(--u) * 1.75) / 1.4 Mono; letter-spacing: .12em; color: var(--accent); margin-top: calc(var(--u) * .5); }
+  /* chapter card (long videos) */
+  .chapter { width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; padding-left: 9%; box-sizing: border-box;
+             background: linear-gradient(90deg, rgba(4,6,10,.82), rgba(4,6,10,.35) 70%, rgba(4,6,10,0)); }
+  .chapter .no { font: 600 calc(var(--u) * 2.4) / 1 Mono; letter-spacing: .35em; color: var(--accent); }
+  .chapter .ti { margin-top: calc(var(--u) * 2.2); font: 600 calc(var(--u) * 9.5) / 1.02 var(--serif); max-width: 70%; }
+  .chapter .ln { margin-top: calc(var(--u) * 2.6); height: 2px; width: 40%; background: linear-gradient(90deg, var(--accent), rgba(255,201,74,0)); transform-origin: left; }
+  /* comparison bars */
+  .compare { width: 100%; box-sizing: border-box; padding: 0 9%; }
+  .compare .row { margin: calc(var(--u) * 2.2) 0; }
+  .compare .lab { display: flex; justify-content: space-between; font: 600 calc(var(--u) * 2.6) / 1.2 var(--sans); }
+  .compare .lab b { font: 800 calc(var(--u) * 3.2) / 1.2 Inter; color: var(--accent); font-feature-settings: "tnum" 1; }
+  .compare .track { margin-top: calc(var(--u) * .9); height: calc(var(--u) * 1.6); border-radius: 999px; background: rgba(255,255,255,.14); overflow: hidden; }
+  .compare .fill { height: 100%; border-radius: 999px; background: linear-gradient(90deg, #FFE7A8, var(--accent)); transform-origin: left; }
+  .compare .row:not(:first-child) .fill { background: linear-gradient(90deg, #DDE7F2, #9DB7D1); }
+  #leak { width: 100%; height: 100%; mix-blend-mode: screen; background:
+    radial-gradient(ellipse 9% 95% at var(--lx, 0%) 50%, rgba(255,244,214,.85), rgba(255,190,110,.45) 45%, rgba(255,150,70,0) 80%),
+    radial-gradient(ellipse 30% 85% at calc(var(--lx, 0%) - 6%) 45%, rgba(255,140,60,.6), rgba(255,90,40,.22) 50%, rgba(255,60,40,0) 78%),
+    radial-gradient(ellipse 45% 60% at calc(var(--lx, 0%) + 14%) 25%, rgba(255,100,70,.32), rgba(255,70,60,0) 70%); }
+  .bar { left: 0; width: 100%; background: #000; }
+  #flash { width: 100%; height: 100%; background: radial-gradient(circle at 50% 45%, rgba(255,248,235,1), rgba(255,240,220,.6) 55%, rgba(255,240,220,0)); }
+</style>
+</head>
+<body>
+<div id="scrimTop" class="abs"></div><div id="scrimBot" class="abs"></div>
+<div id="barTop" class="abs bar" style="height:0"></div><div id="barBot" class="abs bar" style="height:0;top:auto;bottom:0"></div>
+<div id="layers"></div>
+<div id="leak" class="abs" style="opacity:0"></div>
+<div id="flash" class="abs" style="opacity:0"></div>
+<script src="../../node_modules/d3-array/dist/d3-array.min.js"></script>
+<script src="../../node_modules/d3-geo/dist/d3-geo.min.js"></script>
+<script src="../../node_modules/topojson-client/dist/topojson-client.min.js"></script>
+<script src="overlay.js"></script>
+</body>
+</html>

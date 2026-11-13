@@ -1,0 +1,239 @@
+{
+  "note": "Content pillars. Every idea and episode belongs to one. The weekly review scores each pillar by how its videos actually did (views in the first 7 days vs the channel's median, Shorts and long videos separately) and shifts what gets written next: most episodes from the winners, about 30% kept for testing the rest, so a new audience is never missed. Add or remove pillars freely.",
+  "explore": 0.3,
+  "pillars": [
+    {
+      "id": "space",
+      "name": "Space, for real",
+      "mood": "awe",
+      "footage": [
+        "nasa",
+        "wikimedia"
+      ],
+      "seeds": [
+        "real footage from space",
+        "ISS footage",
+        "rocket launch real footage"
+      ],
+      "wiki": [
+        "International Space Station",
+        "Gaganyaan",
+        "Artemis program"
+      ],
+      "look": "arctic"
+    },
+    {
+      "id": "extreme-earth",
+      "name": "Extreme Earth",
+      "mood": "tension",
+      "footage": [
+        "nasa",
+        "wikimedia",
+        "pexels",
+        "pixabay"
+      ],
+      "seeds": [
+        "volcano eruption footage",
+        "glacier collapse",
+        "biggest storm ever filmed"
+      ],
+      "wiki": [
+        "Volcano",
+        "Iceberg",
+        "Tornado",
+        "Lightning"
+      ],
+      "look": "arctic"
+    },
+    {
+      "id": "ocean",
+      "name": "The deep ocean",
+      "mood": "mystery",
+      "footage": [
+        "wikimedia",
+        "pexels",
+        "pixabay"
+      ],
+      "seeds": [
+        "deep sea creatures footage",
+        "blue whale real",
+        "ocean mysteries"
+      ],
+      "wiki": [
+        "Deep sea",
+        "Blue whale",
+        "Mariana Trench"
+      ],
+      "look": "arctic"
+    },
+    {
+      "id": "wildlife",
+      "name": "Wild animals",
+      "mood": "upbeat",
+      "footage": [
+        "pexels",
+        "pixabay",
+        "wikimedia"
+      ],
+      "seeds": [
+        "animal facts real footage",
+        "fastest animal",
+        "smartest animals"
+      ],
+      "wiki": [
+        "Cheetah",
+        "Octopus",
+        "Bengal tiger",
+        "Elephant"
+      ],
+      "look": "earth"
+    },
+    {
+      "id": "engineering",
+      "name": "Mega engineering",
+      "mood": "triumph",
+      "footage": [
+        "pexels",
+        "pixabay",
+        "wikimedia",
+        "nasa"
+      ],
+      "seeds": [
+        "biggest bridge in the world",
+        "mega project construction",
+        "how it was built"
+      ],
+      "wiki": [
+        "Chenab Rail Bridge",
+        "Burj Khalifa",
+        "Panama Canal"
+      ],
+      "look": "documentary"
+    },
+    {
+      "id": "cities",
+      "name": "Cities & places",
+      "mood": "upbeat",
+      "footage": [
+        "pexels",
+        "pixabay",
+        "wikimedia"
+      ],
+      "seeds": [
+        "most beautiful places on earth",
+        "city from above",
+        "hidden places"
+      ],
+      "wiki": [
+        "Tokyo",
+        "Varanasi",
+        "Venice",
+        "Dubai"
+      ],
+      "look": "neon"
+    },
+    {
+      "id": "history",
+      "name": "History in real footage",
+      "mood": "melancholy",
+      "footage": [
+        "wikimedia",
+        "nasa"
+      ],
+      "seeds": [
+        "real old footage history",
+        "first ever filmed",
+        "1900s footage restored"
+      ],
+      "wiki": [
+        "Wright brothers",
+        "Apollo 11",
+        "Titanic"
+      ],
+      "look": "golden"
+    },
+    {
+      "id": "tech",
+      "name": "Future tech",
+      "mood": "investigate",
+      "footage": [
+        "pexels",
+        "pixabay",
+        "nasa"
+      ],
+      "seeds": [
+        "future technology real",
+        "supersonic plane",
+        "robots real footage"
+      ],
+      "wiki": [
+        "Supersonic transport",
+        "Humanoid robot",
+        "Hyperloop"
+      ],
+      "look": "neon"
+    },
+    {
+      "id": "money",
+      "name": "Money, explained",
+      "mood": "investigate",
+      "footage": [
+        "pexels",
+        "pixabay"
+      ],
+      "seeds": [
+        "how money works",
+        "why things cost",
+        "richest"
+      ],
+      "wiki": [
+        "Inflation",
+        "Gold reserve",
+        "Stock market"
+      ],
+      "look": "noir"
+    },
+    {
+      "id": "food",
+      "name": "Food & culture",
+      "mood": "upbeat",
+      "footage": [
+        "pexels",
+        "pixabay",
+        "wikimedia"
+      ],
+      "seeds": [
+        "how it is made food",
+        "street food india",
+        "spices history"
+      ],
+      "wiki": [
+        "Black pepper",
+        "Tea",
+        "Chocolate"
+      ],
+      "look": "golden"
+    },
+    {
+      "id": "body",
+      "name": "The human body",
+      "mood": "investigate",
+      "footage": [
+        "pexels",
+        "pixabay",
+        "wikimedia"
+      ],
+      "seeds": [
+        "human body facts",
+        "what happens when you sleep",
+        "brain facts"
+      ],
+      "wiki": [
+        "Sleep",
+        "Human brain",
+        "Heart"
+      ],
+      "look": "earth"
+    }
+  ]
+}

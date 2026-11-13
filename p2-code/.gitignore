@@ -1,0 +1,11 @@
+node_modules/
+out/
+.cache/
+renders/
+platform-pack/
+engine/*.onnx
+engine/*.bin
+.env
+footage/**/*.mp4
+footage/**/*.mov
+!footage/README.md

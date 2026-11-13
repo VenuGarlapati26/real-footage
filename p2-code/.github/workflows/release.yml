@@ -1,0 +1,28 @@
+# Publishes the day's Instagram Reel at the Short's time, so it goes live together with YouTube, Facebook and TikTok
+# (those three are scheduled by the daily run). ~20 seconds a run, no installs: about 90 Actions minutes a month.
+# The times match channel/settings.json -> shortTimes (07:30, 12:30, 19:30 IST). If you change shortTimes, change these.
+name: Release Instagram (Project 2)
+on:
+  schedule: [{ cron: "1 2 * * *" }, { cron: "1 7 * * *" }, { cron: "1 14 * * *" }]
+  workflow_dispatch:
+concurrency: { group: p2-release, cancel-in-progress: false }
+permissions: { contents: write }
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+      IG_USER_ID: ${{ secrets.IG_USER_ID }}
+      NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - run: node --experimental-strip-types autopilot/release.ts
+      - name: Save what was published
+        if: always()
+        run: |
+          git config user.name "p2-autopilot"; git config user.email "autopilot@users.noreply.github.com"
+          git add channel/released.json 2>/dev/null || true
+          git diff --cached --quiet || (git commit -m "release: $(date -u +%FT%H:%M)" && for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done)

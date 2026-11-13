@@ -1,0 +1,494 @@
+{
+  "id": "E002",
+  "status": "approved",
+  "topic": "extreme-earth",
+  "title": {
+    "en": "NASA Flew Over a 70-Mile Crack in Antarctica. Then It Broke.",
+    "hi": "NASA ने अंटार्कटिका की 70 मील लंबी दरार के ऊपर उड़ान भरी। फिर वह टूट गई।",
+    "es": "La NASA voló sobre una grieta de 70 millas en la Antártida. Luego se rompió.",
+    "pt": "A NASA sobrevoou uma rachadura de 70 milhas na Antártida. Depois ela se partiu."
+  },
+  "thumb": {
+    "en": "70 MILES LONG",
+    "hi": "70 मील लंबी",
+    "es": "70 MILLAS",
+    "pt": "70 MILHAS"
+  },
+  "music": {
+    "mood": "tension",
+    "styles": [
+      "deep low strings",
+      "icy shimmering synth textures",
+      "slow heavy pulse"
+    ],
+    "peak": "s4"
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "title": "NASA, 'IceBridge images of crack in Larsen C Ice Shelf' (NASA Image and Video Library)",
+      "url": "https://images.nasa.gov/details/GSFC_20161208_Larsen_m12449_First_Pass",
+      "claims": [
+        "The IceBridge scientists measured the Larsen C fracture to be about 70 miles long, more than 300 feet wide and about a third of a mile deep.",
+        "The crack completely cuts through the ice shelf"
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "NASA, 'Crack in Larsen C Ice Shelf' (NASA Image and Video Library)",
+      "url": "https://images.nasa.gov/details/GSFC_20170712_Larsen_m12633_Crack",
+      "claims": [
+        "An iceberg about the size of the state of Delaware split off from Antarctica’s Larsen C ice shelf",
+        "the close to 2240 square-mile (5800 square kilometers) chunk of ice has broken away, the Larsen C shelf area has shrunk by approximately 10 percent"
+      ]
+    },
+    {
+      "id": "S3",
+      "title": "NASA, 'NASA's View of Pine Island Glacier's Latest Iceberg' (NASA Image and Video Library)",
+      "url": "https://images.nasa.gov/details/GSFC_20181108_PIG_m13110_Iceberg",
+      "claims": [
+        "Pine Island has lost several large icebergs in the last few years -- it's one of the most rapidly melting glaciers in the Antarctic"
+      ]
+    }
+  ],
+  "engage": {
+    "ask": {
+      "en": "If you could stand at the edge of that crack, would you look down?",
+      "hi": "अगर आप उस दरार के किनारे खड़े होते, तो क्या नीचे झाँकते?",
+      "es": "Si pudieras pararte al borde de esa grieta, ¿mirarías hacia abajo?",
+      "pt": "Se você pudesse ficar na beira dessa rachadura, você olharia para baixo?"
+    },
+    "hookText": {
+      "en": "THIS IS *REAL*",
+      "hi": "यह *असली* है",
+      "es": "ESTO ES *REAL*",
+      "pt": "ISTO É *REAL*"
+    },
+    "loop": {
+      "en": "And right now, somewhere out there, the next crack is already growing...",
+      "hi": "और अभी, कहीं वहाँ, अगली दरार पहले से बढ़ रही है...",
+      "es": "Y ahora mismo, en algún lugar allá afuera, la próxima grieta ya está creciendo...",
+      "pt": "E agora mesmo, em algum lugar lá fora, a próxima rachadura já está crescendo..."
+    },
+    "share": {
+      "en": "Send this to someone who thinks Antarctica never changes.",
+      "hi": "यह उसे भेजिए जो सोचता है कि अंटार्कटिका कभी नहीं बदलता।",
+      "es": "Envíaselo a alguien que cree que la Antártida nunca cambia.",
+      "pt": "Mande para alguém que acha que a Antártida nunca muda."
+    }
+  },
+  "scenes": [
+    {
+      "id": "s1",
+      "vo": {
+        "en": "You are flying over a 70-mile crack in Antarctica, months before it broke. Almost nobody knows what came next.",
+        "hi": "आप अंटार्कटिका की 70 मील लंबी दरार के ऊपर उड़ रहे हैं, उसके टूटने से महीनों पहले। लगभग कोई नहीं जानता आगे क्या हुआ।",
+        "es": "Estás volando sobre una grieta de 70 millas en la Antártida, meses antes de que se rompiera. Casi nadie sabe lo que pasó después.",
+        "pt": "Você está sobrevoando uma rachadura de 70 milhas na Antártida, meses antes dela se partir. Quase ninguém sabe o que veio depois."
+      },
+      "overlays": [
+        {
+          "kind": "kicker",
+          "text": {
+            "en": "The 70-mile crack",
+            "hi": "70 मील लंबी दरार",
+            "es": "La grieta de 70 millas",
+            "pt": "A rachadura de 70 milhas"
+          },
+          "sub": {
+            "en": "Larsen C Ice Shelf · Antarctica",
+            "hi": "लार्सन C हिम शेल्फ़ · अंटार्कटिका",
+            "es": "Plataforma de hielo Larsen C · Antártida",
+            "pt": "Plataforma de gelo Larsen C · Antártida"
+          },
+          "at": 2.3
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "shots": 2,
+      "footage": [
+        {
+          "provider": "nasa",
+          "q": "Larsen C rift",
+          "nasaId": "GSFC_20161208_Larsen_m12449_First_Pass",
+          "takes": [
+            [
+              103.8,
+              109.4
+            ]
+          ]
+        },
+        {
+          "provider": "nasa",
+          "q": "Larsen C crack",
+          "nasaId": "GSFC_20161208_Larsen_m12449_First_Pass",
+          "takes": [
+            [
+              56.5,
+              66.0
+            ]
+          ]
+        },
+        {
+          "provider": "nasa",
+          "q": "IceBridge Antarctica"
+        },
+        {
+          "provider": "nasa",
+          "q": "Larsen C"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "Antarctica ice shelf aerial"
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "vo": {
+        "en": "NASA's IceBridge team measured it: more than three hundred feet wide, and about a third of a mile deep.",
+        "hi": "NASA की IceBridge टीम ने इसे नापा: तीन सौ फ़ीट से ज़्यादा चौड़ी, और लगभग एक तिहाई मील गहरी।",
+        "es": "El equipo IceBridge de la NASA la midió: más de trescientos pies de ancho y cerca de un tercio de milla de profundidad.",
+        "pt": "A equipe IceBridge da NASA mediu: mais de trezentos pés de largura e cerca de um terço de milha de profundidade."
+      },
+      "overlays": [
+        {
+          "kind": "stat",
+          "text": {
+            "en": "300+",
+            "hi": "300+",
+            "es": "300+",
+            "pt": "300+"
+          },
+          "sub": {
+            "en": "feet wide",
+            "hi": "फ़ीट चौड़ी",
+            "es": "pies de ancho",
+            "pt": "pés de largura"
+          },
+          "at": 1.6
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "shots": 2,
+      "footage": [
+        {
+          "provider": "nasa",
+          "q": "crevasses",
+          "nasaId": "GSFC_20161208_Larsen_m12449_Scenic_nadirs",
+          "takes": [
+            [
+              88,
+              99.5
+            ]
+          ]
+        },
+        {
+          "provider": "nasa",
+          "q": "crevasses rock",
+          "nasaId": "GSFC_20161208_Larsen_m12449_Scenic_nadirs",
+          "takes": [
+            [
+              16.2,
+              23.8
+            ]
+          ]
+        },
+        {
+          "provider": "nasa",
+          "q": "IceBridge crevasses"
+        },
+        {
+          "provider": "nasa",
+          "q": "Antarctic Peninsula flight"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "Antarctica ice shelf aerial"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "vo": {
+        "en": "And it cut completely through the ice shelf.",
+        "hi": "और यह हिम शेल्फ़ को पूरी तरह चीरती चली गई।",
+        "es": "Y atravesó por completo la plataforma de hielo.",
+        "pt": "E atravessou completamente a plataforma de gelo."
+      },
+      "sources": [
+        "S1"
+      ],
+      "shots": 1,
+      "footage": [
+        {
+          "provider": "nasa",
+          "q": "ice shelf edge ocean",
+          "nasaId": "GSFC_20161208_Larsen_m12449_Scenic_nadirs",
+          "takes": [
+            [
+              158.5,
+              170.5
+            ]
+          ]
+        },
+        {
+          "provider": "nasa",
+          "q": "ice shelf edge"
+        },
+        {
+          "provider": "nasa",
+          "q": "Antarctica ocean ice"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "Antarctica ice shelf aerial"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "vo": {
+        "en": "Then it broke. A chunk of ice close to five thousand eight hundred square kilometres split off into the sea.",
+        "hi": "फिर वह टूट गई। लगभग पाँच हज़ार आठ सौ वर्ग किलोमीटर का बर्फ़ का टुकड़ा अलग होकर समुद्र में चला गया।",
+        "es": "Entonces se rompió. Un bloque de hielo de casi cinco mil ochocientos kilómetros cuadrados se separó hacia el mar.",
+        "pt": "Então ela se partiu. Um bloco de gelo de quase cinco mil e oitocentos quilômetros quadrados se soltou no mar."
+      },
+      "overlays": [
+        {
+          "kind": "map",
+          "geo": {
+            "lat": -67.5,
+            "lon": -61.5
+          },
+          "text": {
+            "en": "Larsen C Ice Shelf",
+            "hi": "लार्सन C हिम शेल्फ़",
+            "es": "Plataforma Larsen C",
+            "pt": "Plataforma Larsen C"
+          },
+          "at": 0.2,
+          "dur": 3.6
+        },
+        {
+          "kind": "stat",
+          "text": {
+            "en": "5,800",
+            "hi": "5,800",
+            "es": "5.800",
+            "pt": "5.800"
+          },
+          "sub": {
+            "en": "square kilometres of ice",
+            "hi": "वर्ग किलोमीटर बर्फ़",
+            "es": "kilómetros cuadrados de hielo",
+            "pt": "quilômetros quadrados de gelo"
+          },
+          "at": 3.9
+        }
+      ],
+      "sources": [
+        "S2"
+      ],
+      "shots": 2,
+      "footage": [
+        {
+          "provider": "nasa",
+          "q": "iceberg edge",
+          "nasaId": "GSFC_20181108_PIG_m13110_Iceberg",
+          "takes": [
+            [
+              21.8,
+              25.8
+            ]
+          ]
+        },
+        {
+          "provider": "nasa",
+          "q": "iceberg flight",
+          "nasaId": "GSFC_20181108_PIG_m13110_Iceberg",
+          "takes": [
+            [
+              0.2,
+              5.6
+            ]
+          ]
+        },
+        {
+          "provider": "nasa",
+          "q": "iceberg Antarctica"
+        },
+        {
+          "provider": "nasa",
+          "q": "Pine Island Glacier iceberg"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "Antarctica ice shelf aerial"
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "longOnly": true,
+      "vo": {
+        "en": "In one break, the Larsen C shelf shrank by approximately ten percent.",
+        "hi": "एक ही टूटन में, लार्सन C शेल्फ़ लगभग दस प्रतिशत छोटी हो गई।",
+        "es": "En una sola ruptura, la plataforma Larsen C se redujo aproximadamente un diez por ciento.",
+        "pt": "Numa única ruptura, a plataforma Larsen C encolheu aproximadamente dez por cento."
+      },
+      "overlays": [
+        {
+          "kind": "stat",
+          "text": {
+            "en": "10%",
+            "hi": "10%",
+            "es": "10%",
+            "pt": "10%"
+          },
+          "sub": {
+            "en": "of the shelf, gone",
+            "hi": "शेल्फ़ का हिस्सा, गायब",
+            "es": "de la plataforma, perdido",
+            "pt": "da plataforma, perdido"
+          },
+          "at": 0.8
+        }
+      ],
+      "sources": [
+        "S2"
+      ],
+      "shots": 1,
+      "footage": [
+        {
+          "provider": "nasa",
+          "q": "ice cliff",
+          "nasaId": "GSFC_20161208_Larsen_m12449_Scenic_nadirs",
+          "takes": [
+            [
+              49.5,
+              55.5
+            ]
+          ]
+        },
+        {
+          "provider": "nasa",
+          "q": "ice cliff Antarctica"
+        },
+        {
+          "provider": "nasa",
+          "q": "glacier front"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "Antarctica ice shelf aerial"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "longOnly": true,
+      "vo": {
+        "en": "And it is not alone. Pine Island Glacier, one of the most rapidly melting glaciers in the Antarctic, keeps losing giant icebergs too.",
+        "hi": "और यह अकेली नहीं है। पाइन आइलैंड ग्लेशियर, अंटार्कटिका के सबसे तेज़ी से पिघलते ग्लेशियरों में से एक, भी लगातार विशाल हिमखंड खो रहा है।",
+        "es": "Y no es la única. El glaciar Pine Island, uno de los que más rápido se derriten en la Antártida, también sigue perdiendo icebergs gigantes.",
+        "pt": "E ela não está sozinha. A geleira Pine Island, uma das que mais rápido derretem na Antártida, também continua perdendo icebergs gigantes."
+      },
+      "overlays": [
+        {
+          "kind": "lower",
+          "text": {
+            "en": "Source: NASA Operation IceBridge",
+            "hi": "स्रोत: NASA ऑपरेशन IceBridge",
+            "es": "Fuente: NASA Operation IceBridge",
+            "pt": "Fonte: NASA Operation IceBridge"
+          },
+          "at": 1.0
+        }
+      ],
+      "sources": [
+        "S3"
+      ],
+      "shots": 2,
+      "footage": [
+        {
+          "provider": "nasa",
+          "q": "Pine Island Glacier",
+          "nasaId": "GSFC_20181108_PIG_m13110_Iceberg",
+          "takes": [
+            [
+              12.2,
+              15.7
+            ]
+          ]
+        },
+        {
+          "provider": "nasa",
+          "q": "iceberg sea ice",
+          "nasaId": "GSFC_20181108_PIG_m13110_Iceberg",
+          "takes": [
+            [
+              34.2,
+              37.6
+            ]
+          ]
+        },
+        {
+          "provider": "nasa",
+          "q": "Pine Island Glacier"
+        },
+        {
+          "provider": "nasa",
+          "q": "Antarctic iceberg flight"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "Antarctica ice shelf aerial"
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "shortOnly": true,
+      "vo": {
+        "en": "And right now, somewhere out there, the next crack is already growing...",
+        "hi": "और अभी, कहीं वहाँ, अगली दरार पहले से बढ़ रही है...",
+        "es": "Y ahora mismo, en algún lugar allá afuera, la próxima grieta ya está creciendo...",
+        "pt": "E agora mesmo, em algum lugar lá fora, a próxima rachadura já está crescendo..."
+      },
+      "sources": [
+        "S1"
+      ],
+      "shots": 1,
+      "footage": [
+        {
+          "provider": "nasa",
+          "q": "Antarctic flight",
+          "nasaId": "GSFC_20161208_Larsen_m12449_Scenic_nadirs",
+          "takes": [
+            [
+              103.5,
+              110.5
+            ]
+          ]
+        },
+        {
+          "provider": "nasa",
+          "q": "Antarctica flight"
+        },
+        {
+          "provider": "nasa",
+          "q": "ice shelf aerial"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "Antarctica ice shelf aerial"
+        }
+      ]
+    }
+  ]
+}

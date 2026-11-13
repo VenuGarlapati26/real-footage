@@ -1,0 +1,483 @@
+{
+  "id": "E001",
+  "status": "approved",
+  "topic": "space",
+  "title": {
+    "en": "They See 16 Sunrises a Day (Real Footage From Space)",
+    "hi": "एक दिन में 16 सूर्योदय: अंतरिक्ष से असली फुटेज",
+    "es": "Ven 16 amaneceres al día (imágenes reales desde el espacio)",
+    "pt": "Eles veem 16 nasceres do sol por dia (imagens reais do espaço)"
+  },
+  "thumb": {
+    "en": "16 SUNRISES A DAY",
+    "hi": "दिन में 16 सूर्योदय",
+    "es": "16 AMANECERES AL DÍA",
+    "pt": "16 NASCERES DO SOL POR DIA"
+  },
+  "scenes": [
+    {
+      "id": "s1",
+      "vo": {
+        "en": "Before your day ends, astronauts above you will see 16 sunrises. Almost nobody knows why.",
+        "hi": "आपका दिन ख़त्म होने से पहले, आपके ऊपर अंतरिक्ष यात्री 16 सूर्योदय देखेंगे। लगभग कोई नहीं जानता क्यों।",
+        "es": "Antes de que termine tu día, los astronautas sobre ti verán 16 amaneceres. Casi nadie sabe por qué.",
+        "pt": "Antes do seu dia acabar, os astronautas acima de você vão ver 16 nasceres do sol. Quase ninguém sabe por quê."
+      },
+      "footage": [
+        {
+          "provider": "local",
+          "file": "E001/s1.mp4"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "ISS 4K",
+          "file": "Ultra_High_Definition_Video_from_the_International_Space_Station_(Reel_1).webm",
+          "height": 1080,
+          "credit": "NASA / ISS crew (Wikimedia Commons)",
+          "license": "Public domain",
+          "takes": [
+            [
+              11.9,
+              15.9
+            ]
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "q": "ISS time-lapse",
+          "file": "Earth_Illuminated-_ISS_Time-lapse_Photography.webm",
+          "height": 720,
+          "credit": "NASA Johnson Space Center, ISS crew time-lapse (Wikimedia Commons)",
+          "license": "Public domain",
+          "takes": [
+            [
+              116.6,
+              124.0
+            ]
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "q": "ISS 4K",
+          "file": "Ultra_High_Definition_Video_from_the_International_Space_Station_(Reel_1).webm",
+          "height": 1080,
+          "credit": "NASA / ISS crew (Wikimedia Commons)",
+          "license": "Public domain",
+          "takes": [
+            [
+              39.0,
+              49.0
+            ]
+          ]
+        },
+        {
+          "provider": "nasa",
+          "q": "space station sunrise"
+        },
+        {
+          "provider": "nasa",
+          "q": "ISS earth timelapse"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "International Space Station time-lapse"
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "kicker",
+          "text": {
+            "en": "One day. 16 sunrises.",
+            "hi": "एक दिन, 16 सूर्योदय",
+            "es": "Un día. 16 amaneceres.",
+            "pt": "Um dia. 16 nasceres do sol."
+          },
+          "sub": {
+            "en": "International Space Station",
+            "hi": "अंतर्राष्ट्रीय अंतरिक्ष स्टेशन",
+            "es": "Estación Espacial Internacional",
+            "pt": "Estação Espacial Internacional"
+          },
+          "at": 2.3
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "authentic": true
+    },
+    {
+      "id": "s2",
+      "vo": {
+        "en": "The station is racing around the Earth at about twenty-eight thousand kilometres an hour.",
+        "hi": "यह स्टेशन लगभग अट्ठाईस हज़ार किलोमीटर प्रति घंटे की रफ़्तार से धरती का चक्कर लगा रहा है।",
+        "es": "La estación da vueltas a la Tierra a unos veintiocho mil kilómetros por hora.",
+        "pt": "A estação está dando voltas na Terra a cerca de vinte e oito mil quilômetros por hora."
+      },
+      "footage": [
+        {
+          "provider": "local",
+          "file": "E001/s2.mp4"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "ISS time-lapse",
+          "file": "Earth_Illuminated-_ISS_Time-lapse_Photography.webm",
+          "height": 720,
+          "credit": "NASA Johnson Space Center, ISS crew time-lapse (Wikimedia Commons)",
+          "license": "Public domain",
+          "takes": [
+            [
+              25.9,
+              29.25
+            ]
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "q": "ISS time-lapse",
+          "file": "Earth_Illuminated-_ISS_Time-lapse_Photography.webm",
+          "height": 720,
+          "credit": "NASA Johnson Space Center, ISS crew time-lapse (Wikimedia Commons)",
+          "license": "Public domain",
+          "takes": [
+            [
+              17.45,
+              20.8
+            ]
+          ]
+        },
+        {
+          "provider": "nasa",
+          "q": "4K Earth views",
+          "nasaId": "jsc2021m000138_4K_Earth_Views_Extended_Cut_for_Earth_Day_ 2021_210422-4KMP4",
+          "takes": [
+            [
+              1782,
+              1800
+            ]
+          ]
+        },
+        {
+          "provider": "nasa",
+          "q": "space station earth orbit view"
+        },
+        {
+          "provider": "nasa",
+          "q": "earth from space station"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "Earth from ISS video"
+        }
+      ],
+      "overlays": [
+        {
+          "kind": "stat",
+          "text": {
+            "en": "28,000",
+            "hi": "28,000",
+            "es": "28.000",
+            "pt": "28.000"
+          },
+          "sub": {
+            "en": "km per hour",
+            "hi": "किलोमीटर प्रति घंटा",
+            "es": "km por hora",
+            "pt": "km por hora"
+          },
+          "at": 1.2
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "authentic": true,
+      "shots": 3
+    },
+    {
+      "id": "s3",
+      "vo": {
+        "en": "At that speed, one full lap of the planet takes just ninety-two minutes.",
+        "hi": "इस रफ़्तार पर, धरती का एक पूरा चक्कर बस बानवे मिनट में।",
+        "es": "A esa velocidad, una vuelta completa al planeta dura solo noventa y dos minutos.",
+        "pt": "Nessa velocidade, uma volta completa no planeta leva só noventa e dois minutos."
+      },
+      "footage": [
+        {
+          "provider": "local",
+          "file": "E001/s3.mp4"
+        },
+        {
+          "provider": "nasa",
+          "q": "4K Earth views",
+          "nasaId": "jsc2021m000138_4K_Earth_Views_Extended_Cut_for_Earth_Day_ 2021_210422-4KMP4",
+          "takes": [
+            [
+              552,
+              566
+            ]
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "q": "ISS time-lapse",
+          "file": "Earth_Illuminated-_ISS_Time-lapse_Photography.webm",
+          "height": 720,
+          "credit": "NASA Johnson Space Center, ISS crew time-lapse (Wikimedia Commons)",
+          "license": "Public domain",
+          "takes": [
+            [
+              68.8,
+              77.6
+            ]
+          ]
+        },
+        {
+          "provider": "nasa",
+          "q": "earth at night space station"
+        },
+        {
+          "provider": "nasa",
+          "q": "city lights from space station"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "Earth at night from ISS"
+        }
+      ],
+      "overlays": [
+        {
+          "kind": "stat",
+          "text": {
+            "en": "92",
+            "hi": "92",
+            "es": "92",
+            "pt": "92"
+          },
+          "sub": {
+            "en": "minutes per orbit",
+            "hi": "मिनट में एक चक्कर",
+            "es": "minutos por órbita",
+            "pt": "minutos por órbita"
+          },
+          "at": 0.4
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "authentic": true,
+      "shots": 2
+    },
+    {
+      "id": "s4",
+      "vo": {
+        "en": "So every ninety-two minutes, the sun comes up... and goes down again.",
+        "hi": "यानी हर बानवे मिनट में, सूरज उगता है... और फिर डूब जाता है।",
+        "es": "Así que cada noventa y dos minutos, el sol sale... y se vuelve a poner.",
+        "pt": "Então, a cada noventa e dois minutos, o sol nasce... e se põe de novo."
+      },
+      "footage": [
+        {
+          "provider": "local",
+          "file": "E001/s4.mp4"
+        },
+        {
+          "provider": "nasa",
+          "q": "Earth views from the ISS",
+          "nasaId": "Earth Views from the International Space Station",
+          "takes": [
+            [
+              171.25,
+              173.95
+            ]
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "q": "ISS time-lapse",
+          "file": "Earth_Illuminated-_ISS_Time-lapse_Photography.webm",
+          "height": 720,
+          "credit": "NASA Johnson Space Center, ISS crew time-lapse (Wikimedia Commons)",
+          "license": "Public domain",
+          "takes": [
+            [
+              142.7,
+              145.35
+            ]
+          ]
+        },
+        {
+          "provider": "nasa",
+          "q": "orbital sunrise"
+        },
+        {
+          "provider": "nasa",
+          "q": "sunrise from space station"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "orbital sunrise ISS"
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "authentic": true,
+      "shots": 2,
+      "overlays": [
+        {
+          "kind": "orbit",
+          "text": {
+            "en": "16",
+            "hi": "16",
+            "es": "16",
+            "pt": "16"
+          },
+          "sub": {
+            "en": "sunrises every day",
+            "hi": "सूर्योदय हर दिन",
+            "es": "amaneceres cada día",
+            "pt": "nasceres do sol por dia"
+          },
+          "at": 0.15
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "vo": {
+        "en": "Next time you watch a sunrise, remember: for someone up there, it might be their tenth one today.",
+        "hi": "अगली बार जब आप सूर्योदय देखें, तो याद रखिए: ऊपर किसी के लिए, यह आज का दसवाँ हो सकता है।",
+        "es": "La próxima vez que veas un amanecer, recuerda: para alguien allá arriba, puede ser el décimo del día.",
+        "pt": "Da próxima vez que você vir o sol nascer, lembre: para alguém lá em cima, pode ser o décimo do dia."
+      },
+      "footage": [
+        {
+          "provider": "local",
+          "file": "E001/s5.mp4"
+        },
+        {
+          "provider": "pexels",
+          "q": "sunrise india"
+        },
+        {
+          "provider": "pixabay",
+          "q": "sunrise landscape"
+        }
+      ],
+      "overlays": [
+        {
+          "kind": "lower",
+          "text": {
+            "en": "Source: NASA",
+            "hi": "स्रोत: NASA",
+            "es": "Fuente: NASA",
+            "pt": "Fonte: NASA"
+          },
+          "at": 1.0
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "longOnly": true
+    },
+    {
+      "id": "s6",
+      "shortOnly": true,
+      "vo": {
+        "en": "And right now, somewhere above you, another one is beginning...",
+        "hi": "और अभी, कहीं आपके ऊपर, एक और सुबह शुरू हो रही है...",
+        "es": "Y ahora mismo, en algún lugar sobre ti, otro está comenzando...",
+        "pt": "E agora mesmo, em algum lugar acima de você, outro está começando..."
+      },
+      "footage": [
+        {
+          "provider": "local",
+          "file": "E001/s6.mp4"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "ISS time-lapse",
+          "file": "Earth_Illuminated-_ISS_Time-lapse_Photography.webm",
+          "height": 720,
+          "credit": "NASA Johnson Space Center, ISS crew time-lapse (Wikimedia Commons)",
+          "license": "Public domain",
+          "takes": [
+            [
+              145.7,
+              151.45
+            ]
+          ]
+        },
+        {
+          "provider": "nasa",
+          "q": "space station sunrise"
+        },
+        {
+          "provider": "nasa",
+          "q": "ISS sunrise timelapse"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "sunrise from the International Space Station"
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "authentic": true,
+      "shots": 1
+    }
+  ],
+  "music": {
+    "mood": "awe",
+    "styles": [
+      "deep cinematic pulse",
+      "felt piano",
+      "shimmering synth arpeggios"
+    ],
+    "peak": "s3"
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "title": "NASA, 'Good Morning From the International Space Station'",
+      "url": "https://www.nasa.gov/image-article/good-morning-from-international-space-station-3/",
+      "claims": [
+        "traveling at a speed of approximately 17,500 miles per hour (about 28,000 km/h)",
+        "the station completes each trip around the globe in about 92 minutes",
+        "the crew experiences 16 sunrises and sunsets each day"
+      ]
+    }
+  ],
+  "engage": {
+    "ask": {
+      "en": "If you were up there, which of the 16 sunrises would you stay awake for?",
+      "hi": "अगर आप वहाँ होते, तो 16 में से कौन-सा सूर्योदय देखने के लिए जागते?",
+      "es": "Si estuvieras allá arriba, ¿por cuál de los 16 amaneceres te quedarías despierto?",
+      "pt": "Se você estivesse lá em cima, por qual dos 16 nasceres do sol você ficaria acordado?"
+    },
+    "hookText": {
+      "en": "THIS IS *NOT* CGI",
+      "hi": "यह *CGI* नहीं है",
+      "es": "ESTO *NO* ES CGI",
+      "pt": "ISTO *NÃO* É CGI"
+    },
+    "loop": {
+      "en": "And right now, somewhere above you, another one is beginning...",
+      "hi": "और अभी, कहीं आपके ऊपर, एक और सुबह शुरू हो रही है...",
+      "es": "Y ahora mismo, en algún lugar sobre ti, otro está comenzando...",
+      "pt": "E agora mesmo, em algum lugar acima de você, outro está começando..."
+    },
+    "share": {
+      "en": "Send this to someone who has never watched a sunrise.",
+      "hi": "यह उसे भेजिए जिसने कभी सूर्योदय नहीं देखा।",
+      "es": "Envíaselo a alguien que nunca ha visto un amanecer.",
+      "pt": "Mande para alguém que nunca viu o sol nascer."
+    }
+  }
+}

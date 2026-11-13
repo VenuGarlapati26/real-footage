@@ -1,0 +1,38 @@
+# Growth review twice a week (Monday + Thursday, 06:30 UTC = 12:00 IST): scores slots and thumbnails, reads
+# retention, tunes pacing and the hook gate, re-weights topics, runs the trend radar, reports to your phone.
+name: Growth review (Project 2)
+on:
+  schedule: [{ cron: "30 6 * * 1,4" }]
+  workflow_dispatch:
+permissions: { contents: write }
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60   # writes 4 episodes and has Gemini pick their shots (stock clips judged from small previews)
+    env:
+      YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+      YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+      YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+      NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+      NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+      PIXABAY_API_KEY: ${{ secrets.PIXABAY_API_KEY }}
+      NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+      SEMRUSH_API_KEY: ${{ secrets.SEMRUSH_API_KEY }}
+      DATAFORSEO_LOGIN: ${{ secrets.DATAFORSEO_LOGIN }}
+      DATAFORSEO_PASSWORD: ${{ secrets.DATAFORSEO_PASSWORD }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg   # contact sheets for shot picking
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium   # motion-graphics layer
+      - run: npx tsx autopilot/weekly.ts
+      - run: |
+          git config user.name "p2-autopilot"; git config user.email "autopilot@users.noreply.github.com"
+          git add channel episodes   # the new episodes too, or they would be lost
+          git diff --cached --quiet || (git commit -m "growth review $(date -u +%F)" && for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done)
