@@ -15,7 +15,7 @@ import * as meta from "./meta";
 import { allocate, loadFormats, loadPillars, scorePillars, type Perf } from "../growth/pillars";
 import { writeEpisode } from "../growth/writer";
 import { curate } from "../engine/curate";
-import { geminiReady } from "../growth/gemini";
+import { geminiReady, GeminiQuotaError } from "../growth/gemini";
 import { notionReady, syncNotion } from "../growth/notion";
 import type { Row } from "./daily";
 
@@ -109,16 +109,21 @@ async function main() {
     const queue = [...requested.filter(fresh).map(r => ({ idea: r, topic: ideas.find(i => i.idea === r)?.topic ?? plan[0] ?? "space", wiki: undefined as string | undefined })),
       ...plan.map(pid => { const best = ideas.find(i => i.topic === pid && fresh(i.idea)); const p = pf.pillars.find(x => x.id === pid)!;
         const wiki = p.wiki.find(w => fresh(w)); return best ? { idea: best.idea, topic: pid, wiki: undefined } : { idea: wiki ?? p.seeds[0], topic: pid, wiki }; })];
+    const newFiles: string[] = [];   // scripts first (they need the strongest model), footage picking after
     for (const [k, i] of queue.slice(0, n).entries()) {
       try {
         const file = await writeEpisode(i.idea, { topic: i.topic, wiki: i.wiki, angle: angles[k], approve: false });
-        const rep = await curate(file).catch(e => [`curation skipped: ${e.message}`]);
         if (settingsW.autoApprove) { const ep = await readJson<any>(file); ep.status = "approved"; await writeFile(file, JSON.stringify(ep, null, 2) + "\n"); }
-        notes.push(`wrote ${file} from "${i.idea}" (${settingsW.autoApprove ? "approved" : "draft: set status to approved"}); footage: ${rep.join("; ")}`);
+        newFiles.push(file);
+        notes.push(`wrote ${file} from "${i.idea}" (${settingsW.autoApprove ? "approved" : "draft: set status to approved"})`);
         written.push(i.idea.toLowerCase());   // only ideas that really became episodes; a failed one is tried again next time
-      } catch (e: any) { notes.push(`writer: "${i.idea}" skipped (will retry next review): ${String(e.message).split("\n")[0]}`); }
+      } catch (e: any) {
+        notes.push(`writer: "${i.idea}" skipped (will retry next review): ${String(e.message).split("\n")[0]}`);
+        if (e instanceof GeminiQuotaError) { notes.push("writer stopped for today: no Gemini quota left, so the remaining ideas wait for the next review"); break; }
+      }
     }
     await writeFile(writtenFile, JSON.stringify(written, null, 2));
+    for (const file of newFiles) notes.push(`footage for ${file}: ${(await curate(file).catch(e => [`curation skipped: ${e.message}`])).join("; ")}`);
   } else if (settingsW.writer?.enabled) notes.push("episode writer is OFF: add the GEMINI_API_KEY secret (free, aistudio.google.com), or no new episodes get written");
   learning.updated = strategy.updated = new Date().toISOString();
   await saveLearning(learning); await writeFile("channel/strategy.json", JSON.stringify(strategy, null, 2));

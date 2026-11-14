@@ -73,3 +73,28 @@ console.log("http + trend filter tests: all passed");
   assert.equal(readGemini('{"candidates":[{"content":{"parts":[{"text":"x"}]}}]}').candidates[0].content.parts[0].text, "x");
   console.log("gemini stream tests: all passed");
 }
+
+// 6. free daily quota: that model is set aside for the run and the next one answers; per-minute limits are waited out
+{
+  const { quotaKind } = await import("../growth/gemini");
+  assert.equal(quotaKind(429, '{"message":"You exceeded your current quota, please check your plan and billing details.","details":[{"quotaId":"GenerateRequestsPerDayPerProjectPerModel-FreeTier"}]}'), "day");
+  assert.equal(quotaKind(429, '{"message":"You exceeded your current quota. Please retry in 31.2s.","details":[{"quotaId":"GenerateRequestsPerMinutePerProjectPerModel-FreeTier"}]}'), 31.2);
+  assert.equal(quotaKind(429, '{"message":"You exceeded your current quota, please check your plan and billing details."}'), "day");
+  assert.equal(quotaKind(500, '{"message":"internal"}'), null);
+  const hits: string[] = [];
+  const g = http.createServer((req, res) => {
+    const model = req.url!.split("/models/")[1].split(":")[0]; hits.push(model);
+    res.setHeader("content-type", "application/json");
+    if (model === "big") { res.writeHead(429); return res.end(JSON.stringify({ error: { code: 429, message: "You exceeded your current quota, please check your plan and billing details." } })); }
+    res.end(JSON.stringify({ candidates: [{ content: { parts: [{ text: '{"ok":2}' }] } }] }));
+  });
+  await new Promise<void>(r => g.listen(0, "127.0.0.1", r));
+  process.env.GEMINI_BASE = `http://127.0.0.1:${(g.address() as any).port}`;
+  const { askJson, GeminiQuotaError } = await import("../growth/gemini");
+  assert.deepEqual(await askJson<any>([{ text: "x" }], { models: ["big", "lite"] }), { ok: 2 });
+  assert.deepEqual(hits, ["big", "lite"], "one try on the used-up model, then the next");
+  await askJson([{ text: "y" }], { models: ["big", "lite"] }); assert.deepEqual(hits.slice(2), ["lite"], "the used-up model is not asked again");
+  await assert.rejects(askJson([{ text: "z" }], { models: ["big"] }), (e: any) => e instanceof GeminiQuotaError && /resets/.test(e.message));
+  g.close();
+  console.log("gemini quota tests: all passed");
+}

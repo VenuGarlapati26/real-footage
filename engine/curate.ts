@@ -14,7 +14,7 @@ import path from "node:path";
 import { promisify } from "node:util";
 import type { Episode, FootageQuery, Scene, Take } from "./types";
 import { download, isUsable, search, type Candidate } from "./footage";
-import { askJson, geminiReady, type Part } from "../growth/gemini";
+import { askJson, geminiReady, type Part, CURATE_MODELS, GeminiQuotaError } from "../growth/gemini";
 
 const run = promisify(execFile);
 const STEP = 2;               // seconds between contact-sheet frames
@@ -84,7 +84,7 @@ export async function curateScene(sc: Scene, shots: number, need: number, work: 
     const s = await sheet(clips[i].file, clips[i].duration, path.join(work, `${sc.id}-clip${i}.jpg`));
     parts.push({ text: `Clip ${i}: "${clips[i].title}" (${clips[i].duration.toFixed(0)} s)` }, { inline_data: { mime_type: "image/jpeg", data: (await readFile(s.file)).toString("base64") } });
   }
-  const ans = await askJson<{ picks: Pick[] }>(parts, { temperature: 0.2 });
+  const ans = await askJson<{ picks: Pick[] }>(parts, { temperature: 0.2, models: CURATE_MODELS() });
   const picks = validPicks(ans.picks, clips, need + 0.2, shots);
   return picks.map(p => {
     const c = clips[p.clip];
@@ -104,7 +104,9 @@ export async function curate(epFile: string, opts: { force?: boolean; shotSecond
   for (const sc of ep.scenes) {
     if (!opts.force && sc.footage.some(f => (f as any).takes)) { report.push(`${sc.id}: already curated`); continue; }
     const secs = sc.vo.en.split(/\s+/).length / 2.6 + 0.8, shots = sc.shots ?? Math.max(1, Math.round(secs / (opts.shotSeconds ?? 3.2))), need = secs / shots;
-    const pinned = await curateScene(sc, shots, need, work).catch(e => { report.push(`${sc.id}: ${e.message}`); return null; });
+    let out = false;
+    const pinned = await curateScene(sc, shots, need, work).catch(e => { if (e instanceof GeminiQuotaError) out = true; else report.push(`${sc.id}: ${e.message}`); return null; });
+    if (out) { report.push(`${sc.id}+: no Gemini quota left today, the rest is picked automatically at build time`); break; }
     if (!pinned?.length) { report.push(`${sc.id}: no picks (automatic picking at build time)`); continue; }
     sc.footage = [...sc.footage.filter(f => f.provider === "local"), ...pinned, ...sc.footage.filter(f => f.provider !== "local" && !(f as any).takes)];
     sc.shots = pinned.length; report.push(`${sc.id}: ${pinned.length} take(s)`);
