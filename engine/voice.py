@@ -18,7 +18,9 @@ GOOGLE_VOICE = {"en": os.environ.get("GOOGLE_TTS_VOICE_EN", "en-US-Chirp3-HD-Cha
                 "es": "es-US-Chirp3-HD-Charon", "pt": "pt-BR-Chirp3-HD-Charon", "fr": "fr-FR-Chirp3-HD-Charon", "it": "it-IT-Chirp3-HD-Charon"}
 GOOGLE_FALLBACK = {"en": "en-US-Neural2-D", "hi": "hi-IN-Neural2-B", "es": "es-US-Neural2-B", "pt": "pt-BR-Neural2-B", "fr": "fr-FR-Neural2-B", "it": "it-IT-Neural2-C"}
 LANG_NAME = {"en": "English", "hi": "Hindi", "es": "Spanish", "pt": "Brazilian Portuguese", "fr": "French", "it": "Italian"}
-GEMINI_MODEL = os.environ.get("GEMINI_TTS_MODEL", "gemini-2.5-flash-preview-tts")
+# newest first; the first model this key may use is kept (gemini-2.5-flash-preview-tts shuts down 17 Nov 2026)
+GEMINI_MODELS = [m.strip() for m in os.environ.get("GEMINI_TTS_MODEL", "gemini-3.8-flash-tts,gemini-3.8-flash-lite-tts,gemini-3.1-flash-tts-preview,gemini-2.5-flash-preview-tts").split(",") if m.strip()]
+_tts_model = None
 GEMINI_VOICE = os.environ.get("GEMINI_TTS_VOICE", "Charon")
 # ElevenLabs: eleven_multilingual_v2 is the steadiest for long Hindi narration; eleven_v3 is more expressive.
 ELEVEN_MODEL = os.environ.get("ELEVENLABS_MODEL", "eleven_multilingual_v2")
@@ -102,22 +104,32 @@ def google(text, lang, dst):
 
 
 def gemini(text, lang, dst):
+    global _tts_model
     key = os.environ.get("GEMINI_API_KEY")
     if not key:
         return False
-    try:
-        style = f"Read this in natural {LANG_NAME.get(lang, 'English')} like a warm, gripping documentary narrator, unhurried, with real wonder in the voice: "
-        j = post(f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent?key={key}",
-                 {"contents": [{"parts": [{"text": style + text}]}],
-                  "generationConfig": {"responseModalities": ["AUDIO"], "speechConfig": {"voiceConfig": {"prebuiltVoiceConfig": {"voiceName": GEMINI_VOICE}}}}})
-        pcm = base64.b64decode(j["candidates"][0]["content"]["parts"][0]["inlineData"]["data"])
-        raw = dst + ".pcm"
-        open(raw, "wb").write(pcm)
-        ff(raw, dst, POLISH, ("s16le", 24000)); os.remove(raw)
-        return True
-    except Exception as e:
-        print(f"gemini tts: {e}", file=sys.stderr)
-        return False
+    style = f"Read this in natural {LANG_NAME.get(lang, 'English')} like a warm, gripping documentary narrator, unhurried, with real wonder in the voice: "
+    for model in ([_tts_model] if _tts_model else GEMINI_MODELS):
+        try:
+            j = post(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={key}",
+                     {"contents": [{"parts": [{"text": style + text}]}],
+                      "generationConfig": {"responseModalities": ["AUDIO"], "speechConfig": {"voiceConfig": {"prebuiltVoiceConfig": {"voiceName": GEMINI_VOICE}}}}})
+            pcm = base64.b64decode(j["candidates"][0]["content"]["parts"][0]["inlineData"]["data"])
+            raw = dst + ".pcm"
+            open(raw, "wb").write(pcm)
+            ff(raw, dst, POLISH, ("s16le", 24000)); os.remove(raw)
+            _tts_model = model
+            return True
+        except Exception as e:
+            msg = str(e)
+            body = getattr(e, "read", None)
+            if body:
+                try: msg += " " + e.read().decode("utf8", "replace")[:300]
+                except Exception: pass
+            print(f"gemini tts {model}: {msg[:200]}", file=sys.stderr)
+            if _tts_model or not any(k in msg for k in ("404", "403", "no longer available", "not found", "not supported", "limit: 0")):
+                return False   # a real failure (quota for today, network): fall back to the next voice
+    return False
 
 
 def kokoro(text, lang, dst):

@@ -44,3 +44,22 @@ assert.deepEqual(ideas.map(i => i.idea), ["The deepest hole on Earth"]);
 
 srv.close();
 console.log("http + trend filter tests: all passed");
+
+// 4. Gemini: a retired model ("no longer available to new users", 404) -> the next model in the list, then remembered
+{
+  const hits: string[] = [];
+  const g = http.createServer((req, res) => {
+    const model = req.url!.split("/models/")[1].split(":")[0]; hits.push(model);
+    res.setHeader("content-type", "application/json");
+    if (model === "old-model") { res.writeHead(404); return res.end(JSON.stringify({ error: { code: 404, message: "This model models/old-model is no longer available to new users. Please update your code." } })); }
+    res.end(JSON.stringify({ candidates: [{ content: { parts: [{ text: '{"ok":true}' }] } }] }));
+  });
+  await new Promise<void>(r => g.listen(0, "127.0.0.1", r));
+  Object.assign(process.env, { GEMINI_BASE: `http://127.0.0.1:${(g.address() as any).port}`, GEMINI_API_KEY: "k", GEMINI_MODEL: "old-model,new-model" });
+  const { askJson, MODEL } = await import("../growth/gemini");
+  assert.deepEqual(await askJson<any>([{ text: "hi" }]), { ok: true });
+  assert.deepEqual(hits, ["old-model", "new-model"]); assert.equal(MODEL(), "new-model");
+  await askJson([{ text: "again" }]); assert.deepEqual(hits.slice(2), ["new-model"], "the working model is remembered");
+  g.close();
+  console.log("gemini model fallback tests: all passed");
+}
