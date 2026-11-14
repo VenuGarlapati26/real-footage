@@ -21,6 +21,13 @@ export const THRESHOLDS = { ytHook: 60, igHook: 45, title: 70, humanCaption: 60 
 
 const BLOCK = /\b(mr\.? ?beast|kurzgesagt|vox|vsauce|veritasium|discovery channel|nat ?geo|national geographic|netflix|bbc|history channel|disney|marvel|coca-?cola|pepsi|nike|adidas|samsung|iphone)\b/i;
 
+/** Both hook scores for one line (used by the writer to pick the best of several hooks). */
+export function hookScores(hook: string): { yt: number; ig: number } {
+  return { yt: py("yt-script/hookscore.py", ["--json", "--hook", hook])[0].verdict, ig: py("ig-reel/hookscore.py", ["--json", "--hook", hook]).score };
+}
+/** How human the caption reads, 0-100. */
+export const captionHuman = (caption: string): number => py("ig-human/detect.py", ["--json", "-"], caption).human_score;
+
 export function runGates(ep: Episode, caption?: string, hookMin = THRESHOLDS.ytHook): Gate[] {
   const g: Gate[] = [];
   const hook = ep.scenes[0].vo.en;

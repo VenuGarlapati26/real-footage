@@ -24,6 +24,9 @@ import { loadLearning, pick } from "../growth/learn";
 import { THUMB_STYLES } from "../growth/thumbs";
 import { instagramCaption, facebookCaption, firstComment } from "../growth/captions";
 import { notify } from "./notify";
+
+/** About how long the long cut of an episode runs, from its narration (2.6 words per second plus pauses). Pure. */
+export const longSeconds = (ep: Episode) => ep.scenes.filter(sc => !sc.shortOnly).reduce((t, sc) => t + sc.vo.en.split(/\s+/).filter(Boolean).length / 2.6 + 0.8, 0);
 import * as yt from "./youtube";
 import * as meta from "./meta";
 import * as zernio from "./zernio";
@@ -87,7 +90,11 @@ async function main() {
   // what today's earlier run already made (the 16:00 UTC catch-up only fills what is missing, never doubles up)
   const today = (job: string) => ledger.filter(r => r.date === date && r.job === job && r.status !== "failed").length;
   const shortsLeft = Math.max(0, (s.shortsPerDay ?? 1) - today("short"));
-  if (s.longDays.includes(weekday(date)) && !today("long")) { const n = eps.find(x => !done(x.ep.id, "long")); if (n) jobs.push({ ...n, job: "long", slot: pick([s.longTime, ...(s.longAltTimes ?? [])], learning.slots, dayIndex, s.explore) }); }
+  // a long video only from an episode that really has a long cut (3+ min of story): the hand-made samples are Shorts only
+  const minLong = s.minLongSeconds ?? 150;
+  if (s.longDays.includes(weekday(date)) && !today("long")) { const n = eps.find(x => !done(x.ep.id, "long") && longSeconds(x.ep) >= minLong);
+    if (!n) log(`Long day, but no approved episode has a long cut of ${minLong}+ s yet; only Shorts today.`);
+    if (n) jobs.push({ ...n, job: "long", slot: pick([s.longTime, ...(s.longAltTimes ?? [])], learning.slots, dayIndex, s.explore) }); }
   const shortSlots = s.shortTimes as string[], best = pick(shortSlots, learning.slots, dayIndex, s.explore);
   eps.filter(x => !done(x.ep.id, "short")).sort((a, b) => Number(done(b.ep.id, "long")) - Number(done(a.ep.id, "long")))
     .slice(0, shortsLeft).forEach((x, i) => jobs.push({ ...x, job: "short", slot: i === 0 ? best : shortSlots.filter(t => t !== best)[(i - 1) % Math.max(1, shortSlots.length - 1)] ?? best }));

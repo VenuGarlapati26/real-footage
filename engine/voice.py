@@ -32,7 +32,11 @@ KOKORO = {"en": (os.environ.get("KOKORO_VOICE_EN", "af_heart"), "en-us", 0.98), 
 _k = None
 
 # Documentary delivery: warm, close, unhurried. Applied to synthetic voices; human recordings get a cleaner chain.
-POLISH = ("highpass=f=70,equalizer=f=170:t=q:w=1:g=1.5,equalizer=f=3000:t=q:w=1.4:g=1.5,deesser=i=0.25,"
+# Synthetic voices sometimes add long silences (Gemini TTS especially): trim the edges and shorten any pause over 0.6 s.
+TRIM = ("silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0.05,areverse,"
+        "silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0.1,areverse,"
+        "silenceremove=stop_periods=-1:stop_duration=0.6:stop_threshold=-45dB:stop_silence=0.35,")
+POLISH = (TRIM + "highpass=f=70,equalizer=f=170:t=q:w=1:g=1.5,equalizer=f=3000:t=q:w=1.4:g=1.5,deesser=i=0.25,"
           "acompressor=threshold=-21dB:ratio=2.4:attack=10:release=140,loudnorm=I=-18:TP=-2")
 CLEAN_HUMAN = ("highpass=f=80,afftdn=nf=-25,silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0.1,"
                "areverse,silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0.15,areverse,"
@@ -46,6 +50,12 @@ def ff(src, dst, af, raw_fmt=None):
 
 def seconds(path):
     return float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", path], capture_output=True, text=True, check=True).stdout.strip())
+
+
+def plausible(text, secs):
+    """A narrated line runs at roughly 1.6-4 words a second; far slower means the voice drifted or padded silence."""
+    words = max(1, len(text.split()))
+    return secs <= words / 1.4 + 2.0
 
 
 def post(url, body, headers=None):
@@ -119,6 +129,9 @@ def gemini(text, lang, dst):
             open(raw, "wb").write(pcm)
             ff(raw, dst, POLISH, ("s16le", 24000)); os.remove(raw)
             _tts_model = model
+            if not plausible(text, seconds(dst)):
+                print(f"gemini tts {model}: {seconds(dst):.1f}s for {len(text.split())} words, too slow; next voice", file=sys.stderr)
+                return False
             return True
         except Exception as e:
             msg = str(e)
