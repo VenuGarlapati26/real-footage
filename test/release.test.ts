@@ -72,3 +72,17 @@ assert.deepEqual(out.published, ['E1 "t"']); assert.equal(out.errors.length, 1);
 assert.deepEqual(JSON.parse(readFileSync("channel/released.json", "utf8")), { C1: "M1", C2: "expired" });
 process.chdir(cwd); srv.close();
 console.log("release tests: all passed");
+
+// --- precheck: the backup run ends before installs when today's videos exist; a long day needs its long video too
+{
+  const { skipReason } = await import("../autopilot/precheck");
+  const s = { enabled: true, dev: { fullRenders: true }, timezone: "Asia/Kolkata", shortsPerDay: 1, longDays: ["Mon", "Wed", "Fri", "Sun"] };
+  const sat = new Date("2026-11-14T16:00:00Z"), sun = new Date("2026-11-15T16:00:00Z");   // 21:30 IST
+  assert.equal(skipReason(s, [], sat), null, "nothing made yet: work");
+  assert.match(skipReason(s, [{ date: "2026-11-14", job: "short", status: "scheduled" }], sat)!, /already made/);
+  assert.equal(skipReason(s, [{ date: "2026-11-15", job: "short", status: "scheduled" }], sun), null, "Sunday: the long video is still missing");
+  assert.match(skipReason(s, [{ date: "2026-11-15", job: "short", status: "scheduled" }, { date: "2026-11-15", job: "long", status: "scheduled" }], sun)!, /already made/);
+  assert.equal(skipReason(s, [{ date: "2026-11-14", job: "short", status: "failed" }], sat), null, "a failed video is retried");
+  assert.match(skipReason({ ...s, enabled: false }, [], sat)!, /off/);
+  console.log("precheck tests: all passed");
+}

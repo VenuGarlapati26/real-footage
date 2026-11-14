@@ -12,7 +12,7 @@ export interface Usage { month: string; minutes: number; rate: Record<string, nu
 
 // compute seconds per second of finished video on a 2-core runner (measured; updated from every real run)
 export const DEFAULT_RATE: Record<string, number> = { "short-1080p": 11, "long-1080p": 8, "long-1440p": 15, "long-2160p": 32 };
-const OVERHEAD_MIN = 6;   // checkout, installs, footage download, voice, upload per run
+const OVERHEAD_MIN = 10;  // everything else each video's share of a run is billed for: installs + tests, footage download, voice, upload
 
 export async function loadUsage(file = "channel/usage.json", now = new Date()): Promise<Usage> {
   const month = now.toISOString().slice(0, 7);

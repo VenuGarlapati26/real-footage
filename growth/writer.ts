@@ -71,7 +71,7 @@ export async function writeEpisode(idea: string, opts: { wiki?: string; topic?: 
   const example = JSON.parse(await readFile("episodes/E001-iss-16-sunrises.json", "utf8"));
   const id = opts.id ?? await nextId();
   let feedback = "", ep: Episode | null = null;
-  for (let round = 0; round < 3; round++) {
+  for (let round = 0; round < 4; round++) {
     const draft: Episode = await askJson<Episode>([{ text: `${RULES(langs).replace("\${PROVIDERS}", (pillar?.footage ?? ["nasa", "wikimedia", "pexels", "pixabay"]).join(", "))}
 ${pillar ? `This episode is for the content pillar "${pillar.name}"; its default music mood is "${pillar.mood ?? "awe"}" and its usual look is "${(pillar as any).look ?? "documentary"}" (pick another only if the story clearly calls for it).` : ""}
 ${angle ? `STORY FORMAT "${angle.name}" (follow it; it decides the structure, the hook and the reveal): ${angle.recipe}\nSet "angle": "${angle.id}".` : ""}
@@ -89,7 +89,7 @@ Return the full episode JSON with "id": "${id}", "status": "draft", "topic": "${
     const problems = [...factProblems(draft, { S1: src.text }), ...runGates(draft).filter(g => !g.pass).map(g => `gate "${g.name}" failed: ${g.detail}`)];
     ep = draft; if (!problems.length) break;
     feedback = problems.map(p => `- ${p}`).join("\n");
-    if (round === 2) throw new Error(`episode ${id} still fails after 2 rewrites:\n${feedback}`);
+    if (round === 3) throw new Error(`episode ${id} still fails after 3 rewrites: ${problems.slice(0, 3).join(" | ")}${problems.length > 3 ? ` (+${problems.length - 3} more)` : ""}`);
   }
   const file = path.join("episodes", `${id}-${slug(ep!.title.en)}.json`);
   if (opts.approve) ep!.status = "approved";

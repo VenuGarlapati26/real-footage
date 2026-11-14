@@ -20,10 +20,10 @@ console.log("pillar tests passed");
 // Actions-minutes guard: 4K when the month has room, lower when it doesn't
 const { chooseLongRes, record } = await import("../autopilot/budget");
 const fresh = { month: "2026-11", minutes: 0, rate: {} };
-const base = { wanted: "2160p" as const, budgetMinutes: 1800, longSeconds: 240, shortSeconds: 35, shortsPerDay: 1 };
+const base = { wanted: "2160p" as const, budgetMinutes: 2000, longSeconds: 240, shortSeconds: 35, shortsPerDay: 1 };
 assert.equal(chooseLongRes({ ...base, usage: fresh, daysLeft: 8, longDaysLeft: 4 }).res, "2160p", "late in the month with room: 4K");
 assert.equal(chooseLongRes({ ...base, usage: fresh, daysLeft: 30, longDaysLeft: 17 }).res, "1440p", "a full month of 4K would not fit: 1440p");
-assert.equal(chooseLongRes({ ...base, usage: { ...fresh, minutes: 1700 }, daysLeft: 5, longDaysLeft: 3 }).res, "1080p", "nearly spent: 1080p, never skipped");
+assert.equal(chooseLongRes({ ...base, usage: { ...fresh, minutes: 1750 }, daysLeft: 5, longDaysLeft: 3 }).res, "1080p", "nearly spent: 1080p, never skipped");
 const u2 = record(fresh, "long-2160p", 100, 2000); assert.equal(u2.rate["long-2160p"], 20); assert.equal(u2.minutes, 33.3);
 console.log("budget tests passed");
 

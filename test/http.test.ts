@@ -63,3 +63,13 @@ console.log("http + trend filter tests: all passed");
   g.close();
   console.log("gemini model fallback tests: all passed");
 }
+
+// 5. streamed Gemini replies (server-sent events) are merged into one answer; errors inside the stream are surfaced
+{
+  const { readGemini } = await import("../growth/gemini");
+  const sse = 'data: {"candidates":[{"content":{"parts":[{"text":"{\\"a\\":"}]}}]}\r\n\r\ndata: {"candidates":[{"content":{"parts":[{"text":"1}"}]}}]}\r\n\r\n';
+  assert.equal(readGemini(sse).candidates[0].content.parts[0].text, '{"a":1}');
+  assert.equal(readGemini('data: {"error":{"code":404,"message":"no longer available"}}\n\n').error.code, 404);
+  assert.equal(readGemini('{"candidates":[{"content":{"parts":[{"text":"x"}]}}]}').candidates[0].content.parts[0].text, "x");
+  console.log("gemini stream tests: all passed");
+}

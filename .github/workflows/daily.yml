@@ -10,7 +10,20 @@ on:
 concurrency: { group: p2-autopilot, cancel-in-progress: false }
 permissions: { contents: write, issues: write }
 jobs:
+  check:   # ~1 billed minute: ends the day's backup run (and runs while the autopilot is off) before any installs
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    outputs: { skip: "${{ steps.pre.outputs.skip }}" }
+    steps:
+      - uses: actions/checkout@v4
+        with: { sparse-checkout: "autopilot/precheck.ts\nchannel/settings.json\nchannel/ledger.json", sparse-checkout-cone-mode: false }
+      - uses: actions/setup-node@v4
+        with: { node-version: 22 }
+      - id: pre
+        run: node --experimental-strip-types autopilot/precheck.ts
   videos:
+    needs: check
+    if: needs.check.outputs.skip != 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 330   # a 4-minute 4K long video can take ~2 h on the 2-core runner (see autopilot/budget.ts)
     env:

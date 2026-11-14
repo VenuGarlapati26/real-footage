@@ -12,7 +12,9 @@ const PAUSES = (process.env.HTTP_RETRY_MS ?? "3000,8000,20000,45000").split(",")
 export async function politeFetch(url: string, init: RequestInit = {}): Promise<Response> {
   const headers = { "user-agent": UA, "api-user-agent": UA, ...(init.headers as Record<string, string> ?? {}) };
   for (let i = 0; ; i++) {
-    const r = await fetch(url, { ...init, headers });
+    let r: Response;
+    try { r = await fetch(url, { ...init, headers }); }
+    catch (e) { if (i >= PAUSES.length) throw e; await sleep(PAUSES[i]); continue; }   // network drop: wait and retry
     if ((r.status !== 429 && r.status < 500) || i >= PAUSES.length) return r;
     const ra = Number(r.headers.get("retry-after"));
     await r.body?.cancel().catch(() => {});

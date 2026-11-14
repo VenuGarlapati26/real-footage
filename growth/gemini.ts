@@ -15,6 +15,16 @@ export const MODEL = () => working ?? MODELS()[0];
 export const modelUnavailable = (status: number, msg: string) =>
   status === 404 || (status === 403 && /model|permission/i.test(msg)) || /no longer available|not found|not supported|is not available|limit: 0|free.?tier/i.test(msg);
 
+/** A Gemini reply as one object: plain JSON, or a server-sent-event stream whose chunks are merged (text parts joined). */
+export function readGemini(body: string): any {
+  const t = body.trim();
+  if (!t.startsWith("data:")) { try { return JSON.parse(t); } catch { return {}; } }
+  const chunks = t.split(/\r?\n/).filter(l => l.startsWith("data:")).map(l => { try { return JSON.parse(l.slice(5).trim()); } catch { return {}; } });
+  const err = chunks.find(c => c.error); if (err) return err;
+  const text = chunks.flatMap(c => c.candidates?.[0]?.content?.parts ?? []).map((p: any) => p.text ?? "").join("");
+  return { candidates: [{ content: { parts: [{ text }] } }] };
+}
+
 export type Part = { text: string } | { inline_data: { mime_type: string; data: string } };
 
 /** One JSON answer. Retries on rate limits (free tier: a few requests a minute); moves to the next model when one is
@@ -26,9 +36,16 @@ export async function askJson<T>(parts: Part[], opts: { temperature?: number; tr
   for (const model of models) {
     let skip = false;
     for (let i = 0; i < (opts.tries ?? 4) && !skip; i++) {
-      const r = await fetch(`${BASE()}/v1beta/models/${model}:generateContent?key=${key}`, { method: "POST", headers: { "content-type": "application/json" },
-        body: JSON.stringify({ contents: [{ role: "user", parts }], generationConfig: { responseMimeType: "application/json", temperature: opts.temperature ?? 0.4 } }) });
-      const j: any = await r.json().catch(() => ({})), msg = String(j.error?.message ?? "");
+      // streamed: the first bytes arrive at once, so a model that "thinks" for minutes never hits Node's 5-minute
+      // wait-for-headers limit ("fetch failed"); network drops are retried like rate limits
+      let r: Response;
+      try {
+        r = await fetch(`${BASE()}/v1beta/models/${model}:streamGenerateContent?alt=sse&key=${key}`, { method: "POST", headers: { "content-type": "application/json" },
+          body: JSON.stringify({ contents: [{ role: "user", parts }], generationConfig: { responseMimeType: "application/json", temperature: opts.temperature ?? 0.4 } }) });
+      } catch (e: any) { last = `${model}: network ${e.cause?.code ?? e.message}`; await new Promise(res => setTimeout(res, Number(process.env.GEMINI_RETRY_MS ?? 20000) * (i + 1))); continue; }
+      let body = "";
+      try { body = await r.text(); } catch (e: any) { last = `${model}: stream cut ${e.cause?.code ?? e.message}`; await new Promise(res => setTimeout(res, Number(process.env.GEMINI_RETRY_MS ?? 20000) * (i + 1))); continue; }
+      const j: any = readGemini(body), msg = String(j.error?.message ?? "");
       if (!r.ok && modelUnavailable(r.status, msg)) { last = `${model}: ${msg.slice(0, 160)}`; skip = true; break; }
       if (r.status === 429 || r.status >= 500) { last = `${model}: ${r.status} ${msg.slice(0, 120)}`; await new Promise(res => setTimeout(res, Number(process.env.GEMINI_RETRY_MS ?? 20000) * (i + 1))); continue; }
       if (!r.ok) throw new Error(`gemini ${model} ${r.status}: ${msg}`);

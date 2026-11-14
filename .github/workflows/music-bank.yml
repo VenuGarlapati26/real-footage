@@ -7,7 +7,7 @@ on:
   schedule: [{ cron: "30 20 * * 6" }]   # Saturdays, 02:00 IST
   workflow_dispatch:
     inputs:
-      budget: { description: "Minutes to spend composing", default: "90" }
+      budget: { description: "Minutes to spend composing", default: "60" }
 concurrency: { group: music-bank, cancel-in-progress: false }
 jobs:
   compose:
@@ -38,7 +38,7 @@ jobs:
       - name: Compose
         if: steps.need.outputs.n != '0'
         env: { ACESTEP_OFFLOAD_TO_CPU: "false" }
-        run: python3 tools/musicbank.py --ace ACE-Step-1.5 --budget-min ${{ inputs.budget || '90' }}
+        run: python3 tools/musicbank.py --ace ACE-Step-1.5 --budget-min ${{ inputs.budget || '60' }}
       - name: Keep the new tracks in the repo
         if: always() && steps.need.outputs.n != '0'
         run: |
