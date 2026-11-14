@@ -12,11 +12,11 @@ import path from "node:path";
 import type { Episode } from "../engine/types";
 import { LANGS, type Lang } from "../engine/langs";
 import { runGates } from "../engine/gates";
+import { getJson } from "../engine/http";
 import { isLook } from "../engine/grade";
 import { askJson, geminiReady } from "./gemini";
 import { loadPillars, type Pillar, loadFormats, type StoryFormat } from "./pillars";
 
-const UA = "real-footage-channel/1.0 (episode writer)";
 const norm = (s: string) => s.toLowerCase().replace(/[‘’]/g, "'").replace(/[“”]/g, '"').replace(/\s+/g, " ").trim();
 
 /** The best Wikipedia article for the idea, as plain text (first ~14k characters). */
@@ -24,10 +24,10 @@ export async function sourceText(idea: string, title?: string): Promise<{ title:
   const api = process.env.WIKI_API ?? "https://en.wikipedia.org/w/api.php";
   let t = title;
   if (!t) {
-    const s: any = await (await fetch(`${api}?${new URLSearchParams({ action: "query", list: "search", srsearch: idea, srlimit: "1", format: "json" })}`, { headers: { "user-agent": UA } })).json();
+    const s: any = await getJson(`${api}?${new URLSearchParams({ action: "query", list: "search", srsearch: idea, srlimit: "1", format: "json" })}`);
     t = s.query?.search?.[0]?.title; if (!t) throw new Error(`no Wikipedia article for "${idea}"`);
   }
-  const j: any = await (await fetch(`${api}?${new URLSearchParams({ action: "query", prop: "extracts", explaintext: "1", redirects: "1", titles: t!, format: "json" })}`, { headers: { "user-agent": UA } })).json();
+  const j: any = await getJson(`${api}?${new URLSearchParams({ action: "query", prop: "extracts", explaintext: "1", redirects: "1", titles: t!, format: "json" })}`);
   const page: any = Object.values(j.query?.pages ?? {})[0];
   if (!page?.extract) throw new Error(`empty article "${t}"`);
   return { title: page.title, url: `https://en.wikipedia.org/wiki/${encodeURIComponent(page.title.replace(/ /g, "_"))}`, text: page.extract.slice(0, 14000) };

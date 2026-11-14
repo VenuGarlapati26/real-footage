@@ -8,13 +8,14 @@
     "build:episode": "tsx engine/build.ts",
     "sample": "tsx engine/build.ts episodes/E001-iss-16-sunrises.json --formats long,short",
     "gates": "tsx engine/gates.ts",
-    "test": "tsx test/engine.test.ts && tsx test/gates.test.ts && tsx test/growth.test.ts && tsx test/stack.test.ts && tsx test/mograph.test.ts && tsx test/pillars.test.ts && tsx test/release.test.ts && tsx test/premium.test.ts",
+    "test": "tsx test/engine.test.ts && tsx test/gates.test.ts && tsx test/growth.test.ts && tsx test/stack.test.ts && tsx test/mograph.test.ts && tsx test/pillars.test.ts && tsx test/release.test.ts && tsx test/premium.test.ts && tsx test/http.test.ts",
     "typecheck": "tsc --noEmit",
     "auth": "tsx autopilot/auth.ts",
     "autopilot": "tsx autopilot/daily.ts",
     "weekly": "tsx autopilot/weekly.ts",
     "write": "tsx growth/writer.ts",
-    "curate": "tsx engine/curate.ts"
+    "curate": "tsx engine/curate.ts",
+    "channel:art": "tsx tools/lumora-brand.ts"
   },
   "dependencies": {
     "d3-array": "3.2.4",

@@ -20,7 +20,7 @@ import type { Clip, FootageQuery } from "./types";
 
 const run = promisify(execFile);
 const CACHE = process.env.FOOTAGE_CACHE ?? ".cache/footage";
-const UA = "the-real-footage-channel/1.0 (video pipeline; contact via repository)";
+import { UA, getJson, politeFetch } from "./http";
 
 export type Candidate = Omit<Clip, "file" | "duration" | "width" | "height"> & { url: string; width?: number; height?: number; duration?: number };
 
@@ -29,13 +29,13 @@ const NOT_FOOTAGE = /visuali[sz]ation|animation|animated|simulation|illustration
 
 async function nasa(q: string, nasaId?: string): Promise<Candidate[]> {
   const url = nasaId ? `https://images-api.nasa.gov/search?nasa_id=${encodeURIComponent(nasaId)}` : `https://images-api.nasa.gov/search?media_type=video&q=${encodeURIComponent(q)}`;
-  const j: any = await (await fetch(url, { headers: { "user-agent": UA } })).json();
+  const j: any = await getJson(url);
   const out: Candidate[] = [];
   for (const it of (j.collection?.items ?? []).slice(0, 8)) {
     const d = it.data?.[0]; if (!d || d.media_type !== "video") continue;
     // searches only: skip what is not camera footage (visualisations, animations, talks), it breaks the look and the promise
     if (!nasaId && NOT_FOOTAGE.test(`${d.title} ${d.description ?? ""} ${(d.keywords ?? []).join(" ")}`)) continue;
-    const assets: string[] = await (await fetch(it.href, { headers: { "user-agent": UA } })).json().catch(() => []);
+    const assets: string[] = await getJson<string[]>(it.href).catch(() => []);
     const pick = (suffix: string) => assets.find(a => a.endsWith(suffix));
     let file = pick("~orig.mp4");
     if (file) { const h = await fetch(file.replace("http://", "https://"), { method: "HEAD" }).catch(() => null); if (Number(h?.headers.get("content-length") ?? 0) > 350e6) file = undefined; }
@@ -83,7 +83,7 @@ async function wikimedia(q: string): Promise<Candidate[]> {
   const api = "https://commons.wikimedia.org/w/api.php";
   const p = new URLSearchParams({ action: "query", format: "json", generator: "search", gsrsearch: `${q} filetype:video`, gsrnamespace: "6", gsrlimit: "15",
     prop: "imageinfo", iiprop: "url|extmetadata|size", iiurlwidth: "1920" });
-  const j: any = await (await fetch(`${api}?${p}`, { headers: { "user-agent": UA } })).json();
+  const j: any = await getJson(`${api}?${p}`);
   const ok = /^(public domain|pd|cc0|cc by( \d\.\d)?)$/i;
   return Object.values<any>(j.query?.pages ?? []).map(pg => {
     const ii = pg.imageinfo?.[0]; const lic = String(ii?.extmetadata?.LicenseShortName?.value ?? "");
@@ -127,7 +127,7 @@ export async function download(c: Candidate): Promise<Clip> {
   const dims = (c.provider === "pexels" || c.provider === "pixabay") && c.width && c.height ? `-${c.width}x${c.height}` : "";
   const file = c.url.startsWith("file:") ? c.url.slice(5) : path.join(CACHE, `${c.provider}-${c.id.replace(/[^\w.-]+/g, "_")}${dims}${ext}`);
   if (!c.url.startsWith("file:") && !existsSync(file)) {
-    const r = await fetch(c.url, { headers: { "user-agent": UA } });
+    const r = await politeFetch(c.url);
     if (!r.ok || !r.body) throw new Error(`download ${c.provider} ${c.id}: ${r.status}`);
     await pipeline(Readable.fromWeb(r.body as any), createWriteStream(file + ".part"));
     await run("mv", [file + ".part", file]);

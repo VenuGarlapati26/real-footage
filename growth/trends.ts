@@ -16,7 +16,7 @@ import { execFileSync } from "node:child_process";
 import { readFile, writeFile } from "node:fs/promises";
 import * as yt from "../autopilot/youtube";
 
-const UA = "real-footage-channel/1.0 (weekly trend radar)";
+import { UA, getJson } from "../engine/http";
 const median = (xs: number[]) => { const s = [...xs].sort((a, b) => a - b); return s.length ? s[Math.floor(s.length / 2)] : 0; };
 
 export interface Idea { idea: string; topic: string; score: number; why: string[] }
@@ -48,7 +48,7 @@ export async function wikiRising(articles: { lang: "hi" | "en"; title: string; t
   const out = [];
   for (const a of articles) {
     const url = `https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/${a.lang}.wikipedia/all-access/user/${encodeURIComponent(a.title.replace(/ /g, "_"))}/daily/${fmt(start)}/${fmt(end)}`;
-    const j: any = await fetch(url, { headers: { "user-agent": UA } }).then(r => r.json()).catch(() => ({}));
+    const j: any = await getJson(url).catch(() => ({}));
     const v: number[] = (j.items ?? []).map((i: any) => i.views); if (v.length < 14) continue;
     const week = v.slice(-7).reduce((s, x) => s + x, 0), base = median(v.slice(0, -7)) * 7 || 1;
     out.push({ title: a.title, lang: a.lang, topic: a.topic, lift: +(week / base).toFixed(2), week });
@@ -62,10 +62,15 @@ export async function suggestions(seed: string, hl: "hi" | "en"): Promise<string
   return Array.isArray(j?.[1]) ? j[1].slice(0, 10) : [];
 }
 
+/** Topics this channel never makes, whatever is trending: breaking news, politics, war and violence, crime, religion,
+ *  live streams and clickbait. (Evergreen documentary stories only; it also keeps the channel ad-friendly.) Pure. */
+export const OFF_LIMITS = /\b(live|breaking|news|update|trump|biden|modi|election|vote|party|government|minister|president|war|wars|military|army|strike|attack|missile|bomb|terror\w*|isis|hamas|israel|iran|gaza|ukraine|russia|killed|kill|murder|crime|police|arrest|shooting|dead|death|religion|god|hindu|muslim|christian|temple|mosque|church|viral|#shorts|#trending|prank|reaction)\b/i;
+export const allowedIdea = (title: string) => !OFF_LIMITS.test(title);
+
 /** Combine the signals into ranked ideas. Pure function so it can be tested offline. */
 export function rank(input: { outliers: Awaited<ReturnType<typeof outliers>>; wiki: Awaited<ReturnType<typeof wikiRising>>; suggest: Record<string, string[]>; seeds: { q: string; topic: string }[]; weights: Record<string, number> }): Idea[] {
   const ideas = new Map<string, Idea>();
-  const bump = (idea: string, topic: string, s: number, why: string) => { const k = idea.toLowerCase(); const i = ideas.get(k) ?? { idea, topic, score: 0, why: [] }; i.score += s * (input.weights[topic] ?? 1); i.why.push(why); ideas.set(k, i); };
+  const bump = (idea: string, topic: string, s: number, why: string) => { if (!allowedIdea(idea)) return; const k = idea.toLowerCase(); const i = ideas.get(k) ?? { idea, topic, score: 0, why: [] }; i.score += s * (input.weights[topic] ?? 1); i.why.push(why); ideas.set(k, i); };
   for (const o of input.outliers) bump(o.title, input.seeds.find(s => o.title.toLowerCase().includes(s.q.split(" ")[0].toLowerCase()))?.topic ?? "general", Math.min(10, o.multiple) * 2, `outlier ${o.multiple}x its channel (${o.formula || "formula unclear"}): ${o.url}`);
   for (const w of input.wiki) if (w.lift >= 1.5) bump(w.title, w.topic, Math.min(8, w.lift) * 1.5, `Wikipedia (${w.lang}) views ${w.lift}x usual this week`);
   for (const [seed, list] of Object.entries(input.suggest)) list.forEach((q, i) => bump(q, input.seeds.find(s => s.q === seed)?.topic ?? "general", Math.max(0.5, 3 - i * 0.3), `people search "${q}"`));

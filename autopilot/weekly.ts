@@ -98,7 +98,7 @@ async function main() {
   // 6. write next week's episodes (free Gemini key): your Notion picks first, then the radar's best ideas
   const settingsW = await readJson<any>("channel/settings.json");
   if (settingsW.writer?.enabled && geminiReady()) {
-    const writtenFile = "channel/written.json", written: string[] = existsSync(writtenFile) ? await readJson<string[]>(writtenFile) : [];
+    const writtenFile = "channel/written-ideas.json", written: string[] = existsSync(writtenFile) ? await readJson<string[]>(writtenFile) : [];
     // which pillars this week's episodes come from: mostly the proven ones, ~30% testing the rest
     const pf = await loadPillars(), ids = pf.pillars.map(p => p.id), n = settingsW.writer.perWeek ?? 3;
     const plan = allocate(ids, strategy.pillars ?? {}, Math.max(0, n - requested.length), pf.explore ?? 0.3, Math.floor(Date.now() / (7 * 86_400_000)));
@@ -115,8 +115,8 @@ async function main() {
         const rep = await curate(file).catch(e => [`curation skipped: ${e.message}`]);
         if (settingsW.autoApprove) { const ep = await readJson<any>(file); ep.status = "approved"; await writeFile(file, JSON.stringify(ep, null, 2) + "\n"); }
         notes.push(`wrote ${file} from "${i.idea}" (${settingsW.autoApprove ? "approved" : "draft: set status to approved"}); footage: ${rep.join("; ")}`);
-      } catch (e: any) { notes.push(`writer: "${i.idea}" skipped: ${String(e.message).split("\n")[0]}`); }
-      written.push(i.idea.toLowerCase());
+        written.push(i.idea.toLowerCase());   // only ideas that really became episodes; a failed one is tried again next time
+      } catch (e: any) { notes.push(`writer: "${i.idea}" skipped (will retry next review): ${String(e.message).split("\n")[0]}`); }
     }
     await writeFile(writtenFile, JSON.stringify(written, null, 2));
   } else if (settingsW.writer?.enabled) notes.push("episode writer is OFF: add the GEMINI_API_KEY secret (free, aistudio.google.com), or no new episodes get written");
