@@ -53,9 +53,10 @@ def seconds(path):
 
 
 def plausible(text, secs):
-    """A narrated line runs at roughly 1.6-4 words a second; far slower means the voice drifted or padded silence."""
+    """A narrated line runs at about 2-3.5 words a second; far longer means extra words were spoken (an instruction read
+    aloud) or silence was padded, so that take is rejected."""
     words = max(1, len(text.split()))
-    return secs <= words / 1.4 + 2.0
+    return secs <= words / 2.0 + 1.5
 
 
 def post(url, body, headers=None):
@@ -118,7 +119,9 @@ def gemini(text, lang, dst):
     key = os.environ.get("GEMINI_API_KEY")
     if not key:
         return False
-    style = f"Read this in natural {LANG_NAME.get(lang, 'English')} like a warm, gripping documentary narrator, unhurried, with real wonder in the voice: "
+    # Only the line itself is sent: Gemini TTS sometimes READ a style instruction aloud ("Read this in natural English
+    # like a warm..."), which made a 30-second Short 1:21 long. The voice (GEMINI_VOICE) already sets the character.
+    style = ""
     for model in ([_tts_model] if _tts_model else GEMINI_MODELS):
         try:
             j = post(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={key}",
