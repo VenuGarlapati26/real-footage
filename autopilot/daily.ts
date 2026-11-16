@@ -32,6 +32,7 @@ import * as meta from "./meta";
 import * as zernio from "./zernio";
 import { geminiReady, GeminiQuotaError } from "../growth/gemini";
 import { writeEpisode } from "../growth/writer";
+import { curate } from "../engine/curate";
 import { loadPillars } from "../growth/pillars";
 
 const args = new Set(process.argv.slice(2)), DRY = args.has("--dry");
@@ -84,6 +85,8 @@ async function emergencyEpisode(): Promise<{ file: string; ep: Episode } | null>
   for (const i of ideas.slice(0, 2)) {
     try {
       const file = await writeEpisode(i.idea, { topic: i.topic, wiki: i.idea, approve: true });
+      // pick and pin real clips now (Gemini looks at them), so the build does not depend on searches working today
+      const rep = await curate(file).catch(e => [`curation skipped: ${e.message}`]); log(`  footage: ${rep.join("; ")}`);
       written.push(i.idea.toLowerCase()); await writeFile(writtenFile, JSON.stringify(written, null, 2));
       return { file, ep: await readJson<Episode>(file) };
     } catch (e: any) { log(`  "${i.idea}": ${String(e.message).split("\n")[0]}`); if (e instanceof GeminiQuotaError) break; }

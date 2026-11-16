@@ -120,7 +120,22 @@ function pinnedCommons(q: Extract<FootageQuery, { provider: "wikimedia" }>): Can
   return [{ provider: "wikimedia", id: name, url, title: name.replace(/_/g, " "), credit: q.credit ?? "Wikimedia Commons", license: q.license ?? "Public domain", page: `https://commons.wikimedia.org/wiki/File:${encodeURIComponent(name)}` }];
 }
 
+const STOP = new Set(["the", "a", "an", "of", "and", "in", "on", "at", "to", "from", "with", "over", "above", "for", "into", "its", "4k", "hd", "uhd", "footage", "video", "clip", "shot", "view", "views", "real", "aerial", "close", "up"]);
+/** Shorter versions of a long search ("ISS orbiting above Earth at night 4K" -> "ISS orbiting Earth" -> "ISS orbiting" -> "ISS"):
+ *  NASA and Commons match every word, so a long phrase from the writer often finds nothing. Pure. */
+export function shorter(q: string): string[] {
+  const w = q.split(/\s+/).filter(x => x && !STOP.has(x.toLowerCase()));
+  return [...new Set([w.slice(0, 3).join(" "), w.slice(0, 2).join(" "), w[0]].filter(x => x && x !== q))];
+}
+
 export async function search(q: FootageQuery, portrait: boolean, uhd: Size = false): Promise<Candidate[]> {
+  const first = await searchOnce(q, portrait, uhd);
+  if (first.length || !("q" in q) || !q.q || (q as any).id || (q as any).nasaId || (q as any).file) return first;
+  for (const alt of shorter(q.q)) { const r = await searchOnce({ ...q, q: alt } as FootageQuery, portrait, uhd); if (r.length) return r; }
+  return [];
+}
+
+async function searchOnce(q: FootageQuery, portrait: boolean, uhd: Size = false): Promise<Candidate[]> {
   try {
     switch (q.provider) {
       case "local": return existsSync(path.join("footage", q.file)) ? [{ provider: "local", id: q.file, url: `file:${path.join("footage", q.file)}`, title: q.file, credit: "OWN", license: "Own footage", page: "" }] : [];

@@ -128,3 +128,11 @@ console.log("http + trend filter tests: all passed");
   assert.equal(n, first, "not asked again"); assert.ok(Date.now() - t < 50);
   b.close(); console.log("rate-limit breaker tests: all passed");
 }
+
+// 9. long searches from the writer are retried shorter
+{
+  const { shorter } = await import("../engine/footage");
+  assert.deepEqual(shorter("ISS orbiting above Earth at night 4K"), ["ISS orbiting Earth", "ISS orbiting", "ISS"]);
+  assert.deepEqual(shorter("aurora"), []);
+  console.log("search shortening tests: all passed");
+}

@@ -87,6 +87,22 @@ async function findShots(ep: Episode, timed: ReturnType<typeof timeline>, until:
         }
         if (placed) break;
       }
+      // last resort: real camera footage from stock libraries (Pexels/Pixabay: filmed, never AI) for this one shot, even in
+      // a scene promised as space-agency footage. Logged, so the report shows it. A video with one stock shot beats no video.
+      if (!placed) {
+        const words = (tsc.scene.footage.find(f => (f as any).q) as any)?.q ?? ep.title.en;
+        for (const q of [...tsc.scene.footage, ...backup, { provider: "pexels", q: words }, { provider: "pixabay", q: words }, { provider: "pexels", q: ep.topic ?? "earth" }] as Scene["footage"]) {
+          if (!STOCK.has(q.provider)) continue;
+          for (const clip of await candidates(q, false)) {
+            const inPoint = pickIn(clip.duration, await cutsIn(clip.file, 180), each, used.get(`${clip.provider}:${clip.id}`) ?? []);
+            if (inPoint === null) continue;
+            used.set(`${clip.provider}:${clip.id}`, [...(used.get(`${clip.provider}:${clip.id}`) ?? []), [inPoint, inPoint + each]]);
+            shots.push({ scene: tsc.scene.id, clip, inPoint, dur: each, start }); placed = true;
+            log(`  ${tsc.scene.id}: no ${tsc.scene.authentic ? "space-agency" : ""} footage found, used ${clip.provider} "${(q as any).q}"`); break;
+          }
+          if (placed) break;
+        }
+      }
       if (!placed) throw new Error(`no usable footage for scene ${tsc.scene.id} (shot ${k + 1}/${n})${tsc.scene.authentic ? " from real-footage sources (NASA, Wikimedia, own clips)" : ""}. Add a clip in footage/ or more queries.`);
     }
   }
