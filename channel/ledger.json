@@ -38,5 +38,18 @@
     "videoId": "p0pUs0IjEQ8",
     "url": "https://youtu.be/p0pUs0IjEQ8",
     "publishAt": "2026-11-15T14:00:00.000Z"
+  },
+  {
+    "date": "2026-11-17",
+    "episode": "E003",
+    "job": "short",
+    "title": "The Flying Fortress 400 km Above You (Real ISS Footage) #Shorts",
+    "status": "scheduled",
+    "topic": "space",
+    "voice": "synthetic",
+    "slot": "19:30",
+    "videoId": "mdvckFW-ohQ",
+    "url": "https://youtube.com/shorts/mdvckFW-ohQ",
+    "publishAt": "2026-11-17T14:00:00.000Z"
   }
 ]
