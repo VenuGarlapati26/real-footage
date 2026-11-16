@@ -208,7 +208,9 @@ export async function build(epFile: string, formats: Format[], lang: Lang, opts:
     const qa = await qaVideo(out, { width: W, height: H, duration: D });
     log(`${format}: QA ${qa.pass ? "passed" : "FAILED"} - ${[...qa.checks, ...qa.problems].join(", ")}`);
     const rights = [...new Map(shots.map(s => [`${s.clip.provider}:${s.clip.id}`, { provider: s.clip.provider, id: s.clip.id, title: s.clip.title, credit: s.clip.credit, license: s.clip.license, page: s.clip.page }])).values()];
-    results[format] = { file: out, resolution: res, subtitles: subLangs, duration: D, fullDuration: total, voice: voiced.map(v => v.source), music: { source: music.source, mood: music.mood, tracks: music.tracks }, coverMs: Math.round(best.t * 1000), thumbs,
+    // chapter marks for the YouTube description (long videos): where each "chapter" graphic starts
+    const chapters = timed.filter(t => t.start < D).flatMap(t => (t.scene.overlays ?? []).filter(o => o.kind === "chapter").map(o => ({ at: +t.start.toFixed(1), title: tx(o.text, lang) })));
+    results[format] = { file: out, resolution: res, chapters, subtitles: subLangs, duration: D, fullDuration: total, voice: voiced.map(v => v.source), music: { source: music.source, mood: music.mood, tracks: music.tracks }, coverMs: Math.round(best.t * 1000), thumbs,
       shots: shots.map(s => ({ scene: s.scene, clip: `${s.clip.provider}:${s.clip.id}`, in: s.inPoint, start: +s.start.toFixed(2), dur: +s.dur.toFixed(2) })), rights, qa };
   }
   await writeFile(path.join(dir, `manifest-${lang}.json`), JSON.stringify({ episode: ep.id, lang, full, results }, null, 2));

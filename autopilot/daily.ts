@@ -24,6 +24,7 @@ import { loadLearning, pick } from "../growth/learn";
 import { THUMB_STYLES } from "../growth/thumbs";
 import { instagramCaption, facebookCaption, firstComment } from "../growth/captions";
 import { notify } from "./notify";
+import { description } from "../growth/description";
 
 /** About how long the long cut of an episode runs, from its narration (2.6 words per second plus pauses). Pure. */
 export const longSeconds = (ep: Episode) => ep.scenes.filter(sc => !sc.shortOnly).reduce((t, sc) => t + sc.vo.en.split(/\s+/).filter(Boolean).length / 2.6 + 0.8, 0);
@@ -65,17 +66,6 @@ async function checkpoint(msg: string) {
 export interface Row { date: string; episode: string; job: "long" | "short"; title: string; status: string; topic: string; voice: string;
   videoId?: string; url?: string; publishAt?: string; slot: string; thumbStyle?: string; igId?: string; igContainer?: string; fbId?: string; ttId?: string; snapId?: string; scored?: boolean; angle?: string }
 
-function description(ep: Episode, lang: Lang, rights: any[], synthetic: boolean, longUrl?: string) {
-  return [
-    tx(ep.title, lang), "", tx(ep.engage.ask, lang), "",
-    ui(lang, "promise"),
-    ...(longUrl ? ["", `${ui(lang, "full")}: ${longUrl}`] : []),
-    "", `${ui(lang, "footage")}:`, ...rights.map(r => `- ${r.credit} (${r.license})${r.page ? ` ${r.page}` : ""}`),
-    "", `${ui(lang, "sources")}:`, ...ep.sources.map(s => `- ${s.title}: ${s.url}`),
-    ...(synthetic ? ["", ui(lang, "synthetic")] : []),
-    "", ui(lang, "nasa"),
-  ].join("\n");
-}
 
 /** One episode from the next unused pillar topic (Wikipedia title), approved, so today still gets its Short. */
 async function emergencyEpisode(): Promise<{ file: string; ep: Episode } | null> {
@@ -163,7 +153,7 @@ async function main() {
       await writeFile(`channel/renders/${j.ep.id}-${j.job}.json`, JSON.stringify({ duration: r.duration, shots: r.shots }, null, 2));
       await copyFile(r.file.replace(/\.mp4$/, `.${lang}.srt`), `channel/renders/${j.ep.id}-${j.job}.${lang}.srt`).catch(() => {});
       if (!DRY) {
-        const id = await yt.uploadVideo(r.file, { title, description: description(j.ep, lang, r.rights, synthetic, longUrl), tags: [j.ep.topic, "real footage", "space", "earth from space", "documentary"],
+        const id = await yt.uploadVideo(r.file, { title, description: description(j.ep, lang, { format: j.job, rights: r.rights, synthetic, longUrl, chapters: r.chapters, subtitles: r.subtitles }), tags: [j.ep.topic, "real footage", "space", "earth from space", "documentary"],
           categoryId: s.categoryId, language: lang, privacy: "private", publishAt: s.mode === "live" ? at : undefined, syntheticMedia: synthetic });
         row.videoId = id; row.url = j.job === "long" ? `https://youtu.be/${id}` : `https://youtube.com/shorts/${id}`; row.status = s.mode === "live" ? "scheduled" : "private"; row.publishAt = s.mode === "live" ? at : undefined;
         for (const l of (r.subtitles ?? [lang]) as Lang[]) await yt.uploadCaption(id, l, LANGS[l].native, r.file.replace(/\.mp4$/, `.${l}.srt`)).catch(e => log(`  note: subtitles ${l}: ${e.message}`));
