@@ -23,3 +23,19 @@ console.log("writer shape + best-hook tests: all passed");
   assert.ok(longSeconds(big) >= 150);
   console.log("long-cut guard tests: all passed");
 }
+
+// small slips are repaired instead of failing the episode
+{
+  const { tidy, repairClaims, softOnly, shapeProblems: sp } = await import("../growth/writer");
+  const e = structuredClone(ep); e.scenes[1].overlays = [{ kind: "stat", text: "27600" }, { kind: "stat", text: { en: "92" }, sub: "min" }];
+  tidy(e); assert.equal(e.scenes[1].overlays.length, 1); assert.ok(!e.scenes[1].overlays[0].sub); assert.deepEqual(sp(e), []);
+  const src = "The ISS orbits Earth. It travels at an average speed of 28,000 km/h (17,500 mph), completing 15.5 orbits per day. Other text.";
+  const e2: any = { sources: [{ id: "S1", claims: ["travels at 28,000 km/h", "completing 15.5 orbits per day"] }] };
+  assert.equal(repairClaims(e2, src), 1);
+  assert.equal(e2.sources[0].claims[0], "It travels at an average speed of 28,000 km/h (17,500 mph), completing 15.5 orbits per day.");
+  assert.equal(e2.sources[0].claims[1], "completing 15.5 orbits per day");
+  assert.ok(softOnly(['gate "hook (YouTube)" failed (score 55): WORKABLE; weakest STAKES -> rewrite']));
+  assert.ok(!softOnly(['gate "hook (YouTube)" failed (score 40): WEAK']));
+  assert.ok(!softOnly(['claim not found word-for-word in S1: "x"', 'gate "hook (YouTube)" failed (score 55): x']));
+  console.log("writer repair tests: all passed");
+}
