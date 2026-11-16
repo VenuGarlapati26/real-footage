@@ -1,0 +1,754 @@
+{
+  "id": "E003",
+  "status": "approved",
+  "topic": "space",
+  "title": {
+    "en": "The Flying Fortress 400 km Above You (Real ISS Footage)",
+    "hi": "आपके 400 किमी ऊपर उड़ता किला (ISS का असली फुटेज)",
+    "es": "La fortaleza volante a 400 km sobre ti (Imágenes reales)",
+    "pt": "A fortaleza voadora a 400 km acima de você (Imagens reais)"
+  },
+  "thumb": {
+    "en": "400 KM ABOVE YOU",
+    "hi": "आपके 400 किमी ऊपर",
+    "es": "A 400 KM SOBRE TI",
+    "pt": "A 400 KM ACIMA DE VOCÊ"
+  },
+  "look": "arctic",
+  "music": {
+    "mood": "awe",
+    "styles": [
+      "deep cinematic pulse",
+      "ethereal synth pads",
+      "orchestral crescendo"
+    ],
+    "peak": "s3"
+  },
+  "scenes": [
+    {
+      "id": "s1",
+      "vo": {
+        "en": "Before your day ends, forty-three separate space modules will complete fifteen laps around Earth. But why?",
+        "hi": "आपका दिन खत्म होने से पहले, तैंतालीस अलग अंतरिक्ष मॉड्यूल पृथ्वी के 15 चक्कर पूरे करेंगे। लेकिन क्यों?",
+        "es": "Antes de que termine tu día, cuarenta y tres módulos espaciales completarán quince vueltas a la Tierra. ¿Pero por qué?",
+        "pt": "Antes do seu dia acabar, quarenta e três módulos espaciais completarão quinze voltas ao redor da Terra. Mas por quê?"
+      },
+      "footage": [
+        {
+          "provider": "nasa",
+          "q": "wide establishing space station earth orbit",
+          "authentic": true
+        },
+        {
+          "provider": "wikimedia",
+          "q": "tracking shot iss glowing solar arrays",
+          "authentic": true
+        },
+        {
+          "provider": "nasa",
+          "q": "time lapse orbital sunset over oceans",
+          "authentic": true
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "kicker",
+          "text": {
+            "en": "400 km Above Earth",
+            "hi": "पृथ्वी से 400 किमी ऊपर",
+            "es": "A 400 km sobre la Tierra",
+            "pt": "400 km acima da Terra"
+          },
+          "sub": {
+            "en": "International Space Station",
+            "hi": "अंतर्राष्ट्रीय अंतरिक्ष स्टेशन",
+            "es": "Estación Espacial Internacional",
+            "pt": "Estação Espacial Internacional"
+          },
+          "at": 1.5
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "authentic": true
+    },
+    {
+      "id": "s2",
+      "vo": {
+        "en": "It travels at twenty-seven thousand six hundred kilometres per hour, roughly four hundred kilometres above Earth.",
+        "hi": "यह पृथ्वी से लगभग चार सौ किलोमीटर ऊपर, सत्ताईस हज़ार छह सौ किलोमीटर प्रति घंटे की रफ़्तार से चलता है।",
+        "es": "Viaja a veintisiete mil seisicentos kilómetros por hora, a unos cuatrocientos kilómetros sobre la Tierra.",
+        "pt": "Ela viaja a vinte e sete mil e seiscentos quilômetros por hora, a cerca de quatrocentos quilômetros acima da Terra."
+      },
+      "footage": [
+        {
+          "provider": "nasa",
+          "q": "aerial perspective earth atmosphere curved horizon",
+          "authentic": true
+        },
+        {
+          "provider": "wikimedia",
+          "q": "extreme close up space station truss panel",
+          "authentic": true
+        },
+        {
+          "provider": "nasa",
+          "q": "fast motion time lapse earth city lights space",
+          "authentic": true
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "stat",
+          "text": {
+            "en": "27,600",
+            "hi": "27,600",
+            "es": "27.600",
+            "pt": "27.600"
+          },
+          "sub": {
+            "en": "km/h orbital speed",
+            "hi": "किमी/घंटा कक्षीय गति",
+            "es": "km/h velocidad orbital",
+            "pt": "km/h velocidade orbital"
+          },
+          "at": 1
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "authentic": true
+    },
+    {
+      "id": "s3",
+      "vo": {
+        "en": "At that speed, the station loops our planet every ninety-three minutes, completing fifteen point five orbits daily.",
+        "hi": "इस गति से, स्टेशन हर बानवे से तिरानवे मिनट में हमारी पृथ्वी का चक्कर पूरा करता है, रोज़ 15.5 चक्कर लगाकर।",
+        "es": "A esa velocidad, la estación rodea nuestro planeta cada noventa y tres minutos, completando quince punto cinco órbitas al día.",
+        "pt": "Nessa velocidade, a estação dá uma volta no nosso planeta a cada noventa e três minutos, completando quinze ponto cinco órbitas por dia."
+      },
+      "footage": [
+        {
+          "provider": "wikimedia",
+          "q": "orbiting shot space station crossing dark ocean",
+          "authentic": true
+        },
+        {
+          "provider": "nasa",
+          "q": "macro detail robotic arm moving space station",
+          "authentic": true
+        },
+        {
+          "provider": "nasa",
+          "q": "low angle shot iss flying over clouds",
+          "authentic": true
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "orbit",
+          "text": {
+            "en": "15.5",
+            "hi": "15.5",
+            "es": "15,5",
+            "pt": "15,5"
+          },
+          "sub": {
+            "en": "orbits per day",
+            "hi": "चक्कर हर दिन",
+            "es": "órbitas por día",
+            "pt": "órbitas por dia"
+          },
+          "at": 0.8
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "authentic": true
+    },
+    {
+      "id": "s4",
+      "vo": {
+        "en": "Inside this giant craft, forty-three modules host continuous human life in zero gravity.",
+        "hi": "इस विशाल यान के भीतर, तैंतालीस मॉड्यूल शून्य गुरुत्वाकर्षण में निरंतर मानव जीवन को बनाए रखते हैं।",
+        "es": "Dentro de esta nave gigante, cuarenta y tres módulos albergan vida humana continua en gravedad cero.",
+        "pt": "Dentro dessa nave gigante, quarenta e três módulos abrigam vida humana contínua em gravidade zero."
+      },
+      "footage": [
+        {
+          "provider": "nasa",
+          "q": "interior wide shot pressurized space module floating",
+          "authentic": true
+        },
+        {
+          "provider": "nasa",
+          "q": "close up science experiment rack zero gravity",
+          "authentic": true
+        },
+        {
+          "provider": "wikimedia",
+          "q": "slow pan camera through space station corridor",
+          "authentic": true
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "kicker",
+          "text": {
+            "en": "43 Modules",
+            "hi": "43 मॉड्यूल",
+            "es": "43 Módulos",
+            "pt": "43 Módulos"
+          },
+          "sub": {
+            "en": "Pressurized orbital habitat",
+            "hi": "दबावयुक्त कक्षीय आवास",
+            "es": "Hábitat orbital presurizado",
+            "pt": "Habitat orbital pressurizado"
+          },
+          "at": 1.1
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "authentic": true
+    },
+    {
+      "id": "s5",
+      "vo": {
+        "en": "Floating in total vacuum, bacteria survived here for three full years without dying.",
+        "hi": "पूर्ण शून्य में तैरते हुए, बैक्टीरिया यहाँ बिना मरे पूरे तीन साल तक जीवित रहे।",
+        "es": "Flotando en el vacío total, las bacterias sobrevivieron aquí durante tres años completos sin morir.",
+        "pt": "Flutuando no vácuo total, bactérias sobreviveram aqui por três anos inteiros sem morrer."
+      },
+      "slowmo": true,
+      "footage": [
+        {
+          "provider": "nasa",
+          "q": "slow motion space vacuum exposure sample tray",
+          "authentic": true
+        },
+        {
+          "provider": "wikimedia",
+          "q": "extreme macro close up bacterial culture petri dish",
+          "authentic": true
+        },
+        {
+          "provider": "nasa",
+          "q": "cinematic slow pan earth atmospheric limb space",
+          "authentic": true
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "lower",
+          "text": {
+            "en": "Source: Wikipedia",
+            "hi": "स्रोत: विकिपीडिया",
+            "es": "Fuente: Wikipedia",
+            "pt": "Fonte: Wikipédia"
+          },
+          "at": 1.2
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "authentic": true
+    },
+    {
+      "id": "s6",
+      "shortOnly": true,
+      "vo": {
+        "en": "And right above your city tonight, that massive orbit continues without stopping...",
+        "hi": "और आज रात आपके शहर के ठीक ऊपर, वह विशाल कक्षा बिना रुके जारी है...",
+        "es": "Y justo sobre tu ciudad esta noche, esa órbita masiva continúa sin detenerse...",
+        "pt": "E bem acima da sua cidade hoje à noite, essa órbita massiva continua sem parar..."
+      },
+      "footage": [
+        {
+          "provider": "nasa",
+          "q": "wide tracking space station passing night side earth",
+          "authentic": true
+        },
+        {
+          "provider": "wikimedia",
+          "q": "time lapse city lights from low earth orbit",
+          "authentic": true
+        },
+        {
+          "provider": "nasa",
+          "q": "cinematic tilt up iss structure back to earth horizon",
+          "authentic": true
+        }
+      ],
+      "shots": 3,
+      "sources": [
+        "S1"
+      ],
+      "authentic": true
+    },
+    {
+      "id": "s7",
+      "longOnly": true,
+      "vo": {
+        "en": "The station measures one hundred nine metres long, stretching solar wings across seventy-three metres.",
+        "hi": "यह स्टेशन एक सौ नौ मीटर लंबा है, जिसके सौर पंख सत्तर-तीन मीटर तक फैले हैं।",
+        "es": "La estación mide ciento nueve metros de largo, extendiendo alas solares a lo largo de setenta y tres metros.",
+        "pt": "A estação mede cento e nove metros de comprimento, estendendo asas solares ao longo de setenta e três metros."
+      },
+      "footage": [
+        {
+          "provider": "nasa",
+          "q": "extreme wide angle space station full length view",
+          "authentic": true
+        },
+        {
+          "provider": "wikimedia",
+          "q": "tracking shot along gigantic iss solar arrays",
+          "authentic": true
+        },
+        {
+          "provider": "nasa",
+          "q": "close up solar panel texture reflection sunlight",
+          "authentic": true
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "chapter",
+          "text": {
+            "en": "A Flying Colossus",
+            "hi": "एक उड़ता हुआ विशालकाय ढांचा",
+            "es": "Un coloso volante",
+            "pt": "Um colosso voador"
+          },
+          "sub": {
+            "en": "01",
+            "hi": "01",
+            "es": "01",
+            "pt": "01"
+          },
+          "at": 0.5
+        },
+        {
+          "kind": "stat",
+          "text": {
+            "en": "109",
+            "hi": "109",
+            "es": "109",
+            "pt": "109"
+          },
+          "sub": {
+            "en": "metres total length",
+            "hi": "मीटर कुल लंबाई",
+            "es": "metros de longitud total",
+            "pt": "metros de comprimento total"
+          },
+          "at": 2
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "authentic": true
+    },
+    {
+      "id": "s8",
+      "longOnly": true,
+      "vo": {
+        "en": "Since November second, two thousand, humans have lived aboard without a single day left empty.",
+        "hi": "2 नवंबर 2000 से, इंसान बिना एक भी दिन खाली छोड़े यहाँ लगातार रह रहे हैं।",
+        "es": "Desde el dos de noviembre de dos mil, los humanos han vivido a bordo sin un solo día vacío.",
+        "pt": "Desde dois de novembro de dois mil, seres humanos vivem a bordo sem um único dia vazio."
+      },
+      "footage": [
+        {
+          "provider": "nasa",
+          "q": "historical wide shot first station module launch",
+          "authentic": true
+        },
+        {
+          "provider": "wikimedia",
+          "q": "medium pan shot module docking orbital sequence",
+          "authentic": true
+        },
+        {
+          "provider": "nasa",
+          "q": "time lapse station construction assembling solar truss",
+          "authentic": true
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "kicker",
+          "text": {
+            "en": "Continuous Presence",
+            "hi": "निरंतर उपस्थिति",
+            "es": "Presencia continua",
+            "pt": "Presença contínua"
+          },
+          "sub": {
+            "en": "Inhabited since 2 Nov 2000",
+            "hi": "2 नवंबर 2000 से बसा हुआ",
+            "es": "Habitada desde el 2 nov 2000",
+            "pt": "Habitada desde 2 nov 2000"
+          },
+          "at": 1.2
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "authentic": true
+    },
+    {
+      "id": "s9",
+      "longOnly": true,
+      "vo": {
+        "en": "Two hundred ninety individuals from twenty-six nations have stepped into this zero-gravity lab.",
+        "hi": "छब्बीस देशों के दो सौ नब्बे लोग इस शून्य-गुरुत्वाकर्षण प्रयोगशाला में कदम रख चुके हैं।",
+        "es": "Doscientas noventa personas de veintiséis naciones han pisado este laboratorio de gravedad cero.",
+        "pt": "Duzentas e noventa pessoas de vinte e seis nações pisaram neste laboratório de gravidade zero."
+      },
+      "footage": [
+        {
+          "provider": "nasa",
+          "q": "wide interior cupola view earth passing below",
+          "authentic": true
+        },
+        {
+          "provider": "wikimedia",
+          "q": "macro shot astronaut helmet visor earth reflection",
+          "authentic": true
+        },
+        {
+          "provider": "nasa",
+          "q": "tracking shot spacewalk astronaut working on truss",
+          "authentic": true
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "stat",
+          "text": {
+            "en": "290",
+            "hi": "290",
+            "es": "290",
+            "pt": "290"
+          },
+          "sub": {
+            "en": "visitors from 26 countries",
+            "hi": "26 देशों के यात्री",
+            "es": "visitantes de 26 países",
+            "pt": "visitantes de 26 países"
+          },
+          "at": 1
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "authentic": true
+    },
+    {
+      "id": "s10",
+      "longOnly": true,
+      "vo": {
+        "en": "Divided into Russian and American segments, international teams coordinate control of the station.",
+        "hi": "रूसी और अमेरिकी वर्गों में विभाजित, अंतर्राष्ट्रीय टीमें स्टेशन के नियंत्रण का समन्वय करती हैं।",
+        "es": "Dividida en segmentos ruso y estadounidense, equipos internacionales coordinan el control de la estación.",
+        "pt": "Dividida em segmentos russo e americano, equipes internacionais coordenam o controle da estação."
+      },
+      "footage": [
+        {
+          "provider": "nasa",
+          "q": "wide establishing view exterior Russian orbital segment",
+          "authentic": true
+        },
+        {
+          "provider": "wikimedia",
+          "q": "close up shot US segment solar array junction",
+          "authentic": true
+        },
+        {
+          "provider": "nasa",
+          "q": "aerial drift camera along main station spine",
+          "authentic": true
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "chapter",
+          "text": {
+            "en": "Global Engineering",
+            "hi": "वैश्विक इंजीनियरिंग",
+            "es": "Ingeniería global",
+            "pt": "Engenharia global"
+          },
+          "sub": {
+            "en": "02",
+            "hi": "02",
+            "es": "02",
+            "pt": "02"
+          },
+          "at": 0.5
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "authentic": true
+    },
+    {
+      "id": "s11",
+      "longOnly": true,
+      "vo": {
+        "en": "Orbiting between fifty-one point six four degrees north and south, it covers almost all human civilization.",
+        "hi": "51.64 डिग्री उत्तर और दक्षिण के बीच चक्कर लगाते हुए, यह लगभग पूरी मानव सभ्यता को कवर करता है।",
+        "es": "Orbitando entre cincuenta y uno punto sesenta y cuatro grados norte y sur, cubre casi toda la civilización.",
+        "pt": "Orbitando entre cinquenta e um ponto sessenta e quatro graus norte e sul, cobre quase toda a civilização."
+      },
+      "footage": [
+        {
+          "provider": "nasa",
+          "q": "time lapse view high inclination orbit earth horizon",
+          "authentic": true
+        },
+        {
+          "provider": "wikimedia",
+          "q": "tracking wide shot glowing aurora borealis space station",
+          "authentic": true
+        },
+        {
+          "provider": "nasa",
+          "q": "macro close up storm cloud tops lightning space",
+          "authentic": true
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "map",
+          "text": {
+            "en": "Orbital Inclination: 51.64°",
+            "hi": "कक्षीय झुकाव: 51.64°",
+            "es": "Inclinación orbital: 51,64°",
+            "pt": "Inclinação orbital: 51,64°"
+          },
+          "geo": {
+            "lat": 51.64,
+            "lon": 0
+          },
+          "at": 1
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "authentic": true
+    },
+    {
+      "id": "s12",
+      "longOnly": true,
+      "vo": {
+        "en": "With an internal space matching a Boeing seven forty seven, astronauts live inside one thousand five cubic metres.",
+        "hi": "बोइंग 747 के बराबर आंतरिक जगह के साथ, अंतरिक्ष यात्री 1,005 घन मीटर क्षेत्र में रहते हैं।",
+        "es": "Con un espacio interno comparable a un Boeing 747, los astronautas viven en mil cinco metros cúbicos.",
+        "pt": "Com um espaço interno comparável a um Boeing 747, os astronautas vivem em mil e cinco metros cúbicos."
+      },
+      "footage": [
+        {
+          "provider": "nasa",
+          "q": "wide pan shot interior habitable research module",
+          "authentic": true
+        },
+        {
+          "provider": "wikimedia",
+          "q": "detail shot zero gravity equipment rack straps",
+          "authentic": true
+        },
+        {
+          "provider": "nasa",
+          "q": "slow motion floating water droplet microgravity lab",
+          "authentic": true
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "stat",
+          "text": {
+            "en": "1,005",
+            "hi": "1,005",
+            "es": "1.005",
+            "pt": "1.005"
+          },
+          "sub": {
+            "en": "m³ pressurized volume",
+            "hi": "m³ दबावयुक्त आयतन",
+            "es": "m³ volumen presurizado",
+            "pt": "m³ volume pressurizado"
+          },
+          "at": 1.2
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "authentic": true
+    },
+    {
+      "id": "s13",
+      "longOnly": true,
+      "vo": {
+        "en": "Crews dedicate one hundred sixty man-hours weekly to research, testing how bodies survive space before Mars missions.",
+        "hi": "मंगल अभियानों से पहले शरीर के अस्तित्व का परीक्षण करते हुए, दल साप्ताहिक रूप से 160 घंटे शोध में बिताते हैं।",
+        "es": "Las tripulaciones dedican ciento sesenta horas hombre semanales a investigar la supervivencia humana antes de ir a Marte.",
+        "pt": "As tripulações dedicam cento e sessenta horas-homem semanais a pesquisas sobre a sobrevivência humana antes de Marte."
+      },
+      "footage": [
+        {
+          "provider": "nasa",
+          "q": "close up ultrasound scanning procedure zero gravity",
+          "authentic": true
+        },
+        {
+          "provider": "wikimedia",
+          "q": "medium shot plant growth microgravity experiment rack",
+          "authentic": true
+        },
+        {
+          "provider": "nasa",
+          "q": "tracking shot alpha magnetic spectrometer exterior iss",
+          "authentic": true
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "chapter",
+          "text": {
+            "en": "Testing Mars Frontiers",
+            "hi": "मंगल की सीमाओं का परीक्षण",
+            "es": "Probando las fronteras de Marte",
+            "pt": "Testando as fronteiras de Marte"
+          },
+          "sub": {
+            "en": "03",
+            "hi": "03",
+            "es": "03",
+            "pt": "03"
+          },
+          "at": 0.5
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "authentic": true
+    },
+    {
+      "id": "s14",
+      "longOnly": true,
+      "vo": {
+        "en": "Until twenty thirty, this flying laboratory will remain humanity's main bridge to deep space.",
+        "hi": "2030 तक, यह उड़ती प्रयोगशाला गहरे अंतरिक्ष के लिए मानवता का मुख्य पुल बनी रहेगी।",
+        "es": "Hasta dos mil treinta, este laboratorio volante seguirá siendo el puente principal hacia el espacio profundo.",
+        "pt": "Até dois mil e trinta, este laboratório voador continuará sendo a principal ponte para o espaço profundo."
+      },
+      "slowmo": true,
+      "footage": [
+        {
+          "provider": "nasa",
+          "q": "slow motion wide view space station orbit earth edge",
+          "authentic": true
+        },
+        {
+          "provider": "wikimedia",
+          "q": "cinematic pull back camera iss against deep starfield",
+          "authentic": true
+        },
+        {
+          "provider": "nasa",
+          "q": "extreme wide shot space station vanishing into sun flare",
+          "authentic": true
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "lower",
+          "text": {
+            "en": "Source: Wikipedia",
+            "hi": "स्रोत: विकिपीडिया",
+            "es": "Fuente: Wikipedia",
+            "pt": "Fonte: Wikipédia"
+          },
+          "at": 1
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "authentic": true
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Wikipedia, International Space Station",
+      "url": "https://en.wikipedia.org/wiki/International_Space_Station",
+      "claims": [
+        "at about 400 kilometres (250 miles) above Earth",
+        "Its orbit takes it at 7.67 km/s (27,600 km/h; 17,200 mph) roughly every 93 minutes around Earth, 15.5 times a day.",
+        "Measuring 109 m (358 ft) (with solar arrays) by 73 m (239 ft)",
+        "has a pressurised internal volume of 1,005 m3 (35,491 ft3), comparable to a Boeing 747 airliner.",
+        "In total, the station consists of 43 different modules and elements.",
+        "Deinococcus radiodurans bacteria, which is highly resistant to environmental hazards, were found to survive for three years in outer space",
+        "Since 2 November 2000, it has hosted the longest continuous human presence in space.",
+        "As of August 2025, 290 individuals from 26 countries had visited the station.",
+        "The station orbits between 51.64° north and south"
+      ]
+    }
+  ],
+  "engage": {
+    "ask": {
+      "en": "If you could spend 24 hours on the space station, what experiment would you run?",
+      "hi": "अगर आपको स्पेस स्टेशन पर 24 घंटे बिताने का मौका मिले, तो आप कौन सा प्रयोग करेंगे?",
+      "es": "Si pudieras pasar 24 horas en la estación espacial, ¿qué experimento harías?",
+      "pt": "Se você pudesse passar 24 horas na estação espacial, qual experimento faria?"
+    },
+    "hookText": {
+      "en": "REAL SPACE *STATION*",
+      "hi": "असली *अंतरिक्ष* स्टेशन",
+      "es": "ESTACIÓN ESPACIAL *REAL*",
+      "pt": "ESTAÇÃO ESPACIAL *REAL*"
+    },
+    "loop": {
+      "en": "And right above your city tonight, that massive orbit continues without stopping...",
+      "hi": "और आज रात आपके शहर के ठीक ऊपर, वह विशाल कक्षा बिना रुके जारी है...",
+      "es": "Y justo sobre tu ciudad esta noche, esa órbita masiva continúa sin detenerse...",
+      "pt": "E bem acima da sua cidade hoje à noite, essa órbita massiva continua sem parar..."
+    },
+    "share": {
+      "en": "Share this to show how fast 27,600 km/h really is.",
+      "hi": "यह दिखाने के लिए शेयर करें कि 27,600 किमी/घंटा वास्तव में कितना तेज़ होता है।",
+      "es": "Comparte esto para mostrar lo rápido que es realmente 27.600 km/h.",
+      "pt": "Compartilhe isso para mostrar o quão rápido 27.600 km/h realmente é."
+    }
+  }
+}
