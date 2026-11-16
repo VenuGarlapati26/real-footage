@@ -1,12 +1,11 @@
-# 8-SECOND SAMPLES WITH REAL FOOTAGE (development mode). Runs when an episode file changes, or by hand.
+# 8-SECOND SAMPLES WITH REAL FOOTAGE. By hand only (Actions -> Samples -> Run workflow): the channel is live, and running
+# on every push (the autopilot pushes new episodes every day) would spend free minutes for nothing.
 # Renders both formats capped at channel/settings.json -> dev.maxSeconds and keeps them as a downloadable artifact.
 name: Samples (8 s, real footage)
 on:
   workflow_dispatch:
     inputs:
       episode: { description: "Episode file", default: "episodes/E001-iss-16-sunrises.json" }
-  push:
-    paths: ["episodes/**", "engine/**", "footage/**"]
 jobs:
   sample:
     runs-on: ubuntu-24.04   # pinned: "latest" moves to Ubuntu 26 and could break installs
@@ -22,6 +21,8 @@ jobs:
       KOKORO_VOICES: ${{ github.workspace }}/.cache/kokoro/voices-v1.0.bin
     steps:
       - uses: actions/checkout@v5
+      - name: Free disk space
+        run: sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /usr/local/.ghcup /opt/hostedtoolcache/CodeQL /usr/share/swift && df -h / | tail -1
       - uses: actions/setup-node@v5
         with: { node-version: 22, cache: npm }
       - uses: actions/setup-python@v6
@@ -29,7 +30,7 @@ jobs:
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
       - run: pip install -q kokoro-onnx soundfile && npm ci && npx playwright install --with-deps chromium
       - uses: actions/cache@v4
-        with: { path: .cache, key: "cache-${{ hashFiles('episodes/**') }}", restore-keys: "cache-" }
+        with: { path: .cache/kokoro, key: "kokoro-v1" }   # only the voice model: a footage cache grew to 6 GB and filled the disk
       - name: Kokoro fallback voice
         run: |
           mkdir -p .cache/kokoro && cd .cache/kokoro
