@@ -8,17 +8,25 @@ export const UA = process.env.HTTP_UA ?? "LumoraBot/1.0 (https://venugarlapati26
 const sleep = (ms: number) => new Promise(r => setTimeout(r, ms));
 const PAUSES = (process.env.HTTP_RETRY_MS ?? "3000,8000,20000,45000").split(",").map(Number);
 
+// A site that still refuses after all retries is left alone for a while (circuit breaker): otherwise every following
+// file on it waits the full retry ladder again, and one rate-limited site can stall a whole run.
+const cooling = new Map<string, number>();
+const COOL_MS = () => Number(process.env.HTTP_COOL_MS ?? 15 * 60_000);
+
 /** fetch with the project user agent, retrying 429 and 5xx. Returns the final Response (ok or not). */
 export async function politeFetch(url: string, init: RequestInit = {}): Promise<Response> {
   const headers = { "user-agent": UA, "api-user-agent": UA, ...(init.headers as Record<string, string> ?? {}) };
+  const host = new URL(url).host;
+  if ((cooling.get(host) ?? 0) > Date.now()) return new Response(`${host} is rate-limiting this run; skipped`, { status: 429 });
   for (let i = 0; ; i++) {
     let r: Response;
     try { r = await fetch(url, { ...init, headers }); }
     catch (e) { if (i >= PAUSES.length) throw e; await sleep(PAUSES[i]); continue; }   // network drop: wait and retry
-    if ((r.status !== 429 && r.status < 500) || i >= PAUSES.length) return r;
+    if (r.status !== 429 && r.status < 500) return r;
+    if (i >= PAUSES.length) { if (r.status === 429) cooling.set(host, Date.now() + COOL_MS()); return r; }
     const ra = Number(r.headers.get("retry-after"));
     await r.body?.cancel().catch(() => {});
-    await sleep(Number.isFinite(ra) && ra > 0 ? Math.min(ra * 1000, 120_000) : PAUSES[i]);
+    await sleep(Number.isFinite(ra) && ra > 0 ? Math.min(ra * 1000, 30_000) : PAUSES[i]);
   }
 }
 

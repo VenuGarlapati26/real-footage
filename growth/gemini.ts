@@ -8,7 +8,7 @@ const BASE = () => process.env.GEMINI_BASE ?? "https://generativelanguage.google
 export const geminiReady = () => !!process.env.GEMINI_API_KEY;
 /** Models to try, newest first. Google retires and renames models often (gemini-2.5-flash is closed to new keys since
  *  late 2026), so the client walks this list and keeps the first one this key may use. GEMINI_MODEL forces one. */
-export const MODELS = () => (process.env.GEMINI_MODEL ?? "gemini-3.8-flash,gemini-3.5-flash,gemini-3.5-flash-lite,gemini-3.1-flash-lite,gemini-flash-latest,gemini-2.5-flash").split(",").map(m => m.trim()).filter(Boolean);
+export const MODELS = () => (process.env.GEMINI_MODEL ?? "gemini-3.8-flash,gemini-3.5-flash,gemini-3.5-flash-lite,gemini-3.1-flash-lite,gemini-flash-latest").split(",").map(m => m.trim()).filter(Boolean);
 const workingFor = new Map<string, string>();   // per model list: the first model that answered
 const exhausted = new Set<string>();   // models whose free daily quota is used up in this run
 /** "You exceeded your current quota": the per-day free limit (move to the next model; each has its own quota), or a

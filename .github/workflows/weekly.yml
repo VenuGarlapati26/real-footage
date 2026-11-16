@@ -7,7 +7,7 @@ on:
 permissions: { contents: write }
 jobs:
   review:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04   # pinned: "latest" moves to Ubuntu 26 and could break installs
     timeout-minutes: 60   # writes 4 episodes and has Gemini pick their shots (stock clips judged from small previews)
     env:
       YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
@@ -23,12 +23,12 @@ jobs:
       DATAFORSEO_LOGIN: ${{ secrets.DATAFORSEO_LOGIN }}
       DATAFORSEO_PASSWORD: ${{ secrets.DATAFORSEO_PASSWORD }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Free disk space (~25 GB of unused preinstalled tools)
         run: sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /usr/local/.ghcup /opt/hostedtoolcache/CodeQL /usr/share/swift && df -h / | tail -1
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with: { node-version: 22, cache: npm }
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with: { python-version: "3.12" }
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg   # contact sheets for shot picking
       - run: npm ci
@@ -37,4 +37,4 @@ jobs:
       - run: |
           git config user.name "p2-autopilot"; git config user.email "autopilot@users.noreply.github.com"
           git add channel episodes   # the new episodes too, or they would be lost
-          git diff --cached --quiet || (git commit -m "growth review $(date -u +%F)" && for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done)
+          git diff --cached --quiet || (git commit -m "growth review $(date -u +%F)" && for i in 1 2 3; do git pull --rebase --autostash && git push && break; sleep 5; done)

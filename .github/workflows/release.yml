@@ -9,15 +9,15 @@ concurrency: { group: p2-release, cancel-in-progress: false }
 permissions: { contents: write }
 jobs:
   release:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04   # pinned: "latest" moves to Ubuntu 26 and could break installs
     timeout-minutes: 5
     env:
       META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
       IG_USER_ID: ${{ secrets.IG_USER_ID }}
       NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with: { node-version: 22 }
       - run: node --experimental-strip-types autopilot/release.ts
       - name: Save what was published
@@ -25,4 +25,4 @@ jobs:
         run: |
           git config user.name "p2-autopilot"; git config user.email "autopilot@users.noreply.github.com"
           git add channel/released.json 2>/dev/null || true
-          git diff --cached --quiet || (git commit -m "release: $(date -u +%FT%H:%M)" && for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done)
+          git diff --cached --quiet || (git commit -m "release: $(date -u +%FT%H:%M)" && for i in 1 2 3; do git pull --rebase --autostash && git push && break; sleep 5; done)

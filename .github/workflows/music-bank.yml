@@ -11,18 +11,18 @@ on:
 concurrency: { group: music-bank, cancel-in-progress: false }
 jobs:
   compose:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04   # pinned: "latest" moves to Ubuntu 26 and could break installs
     timeout-minutes: 330
     permissions: { contents: write }
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Anything to do?
         id: need
         run: echo "n=$(python3 tools/musicbank.py --check)" >> "$GITHUB_OUTPUT"
       - name: Make disk room for the model (~15 GB)
         if: steps.need.outputs.n != '0'
         run: sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL && df -h /
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         if: steps.need.outputs.n != '0'
         with: { python-version: "3.11" }
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg && pip install -q uv
@@ -44,4 +44,4 @@ jobs:
         run: |
           git config user.name "p2-autopilot"; git config user.email "autopilot@users.noreply.github.com"
           git add music/bank
-          git diff --cached --quiet || (git commit -m "music bank: $(ls music/bank/*/*.mp3 | wc -l) tracks" && for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done)
+          git diff --cached --quiet || (git commit -m "music bank: $(ls music/bank/*/*.mp3 | wc -l) tracks" && for i in 1 2 3; do git pull --rebase --autostash && git push && break; sleep 5; done)

@@ -33,7 +33,15 @@ async function nasa(q: string, nasaId?: string, size: Size = false): Promise<Can
   const url = nasaId ? `https://images-api.nasa.gov/search?nasa_id=${encodeURIComponent(nasaId)}` : `https://images-api.nasa.gov/search?media_type=video&q=${encodeURIComponent(q)}`;
   const j: any = await getJson(url);
   const out: Candidate[] = [];
-  for (const it of (j.collection?.items ?? []).slice(0, 8)) {
+  // relevance: NASA's search also returns loosely related videos (a lab experiment for "ISS"): keep the ones whose title
+  // shares a real word with the query, best match first
+  const terms = q.toLowerCase().split(/[^a-z0-9]+/).filter(w => w.length > 2 && !["the", "and", "from", "with", "view", "views", "footage", "video"].includes(w));
+  const hits = (x: any) => { const t = String(x.data?.[0]?.title ?? "").toLowerCase(); return terms.filter(w => t.includes(w)).length; };
+  if (terms.includes("iss")) terms.push("station", "expedition", "spacewalk");
+  const all = j.collection?.items ?? [], matched = all.filter((x: any) => hits(x) > 0);
+  // too few clear matches: keep the rest after them (curation and quality checks still choose)
+  const items = nasaId || !terms.length ? all : [...matched.sort((a: any, b: any) => hits(b) - hits(a)), ...(matched.length >= 3 ? [] : all.filter((x: any) => !matched.includes(x)))];
+  for (const it of items.slice(0, 8)) {
     const d = it.data?.[0]; if (!d || d.media_type !== "video") continue;
     // searches only: skip what is not camera footage (visualisations, animations, talks), it breaks the look and the promise
     if (!nasaId && NOT_FOOTAGE.test(`${d.title} ${d.description ?? ""} ${(d.keywords ?? []).join(" ")}`)) continue;

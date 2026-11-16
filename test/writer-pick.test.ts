@@ -39,3 +39,20 @@ console.log("writer shape + best-hook tests: all passed");
   assert.ok(!softOnly(['claim not found word-for-word in S1: "x"', 'gate "hook (YouTube)" failed (score 55): x']));
   console.log("writer repair tests: all passed");
 }
+
+// hooks are scored with numbers as digits (narration spells them out for the voice)
+{
+  const { digitsForScoring, hookScores } = await import("../engine/gates");
+  assert.equal(digitsForScoring("It moves at twenty-eight thousand kilometres an hour, sixteen times a day."), "It moves at 28000 kilometres an hour, 16 times a day.");
+  assert.equal(digitsForScoring("one hundred and five people, two million years"), "105 people, 2000000 years");
+  assert.equal(digitsForScoring("someone was there"), "someone was there");
+  const h = "You will never see this from Earth, but sixteen times a day, the sun rises up there. Why?";
+  const s = hookScores(h); console.log("example hook scores", s);
+  assert.ok(s.yt >= 60 && s.ig >= 45, "the example in the writer's rules passes both gates");
+  console.log("hook scoring tests: all passed");
+}
+{
+  const { tidy } = await import("../growth/writer");
+  const e: any = structuredClone(ep); e.sources = [{ id: "S1", claims: [] }]; e.scenes.forEach((s: any) => delete s.sources);
+  tidy(e); assert.ok(e.scenes.every((s: any) => s.sources[0] === "S1")); console.log("source tag repair: passed");
+}

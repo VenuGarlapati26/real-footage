@@ -11,20 +11,20 @@ concurrency: { group: p2-autopilot, cancel-in-progress: false }
 permissions: { contents: write, issues: write }
 jobs:
   check:   # ~1 billed minute: ends the day's backup run (and runs while the autopilot is off) before any installs
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04   # pinned: "latest" moves to Ubuntu 26 and could break installs
     timeout-minutes: 3
     outputs: { skip: "${{ steps.pre.outputs.skip }}" }
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with: { sparse-checkout: "autopilot/precheck.ts\nchannel/settings.json\nchannel/ledger.json", sparse-checkout-cone-mode: false }
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with: { node-version: 22 }
       - id: pre
         run: node --experimental-strip-types autopilot/precheck.ts
   videos:
     needs: check
     if: needs.check.outputs.skip != 'true'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04   # pinned: "latest" moves to Ubuntu 26 and could break installs
     timeout-minutes: 330   # a 4-minute 4K long video can take ~2 h on the 2-core runner (see autopilot/budget.ts)
     env:
       YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
@@ -49,12 +49,12 @@ jobs:
       RENDER_DIR: ${{ github.workspace }}/renders
       PACK_DIR: ${{ github.workspace }}/platform-pack
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Free disk space (~25 GB of unused preinstalled tools)
         run: sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /usr/local/.ghcup /opt/hostedtoolcache/CodeQL /usr/share/swift && df -h / | tail -1
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with: { node-version: 22, cache: npm }
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with: { python-version: "3.12" }
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
       - run: pip install -q kokoro-onnx soundfile
@@ -85,8 +85,8 @@ jobs:
         if: always()
         run: |
           git config user.name "p2-autopilot"; git config user.email "autopilot@users.noreply.github.com"
-          git add channel assets/sfx 2>/dev/null || git add channel
-          git diff --cached --quiet || (git commit -m "autopilot: $(date -u +%F)" && for i in 1 2 3; do git pull --rebase && git push && break; sleep 5; done)
+          git add channel episodes assets/sfx 2>/dev/null || git add channel episodes
+          git diff --cached --quiet || (git commit -m "autopilot: $(date -u +%F)" && for i in 1 2 3; do git pull --rebase --autostash && git push && break; sleep 5; done)
       - name: Open an issue if something failed
         if: failure()
         env: { GH_TOKEN: "${{ github.token }}" }

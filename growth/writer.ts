@@ -12,7 +12,7 @@ import { readdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import type { Episode } from "../engine/types";
 import { LANGS, type Lang } from "../engine/langs";
-import { runGates, hookScores, captionHuman, THRESHOLDS } from "../engine/gates";
+import { runGates, hookScores, captionHuman, THRESHOLDS, hardFailures } from "../engine/gates";
 import { instagramCaption } from "./captions";
 import { getJson } from "../engine/http";
 import { isLook } from "../engine/grade";
@@ -67,7 +67,22 @@ export function shapeProblems(ep: any): string[] {
 
 /** Small slips Gemini makes often, fixed here instead of costing a rewrite: an overlay without English text is dropped. */
 export function tidy(ep: any): void {
+  // the question to viewers must end with "?" in every language
+  if (ep?.engage?.ask && typeof ep.engage.ask === "object") for (const [l, q] of Object.entries(ep.engage.ask)) if (typeof q === "string" && q.trim() && !/[?？]\s*$/.test(q)) ep.engage.ask[l] = q.trim().replace(/[.!。]+$/, "") + (l === "ja" || l === "zh" ? "？" : "?");
+  // every fact comes from the one fetched source (S1), and the numbers are checked against its claims: a scene that
+  // forgot its "sources" tag gets it
+  const ids: string[] = (Array.isArray(ep?.sources) ? ep.sources : []).map((x: any) => x?.id).filter(Boolean);
   for (const sc of Array.isArray(ep?.scenes) ? ep.scenes : []) {
+    if (ids.length === 1 && sc && (!Array.isArray(sc.sources) || !sc.sources.length || sc.sources.some((i: string) => !ids.includes(i)))) sc.sources = [ids[0]];
+    // footage: at least 2 online queries; scenes promised as real footage use only NASA / Wikimedia
+    if (sc && Array.isArray(sc.footage)) {
+      const q = sc.footage.find((f: any) => f?.q)?.q ?? (typeof sc?.vo?.en === "string" ? sc.vo.en.split(/\s+/).slice(0, 4).join(" ") : "earth from space");
+      if (sc.authentic) sc.footage = sc.footage.filter((f: any) => f?.provider !== "pexels" && f?.provider !== "pixabay");
+      const online = () => sc.footage.filter((f: any) => f?.provider && f.provider !== "local");
+      const add = sc.authentic ? ["nasa", "wikimedia"] : ["nasa", "pexels", "wikimedia"];
+      for (const prov of add) { if (online().length >= 2 && (!sc.authentic || online().filter((f: any) => f.provider === "nasa" || f.provider === "wikimedia").length >= 2)) break;
+        if (!sc.footage.some((f: any) => f?.provider === prov && f?.q === q)) sc.footage.push({ provider: prov, q }); }
+    }
     if (!Array.isArray(sc?.overlays)) continue;
     sc.overlays = sc.overlays.filter((o: any) => hasEn(o?.text));
     for (const o of sc.overlays) if (o.sub && !hasEn(o.sub)) delete o.sub;
@@ -120,8 +135,8 @@ export function pickBest(ep: any): string {
 
 /** Turn a failed gate into an instruction Gemini can act on. */
 const HOW: Record<string, string> = {
-  "hook (YouTube)": "rewrite scene 1 vo and all hookOptions: name a concrete, surprising specific (a number, place or thing), say what is at stake for the viewer, address \"you\", end with an open loop",
-  "hook (Reels/Shorts)": "the first 2 seconds must shock: lead with the strangest concrete fact, short words, no warm-up",
+  "hook (YouTube)": "rewrite scene 1 vo and all hookOptions with ALL of: 'you' in the first six words, a number or named place, a stakes word (before/never/lose/cost/risk/stop/die), a curiosity word (why/how/what/but/nobody/almost), 9-20 words, end on an open question",
+  "hook (Reels/Shorts)": "the first 2 seconds must shock: the first five words carry the strangest number or fact, short words, no warm-up, no 'did you know'",
   "caption reads naturally": "write engage.share, engage.ask and all shareOptions like a real person texting a friend: plain words, contractions, no hype words (incredible, mind-blowing, delve, journey, unlock, fascinating), no em dashes, varied sentence length",
   "caption": "fix the caption pieces (scene 1 vo, engage.share, engage.ask) as described",
   "title + thumbnail": "title under 60 characters with a concrete specific; thumb 2-4 words that add to the title, not repeat it",
@@ -131,7 +146,7 @@ const RULES = (langs: Lang[]) => `You write for a premium, entertaining document
 Every video is built from REAL footage (NASA, Wikimedia Commons). Tone: gripping, cinematic, confident, a little playful, never childish, never clickbait-false.
 Write ONE episode as JSON with exactly this shape (the example shows the format and the quality bar):
 - "scenes": 5-6 scenes for the Short (about 25-40 s spoken in total), then 8-14 extra scenes marked "longOnly": true that deepen the story for the long video (3-5 minutes in total). One scene marked "shortOnly": true at the end of the Short: a loop line that leads back into the opening.
-- scene 1 "vo.en" is the hook: under 16 words, speaks to "you", puts the most surprising fact first, ends on an open question or "almost nobody knows why". It must NOT repeat "engage.hookText".
+- scene 1 "vo.en" is the hook, 9 to 20 words, and it needs ALL of these: "you" or "your" in the first six words; one concrete number or named place/thing; one stakes word (before, never, lose, cost, risk, stop, die, broke, fail); one curiosity word (why, how, what, until, but, nobody, almost); and it ends on an open question or an unfinished thought, never on its answer (no "because"). Example: "You will never see this from Earth, but sixteen times a day, the sun rises up there. Why?" It must NOT repeat "engage.hookText".
 - "overlays": kinds "kicker" (headline + sub label), "stat" (a number + unit; text = the number as digits), "orbit" (only for counts of laps or cycles), "lower" (a source line). One stat in at most every other scene.
 - every number in narration or overlays must appear word for word in a "claims" entry, and every claim must be copied EXACTLY from the source text below (no paraphrase).
 - "footage": 3 search queries per scene (field "q"), written like a cinematographer's shot list: what the camera sees AND how it is filmed, 3-6 words, e.g. "aerial drone glacier calving", "macro close up coffee crema", "time lapse city traffic night", "slow motion wave crashing", "tracking shot cheetah running". Mix shot types so consecutive scenes never look alike (wide establishing -> detail close-up -> aerial -> motion). Never ask for people talking, offices, screens or text. Providers, in this order of preference: \${PROVIDERS}. Set "authentic": true ONLY on scenes that show real footage from space (then use only "nasa"/"wikimedia" there).
@@ -155,8 +170,9 @@ export async function writeEpisode(idea: string, opts: { wiki?: string; topic?: 
   const example = JSON.parse(await readFile("episodes/E001-iss-16-sunrises.json", "utf8"));
   const id = opts.id ?? await nextId();
   let feedback = "", ep: Episode | null = null;
-  let best: { ep: Episode; problems: string[] } | null = null;
-  for (let round = 0; round < 6; round++) {
+  let best: { ep: Episode; problems: string[]; hard: number } | null = null;
+  const ROUNDS = 4;   // 1 draft + 3 rewrites: enough with the code repairs, and it keeps the free Gemini quota for 4 episodes
+  for (let round = 0; round < ROUNDS; round++) {
     const draft: any = await askJson<Episode>([{ text: `${RULES(langs).replace("\${PROVIDERS}", (pillar?.footage ?? ["nasa", "wikimedia", "pexels", "pixabay"]).join(", "))}
 ${pillar ? `This episode is for the content pillar "${pillar.name}"; its default music mood is "${pillar.mood ?? "awe"}" and its usual look is "${(pillar as any).look ?? "documentary"}" (pick another only if the story clearly calls for it).` : ""}
 ${angle ? `STORY FORMAT "${angle.name}" (follow it; it decides the structure, the hook and the reveal): ${angle.recipe}\nSet "angle": "${angle.id}".` : ""}
@@ -170,21 +186,24 @@ SOURCE "S1" = Wikipedia, "${src.title}" (${src.url}):
 ${ep ? `\nYOUR PREVIOUS DRAFT:\n${JSON.stringify(ep)}\n\nFIX THESE PROBLEMS:\n${feedback}` : ""}
 Return the full episode JSON with "id": "${id}", "status": "draft", "topic": "${opts.topic ?? "space"}", and sources [{"id":"S1","title":"Wikipedia, ${src.title}","url":"${src.url}","claims":[...]}].` }], { temperature: round ? 0.3 : 0.7 });
     tidy(draft);
-    let problems = shapeProblems(draft);
+    let problems = shapeProblems(draft), hard = 0;
     if (!problems.length) {
       draft.id = id; draft.status = "draft"; if (angle) draft.angle = angle.id;
       if (draft.look && !isLook(draft.look)) delete draft.look;
       pickBest(draft); repairClaims(draft, src.text);
       try {
-        const failed = runGates(draft).filter(g => !g.pass);
-        problems = [...factProblems(draft, { S1: src.text }), ...failed.map(g => `gate "${g.name}" failed${g.score != null ? ` (score ${g.score})` : ""}: ${g.detail}${HOW[g.name] ? ` -> ${HOW[g.name]}` : ""}`)];
-      } catch (e: any) { problems = [`the episode could not be checked (${String(e.message).split("\n")[0]}); return the complete JSON shape`]; }
-    }
-    if (!best || problems.length < best.problems.length) best = { ep: draft, problems };
+        const gates = runGates(draft), failed = gates.filter(g => !g.pass);
+        const facts = factProblems(draft, { S1: src.text });
+        hard = facts.length + hardFailures(gates).length;
+        problems = [...facts, ...failed.map(g => `gate "${g.name}" failed${g.score != null ? ` (score ${g.score})` : ""}: ${g.detail}${HOW[g.name] ? ` -> ${HOW[g.name]}` : ""}`)];
+      } catch (e: any) { problems = [`the episode could not be checked (${String(e.message).split("\n")[0]}); return the complete JSON shape`]; hard = 99; }
+    } else hard = 99;
+    if (!best || hard < best.hard || (hard === best.hard && problems.length < best.problems.length)) best = { ep: draft, problems, hard };
     ep = best.ep; if (!problems.length) break;
     feedback = best.problems.map(p => `- ${p}`).join("\n");
-    if (round === 5 && softOnly(best.problems)) { ep = best.ep; break; }   // good enough: a near-miss hook beats no video
-    if (round === 5) throw new Error(`episode ${id} still fails after 5 rewrites: ${best.problems.slice(0, 3).join(" | ")}${best.problems.length > 3 ? ` (+${best.problems.length - 3} more)` : ""}`);
+    // after the rewrites: keep the best draft whenever its facts, rights and text are right (quality scores never block)
+    if (round === ROUNDS - 1 && best.hard === 0) { ep = best.ep; break; }
+    if (round === ROUNDS - 1) throw new Error(`episode ${id} still fails after ${ROUNDS - 1} rewrites: ${best.problems.slice(0, 3).join(" | ")}${best.problems.length > 3 ? ` (+${best.problems.length - 3} more)` : ""}`);
   }
   const file = path.join("episodes", `${id}-${slug(ep!.title.en)}.json`);
   if (opts.approve) ep!.status = "approved";

@@ -9,7 +9,7 @@ on:
     paths: ["episodes/**", "engine/**", "footage/**"]
 jobs:
   sample:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04   # pinned: "latest" moves to Ubuntu 26 and could break installs
     timeout-minutes: 60
     env:
       PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
@@ -21,10 +21,10 @@ jobs:
       KOKORO_MODEL: ${{ github.workspace }}/.cache/kokoro/kokoro-v1.0.int8.onnx
       KOKORO_VOICES: ${{ github.workspace }}/.cache/kokoro/voices-v1.0.bin
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with: { node-version: 22, cache: npm }
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with: { python-version: "3.12" }
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
       - run: pip install -q kokoro-onnx soundfile && npm ci && npx playwright install --with-deps chromium

@@ -4,33 +4,58 @@
 //
 //   npx tsx engine/gates.ts episodes/E001-iss-16-sunrises.json
 
+import { fileURLToPath } from "node:url";
 import { execFileSync } from "node:child_process";
 import { readFileSync } from "node:fs";
 import type { Episode } from "./types";
 import { instagramCaption, facebookCaption } from "../growth/captions";
 
-const V = "vendor/skills";
+const V = fileURLToPath(new URL("../vendor/skills", import.meta.url));   // works from any folder
 /** Run a vendored tool and read its JSON. Some tools exit 1 to mean "review" - the JSON is still the answer. */
 const py = (script: string, args: string[], input?: string) => {
   try { return JSON.parse(execFileSync("python3", ["-I", `${V}/${script}`, ...args], { input, encoding: "utf8" })); }
   catch (e: any) { if (e.stdout) return JSON.parse(String(e.stdout)); throw e; }
 };
 
-export interface Gate { name: string; pass: boolean; score?: number; detail: string }
+/** soft = a quality score (hook, title, caption style): the writer optimises it, but it never stops a video.
+ *  Hard gates (facts, rights, English text, real footage) always block. */
+export interface Gate { name: string; pass: boolean; score?: number; detail: string; soft?: boolean }
+const SOFT = new Set(["hook (YouTube)", "hook (Reels/Shorts)", "title + thumbnail", "caption", "caption reads naturally", "on-screen hook differs from spoken line", "engagement pieces"]);
+/** The gates that must pass before a video is made or an episode is kept. */
+export const hardFailures = (g: Gate[]) => g.filter(x => !x.pass && !x.soft);
 export const THRESHOLDS = { ytHook: 60, igHook: 45, title: 70, humanCaption: 60 };
 
 const BLOCK = /\b(mr\.? ?beast|kurzgesagt|vox|vsauce|veritasium|discovery channel|nat ?geo|national geographic|netflix|bbc|history channel|disney|marvel|coca-?cola|pepsi|nike|adidas|samsung|iphone)\b/i;
 
+const ONES: Record<string, number> = { zero: 0, one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8, nine: 9, ten: 10, eleven: 11,
+  twelve: 12, thirteen: 13, fourteen: 14, fifteen: 15, sixteen: 16, seventeen: 17, eighteen: 18, nineteen: 19 };
+const TENS: Record<string, number> = { twenty: 20, thirty: 30, forty: 40, fifty: 50, sixty: 60, seventy: 70, eighty: 80, ninety: 90 };
+const SCALE: Record<string, number> = { hundred: 100, thousand: 1e3, million: 1e6, billion: 1e9 };
+/** Narration spells numbers out for the voice ("twenty-eight thousand"); the hook scorers look for digits. So the hook is
+ *  scored as it reads on screen: "28000". Pure; only used for scoring, never changes the script. */
+export function digitsForScoring(text: string): string {
+  const word = "(?:" + [...Object.keys(ONES), ...Object.keys(TENS), ...Object.keys(SCALE)].join("|") + ")";
+  return text.replace(new RegExp(`\\b${word}(?:[\\s-]+(?:and[\\s]+)?${word})*\\b`, "gi"), m => {
+    let total = 0, cur = 0, seen = false;
+    for (const w of m.toLowerCase().split(/[\s-]+/).filter(x => x !== "and")) {
+      if (w in ONES) { cur += ONES[w]; seen = true; } else if (w in TENS) { cur += TENS[w]; seen = true; }
+      else if (w === "hundred") { cur = (cur || 1) * 100; seen = true; } else if (w in SCALE) { total += (cur || 1) * SCALE[w]; cur = 0; seen = true; }
+    }
+    return seen ? String(total + cur) : m;
+  });
+}
+
 /** Both hook scores for one line (used by the writer to pick the best of several hooks). */
 export function hookScores(hook: string): { yt: number; ig: number } {
-  return { yt: py("yt-script/hookscore.py", ["--json", "--hook", hook])[0].verdict, ig: py("ig-reel/hookscore.py", ["--json", "--hook", hook]).score };
+  const h = digitsForScoring(hook);
+  return { yt: py("yt-script/hookscore.py", ["--json", "--hook", h])[0].verdict, ig: py("ig-reel/hookscore.py", ["--json", "--hook", h]).score };
 }
 /** How human the caption reads, 0-100. */
 export const captionHuman = (caption: string): number => py("ig-human/detect.py", ["--json", "-"], caption).human_score;
 
 export function runGates(ep: Episode, caption?: string, hookMin = THRESHOLDS.ytHook): Gate[] {
   const g: Gate[] = [];
-  const hook = ep.scenes[0].vo.en;
+  const hook = digitsForScoring(ep.scenes[0].vo.en);
   const yt = py("yt-script/hookscore.py", ["--json", "--hook", hook])[0];
   g.push({ name: "hook (YouTube)", pass: yt.verdict >= hookMin, score: yt.verdict, detail: `${yt.band}; weakest ${Object.entries(yt.properties as Record<string, number>).sort((a, b) => a[1] - b[1])[0][0]}` });
   const ig = py("ig-reel/hookscore.py", ["--json", "--hook", hook]);
@@ -70,6 +95,7 @@ export function runGates(ep: Episode, caption?: string, hookMin = THRESHOLDS.ytH
   const missing = ep.scenes.filter(s => !s.vo.en || (s.overlays ?? []).some(o => !o.text.en)).map(s => `${s.id} (English)`);
   const partial = started.filter(l => l !== "en" && ep.scenes.some(s => !s.vo[l]));
   g.push({ name: "languages complete", pass: !missing.length, detail: missing.length ? missing.join(", ") : `English${started.length > 1 ? ` + ${started.filter(l => l !== "en" && !partial.includes(l)).join(", ")}` : ""}${partial.length ? `; unfinished (subtitles skipped): ${partial.join(", ")}` : ""}` });
+  for (const x of g) if (SOFT.has(x.name)) x.soft = true;
   return g;
 }
 

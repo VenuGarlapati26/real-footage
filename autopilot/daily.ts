@@ -17,7 +17,7 @@ import path from "node:path";
 import { readFile, writeFile, readdir, mkdir, copyFile } from "node:fs/promises";
 import { build } from "../engine/build";
 import { chooseLongRes, loadUsage, record, saveUsage, type Res } from "./budget";
-import { runGates } from "../engine/gates";
+import { runGates, hardFailures } from "../engine/gates";
 import type { Episode, Lang } from "../engine/types";
 import { LANGS, tx, ui } from "../engine/langs";
 import { loadLearning, pick } from "../growth/learn";
@@ -30,6 +30,9 @@ export const longSeconds = (ep: Episode) => ep.scenes.filter(sc => !sc.shortOnly
 import * as yt from "./youtube";
 import * as meta from "./meta";
 import * as zernio from "./zernio";
+import { geminiReady, GeminiQuotaError } from "../growth/gemini";
+import { writeEpisode } from "../growth/writer";
+import { loadPillars } from "../growth/pillars";
 
 const args = new Set(process.argv.slice(2)), DRY = args.has("--dry");
 const log = (s: string) => console.log(`[${new Date().toISOString().slice(11, 19)}] ${s}`);
@@ -54,7 +57,8 @@ export function releaseAt(date: string, hhmm: string, tz: string, now = Date.now
 async function checkpoint(msg: string) {
   if (!process.env.GITHUB_ACTIONS || DRY) return;
   const g = (...a: string[]) => execFileP("git", ["-c", "user.name=p2-autopilot", "-c", "user.email=autopilot@users.noreply.github.com", ...a]);
-  try { await g("add", "channel/ledger.json"); await g("commit", "-m", msg); for (let i = 0; i < 3; i++) { try { await g("pull", "--rebase"); await g("push"); break; } catch { await new Promise(r => setTimeout(r, 4000)); } } }
+  try { await g("add", "channel/ledger.json", "episodes"); if (existsSync("channel/written-ideas.json")) await g("add", "channel/written-ideas.json");
+    await g("commit", "-m", msg); for (let i = 0; i < 3; i++) { try { await g("pull", "--rebase", "--autostash"); await g("push"); break; } catch { await new Promise(r => setTimeout(r, 4000)); } } }
   catch (e: any) { log(`  note: checkpoint push: ${e.message ?? e}`); }
 }
 export interface Row { date: string; episode: string; job: "long" | "short"; title: string; status: string; topic: string; voice: string;
@@ -72,6 +76,21 @@ function description(ep: Episode, lang: Lang, rights: any[], synthetic: boolean,
   ].join("\n");
 }
 
+/** One episode from the next unused pillar topic (Wikipedia title), approved, so today still gets its Short. */
+async function emergencyEpisode(): Promise<{ file: string; ep: Episode } | null> {
+  const writtenFile = "channel/written-ideas.json", written: string[] = existsSync(writtenFile) ? await readJson<string[]>(writtenFile) : [];
+  const pf = await loadPillars();
+  const ideas = pf.pillars.flatMap(p => p.wiki.map(w => ({ idea: w, topic: p.id }))).filter(i => !written.includes(i.idea.toLowerCase()));
+  for (const i of ideas.slice(0, 2)) {
+    try {
+      const file = await writeEpisode(i.idea, { topic: i.topic, wiki: i.idea, approve: true });
+      written.push(i.idea.toLowerCase()); await writeFile(writtenFile, JSON.stringify(written, null, 2));
+      return { file, ep: await readJson<Episode>(file) };
+    } catch (e: any) { log(`  "${i.idea}": ${String(e.message).split("\n")[0]}`); if (e instanceof GeminiQuotaError) break; }
+  }
+  return null;
+}
+
 const daysInMonth = (d: string) => new Date(Number(d.slice(0, 4)), Number(d.slice(5, 7)), 0).getDate();
 
 async function main() {
@@ -86,6 +105,11 @@ async function main() {
   const files = (await readdir("episodes")).filter(f => f.endsWith(".json")).sort();
   const eps = (await Promise.all(files.map(async f => ({ file: path.join("episodes", f), ep: await readJson<Episode>(path.join("episodes", f)) })))).filter(x => x.ep.status === "approved");
   const done = (id: string, job: string) => ledger.some(r => r.episode === id && r.job === job && r.status !== "failed");
+  // self-healing: if the weekly writer could not keep up and no unused episode is left, write one now (free Gemini key)
+  if (!eps.some(x => !done(x.ep.id, "short")) && s.writer?.enabled && geminiReady() && !args.has("--no-write")) {
+    const e = await emergencyEpisode().catch(err => { log(`Emergency writer failed: ${String(err.message).split("\n")[0]}`); return null; });
+    if (e) { eps.push(e); log(`No episode was left, so one was written now: ${e.file}`); }
+  }
   const jobs: { file: string; ep: Episode; job: "long" | "short"; slot: string }[] = [];
   // what today's earlier run already made (the 16:00 UTC catch-up only fills what is missing, never doubles up)
   const today = (job: string) => ledger.filter(r => r.date === date && r.job === job && r.status !== "failed").length;
@@ -111,7 +135,9 @@ async function main() {
   jobs.sort((a, b) => (a.job === "short" ? 0 : 1) - (b.job === "short" ? 0 : 1));
   for (const j of jobs) {
     try {
-      const bad = runGates(j.ep, undefined, learning.hookMin).filter(g => !g.pass); if (bad.length) throw new Error(`gates: ${bad.map(g => `${g.name} (${g.detail})`).join("; ")}`);
+      const gates = runGates(j.ep, undefined, learning.hookMin), bad = hardFailures(gates);
+      for (const g of gates.filter(g => !g.pass && g.soft)) log(`  note: ${g.name} ${g.score ?? ""} (${g.detail}), not blocking`);
+      if (bad.length) throw new Error(`gates: ${bad.map(g => `${g.name} (${g.detail})`).join("; ")}`);
       // long videos: the highest resolution the month's Actions minutes can still afford (4K when there is room)
       let res: string | undefined;
       if (j.job === "long") {

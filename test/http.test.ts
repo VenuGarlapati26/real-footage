@@ -115,3 +115,16 @@ console.log("http + trend filter tests: all passed");
   f.close(); delete process.env.FOOTAGE_MAX_MB;
   console.log("footage size cap tests: all passed");
 }
+
+// 8. a site that keeps refusing is skipped for the rest of the run (no second wait ladder)
+{
+  let n = 0;
+  const b = http.createServer((_q, r) => { n++; r.writeHead(429, { "retry-after": "0" }); r.end("slow down"); });
+  await new Promise<void>(r => b.listen(0, "127.0.0.1", r));
+  const u = `http://127.0.0.1:${(b.address() as any).port}`;
+  const { politeFetch } = await import("../engine/http");
+  assert.equal((await politeFetch(`${u}/a`)).status, 429); const first = n;
+  const t = Date.now(); assert.equal((await politeFetch(`${u}/b`)).status, 429);
+  assert.equal(n, first, "not asked again"); assert.ok(Date.now() - t < 50);
+  b.close(); console.log("rate-limit breaker tests: all passed");
+}

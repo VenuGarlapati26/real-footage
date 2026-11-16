@@ -72,7 +72,10 @@ async function findShots(ep: Episode, timed: ReturnType<typeof timeline>, until:
     for (let k = 0; k < n; k++) {
       const start = tsc.start + k * each; if (start >= until) break;
       let placed = false;
-      for (const q of tsc.scene.footage) {
+      // the scene's own queries first; if every one of them fails (a source down or rate-limited that day), the other
+      // scenes' footage of the same story: one weaker shot is better than no video at all
+      const backup = ep.scenes.filter(o => o.id !== tsc.scene.id).flatMap(o => o.footage).filter(f => !tsc.scene.authentic || !STOCK.has(f.provider));
+      for (const q of [...tsc.scene.footage, ...backup]) {
         for (const clip of await candidates(q, !!tsc.scene.authentic)) {
           const key = `${clip.provider}:${clip.id}`;
           // slow motion only from footage really filmed fast (48+ fps): half speed, every frame real
