@@ -98,3 +98,20 @@ console.log("http + trend filter tests: all passed");
   g.close();
   console.log("gemini quota tests: all passed");
 }
+
+// 7. footage downloads have a size cap (the runner's disk), and a missing Commons transcode falls back
+{
+  process.env.FOOTAGE_MAX_MB = "0.001"; process.env.FOOTAGE_CACHE = (await import("node:os")).tmpdir() + "/p2-cap-" + Date.now();
+  const f = http.createServer((req, res) => {
+    if (req.url === "/big.mp4") { res.writeHead(200, { "content-length": "5000" }); return res.end(Buffer.alloc(5000)); }
+    res.writeHead(404); res.end("no");
+  });
+  await new Promise<void>(r => f.listen(0, "127.0.0.1", r));
+  const b = `http://127.0.0.1:${(f.address() as any).port}`;
+  const { download } = await import("../engine/footage");
+  const c = { provider: "wikimedia" as const, id: "x", title: "x", credit: "c", license: "PD", page: "" };
+  await assert.rejects(download({ ...c, url: `${b}/big.mp4` }), /too big/);
+  await assert.rejects(download({ ...c, url: `${b}/missing.webm`, fallback: `${b}/big.mp4` }), /too big/, "fell back to the second address");
+  f.close(); delete process.env.FOOTAGE_MAX_MB;
+  console.log("footage size cap tests: all passed");
+}

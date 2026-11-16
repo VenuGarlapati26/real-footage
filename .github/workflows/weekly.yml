@@ -24,6 +24,8 @@ jobs:
       DATAFORSEO_PASSWORD: ${{ secrets.DATAFORSEO_PASSWORD }}
     steps:
       - uses: actions/checkout@v4
+      - name: Free disk space (~25 GB of unused preinstalled tools)
+        run: sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /usr/local/.ghcup /opt/hostedtoolcache/CodeQL /usr/share/swift && df -h / | tail -1
       - uses: actions/setup-node@v4
         with: { node-version: 22, cache: npm }
       - uses: actions/setup-python@v5

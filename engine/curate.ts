@@ -9,7 +9,7 @@
 //   npx tsx engine/curate.ts episodes/E002.json [--force]
 
 import { execFile } from "node:child_process";
-import { mkdir, readFile, writeFile } from "node:fs/promises";
+import { mkdir, readFile, writeFile, rm } from "node:fs/promises";
 import path from "node:path";
 import { promisify } from "node:util";
 import type { Episode, FootageQuery, Scene, Take } from "./types";
@@ -84,6 +84,8 @@ export async function curateScene(sc: Scene, shots: number, need: number, work: 
     const s = await sheet(clips[i].file, clips[i].duration, path.join(work, `${sc.id}-clip${i}.jpg`));
     parts.push({ text: `Clip ${i}: "${clips[i].title}" (${clips[i].duration.toFixed(0)} s)` }, { inline_data: { mime_type: "image/jpeg", data: (await readFile(s.file)).toString("base64") } });
   }
+  // the contact sheets are made: the preview files are not needed again (keeps the runner's disk free)
+  for (const c of clips) if (c.provider !== "local") await rm(c.file, { force: true }).catch(() => {});
   const ans = await askJson<{ picks: Pick[] }>(parts, { temperature: 0.2, models: CURATE_MODELS() });
   const picks = validPicks(ans.picks, clips, need + 0.2, shots);
   return picks.map(p => {

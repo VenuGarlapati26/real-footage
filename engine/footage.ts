@@ -22,12 +22,14 @@ const run = promisify(execFile);
 const CACHE = process.env.FOOTAGE_CACHE ?? ".cache/footage";
 import { UA, getJson, politeFetch } from "./http";
 
-export type Candidate = Omit<Clip, "file" | "duration" | "width" | "height"> & { url: string; width?: number; height?: number; duration?: number };
+export type Candidate = Omit<Clip, "file" | "duration" | "width" | "height"> & { url: string; width?: number; height?: number; duration?: number; fallback?: string };
+/** The biggest file ever downloaded (FOOTAGE_MAX_MB, default 600): a GitHub runner has ~14 GB of free disk. */
+const MAX_BYTES = () => Number(process.env.FOOTAGE_MAX_MB ?? 600) * 1e6;
 
 // ---------------------------------------------------------------- providers
 const NOT_FOOTAGE = /visuali[sz]ation|animation|animated|simulation|illustration|artist'?s (concept|rendering)|conceptual|infographic|radar data|data visual|interview|news conference|briefing|webinar|lecture|panel discussion|talking head|explainer graphic/i;
 
-async function nasa(q: string, nasaId?: string): Promise<Candidate[]> {
+async function nasa(q: string, nasaId?: string, size: Size = false): Promise<Candidate[]> {
   const url = nasaId ? `https://images-api.nasa.gov/search?nasa_id=${encodeURIComponent(nasaId)}` : `https://images-api.nasa.gov/search?media_type=video&q=${encodeURIComponent(q)}`;
   const j: any = await getJson(url);
   const out: Candidate[] = [];
@@ -37,6 +39,8 @@ async function nasa(q: string, nasaId?: string): Promise<Candidate[]> {
     if (!nasaId && NOT_FOOTAGE.test(`${d.title} ${d.description ?? ""} ${(d.keywords ?? []).join(" ")}`)) continue;
     const assets: string[] = await getJson<string[]>(it.href).catch(() => []);
     const pick = (suffix: string) => assets.find(a => a.endsWith(suffix));
+    // previews (curation contact sheets) use NASA's small renditions: the originals can be gigabytes
+    if (size === "preview") { const f = pick("~small.mp4") ?? pick("~mobile.mp4") ?? pick("~medium.mp4"); if (f) { out.push({ provider: "nasa", id: d.nasa_id, url: f.replace("http://", "https://"), title: d.title, credit: `NASA${d.center ? ` / ${d.center}` : ""}${d.date_created ? `, ${d.date_created.slice(0, 4)}` : ""}`, license: "Public domain (NASA media guidelines)", page: `https://images.nasa.gov/details/${encodeURIComponent(d.nasa_id)}` }); } continue; }
     let file = pick("~orig.mp4");
     if (file) { const h = await fetch(file.replace("http://", "https://"), { method: "HEAD" }).catch(() => null); if (Number(h?.headers.get("content-length") ?? 0) > 350e6) file = undefined; }
     file ??= pick("~large.mp4") ?? pick("~medium.mp4");
@@ -79,7 +83,7 @@ async function pixabay(q: string, id?: string, size: Size = false): Promise<Cand
   }).filter(Boolean);
 }
 
-async function wikimedia(q: string): Promise<Candidate[]> {
+async function wikimedia(q: string, size: Size = false): Promise<Candidate[]> {
   const api = "https://commons.wikimedia.org/w/api.php";
   const p = new URLSearchParams({ action: "query", format: "json", generator: "search", gsrsearch: `${q} filetype:video`, gsrnamespace: "6", gsrlimit: "15",
     prop: "imageinfo", iiprop: "url|extmetadata|size", iiurlwidth: "1920" });
@@ -89,7 +93,14 @@ async function wikimedia(q: string): Promise<Candidate[]> {
     const ii = pg.imageinfo?.[0]; const lic = String(ii?.extmetadata?.LicenseShortName?.value ?? "");
     if (!ii || !ok.test(lic.trim())) return null;
     const artist = String(ii.extmetadata?.Artist?.value ?? "").replace(/<[^>]+>/g, "").trim() || "Wikimedia Commons";
-    return { provider: "wikimedia", id: String(pg.pageid), url: ii.url, width: ii.width, height: ii.height, title: pg.title, credit: `${artist} / Wikimedia Commons`, license: lic, page: ii.descriptionurl };
+    // Commons originals can be several GB: use its own transcode (480p for previews, 1080p for renders) when there is one
+    const name = String(pg.title).replace(/^File:/, "").replace(/ /g, "_"), webm = /\.(webm|ogv)$/i.test(name);
+    if (!webm && Number(ii.size ?? 0) > MAX_BYTES()) return null;
+    const h = createHash("md5").update(name).digest("hex"), tr = `https://upload.wikimedia.org/wikipedia/commons/transcoded/${h[0]}/${h.slice(0, 2)}/${encodeURIComponent(name)}/${encodeURIComponent(name)}`;
+    const small = Number(ii.size ?? 0) <= MAX_BYTES();
+    const url = webm && (size === "preview" || !small) ? `${tr}.${size === "preview" ? 480 : 1080}p.vp9.webm` : ii.url;
+    const fallback = url !== ii.url ? (size === "preview" ? `${tr}.720p.vp9.webm` : small ? ii.url : `${tr}.720p.vp9.webm`) : undefined;
+    return { provider: "wikimedia", id: String(pg.pageid), url, fallback, width: ii.width, height: ii.height, title: pg.title, credit: `${artist} / Wikimedia Commons`, license: lic, page: ii.descriptionurl };
   }).filter(Boolean) as Candidate[];
 }
 
@@ -105,10 +116,10 @@ export async function search(q: FootageQuery, portrait: boolean, uhd: Size = fal
   try {
     switch (q.provider) {
       case "local": return existsSync(path.join("footage", q.file)) ? [{ provider: "local", id: q.file, url: `file:${path.join("footage", q.file)}`, title: q.file, credit: "OWN", license: "Own footage", page: "" }] : [];
-      case "nasa": return await nasa(q.q, q.nasaId);
+      case "nasa": return await nasa(q.q, q.nasaId, uhd);
       case "pexels": return await pexels(q.q, portrait, uhd, q.id);
       case "pixabay": return await pixabay(q.q, q.id, uhd);
-      case "wikimedia": return q.file ? pinnedCommons(q) : await wikimedia(q.q);
+      case "wikimedia": return q.file ? pinnedCommons(q) : await wikimedia(q.q, uhd);
     }
   } catch (e) { console.warn(`  footage search ${q.provider} failed: ${String(e).slice(0, 160)}`); return []; }
 }
@@ -124,11 +135,15 @@ export async function download(c: Candidate): Promise<Clip> {
   await mkdir(CACHE, { recursive: true });
   const ext = path.extname(new URL(c.url).pathname).toLowerCase() || ".mp4";
   // the size is part of the name: the same stock video in 4K (long), 1080p (Short) and preview (curation) are 3 files
-  const dims = (c.provider === "pexels" || c.provider === "pixabay") && c.width && c.height ? `-${c.width}x${c.height}` : "";
+  const dims = (c.provider === "pexels" || c.provider === "pixabay") && c.width && c.height ? `-${c.width}x${c.height}`
+    : c.provider === "nasa" || c.provider === "wikimedia" ? `-${createHash("md5").update(c.url).digest("hex").slice(0, 6)}` : "";
   const file = c.url.startsWith("file:") ? c.url.slice(5) : path.join(CACHE, `${c.provider}-${c.id.replace(/[^\w.-]+/g, "_")}${dims}${ext}`);
   if (!c.url.startsWith("file:") && !existsSync(file)) {
-    const r = await politeFetch(c.url);
+    let r = await politeFetch(c.url);
+    if (!r.ok && c.fallback) { await r.body?.cancel().catch(() => {}); r = await politeFetch(c.fallback); }
     if (!r.ok || !r.body) throw new Error(`download ${c.provider} ${c.id}: ${r.status}`);
+    const len = Number(r.headers.get("content-length") ?? 0);
+    if (len > MAX_BYTES()) { await r.body.cancel().catch(() => {}); throw new Error(`download ${c.provider} ${c.id}: ${(len / 1e6).toFixed(0)} MB is too big`); }
     await pipeline(Readable.fromWeb(r.body as any), createWriteStream(file + ".part"));
     await run("mv", [file + ".part", file]);
   }
