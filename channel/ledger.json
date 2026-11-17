@@ -51,5 +51,18 @@
     "videoId": "mdvckFW-ohQ",
     "url": "https://youtube.com/shorts/mdvckFW-ohQ",
     "publishAt": "2026-11-17T14:00:00.000Z"
+  },
+  {
+    "date": "2026-11-18",
+    "episode": "E004",
+    "job": "short",
+    "title": "Three Astronauts at 400 km #Shorts",
+    "status": "scheduled",
+    "topic": "space",
+    "voice": "synthetic",
+    "slot": "07:30",
+    "videoId": "rImSQP754Z8",
+    "url": "https://youtube.com/shorts/rImSQP754Z8",
+    "publishAt": "2026-11-18T02:00:00.000Z"
   }
 ]
