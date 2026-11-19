@@ -80,5 +80,34 @@
     "videoId": "OHmrHE_5p38",
     "url": "https://youtube.com/shorts/OHmrHE_5p38",
     "publishAt": "2026-11-19T07:00:00.000Z"
+  },
+  {
+    "date": "2026-11-20",
+    "episode": "E006",
+    "job": "short",
+    "title": "Why Your Brain Paralyzes You Every Night #Shorts",
+    "status": "scheduled",
+    "topic": "body",
+    "angle": "mystery",
+    "voice": "synthetic",
+    "slot": "19:30",
+    "videoId": "vEwcO3l0pHg",
+    "url": "https://youtube.com/shorts/vEwcO3l0pHg",
+    "publishAt": "2026-11-20T14:00:00.000Z"
+  },
+  {
+    "date": "2026-11-20",
+    "episode": "E006",
+    "job": "long",
+    "title": "Why Your Brain Paralyzes You Every Night",
+    "status": "scheduled",
+    "topic": "body",
+    "angle": "mystery",
+    "voice": "synthetic",
+    "slot": "20:30",
+    "thumbStyle": "frame",
+    "videoId": "G-veUBDk2ik",
+    "url": "https://youtu.be/G-veUBDk2ik",
+    "publishAt": "2026-11-20T15:00:00.000Z"
   }
 ]
