@@ -1,0 +1,810 @@
+{
+  "id": "E005",
+  "status": "approved",
+  "topic": "space",
+  "title": {
+    "en": "The $93 Billion Return to the Moon",
+    "hi": "चाँद पर 93 अरब डॉलर की वापसी",
+    "es": "El regreso a la Luna de 93 mil millones de dólares",
+    "pt": "O retorno de 93 bilhões de dólares à Lua"
+  },
+  "thumb": {
+    "en": "RETURN TO THE MOON",
+    "hi": "चाँद पर वापसी",
+    "es": "REGRESO A LA LUNA",
+    "pt": "RETORNO À LUA"
+  },
+  "look": "arctic",
+  "music": {
+    "mood": "awe",
+    "styles": [
+      "deep cinematic pulse",
+      "ethereal synth pads",
+      "soaring orchestral brass"
+    ],
+    "peak": "s10"
+  },
+  "engage": {
+    "ask": {
+      "en": "Would you volunteer to spend an entire year living on the lunar surface?",
+      "hi": "क्या आप चाँद की सतह पर पूरा एक साल बिताने के लिए तैयार होंगे?",
+      "es": "¿Te ofrecerías como voluntario para vivir un año entero en la superficie lunar?",
+      "pt": "Você se voluntariaria para passar um ano inteiro morando na superfície lunar?"
+    },
+    "hookText": {
+      "en": "BACK TO *THE MOON*",
+      "hi": "चाँद पर *वापसी*",
+      "es": "DE VUELTA A *LA LUNA*",
+      "pt": "DE VOLTA À *LUA*"
+    },
+    "loop": {
+      "en": "And before this decade ends, the next giant leap will test everything we know...",
+      "hi": "और यह दशक ख़त्म होने से पहले, अगला बड़ा क़दम हमारी हर सीख की परीक्षा लेगा...",
+      "es": "Y antes de que termine esta década, el próximo gran salto pondrá a prueba todo lo que sabemos...",
+      "pt": "E antes do fim desta década, o próximo grande salto vai testar tudo o que sabemos..."
+    },
+    "share": {
+      "en": "Send this to someone who dreams of leaving Earth.",
+      "hi": "यह उसे भेजें जो पृथ्वी से परे जाने के सपने देखता है।",
+      "es": "Envíaselo a alguien que sueñe con dejar la Tierra.",
+      "pt": "Envie para quem sonha em viajar além da Terra."
+    }
+  },
+  "scenes": [
+    {
+      "id": "s1",
+      "vo": {
+        "en": "Before your lifetime ends, NASA will risk ninety-three billion dollars to reach the Moon. But how?",
+        "hi": "आपका जीवन समाप्त होने से पहले, नासा चाँद पर पहुँचने के लिए तिरानवे अरब डॉलर का जोखिम उठाएगा। लेकिन कैसे?",
+        "es": "Antes de que termine tu vida, la NASA arriesgará noventa y tres mil millones de dólares para llegar a la Luna. ¿Pero cómo?",
+        "pt": "Antes de sua vida acabar, a NASA vai arriscar noventa e três bilhões de dólares para alcançar a Lua. Mas como?"
+      },
+      "footage": [
+        {
+          "provider": "nasa",
+          "q": "wide tracking shot rocket launch"
+        },
+        {
+          "provider": "nasa",
+          "q": "lunar surface from orbit slow"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "earthrise over moon horizon view"
+        }
+      ],
+      "authentic": true,
+      "slowmo": true,
+      "overlays": [
+        {
+          "kind": "stat",
+          "text": {
+            "en": "93",
+            "hi": "93",
+            "es": "93",
+            "pt": "93"
+          },
+          "sub": {
+            "en": "billion dollars estimated cost",
+            "hi": "अरब डॉलर अनुमानित लागत",
+            "es": "mil millones de dólares de costo",
+            "pt": "bilhões de dólares em custo"
+          },
+          "at": 1.2
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s2",
+      "vo": {
+        "en": "Its first test spacecraft flew more than two point three million kilometres around the far side.",
+        "hi": "इसके पहले परीक्षण अंतरिक्ष यान ने चाँद के दूरवर्ती हिस्से का चक्कर लगाते हुए तेईस लाख किलोमीटर से अधिक की दूरी तय की।",
+        "es": "Su primera nave espacial de prueba voló más de dos coma tres millones de kilómetros alrededor del lado oculto.",
+        "pt": "Sua primeira espaçonave de teste voou mais de dois vírgula três milhões de quilômetros ao redor do lado oculto."
+      },
+      "footage": [
+        {
+          "provider": "nasa",
+          "q": "spacecraft orbiting moon extreme wide"
+        },
+        {
+          "provider": "nasa",
+          "q": "orion capsule deep space view"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "earth crescent seen behind spacecraft"
+        }
+      ],
+      "authentic": true,
+      "overlays": [
+        {
+          "kind": "kicker",
+          "text": {
+            "en": "Artemis I",
+            "hi": "आर्टेमिस I",
+            "es": "Artemis I",
+            "pt": "Artemis I"
+          },
+          "sub": {
+            "en": "Path around the Moon",
+            "hi": "चाँद की परिक्रमा का मार्ग",
+            "es": "Trayectoria alrededor de la Luna",
+            "pt": "Trajetória ao redor da Lua"
+          },
+          "at": 0.8
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s3",
+      "vo": {
+        "en": "Fifty years after Apollo seventeen landed, humans are finally preparing to touch lunar soil again.",
+        "hi": "अपोलो सत्रह के उतरने के पचास साल बाद, इंसान आखिरकार फिर से चाँद की ज़मीन छूने की तैयारी कर रहे हैं।",
+        "es": "Cincuenta años después del Apolo diecisiete, la humanidad se prepara por fin para tocar suelo lunar.",
+        "pt": "Cinquenta anos após o Apollo dezessete pousar, a humanidade finalmente se prepara para tocar o solo lunar."
+      },
+      "footage": [
+        {
+          "provider": "wikimedia",
+          "q": "vintage apollo lunar surface panorama"
+        },
+        {
+          "provider": "nasa",
+          "q": "astronaut boots stepping lunar dust"
+        },
+        {
+          "provider": "nasa",
+          "q": "crater shadows extreme wide tracking"
+        }
+      ],
+      "authentic": true,
+      "overlays": [
+        {
+          "kind": "stat",
+          "text": {
+            "en": "50",
+            "hi": "50",
+            "es": "50",
+            "pt": "50"
+          },
+          "sub": {
+            "en": "years since Apollo 17",
+            "hi": "साल अपोलो 17 के बाद",
+            "es": "años desde el Apolo 17",
+            "pt": "anos desde a Apollo 17"
+          },
+          "at": 0.6
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s4",
+      "vo": {
+        "en": "Four astronauts fly into deep space first, proving the capsule can bring crews back alive.",
+        "hi": "चार अंतरिक्ष यात्री पहले गहरे अंतरिक्ष में उड़ान भरते हैं, ताकि साबित हो सके कि कैप्सूल इंसानों को सुरक्षित लौटा सकता है।",
+        "es": "Cuatro astronautas vuelan primero al espacio profundo, demostrando que la cápsula puede traer tripulaciones con vida.",
+        "pt": "Quatro astronautas voam primeiro ao espaço profundo, provando que a cápsula traz tripulações com vida."
+      },
+      "footage": [
+        {
+          "provider": "nasa",
+          "q": "crew capsule floating deep space"
+        },
+        {
+          "provider": "nasa",
+          "q": "service module firing thrusters close"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "spacecraft approaching distant moon orbit"
+        }
+      ],
+      "authentic": true,
+      "overlays": [
+        {
+          "kind": "kicker",
+          "text": {
+            "en": "Artemis II",
+            "hi": "आर्टेमिस II",
+            "es": "Artemis II",
+            "pt": "Artemis II"
+          },
+          "sub": {
+            "en": "Crewed lunar flyby",
+            "hi": "मानवयुक्त चंद्र परिक्रमा",
+            "es": "Sobrevuelo lunar tripulado",
+            "pt": "Voo tripulado ao redor da Lua"
+          },
+          "at": 0.4
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s5",
+      "vo": {
+        "en": "This time, the goal is not just planting flags, but building a permanent base.",
+        "hi": "इस बार मक़सद सिर्फ़ झंडा गाड़ना नहीं, बल्कि एक स्थायी ठिकाना बनाना है।",
+        "es": "Esta vez, el objetivo no es solo plantar banderas, sino construir una base permanente.",
+        "pt": "Desta vez, o objetivo não é só fincar bandeiras, mas construir uma base permanente."
+      },
+      "footage": [
+        {
+          "provider": "nasa",
+          "q": "cinematic wide moon south pole"
+        },
+        {
+          "provider": "nasa",
+          "q": "lunar regolith detail close up"
+        },
+        {
+          "provider": "nasa",
+          "q": "sun shining across moon craters"
+        }
+      ],
+      "overlays": [
+        {
+          "kind": "kicker",
+          "text": {
+            "en": "The New Era",
+            "hi": "नया दौर",
+            "es": "La nueva era",
+            "pt": "A nova era"
+          },
+          "sub": {
+            "en": "Permanent moonbase",
+            "hi": "स्थायी चंद्र आधार",
+            "es": "Base lunar permanente",
+            "pt": "Base lunar permanente"
+          },
+          "at": 0.5
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s6",
+      "shortOnly": true,
+      "vo": {
+        "en": "And before this decade ends, the next giant leap will test everything we know...",
+        "hi": "और यह दशक ख़त्म होने से पहले, अगला बड़ा क़दम हमारी हर सीख की परीक्षा लेगा...",
+        "es": "Y antes de que termine esta década, el próximo gran salto pondrá a prueba todo lo que sabemos...",
+        "pt": "E antes do fim desta década, o próximo grande salto vai testar tudo o que sabemos..."
+      },
+      "footage": [
+        {
+          "provider": "nasa",
+          "q": "massive rocket engine ignition night"
+        },
+        {
+          "provider": "nasa",
+          "q": "sls rocket rising into sky"
+        },
+        {
+          "provider": "nasa",
+          "q": "exhaust smoke billowing launch pad"
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s7",
+      "longOnly": true,
+      "vo": {
+        "en": "The path started when earlier lunar plans were suspended, replaced by six billion dollars in heavy lift research.",
+        "hi": "यह सफ़र तब शुरू हुआ जब पुरानी चंद्र योजनाएं स्थगित हुईं और भारी रॉकेट अनुसंधान के लिए छह अरब डॉलर मिले।",
+        "es": "El camino comenzó cuando se suspendieron planes lunares anteriores, reemplazados por seis mil millones para cohetes pesados.",
+        "pt": "O caminho começou quando planos anteriores foram suspensos, substituídos por seis bilhões de dólares para foguetes pesados."
+      },
+      "footage": [
+        {
+          "provider": "nasa",
+          "q": "rocket factory manufacturing stage crane"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "solid rocket booster test firing"
+        },
+        {
+          "provider": "nasa",
+          "q": "core stage assembly aerial view"
+        }
+      ],
+      "overlays": [
+        {
+          "kind": "chapter",
+          "text": {
+            "en": "The Reset",
+            "hi": "पुनर्निर्धारण",
+            "es": "El reinicio",
+            "pt": "O recomeço"
+          },
+          "at": 0.2
+        },
+        {
+          "kind": "stat",
+          "text": {
+            "en": "6",
+            "hi": "6",
+            "es": "6",
+            "pt": "6"
+          },
+          "sub": {
+            "en": "billion dollars funding boost",
+            "hi": "अरब डॉलर अतिरिक्त फंडिंग",
+            "es": "mil millones de financiamiento",
+            "pt": "bilhões de dólares em recursos"
+          },
+          "at": 1.4
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s8",
+      "longOnly": true,
+      "vo": {
+        "en": "Engineers reused hardware from the Space Shuttle era, including giant solid rocket boosters and liquid engines.",
+        "hi": "इंजीनियरों ने स्पेस शटल के पुर्ज़ों का दोबारा इस्तेमाल किया, जिनमें विशाल सॉलिड रॉकेट बूस्टर और लिक्विड इंजन शामिल थे।",
+        "es": "Los ingenieros reutilizaron componentes del transbordador espacial, incluidos cohetes aceleradores y motores líquidos.",
+        "pt": "Engenheiros reutilizaram componentes dos ônibus espaciais, incluindo aceleradores sólidos e motores líquidos."
+      },
+      "footage": [
+        {
+          "provider": "nasa",
+          "q": "rocket engine test stand firing"
+        },
+        {
+          "provider": "nasa",
+          "q": "orange core stage vertical crane"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "technicians inspecting spacecraft heat shield"
+        }
+      ],
+      "overlays": [
+        {
+          "kind": "kicker",
+          "text": {
+            "en": "Heritage Hardware",
+            "hi": "पुरातन हार्डवेयर",
+            "es": "Hardware heredado",
+            "pt": "Hardware herdado"
+          },
+          "sub": {
+            "en": "Space Launch System",
+            "hi": "स्पेस लॉन्च सिस्टम",
+            "es": "Sistema de Lanzamiento Espacial",
+            "pt": "Sistema de Lançamento Espacial"
+          },
+          "at": 0.5
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s9",
+      "longOnly": true,
+      "vo": {
+        "en": "Early orbital tests hurled the prototype capsule into the atmosphere at thirty-two thousand kilometres an hour.",
+        "hi": "शुरुआती परीक्षणों में प्रोटोटाइप कैप्सूल को बत्तीस हज़ार किलोमीटर प्रति घंटे की रफ़्तार से वायुमंडल में उतारा गया।",
+        "es": "Pruebas iniciales lanzaron la cápsula prototipo a la atmósfera a treinta y dos mil kilómetros por hora.",
+        "pt": "Testes iniciais lançaram a cápsula protótipo na atmosfera a trinta e dois mil quilômetros por hora."
+      },
+      "footage": [
+        {
+          "provider": "nasa",
+          "q": "capsule glowing red reentry plasma"
+        },
+        {
+          "provider": "nasa",
+          "q": "parachutes deploying above ocean surface"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "recovery ship approaching floating capsule"
+        }
+      ],
+      "authentic": true,
+      "overlays": [
+        {
+          "kind": "stat",
+          "text": {
+            "en": "32,000",
+            "hi": "32,000",
+            "es": "32.000",
+            "pt": "32.000"
+          },
+          "sub": {
+            "en": "km/h test re-entry speed",
+            "hi": "किमी/घंटा परीक्षण पुनःप्रवेश गति",
+            "es": "km/h velocidad de reentrada",
+            "pt": "km/h velocidade de reentrada"
+          },
+          "at": 1.1
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s10",
+      "longOnly": true,
+      "vo": {
+        "en": "Then, in late twenty-twenty-two, the full-scale rocket finally lit its core engines at Kennedy Space Center.",
+        "hi": "फिर, साल दो हज़ार बाईस के अंत में, कैनेडी स्पेस सेंटर में इस विशाल रॉकेट के मुख्य इंजन आखिरकार धधक उठे।",
+        "es": "Luego, a finales de dos mil veintidós, el enorme cohete encendió sus motores en el Centro Espacial Kennedy.",
+        "pt": "Então, no fim de dois mil e vinte e dois, o enorme foguete acendeu seus motores no Centro Espacial Kennedy."
+      },
+      "footage": [
+        {
+          "provider": "nasa",
+          "q": "night launch sls climbing slow"
+        },
+        {
+          "provider": "nasa",
+          "q": "launch pad flood lights smoke"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "tracking shot rocket climbing stars"
+        }
+      ],
+      "slowmo": true,
+      "overlays": [
+        {
+          "kind": "chapter",
+          "text": {
+            "en": "Lunar Bound",
+            "hi": "चाँद की ओर",
+            "es": "Rumbo a la Luna",
+            "pt": "Rumo à Lua"
+          },
+          "at": 0.2
+        },
+        {
+          "kind": "kicker",
+          "text": {
+            "en": "November 16, 2022",
+            "hi": "16 नवंबर 2022",
+            "es": "16 de noviembre de 2022",
+            "pt": "16 de novembro de 2022"
+          },
+          "sub": {
+            "en": "Kennedy Space Center",
+            "hi": "कैनेडी स्पेस सेंटर",
+            "es": "Centro Espacial Kennedy",
+            "pt": "Centro Espacial Kennedy"
+          },
+          "at": 1.4
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s11",
+      "longOnly": true,
+      "vo": {
+        "en": "The uncrewed craft swept past the Moon, entering a retrograde orbit where it spent six days.",
+        "hi": "यह मानवरहित यान चाँद के करीब से गुज़रा और एक उल्टी कक्षा में छह दिन बिताए।",
+        "es": "La nave sin tripulación sobrevoló la Luna y entró en una órbita retrógrada donde pasó seis días.",
+        "pt": "A nave não tripulada contornou a Lua e entrou em órbita retrógrada onde passou seis dias."
+      },
+      "footage": [
+        {
+          "provider": "nasa",
+          "q": "solar panels turning against moon"
+        },
+        {
+          "provider": "nasa",
+          "q": "deep space capsule silhouette earth"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "lunar craters rotating slowly below"
+        }
+      ],
+      "authentic": true,
+      "overlays": [
+        {
+          "kind": "stat",
+          "text": {
+            "en": "6",
+            "hi": "6",
+            "es": "6",
+            "pt": "6"
+          },
+          "sub": {
+            "en": "days in distant retrograde orbit",
+            "hi": "दिन दूरवर्ती कक्षा में",
+            "es": "días en órbita retrógrada",
+            "pt": "dias em órbita retrógrada"
+          },
+          "at": 1
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s12",
+      "longOnly": true,
+      "vo": {
+        "en": "When it sliced back through the atmosphere, the heat shield suffered greater erosion than predicted, before splashing down.",
+        "hi": "जब यह वापस वायुमंडल में दाखिल हुआ, तो हीट शील्ड को उम्मीद से अधिक घिसाव झेलना पड़ा, फिर यह समुद्र में गिरा।",
+        "es": "Al reingresar en la atmósfera, el escudo térmico sufrió mayor desgaste del previsto antes de amerizar.",
+        "pt": "Ao reentrar na atmosfera, o escudo térmico sofreu maior erosão do que o esperado antes do pouso no mar."
+      },
+      "footage": [
+        {
+          "provider": "nasa",
+          "q": "space capsule ocean recovery helicopter"
+        },
+        {
+          "provider": "nasa",
+          "q": "close view charred heat shield"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "navy divers securing floating spacecraft"
+        }
+      ],
+      "slowmo": true,
+      "overlays": [
+        {
+          "kind": "kicker",
+          "text": {
+            "en": "Pacific Ocean",
+            "hi": "प्रशांत महासागर",
+            "es": "Océano Pacífico",
+            "pt": "Oceano Pacífico"
+          },
+          "sub": {
+            "en": "Heat shield erosion noted",
+            "hi": "हीट शील्ड घिसाव दर्ज",
+            "es": "Erosión del escudo térmico",
+            "pt": "Erosão no escudo térmico"
+          },
+          "at": 0.8
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s13",
+      "longOnly": true,
+      "vo": {
+        "en": "The next milestone takes four humans on a nine-day trajectory circling the Moon.",
+        "hi": "अगला पड़ाव चार अंतरिक्ष यात्रियों को नौ दिनों के सफ़र पर चाँद के चक्कर लगाने ले जाता है।",
+        "es": "El siguiente gran hito lleva a cuatro astronautas en una trayectoria de nueve días alrededor de la Luna.",
+        "pt": "O próximo marco leva quatro humanos em uma trajetória de nove dias contornando a Lua."
+      },
+      "footage": [
+        {
+          "provider": "nasa",
+          "q": "astronauts walking down launch walkway"
+        },
+        {
+          "provider": "nasa",
+          "q": "capsule flying above lunar horizon"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "earth viewed from deep space"
+        }
+      ],
+      "overlays": [
+        {
+          "kind": "chapter",
+          "text": {
+            "en": "The Crew",
+            "hi": "दल की उड़ान",
+            "es": "La tripulación",
+            "pt": "A tripulação"
+          },
+          "at": 0.2
+        },
+        {
+          "kind": "stat",
+          "text": {
+            "en": "9",
+            "hi": "9",
+            "es": "9",
+            "pt": "9"
+          },
+          "sub": {
+            "en": "days journey around the Moon",
+            "hi": "दिनों की यात्रा चाँद के इर्द-गिर्द",
+            "es": "días de viaje alrededor lunar",
+            "pt": "dias de viagem ao redor da Lua"
+          },
+          "at": 1.2
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s14",
+      "longOnly": true,
+      "vo": {
+        "en": "Soon after, astronauts will test commercial landing craft directly in Earth orbit before attempting descent.",
+        "hi": "इसके तुरंत बाद, अंतरिक्ष यात्री नीचे उतरने से पहले पृथ्वी की कक्षा में व्यावसायिक लैंडरों का परीक्षण करेंगे।",
+        "es": "Poco después, los astronautas probarán módulos de alunizaje comerciales en órbita terrestre antes del descenso.",
+        "pt": "Pouco depois, os astronautas testarão módulos de pouso comerciais em órbita da Terra antes da descida."
+      },
+      "footage": [
+        {
+          "provider": "nasa",
+          "q": "spacecraft docking in earth orbit"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "spacesuit test inside pressure chamber"
+        },
+        {
+          "provider": "nasa",
+          "q": "commercial lunar lander prototype cleanroom"
+        }
+      ],
+      "overlays": [
+        {
+          "kind": "kicker",
+          "text": {
+            "en": "Artemis III",
+            "hi": "आर्टेमिस III",
+            "es": "Artemis III",
+            "pt": "Artemis III"
+          },
+          "sub": {
+            "en": "Commercial lander docking test",
+            "hi": "व्यावसायिक लैंडर डॉकिंग परीक्षण",
+            "es": "Prueba de acoplamiento comercial",
+            "pt": "Teste de acoplagem do módulo"
+          },
+          "at": 0.7
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s15",
+      "longOnly": true,
+      "vo": {
+        "en": "By Artemis four, two spacewalks across the lunar surface will mark humanity's first landing in half a century.",
+        "hi": "आर्टेमिस चार तक, सतह पर दो स्पेसवॉक आधी सदी में इंसान का पहला चंद्र अवतरण दर्ज करेंगे।",
+        "es": "Para Artemis cuatro, dos caminatas lunares marcarán el primer alunizaje humano en medio siglo.",
+        "pt": "Com a Artemis quatro, duas caminhadas na superfície marcarão o primeiro pouso humano em meio século."
+      },
+      "footage": [
+        {
+          "provider": "nasa",
+          "q": "astronaut walking dusty lunar surface"
+        },
+        {
+          "provider": "nasa",
+          "q": "lunar lander touching crater surface"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "shadows stretching across lunar dust"
+        }
+      ],
+      "overlays": [
+        {
+          "kind": "stat",
+          "text": {
+            "en": "2",
+            "hi": "2",
+            "es": "2",
+            "pt": "2"
+          },
+          "sub": {
+            "en": "surface spacewalks planned",
+            "hi": "चंद्र सतह पर वॉक नियोजित",
+            "es": "caminatas lunares planeadas",
+            "pt": "caminhadas na superfície planejadas"
+          },
+          "at": 1
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s16",
+      "longOnly": true,
+      "vo": {
+        "en": "From yearly polar bases to distant outposts, this barren world is becoming our launchpad to Mars.",
+        "hi": "हर साल लगने वाले ध्रुवीय शिविरों से लेकर सुदूर ठिकानों तक, यह बंजर दुनिया मंगल तक पहुँचने का मंच बन रही है।",
+        "es": "Desde bases polares anuales hasta puestos remotos, este mundo árido se convertirá en nuestra plataforma hacia Marte.",
+        "pt": "De bases polares anuais a postos remotos, este mundo desértico está se tornando nosso trampolim para Marte."
+      },
+      "footage": [
+        {
+          "provider": "nasa",
+          "q": "mars landscape extreme wide panoramic"
+        },
+        {
+          "provider": "nasa",
+          "q": "moon horizon slow camera tilt"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "earth and moon floating together"
+        }
+      ],
+      "overlays": [
+        {
+          "kind": "lower",
+          "text": {
+            "en": "Source: NASA",
+            "hi": "स्रोत: NASA",
+            "es": "Fuente: NASA",
+            "pt": "Fonte: NASA"
+          },
+          "at": 0.8
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Wikipedia, Artemis program",
+      "url": "https://en.wikipedia.org/wiki/Artemis_program",
+      "claims": [
+        "aimed at returning humans to the Moon for the first time since the Apollo program and building a permanent moonbase",
+        "Space Shuttle–derived hardware, such as the Space Launch System's (SLS) core stage, its RS-25 engines, and solid rocket boosters",
+        "The uncrewed Artemis I mission sent an Orion spacecraft to lunar orbit in 2022.",
+        "Artemis II sent four astronauts on a lunar flyby in 2026, becoming the only crewed flight beyond low Earth orbit not part of the Apollo program.",
+        "test an HLS lunar lander in Earth orbit",
+        "NASA intends yearly lunar landings to develop a permanent lunar base, as a step toward human missions to Mars.",
+        "polar distant retrograde lunar orbit for about six days before returning to Earth",
+        "Orion's ablative heat shield experienced greater-than-expected erosion during reentry.",
+        "conduct at least two extravehicular activities",
+        "He instead proposed US$6 billion in additional funding and called for the development of a new heavy-lift rocket program",
+        "an audit of NASA's Office of Inspector General estimated the true cost of the Artemis program at about $93 billion until 2025.",
+        "making a high-energy re-entry at 32,000 km/h (20,000 mph).",
+        "On November 16 at 01:47:44 EST (06:47:44 UTC), Artemis I successfully launched from the Kennedy Space Center.",
+        "Artemis travel more than 2.3 million kilometers (1.4 million miles) on a path around the Moon before returning safely to Earth.",
+        "The splashdown occurred 50 years to the day since NASA's Apollo 17 Moon landing",
+        "concluding their nine-day trip around the Moon."
+      ]
+    }
+  ]
+}

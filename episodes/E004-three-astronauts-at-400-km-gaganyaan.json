@@ -1,0 +1,681 @@
+{
+  "id": "E004",
+  "status": "approved",
+  "topic": "space",
+  "title": {
+    "en": "Three Astronauts at 400 km: Gaganyaan",
+    "hi": "400 किमी की ऊँचाई पर तीन अंतरिक्ष यात्री: गगनयान",
+    "es": "Tres astronautas a 400 km: Gaganyaan",
+    "pt": "Três astronautas a 400 km: Gaganyaan"
+  },
+  "thumb": {
+    "en": "FIRST HOMEGROWN CREW",
+    "hi": "पहला स्वदेशी क्रू",
+    "es": "TRIPULACIÓN PROPIA",
+    "pt": "TRIPULAÇÃO PRÓPRIA"
+  },
+  "look": "arctic",
+  "scenes": [
+    {
+      "id": "s1",
+      "vo": {
+        "en": "Before your eyes turn toward Gaganyaan, three humans will risk four hundred kilometres in orbit... but how?",
+        "hi": "इससे पहले कि आपकी आँखें गगनयान की ओर मुड़ें, तीन इंसान चार सौ किलोमीटर की कक्षा में जोखिम उठाएंगे... लेकिन कैसे?",
+        "es": "Antes de que mires hacia Gaganyaan, tres humanos arriesgarán cuatrocientos kilómetros en órbita... ¿pero cómo?",
+        "pt": "Antes dos seus olhos se voltarem para a Gaganyaan, três humanos vão arriscar quatrocentos quilômetros em órbita... mas como?"
+      },
+      "footage": [
+        {
+          "provider": "nasa",
+          "q": "wide tracking shot rocket launch"
+        },
+        {
+          "provider": "nasa",
+          "q": "slow pan earth orbital sunrise"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "time lapse glowing blue earth atmosphere"
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "kicker",
+          "text": {
+            "en": "Target: 400 Kilometres",
+            "hi": "लक्ष्य: 400 किलोमीटर",
+            "es": "Objetivo: 400 kilómetros",
+            "pt": "Alvo: 400 quilômetros"
+          },
+          "sub": {
+            "en": "Gaganyaan Orbital Mission",
+            "hi": "गगनयान कक्षीय मिशन",
+            "es": "Misión Orbital Gaganyaan",
+            "pt": "Missão Orbital Gaganyaan"
+          },
+          "at": 1.2
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "authentic": true
+    },
+    {
+      "id": "s2",
+      "vo": {
+        "en": "This autonomous five point three tonne capsule is engineered to circle Earth for up to seven days.",
+        "hi": "यह पूरी तरह से स्वायत्त पाँच दशमलव तीन टन का कैप्सूल सात दिनों तक पृथ्वी का चक्कर लगाने के लिए तैयार किया गया है।",
+        "es": "Esta cápsula autónoma de cinco coma tres toneladas está diseñada para orbitar la Tierra hasta siete días.",
+        "pt": "Esta cápsula autônoma de cinco vírgula três toneladas foi projetada para orbitar a Terra por até sete dias."
+      },
+      "footage": [
+        {
+          "provider": "wikimedia",
+          "q": "cinematic orbital shot earth curve"
+        },
+        {
+          "provider": "nasa",
+          "q": "extreme telephoto view orbiting spacecraft"
+        },
+        {
+          "provider": "nasa",
+          "q": "low angle rocket engine ignition"
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "stat",
+          "text": {
+            "en": "400",
+            "hi": "400",
+            "es": "400",
+            "pt": "400"
+          },
+          "sub": {
+            "en": "km orbit altitude",
+            "hi": "किमी कक्षीय ऊँचाई",
+            "es": "km de altitud orbital",
+            "pt": "km de altitude orbital"
+          },
+          "at": 0.8
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "authentic": true
+    },
+    {
+      "id": "s3",
+      "vo": {
+        "en": "A crew of three will ride inside, trusting twin parachutes to survive atmospheric entry.",
+        "hi": "तीन अंतरिक्ष यात्रियों का दल इसमें सवार होगा, और वायुमंडल में सुरक्षित वापसी के लिए दोहरे पैराशूट पर भरोसा करेगा।",
+        "es": "Una tripulación de tres viajará en su interior, confiando en paracaídas dobles para sobrevivir a la reentrada.",
+        "pt": "Uma tripulação de três estará a bordo, confiando em paraquedas duplos para sobreviver à reentrada."
+      },
+      "footage": [
+        {
+          "provider": "nasa",
+          "q": "slow motion spacecraft parachute deployment"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "high altitude ocean splashdown aerial"
+        },
+        {
+          "provider": "nasa",
+          "q": "tracking shot ocean rescue vessel"
+        }
+      ],
+      "shots": 3,
+      "slowmo": true,
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s4",
+      "vo": {
+        "en": "Back in nineteen eighty-four, Rakesh Sharma flew aboard Soyuz T-eleven, and now India prepares its return.",
+        "hi": "साल उन्नीस सौ चौरासी में राकेश शर्मा सोयुज टी-ग्यारह पर गए थे, और अब भारत अपनी वापसी की तैयारी में है।",
+        "es": "En mil novecientos ochenta y cuatro, Rakesh Sharma voló en la Soyuz T-once, y ahora la India prepara su regreso.",
+        "pt": "Em mil novecentos e oitenta e quatro, Rakesh Sharma voou na Soyuz T-onze, e agora a Índia prepara o seu retorno."
+      },
+      "footage": [
+        {
+          "provider": "wikimedia",
+          "q": "historic archival rocket liftoff launch"
+        },
+        {
+          "provider": "nasa",
+          "q": "wide establishing view space station orbit"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "golden hour satellite orbit tracking"
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "lower",
+          "text": {
+            "en": "Soyuz T-11 • Salyut 7",
+            "hi": "सोयुज टी-11 • सैल्यूट 7",
+            "es": "Soyuz T-11 • Saliut 7",
+            "pt": "Soyuz T-11 • Salyut 7"
+          },
+          "at": 0.5
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "authentic": true
+    },
+    {
+      "id": "s5",
+      "vo": {
+        "en": "This time, the rocket, the capsule, and the voyage belong entirely to their own skies.",
+        "hi": "इस बार, रॉकेट, कैप्सूल और यह पूरी उड़ान पूरी तरह से उनकी अपनी धरती और आसमान की है।",
+        "es": "Esta vez, el cohete, la cápsula y la travesía pertenecen por completo a sus propios cielos.",
+        "pt": "Desta vez, o foguete, a cápsula e a jornada pertencem inteiramente aos seus próprios céus."
+      },
+      "footage": [
+        {
+          "provider": "nasa",
+          "q": "dramatic slow tilt rocket launch pad"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "cinematic clouds parting over launch base"
+        },
+        {
+          "provider": "nasa",
+          "q": "starfield horizon above earth atmosphere"
+        }
+      ],
+      "shots": 3,
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s6",
+      "shortOnly": true,
+      "vo": {
+        "en": "And every countdown begins right here, when you dare to look upward...",
+        "hi": "और हर उलटी गिनती यहीं से शुरू होती है, जब आप आसमान की ओर देखने की हिम्मत करते हैं...",
+        "es": "Y cada cuenta regresiva comienza aquí mismo, cuando te atreves a mirar hacia arriba...",
+        "pt": "E toda contagem regressiva começa bem aqui, quando você se atreve a olhar para cima..."
+      },
+      "footage": [
+        {
+          "provider": "nasa",
+          "q": "epic slow motion rocket exhaust blast"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "time lapse starry night sky rotation"
+        },
+        {
+          "provider": "nasa",
+          "q": "wide panoramic view planet earth horizon"
+        }
+      ],
+      "shots": 3,
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s7",
+      "longOnly": true,
+      "vo": {
+        "en": "The foundation began in two thousand seven, when an experimental five hundred fifty-five kilogram spacecraft splashed down safely.",
+        "hi": "इसकी नींव सन दो हज़ार सात में पड़ी, जब पाँच सौ पचपन किलोग्राम का एक प्रायोगिक अंतरिक्ष यान सुरक्षित रूप से समुद्र में उतरा।",
+        "es": "Los cimientos comenzaron en dos mil siete, cuando una nave experimental de quinientos cincuenta y cinco kilogramos amerizó con éxito.",
+        "pt": "A base começou em dois mil e sete, quando uma espaçonave experimental de quinhentos e cinquenta e cinco quilos pousou em segurança no mar."
+      },
+      "footage": [
+        {
+          "provider": "wikimedia",
+          "q": "aerial view ocean recovery operation boat"
+        },
+        {
+          "provider": "nasa",
+          "q": "telephoto tracking capsule descending parachute"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "choppy ocean waves water splashing"
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "chapter",
+          "text": {
+            "en": "The Proving Grounds",
+            "hi": "शुरुआती परीक्षण",
+            "es": "El terreno de pruebas",
+            "pt": "O campo de provas"
+          }
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s8",
+      "longOnly": true,
+      "vo": {
+        "en": "That test dropped through the atmosphere from a height of six hundred thirty-five kilometres into the Bay of Bengal.",
+        "hi": "वह परीक्षण छह सौ पैंतीस किलोमीटर की ऊँचाई से वायुमंडल को चीरते हुए बंगाल की खाड़ी में गिरा था।",
+        "es": "Aquella prueba descendió a través de la atmósfera desde seiscientos treinta y cinco kilómetros de altitud hacia la bahía de Bengala.",
+        "pt": "Aquele teste desceu pela atmosfera a partir de seiscentos e trinta e cinco quilômetros de altitude até a Baía de Bengala."
+      },
+      "footage": [
+        {
+          "provider": "nasa",
+          "q": "satellite view bay of bengal coastline"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "dramatic atmospheric re-entry heat simulation"
+        },
+        {
+          "provider": "nasa",
+          "q": "orbital wide view ocean storm clouds"
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "stat",
+          "text": {
+            "en": "635",
+            "hi": "635",
+            "es": "635",
+            "pt": "635"
+          },
+          "sub": {
+            "en": "km test descent",
+            "hi": "किमी परीक्षण अवरोहण",
+            "es": "km descenso de prueba",
+            "pt": "km descida de teste"
+          },
+          "at": 0.9
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s9",
+      "longOnly": true,
+      "vo": {
+        "en": "Earlier history ran through Salyut seven, where Rakesh Sharma spent seven days, twenty-one hours, and forty minutes.",
+        "hi": "इससे पहले का इतिहास सैल्यूट सात से जुड़ा था, जहाँ राकेश शर्मा ने सात दिन, इक्कीस घंटे और चालीस मिनट बिताए थे।",
+        "es": "La historia previa pasó por la Saliut siete, donde Rakesh Sharma pasó siete días, veintiuna horas y cuarenta minutos.",
+        "pt": "A história anterior passou pela Salyut sete, onde Rakesh Sharma passou sete dias, vinte e uma horas e quarenta minutos."
+      },
+      "footage": [
+        {
+          "provider": "wikimedia",
+          "q": "archival orbital station in space flight"
+        },
+        {
+          "provider": "nasa",
+          "q": "slow interior pass space module cabin"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "earth continent clouds from space window"
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "lower",
+          "text": {
+            "en": "3 April 1984 • First Indian in Space",
+            "hi": "3 अप्रैल 1984 • अंतरिक्ष में पहले भारतीय",
+            "es": "3 de abril de 1984 • Primer indio en el espacio",
+            "pt": "3 de abril de 1984 • Primeiro indiano no espaço"
+          },
+          "at": 1.1
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "authentic": true
+    },
+    {
+      "id": "s10",
+      "longOnly": true,
+      "vo": {
+        "en": "Designing an independent vehicle was vastly harder: the crew module structure spans four metres across.",
+        "hi": "एक पूरी तरह स्वतंत्र यान का निर्माण कहीं अधिक कठिन था: क्रू मॉड्यूल की संरचना चार मीटर चौड़ी है।",
+        "es": "Diseñar una nave propia fue infinitamente más complejo: la estructura del módulo de tripulación mide cuatro metros de diámetro.",
+        "pt": "Projetar um veículo próprio foi muito mais desafiador: a estrutura do módulo de tripulação tem quatro metros de diâmetro."
+      },
+      "footage": [
+        {
+          "provider": "wikimedia",
+          "q": "extreme close up carbon composite texture"
+        },
+        {
+          "provider": "nasa",
+          "q": "smooth robotic camera tracking aerospace cleanroom"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "high tech aerospace assembly slow pan"
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "chapter",
+          "text": {
+            "en": "Engineering Independence",
+            "hi": "आत्मनिर्भर इंजीनियरिंग",
+            "es": "Ingeniería independiente",
+            "pt": "Engenharia independente"
+          }
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s11",
+      "longOnly": true,
+      "vo": {
+        "en": "Every stage requires emergency abort capabilities to yank astronauts away from an explosive launch failure.",
+        "hi": "हर चरण में आपातकालीन इजेक्शन क्षमता की आवश्यकता होती है, ताकि किसी दुर्घटना में अंतरिक्ष यात्रियों को तुरंत सुरक्षित निकाला जा सके।",
+        "es": "Cada etapa requiere sistemas de eyección de emergencia para rescatar a la tripulación ante cualquier fallo catastrófico.",
+        "pt": "Cada estágio requer sistemas de escape de emergência para resgatar os astronautas em caso de falha no lançamento."
+      },
+      "footage": [
+        {
+          "provider": "nasa",
+          "q": "high speed launch abort rocket test"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "dramatic smoke plume separation rocket thrust"
+        },
+        {
+          "provider": "nasa",
+          "q": "slow motion escape motor fiery exhaust"
+        }
+      ],
+      "shots": 3,
+      "slowmo": true,
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s12",
+      "longOnly": true,
+      "vo": {
+        "en": "Parachutes must brake the returning module from over two hundred sixteen metres per second to under eleven.",
+        "hi": "पैराशूट को लौटते हुए कैप्सूल की गति दो सौ सोलह मीटर प्रति सेकंड से घटाकर ग्यारह से भी कम करनी होगी।",
+        "es": "Los paracaídas deben frenar el módulo desde más de doscientos dieciséis metros por segundo a menos de once.",
+        "pt": "Os paraquedas precisam desacelerar o módulo de mais de duzentos e dezesseis metros por segundo para menos de onze."
+      },
+      "footage": [
+        {
+          "provider": "nasa",
+          "q": "drone overhead view parachute ocean splashdown"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "super slow motion parachute canopy opening"
+        },
+        {
+          "provider": "nasa",
+          "q": "water spray impact spacecraft sea landing"
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "stat",
+          "text": {
+            "en": "11",
+            "hi": "11",
+            "es": "11",
+            "pt": "11"
+          },
+          "sub": {
+            "en": "m/s at splashdown",
+            "hi": "मी/से समुद्र में उतरते समय",
+            "es": "m/s en el amerizaje",
+            "pt": "m/s no pouso na água"
+          },
+          "at": 1.2
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s13",
+      "longOnly": true,
+      "vo": {
+        "en": "When foreign partners would not share life-support technology, national laboratories built the environmental systems from scratch.",
+        "hi": "जब विदेशी सहयोगियों ने जीवन-रक्षक तकनीक साझा करने से इनकार कर दिया, तो वैज्ञानिकों ने इसे पूरी तरह खुद विकसित किया।",
+        "es": "Cuando los socios extranjeros no compartieron la tecnología de soporte vital, los laboratorios nacionales la desarrollaron desde cero.",
+        "pt": "Quando parceiros estrangeiros não compartilharam a tecnologia de suporte à vida, os laboratórios nacionais a desenvolveram do zero."
+      },
+      "footage": [
+        {
+          "provider": "wikimedia",
+          "q": "macro shot oxygen valve system mechanics"
+        },
+        {
+          "provider": "nasa",
+          "q": "smooth slider shot astronaut cabin console"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "sparkling cleanroom laboratory testing setup equipment"
+        }
+      ],
+      "shots": 3,
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s14",
+      "longOnly": true,
+      "vo": {
+        "en": "To track the capsule across southern orbits, a dedicated ground station arose in the Cocos Islands.",
+        "hi": "दक्षिणी कक्षाओं में कैप्सूल पर नज़र रखने के लिए, कोकोस द्वीप समूह में एक विशेष ग्राउंड स्टेशन तैयार किया गया।",
+        "es": "Para rastrear la cápsula en sus órbitas del sur, se construyó una estación terrestre en las Islas Cocos.",
+        "pt": "Para rastrear a cápsula nas órbitas do sul, uma estação terrestre dedicada surgiu nas Ilhas Cocos."
+      },
+      "footage": [
+        {
+          "provider": "wikimedia",
+          "q": "aerial orbit deep ocean tropical atoll"
+        },
+        {
+          "provider": "nasa",
+          "q": "giant satellite dish tracking sky rotation"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "wide establishing shot radar antenna island"
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "map",
+          "text": {
+            "en": "Cocos Islands",
+            "hi": "कोकोस द्वीप समूह",
+            "es": "Islas Cocos",
+            "pt": "Ilhas Cocos"
+          },
+          "geo": {
+            "lat": -12.1642,
+            "lon": 96.871
+          }
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s15",
+      "longOnly": true,
+      "vo": {
+        "en": "The total program budget expanded to twenty thousand one hundred ninety-three crore rupees to construct an orbital station.",
+        "hi": "एक स्वदेशी अंतरिक्ष स्टेशन बनाने के लिए कुल कार्यक्रम बजट को बढ़ाकर बीस हज़ार एक सौ तिरानवे करोड़ रुपये कर दिया गया।",
+        "es": "El presupuesto total del programa se amplió a veinte mil ciento noventa y tres millones de rupias para construir una estación orbital.",
+        "pt": "O orçamento total do programa foi ampliado para vinte mil cento e noventa e três crores de rúpias para construir uma estação orbital."
+      },
+      "footage": [
+        {
+          "provider": "nasa",
+          "q": "slow orbit modular space station concept"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "solar panels unfolding in bright sunlight"
+        },
+        {
+          "provider": "nasa",
+          "q": "spacecraft docking mechanism cinematic approach"
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "chapter",
+          "text": {
+            "en": "The Station Ahead",
+            "hi": "भविष्य का स्टेशन",
+            "es": "La futura estación",
+            "pt": "A estação futura"
+          }
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s16",
+      "longOnly": true,
+      "vo": {
+        "en": "When three voyagers lift off above the clouds, a nation's ancient gaze finally reaches orbit on its own terms.",
+        "hi": "जब तीन अंतरिक्ष यात्री बादलों के पार उड़ान भरेंगे, तो एक सभ्यता का प्राचीन सपना अपनी शर्तों पर कक्षा में पहुंचेगा।",
+        "es": "Cuando tres viajeros despeguen sobre las nubes, la mirada milenaria de una nación alcanzará por fin la órbita bajo sus propios términos.",
+        "pt": "Quando três tripulantes decolarem acima das nuvens, o olhar milenar de uma nação finalmente alcançará a órbita sob seus próprios termos."
+      },
+      "footage": [
+        {
+          "provider": "nasa",
+          "q": "glowing sun rising over curved earth"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "silhouette rocket climbing into twilight sky"
+        },
+        {
+          "provider": "nasa",
+          "q": "breathtaking panoramic view blue planet space"
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "lower",
+          "text": {
+            "en": "Source: ISRO / Wikipedia",
+            "hi": "स्रोत: ISRO / Wikipedia",
+            "es": "Fuente: ISRO / Wikipedia",
+            "pt": "Fonte: ISRO / Wikipedia"
+          },
+          "at": 1
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "authentic": true
+    }
+  ],
+  "engage": {
+    "ask": {
+      "en": "Would you sit inside this capsule for seven days straight?",
+      "hi": "क्या आप पूरे सात दिन इस कैप्सूल के अंदर बैठना चाहेंगे?",
+      "es": "¿Te meterías en esta cápsula durante siete días seguidos?",
+      "pt": "Você ficaria dentro dessa cápsula por sete dias seguidos?"
+    },
+    "hookText": {
+      "en": "THREE HUMANS *ALONE*",
+      "hi": "अंतरिक्ष में *अकेले*",
+      "es": "TRES HUMANOS *SOLOS*",
+      "pt": "TRÊS HUMANOS *SÓS*"
+    },
+    "loop": {
+      "en": "And every countdown begins right here, when you dare to look upward...",
+      "hi": "और हर उलटी गिनती यहीं से शुरू होती है, जब आप आसमान की ओर देखने की हिम्मत करते हैं...",
+      "es": "Y cada cuenta regresiva comienza aquí mismo, cuando te atreves a mirar hacia arriba...",
+      "pt": "E toda contagem regressiva começa bem aqui, quando você se atreve a olhar para cima..."
+    },
+    "share": {
+      "en": "Send this to anyone who didn't know India is launching humans soon.",
+      "hi": "उसे भेजो जिसे नहीं पता कि भारत जल्द ही इंसानों को अंतरिक्ष में भेज रहा है।",
+      "es": "Envíale esto a quien no sepa que la India pronto enviará humanos al espacio.",
+      "pt": "Manda isso para quem não sabia que a Índia vai lançar humanos em breve."
+    }
+  },
+  "music": {
+    "mood": "awe",
+    "styles": [
+      "deep cinematic pulse",
+      "orchestral brass swell",
+      "ethereal synth pads"
+    ],
+    "peak": "s3"
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Wikipedia, Gaganyaan",
+      "url": "https://en.wikipedia.org/wiki/Gaganyaan",
+      "claims": [
+        "The spacecraft is being designed to carry three people to low Earth orbit",
+        "orbit the Earth at 400 kilometres (250 mi) altitude for up to seven days with a two- or three-person crew on board",
+        "ISRO's largely autonomous 5.3 tonnes (5.2 long tons; 5.8 short tons) capsule",
+        "The parachutes would reduce the speed of the crew module from over 216 m/s (480 mph) to under 11 m/s (25 mph) at splashdown.",
+        "On 3 April 1984, Sharma became the first Indian-born citizen to enter space when he flew aboard the Soviet Soyuz T-11",
+        "Sharma spent 7 days, 21 hours, and 40 minutes aboard the Salyut 7",
+        "scaled 555 kilograms (1,224 lb) experimental spacecraft from Space Capsule Recovery Experiment (SRE), which was launched and recovered in January 2007.",
+        "splashed into the Bay of Bengal after descending from a height of 635 kilometres (395 mi)",
+        "The OMA is a conical structure with a diameter of 4 meters, composed of carbon-fiber-reinforced polymers.",
+        "total budget to ₹20,193 crore",
+        "In 2021, ISRO established a temporary ground station for the Gaganyaan mission in the Cocos (Keeling) Islands"
+      ]
+    }
+  ]
+}
