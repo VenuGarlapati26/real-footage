@@ -46,7 +46,7 @@ const { runGates, hardFailures } = await import(path.join(root, "engine/gates.ts
 
 const file = await writeEpisode("International Space Station", { topic: "space", approve: true });
 const ep = JSON.parse(readFileSync(file, "utf8"));
-assert.ok(calls <= 4, `at most 4 Gemini calls per episode (was ${calls})`);
+assert.ok(calls === 4, "a too-short long cut is sent back for rewrites, but never blocks the Short"); assert.ok(calls <= 4, `at most 4 Gemini calls per episode (was ${calls})`);
 assert.deepEqual(hardFailures(runGates(ep)).map((g: any) => g.name), [], "the daily run accepts it");
 assert.ok(ep.scenes.every((s: any) => s.footage.filter((f: any) => f.provider !== "local").length >= 2), "footage fallbacks added");
 assert.ok(Object.values(ep.engage.ask).every((q: any) => /[?？]$/.test(q)), "ask is a question");

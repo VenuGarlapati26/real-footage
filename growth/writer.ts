@@ -14,6 +14,7 @@ import type { Episode } from "../engine/types";
 import { LANGS, type Lang } from "../engine/langs";
 import { runGates, hookScores, captionHuman, THRESHOLDS, hardFailures } from "../engine/gates";
 import { instagramCaption } from "./captions";
+import { longSeconds, MIN_LONG_SECONDS } from "./length";
 import { getJson } from "../engine/http";
 import { isLook } from "../engine/grade";
 import { askJson, geminiReady } from "./gemini";
@@ -79,7 +80,9 @@ export function tidy(ep: any): void {
       const q = sc.footage.find((f: any) => f?.q)?.q ?? (typeof sc?.vo?.en === "string" ? sc.vo.en.split(/\s+/).slice(0, 4).join(" ") : "earth from space");
       if (sc.authentic) sc.footage = sc.footage.filter((f: any) => f?.provider !== "pexels" && f?.provider !== "pixabay");
       const online = () => sc.footage.filter((f: any) => f?.provider && f.provider !== "local");
-      const add = sc.authentic ? ["nasa", "wikimedia"] : ["nasa", "pexels", "wikimedia"];
+      // NASA only when the story is about space/Earth from above; otherwise filmed stock footage fits far better
+      const spacey = /space|orbit|nasa|planet|moon|mars|astronaut|rocket|satellite|earth from|aurora|iss\b/i.test(`${ep.topic ?? ""} ${q}`);
+      const add = sc.authentic ? (spacey ? ["nasa", "wikimedia"] : ["wikimedia", "nasa"]) : spacey ? ["nasa", "pexels", "wikimedia"] : ["pexels", "pixabay", "wikimedia"];
       for (const prov of add) { if (online().length >= 2 && (!sc.authentic || online().filter((f: any) => f.provider === "nasa" || f.provider === "wikimedia").length >= 2)) break;
         if (!sc.footage.some((f: any) => f?.provider === prov && f?.q === q)) sc.footage.push({ provider: prov, q }); }
     }
@@ -145,7 +148,7 @@ const HOW: Record<string, string> = {
 const RULES = (langs: Lang[]) => `You write for a premium, entertaining documentary channel for adults and teens (13-55), worldwide, India first.
 Every video is built from REAL footage (NASA, Wikimedia Commons). Tone: gripping, cinematic, confident, a little playful, never childish, never clickbait-false.
 Write ONE episode as JSON with exactly this shape (the example shows the format and the quality bar):
-- "scenes": 5-6 scenes for the Short (about 25-40 s spoken in total), then 8-14 extra scenes marked "longOnly": true that deepen the story for the long video (3-5 minutes in total). One scene marked "shortOnly": true at the end of the Short: a loop line that leads back into the opening.
+- "scenes": 5-6 scenes for the Short (about 25-40 s spoken in total), then 10-14 extra scenes marked "longOnly": true that deepen the story for the long video. Each longOnly scene's "vo.en" is 30-50 words. The whole long cut (every scene that is not shortOnly) must be at least 450 words of narration, about 3-5 minutes: without that, no long video can be made from this episode. One scene marked "shortOnly": true at the end of the Short: a loop line that leads back into the opening.
 - scene 1 "vo.en" is the hook, 9 to 20 words, and it needs ALL of these: "you" or "your" in the first six words; one concrete number or named place/thing; one stakes word (before, never, lose, cost, risk, stop, die, broke, fail); one curiosity word (why, how, what, until, but, nobody, almost); and it ends on an open question or an unfinished thought, never on its answer (no "because"). Example: "You will never see this from Earth, but sixteen times a day, the sun rises up there. Why?" It must NOT repeat "engage.hookText".
 - "overlays": kinds "kicker" (headline + sub label), "stat" (a number + unit; text = the number as digits), "orbit" (only for counts of laps or cycles), "lower" (a source line). One stat in at most every other scene.
 - every number in narration or overlays must appear word for word in a "claims" entry, and every claim must be copied EXACTLY from the source text below (no paraphrase).
@@ -195,7 +198,9 @@ Return the full episode JSON with "id": "${id}", "status": "draft", "topic": "${
         const gates = runGates(draft), failed = gates.filter(g => !g.pass);
         const facts = factProblems(draft, { S1: src.text });
         hard = facts.length + hardFailures(gates).length;
-        problems = [...facts, ...failed.map(g => `gate "${g.name}" failed${g.score != null ? ` (score ${g.score})` : ""}: ${g.detail}${HOW[g.name] ? ` -> ${HOW[g.name]}` : ""}`)];
+        const secs = longSeconds(draft), lacking = secs < MIN_LONG_SECONDS + 30
+          ? [`the long cut is only about ${Math.round(secs)} s of narration (needs 180 s or more): add ${Math.max(3, Math.ceil((180 - secs) / 15))} more "longOnly": true scenes of 30-50 words each, from facts in the source`] : [];
+        problems = [...facts, ...lacking, ...failed.map(g => `gate "${g.name}" failed${g.score != null ? ` (score ${g.score})` : ""}: ${g.detail}${HOW[g.name] ? ` -> ${HOW[g.name]}` : ""}`)];
       } catch (e: any) { problems = [`the episode could not be checked (${String(e.message).split("\n")[0]}); return the complete JSON shape`]; hard = 99; }
     } else hard = 99;
     if (!best || hard < best.hard || (hard === best.hard && problems.length < best.problems.length)) best = { ep: draft, problems, hard };

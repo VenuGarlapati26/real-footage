@@ -26,15 +26,15 @@ import { instagramCaption, facebookCaption, firstComment } from "../growth/capti
 import { notify } from "./notify";
 import { description } from "../growth/description";
 
-/** About how long the long cut of an episode runs, from its narration (2.6 words per second plus pauses). Pure. */
-export const longSeconds = (ep: Episode) => ep.scenes.filter(sc => !sc.shortOnly).reduce((t, sc) => t + sc.vo.en.split(/\s+/).filter(Boolean).length / 2.6 + 0.8, 0);
+export { longSeconds } from "../growth/length";
+import { longSeconds } from "../growth/length";
 import * as yt from "./youtube";
 import * as meta from "./meta";
 import * as zernio from "./zernio";
 import { geminiReady, GeminiQuotaError } from "../growth/gemini";
 import { writeEpisode } from "../growth/writer";
 import { curate } from "../engine/curate";
-import { loadPillars } from "../growth/pillars";
+import { loadPillars, nextPillar, varietyOrder } from "../growth/pillars";
 
 const args = new Set(process.argv.slice(2)), DRY = args.has("--dry");
 const log = (s: string) => console.log(`[${new Date().toISOString().slice(11, 19)}] ${s}`);
@@ -71,7 +71,11 @@ export interface Row { date: string; episode: string; job: "long" | "short"; tit
 async function emergencyEpisode(): Promise<{ file: string; ep: Episode } | null> {
   const writtenFile = "channel/written-ideas.json", written: string[] = existsSync(writtenFile) ? await readJson<string[]>(writtenFile) : [];
   const pf = await loadPillars();
-  const ideas = pf.pillars.flatMap(p => p.wiki.map(w => ({ idea: w, topic: p.id }))).filter(i => !written.includes(i.idea.toLowerCase()));
+  // the pillar least used lately (never "space" every time), then the next pillars in that order
+  const ledger: Row[] = existsSync("channel/ledger.json") ? await readJson<Row[]>("channel/ledger.json") : [];
+  const recent = ledger.slice(-14).map(r => r.topic ?? ""), ids = pf.pillars.map(p => p.id), first = nextPillar(ids, recent);
+  const order = [first, ...ids.filter(i => i !== first).sort((a, b) => recent.filter(t => t === a).length - recent.filter(t => t === b).length)];
+  const ideas = order.flatMap(id => pf.pillars.find(p => p.id === id)!.wiki.map(w => ({ idea: w, topic: id }))).filter(i => !written.includes(i.idea.toLowerCase()));
   for (const i of ideas.slice(0, 2)) {
     try {
       const file = await writeEpisode(i.idea, { topic: i.topic, wiki: i.idea, approve: true });
@@ -113,7 +117,11 @@ async function main() {
     if (!n) log(`Long day, but no approved episode has a long cut of ${minLong}+ s yet; only Shorts today.`);
     if (n) jobs.push({ ...n, job: "long", slot: pick([s.longTime, ...(s.longAltTimes ?? [])], learning.slots, dayIndex, s.explore) }); }
   const shortSlots = s.shortTimes as string[], best = pick(shortSlots, learning.slots, dayIndex, s.explore);
-  eps.filter(x => !done(x.ep.id, "short")).sort((a, b) => Number(done(b.ep.id, "long")) - Number(done(a.ep.id, "long")))
+  // variety first: today's Short is from a different topic than the last ones posted; then prefer episodes whose long
+  // video is already out (the Short sends viewers to it)
+  const recentTopics = ledger.filter(r => r.status !== "failed").slice(-7).map(r => r.topic ?? "");
+  varietyOrder(eps.filter(x => !done(x.ep.id, "short")).map(x => ({ ...x, topic: x.ep.topic }))
+    .sort((a, b) => Number(done(b.ep.id, "long")) - Number(done(a.ep.id, "long"))), recentTopics)
     .slice(0, shortsLeft).forEach((x, i) => jobs.push({ ...x, job: "short", slot: i === 0 ? best : shortSlots.filter(t => t !== best)[(i - 1) % Math.max(1, shortSlots.length - 1)] ?? best }));
   if (!jobs.length && (today("short") || today("long"))) { log("Today's videos are already made."); return; }
   if (!jobs.length) {

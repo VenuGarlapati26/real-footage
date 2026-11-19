@@ -35,18 +35,42 @@ export function pillarWeights(ids: string[], perf: Perf, format: "short" | "long
   return Object.fromEntries(ids.map(id => { const p = perf[id]?.[format]; return [id, p?.n ? +(p.score + 0.6 / Math.sqrt(p.n)).toFixed(3) : 1.2]; }));
 }
 
-/** Which pillars next week's `count` episodes come from. Deterministic given `seed`. Pure. */
+/** Which pillars next week's `count` episodes come from. Deterministic given `seed`. Pure.
+ *  Variety rules (the channel must never turn into "only space"):
+ *  - a pillar counts as proven only after 2+ videos AND a weight of 1 or more (doing at least as well as the channel);
+ *  - no pillar gets more than a third of the week (rounded up), however well it does;
+ *  - the same pillar never sits in two slots in a row. */
 export function allocate(ids: string[], perf: Perf, count: number, explore: number, seed = 1): string[] {
   const w = pillarWeights(ids, perf, "short"), wl = pillarWeights(ids, perf, "long");
+  const tested = (id: string) => (perf[id]?.short.n ?? 0) + (perf[id]?.long.n ?? 0);
   const both = ids.map(id => ({ id, w: (w[id] + wl[id]) / 2 })).sort((a, b) => b.w - a.w);
+  const cap = Math.max(1, Math.ceil(count / 3)), used = (id: string) => out.filter(x => x === id).length;
   const nExplore = Math.min(count, Math.max(count > 1 ? 1 : 0, Math.round(count * explore)));
   const out: string[] = [];
-  const tested = (id: string) => (perf[id]?.short.n ?? 0) + (perf[id]?.long.n ?? 0);
-  // the proven top 3, best first (nothing proven yet = every slot is a test of something new)
-  const proven = both.filter(b => tested(b.id) > 0).slice(0, 3);
-  for (let i = 0; proven.length && out.length < count - nExplore; i++) out.push(proven[i % proven.length].id);
-  const rest = [...ids].sort((a, b) => tested(a) - tested(b) || ((a.charCodeAt(0) * 31 + seed) % 97) - ((b.charCodeAt(0) * 31 + seed) % 97));
+  const proven = both.filter(b => tested(b.id) >= 2 && b.w >= 1).slice(0, 3);
+  for (let i = 0, guard = 0; proven.length && out.length < count - nExplore && guard < count * 4; i++, guard++) {
+    const id = proven[i % proven.length].id; if (used(id) < cap) out.push(id);
+  }
+  const rest = [...ids].sort((a, b) => tested(a) - tested(b) || ((a.charCodeAt(0) * 31 + a.length * 7 + seed) % 97) - ((b.charCodeAt(0) * 31 + b.length * 7 + seed) % 97));
   for (const id of rest) { if (out.length >= count) break; if (!out.includes(id)) out.push(id); }
-  for (let i = 0; out.length < count; i++) out.push(rest[i % rest.length]);   // more slots than options: repeat in order
+  for (let i = 0; out.length < count; i++) out.push(rest[i % rest.length]);   // more slots than pillars: repeat in order
+  // spread repeats apart: never the same pillar twice in a row
+  for (let i = 1; i < out.length; i++) if (out[i] === out[i - 1]) {
+    const j = out.findIndex((x, k) => k > i && x !== out[i - 1] && (k + 1 >= out.length || out[k + 1] !== out[i]) && out[i - 2] !== x);
+    if (j > 0) [out[i], out[j]] = [out[j], out[i]];
+  }
   return out;
+}
+
+/** Which pillar an extra episode should come from: the one least used lately (ties: list order). Pure. */
+export function nextPillar(ids: string[], recentTopics: string[]): string {
+  const last = (id: string) => { const i = recentTopics.lastIndexOf(id); return i < 0 ? -1 : i; };
+  const count = (id: string) => recentTopics.filter(t => t === id).length;
+  return [...ids].sort((a, b) => count(a) - count(b) || last(a) - last(b))[0];
+}
+
+/** Order unused episodes so today's Short is a different topic from the last ones posted. Pure. */
+export function varietyOrder<T extends { topic?: string }>(eps: T[], recentTopics: string[]): T[] {
+  const age = (t?: string) => { const i = recentTopics.lastIndexOf(t ?? ""); return i < 0 ? -1 : i; };   // -1 = not posted lately
+  return eps.map((e, k) => ({ e, k })).sort((a, b) => age(a.e.topic) - age(b.e.topic) || a.k - b.k).map(x => x.e);
 }

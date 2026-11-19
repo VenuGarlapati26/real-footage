@@ -15,6 +15,18 @@ assert.ok(perf.wildlife.short.score > perf.ocean.short.score && perf.ocean.short
 const wt = pillarWeights(ids, perf, "short"); assert.ok(wt.wildlife > wt.space && wt.history === 1.2, "untested pillars keep an optimistic weight");
 const plan = allocate(ids, perf, 5, 0.3, 7);
 assert.equal(plan[0], "wildlife", "the winner leads"); assert.ok(plan.filter(p => p === "wildlife").length >= 1 && plan.some(p => !["wildlife", "ocean", "space"].includes(p)), "and ~30% keeps testing other pillars");
+// the "only space" trap: one pillar with a little data must not take over the week
+const onlySpace = scorePillars([{ pillar: "space", format: "short", views: 900 }, { pillar: "space", format: "short", views: 1100 }, { pillar: "space", format: "short", views: 1000 }]);
+const wk = allocate(ids, onlySpace, 4, pf.explore, 5);
+assert.ok(wk.filter(x => x === "space").length <= 2 && new Set(wk).size >= 3, `varied week: ${wk}`);
+assert.ok(wk.every((x, i) => i === 0 || x !== wk[i - 1]), "never the same pillar twice in a row");
+// even a huge winner gets at most a third of the week
+const big = scorePillars([...Array(6)].flatMap(() => [{ pillar: "wildlife", format: "short" as const, views: 9000 }, { pillar: "ocean", format: "short" as const, views: 100 }]));
+const wk2 = allocate(ids, big, 6, pf.explore, 2); assert.ok(wk2.filter(x => x === "wildlife").length <= 2, `${wk2}`);
+const { nextPillar, varietyOrder } = await import("../growth/pillars");
+assert.notEqual(nextPillar(ids, ["space", "extreme-earth", "space"]), "space");
+const order = varietyOrder([{ topic: "space", id: 1 }, { topic: "space", id: 2 }, { topic: "food", id: 3 }], ["ocean", "space"]);
+assert.equal(order[0].topic, "food", "today's Short is not yesterday's topic");
 console.log("pillar tests passed");
 
 // Actions-minutes guard: 4K when the month has room, lower when it doesn't
