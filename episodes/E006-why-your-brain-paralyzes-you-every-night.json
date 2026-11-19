@@ -1,0 +1,1531 @@
+{
+  "id": "E006",
+  "status": "approved",
+  "topic": "body",
+  "angle": "mystery",
+  "look": "earth",
+  "title": {
+    "en": "Why Your Brain Paralyzes You Every Night",
+    "hi": "हर रात आपका दिमाग आपके शरीर को सुन्न क्यों कर देता है?",
+    "es": "¿Por qué tu cerebro te paraliza todas las noches?",
+    "pt": "Por que o seu cérebro paralisa você toda noite?"
+  },
+  "thumb": {
+    "en": "PARALYZED EVERY NIGHT",
+    "hi": "हर रात लकवाग्रस्त शरीर",
+    "es": "PARALIZADO CADA NOCHE",
+    "pt": "PARALISADO TODA NOITE"
+  },
+  "scenes": [
+    {
+      "id": "s1",
+      "vo": {
+        "en": "Before your head hits the pillow, your brain consumes twenty percent of your energy, but why?",
+        "hi": "तकिए पर सिर रखने से पहले, आपका दिमाग बीस प्रतिशत ऊर्जा खर्च कर चुका होता है, पर क्यों?",
+        "es": "Antes de apoyar la cabeza, tu cerebro gasta el veinte por ciento de tu energía, ¿pero por qué?",
+        "pt": "Antes de encostar no travesseiro, seu cérebro consome vinte por cento da sua energia, mas por quê?"
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "macro extreme closeup human eye sleeping",
+          "id": "5419496",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro extreme closeup human eye sleeping",
+          "id": "36816949",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro extreme closeup human eye sleeping"
+        },
+        {
+          "provider": "pixabay",
+          "q": "cinematic tracking shot dark bedroom sleeper"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "time lapse human sleeping in darkness"
+        }
+      ],
+      "overlays": [
+        {
+          "kind": "kicker",
+          "text": {
+            "en": "The Nightly Mystery",
+            "hi": "रातों का रहस्य",
+            "es": "El misterio nocturno",
+            "pt": "O mistério noturno"
+          },
+          "sub": {
+            "en": "The human brain",
+            "hi": "मानव मस्तिष्क",
+            "es": "El cerebro humano",
+            "pt": "O cérebro humano"
+          },
+          "at": 1.2
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "shots": 2
+    },
+    {
+      "id": "s2",
+      "vo": {
+        "en": "While you rest, your conscious mind shuts out the outside world, yet your brain never stops firing electrical pulses.",
+        "hi": "जब आप विश्राम करते हैं, आपका चेतन मन बाहरी दुनिया से कट जाता है, फिर भी आपका मस्तिष्क विद्युत संकेत भेजना कभी बंद नहीं करता।",
+        "es": "Mientras descansas, tu mente consciente se desconecta del exterior, pero tu cerebro nunca deja de emitir pulsos eléctricos.",
+        "pt": "Enquanto você descansa, sua mente consciente se desliga do mundo exterior, mas seu cérebro nunca para de disparar pulsos elétricos."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "abstract glowing neural network firing impulses",
+          "id": "34996641",
+          "takes": [
+            [
+              2,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "abstract glowing neural network firing impulses",
+          "id": "35063024",
+          "takes": [
+            [
+              2,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "abstract glowing neural network firing impulses",
+          "id": "29184317",
+          "takes": [
+            [
+              2,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "abstract glowing neural network firing impulses"
+        },
+        {
+          "provider": "pixabay",
+          "q": "macro bioluminescent electrical synapses firing"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "animation of active human brain neurons"
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "shots": 3
+    },
+    {
+      "id": "s3",
+      "vo": {
+        "en": "In quiet waking, the brain is responsible for twenty percent of the body's energy use, burning constant power.",
+        "hi": "शांत जागृत अवस्था में, शरीर की कुल ऊर्जा खपत का बीस प्रतिशत हिस्सा केवल मस्तिष्क ही खर्च करता है।",
+        "es": "En vigilia tranquila, el cerebro es responsable del veinte por ciento del gasto energético de todo el cuerpo.",
+        "pt": "Em vigília tranquila, o cérebro é responsável por vinte por cento do gasto de energia do corpo todo."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "macro thermal imaging human head heat",
+          "id": "7859801",
+          "takes": [
+            [
+              12,
+              17
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro thermal imaging human head heat",
+          "id": "8090197",
+          "takes": [
+            [
+              2,
+              7
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro thermal imaging human head heat"
+        },
+        {
+          "provider": "pixabay",
+          "q": "close up glowing energy particles pulsating"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "medical scan brain metabolism activity"
+        }
+      ],
+      "overlays": [
+        {
+          "kind": "stat",
+          "text": {
+            "en": "20",
+            "hi": "20",
+            "es": "20",
+            "pt": "20"
+          },
+          "sub": {
+            "en": "% of energy use",
+            "hi": "% ऊर्जा की खपत",
+            "es": "% del consumo de energía",
+            "pt": "% do uso de energia"
+          },
+          "at": 1
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "shots": 2
+    },
+    {
+      "id": "s4",
+      "slowmo": true,
+      "vo": {
+        "en": "Then you slip into rapid eye movement, where vivid hallucinations ignite alongside complete muscle switch-off.",
+        "hi": "फिर आप रैपिड आई मूवमेंट में प्रवेश करते हैं, जहाँ सपनों की आंधी चलती है और मांसपेशियाँ पूरी तरह शिथिल हो जाती हैं।",
+        "es": "Luego caes en el sueño MOR, donde intensas alucinaciones despiertan mientras la musculatura se desconecta por completo.",
+        "pt": "Então você entra no sono REM, onde alucinações nítidas surgem enquanto seus músculos desligam completamente."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "extreme macro rapid eye movement sleep",
+          "id": "6258099",
+          "takes": [
+            [
+              0,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "extreme macro rapid eye movement sleep",
+          "id": "5419496",
+          "takes": [
+            [
+              10,
+              18
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "extreme macro rapid eye movement sleep"
+        },
+        {
+          "provider": "pixabay",
+          "q": "abstract underwater ink swirling like dreams"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "macro shot closed eyelids flickering sleep"
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "shots": 2
+    },
+    {
+      "id": "s5",
+      "vo": {
+        "en": "The sleep cycle repeats four to six times every single night, rebuilding tissues and clearing debris until morning comes.",
+        "hi": "यह चक्र हर रात चार से छह बार दोहराया जाता है, ऊतकों की मरम्मत करता है और सुबह होने तक कचरा साफ़ करता है।",
+        "es": "Este ciclo se repite entre cuatro y seis veces cada noche, reparando tejidos y eliminando residuos hasta el amanecer.",
+        "pt": "O ciclo do sono se repete de quatro a seis vezes a cada noite, reconstruindo tecidos e limpando resíduos até amanhecer."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "time lapse morning sunlight entering room",
+          "id": "5250810",
+          "takes": [
+            [
+              2,
+              12
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "time lapse morning sunlight entering room",
+          "id": "34580818",
+          "takes": [
+            [
+              2,
+              10
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "time lapse morning sunlight entering room",
+          "id": "3127063",
+          "takes": [
+            [
+              0,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "time lapse morning sunlight entering room"
+        },
+        {
+          "provider": "pixabay",
+          "q": "aerial shot morning mist over forest"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "macro cellular division microscopic view"
+        }
+      ],
+      "overlays": [
+        {
+          "kind": "orbit",
+          "text": {
+            "en": "4-6",
+            "hi": "4-6",
+            "es": "4-6",
+            "pt": "4-6"
+          },
+          "sub": {
+            "en": "cycles per night",
+            "hi": "चक्र प्रति रात",
+            "es": "ciclos por noche",
+            "pt": "ciclos por noite"
+          },
+          "at": 0.5
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "shots": 3
+    },
+    {
+      "id": "s6",
+      "shortOnly": true,
+      "vo": {
+        "en": "And tonight, the moment your eyes drift shut, that clock starts all over again...",
+        "hi": "और आज रात, जैसे ही आपकी पलकें झुकेंगी, वह रहस्यमय चक्र फिर से शुरू हो जाएगा...",
+        "es": "Y esta noche, en cuanto tus ojos se cierren, ese reloj volverá a empezar...",
+        "pt": "E esta noite, no instante em que seus olhos se fecharem, esse relógio recomeçará..."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "slow motion eyelids closing into dark",
+          "id": "7018677",
+          "takes": [
+            [
+              20,
+              26
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "slow motion eyelids closing into dark",
+          "id": "40481915",
+          "takes": [
+            [
+              4,
+              9
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "slow motion eyelids closing into dark"
+        },
+        {
+          "provider": "pixabay",
+          "q": "macro iris pupil dilating in darkness"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "shadow falling across face bedroom cinematic"
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "shots": 2
+    },
+    {
+      "id": "s7",
+      "longOnly": true,
+      "vo": {
+        "en": "The transition begins subtly. The American Academy of Sleep Medicine divides non-REM sleep into three stages, designated as N1, N2, and N3. With each descending level, conscious awareness slips farther away into deep slow-wave slumber.",
+        "hi": "यह बदलाव धीरे-धीरे शुरू होता है। अमेरिकन एकेडमी ऑफ स्लीप मेडिसिन नॉन-रेम नींद को तीन चरणों में बांटती है: N1, N2 और N3। हर स्तर के साथ, आपकी चेतना गहरी नींद के आगोश में समाती जाती है।",
+        "es": "La transición comienza con sutileza. La Academia Estadounidense de Medicina del Sueño divide el sueño no MOR en tres etapas: N1, N2 y N3. Con cada fase, la consciencia se adentra en un letargo de ondas lentas.",
+        "pt": "A transição começa sutilmente. A Academia Americana de Medicina do Sono divide o sono não REM em três estágios: N1, N2 e N3. A cada fase, a consciência desperta mergulha mais fundo em um sono de ondas lentas."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "tracking shot calm ocean water surface",
+          "id": "14210815",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot calm ocean water surface",
+          "id": "5476219",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot calm ocean water surface",
+          "id": "5560966",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot calm ocean water surface",
+          "id": "4395205",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot calm ocean water surface"
+        },
+        {
+          "provider": "pixabay",
+          "q": "macro water ripples spreading slowly darkness"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "slow motion falling feather black background"
+        }
+      ],
+      "overlays": [
+        {
+          "kind": "chapter",
+          "text": {
+            "en": "Descent into Sleep",
+            "hi": "गहरी नींद का सफर",
+            "es": "Descenso al sueño",
+            "pt": "Descida ao sono"
+          },
+          "at": 0.5
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "shots": 4
+    },
+    {
+      "id": "s8",
+      "longOnly": true,
+      "slowmo": true,
+      "vo": {
+        "en": "Deep inside areas with reduced electrical activity, the brain restores its supply of adenosine triphosphate, known as ATP. This microscopic molecule provides the vital energy currency required to power every waking moment of your tomorrow.",
+        "hi": "मस्तिष्क की कम सक्रिय कोशिकाओं में, एटीपी यानी एडेनोसिन ट्राइफॉस्फेट का नया भंडार तैयार होता है। यही सूक्ष्म अणु ऊर्जा का मुख्य स्रोत है जो आपके अगले दिन को शक्ति प्रदान करता है।",
+        "es": "En las regiones con menor actividad, el cerebro reabastece su reserva de trifosfato de adenosina, conocido como ATP. Esta diminuta molécula es la moneda energética indispensable para alimentar cada instante de tu vigilia de mañana.",
+        "pt": "Nas regiões de menor atividade, o cérebro restaura suas reservas de trifosfato de adenosina, o ATP. Essa molécula vital atua como a moeda de energia necessária para abastecer cada hora desperta do seu amanhã."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "macro glowing molecular structure rotating slowly",
+          "id": "36538696",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro glowing molecular structure rotating slowly",
+          "id": "35073329",
+          "takes": [
+            [
+              1,
+              7
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro glowing molecular structure rotating slowly",
+          "id": "34742429",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro glowing molecular structure rotating slowly",
+          "id": "34499231",
+          "takes": [
+            [
+              5,
+              11
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro glowing molecular structure rotating slowly"
+        },
+        {
+          "provider": "pixabay",
+          "q": "abstract bioluminescent particles flowing in liquid"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "3d render microscopic cell mitochondria glowing"
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "shots": 4
+    },
+    {
+      "id": "s9",
+      "longOnly": true,
+      "vo": {
+        "en": "Electrodes placed across the skull reveal rhythmic transformations. While beta and gamma waves signify high alertness and intense focus during daytime, sleep gradually ushers in slower theta rhythms, which ultimately give way to massive, synchronized delta waves.",
+        "hi": "सिर पर लगे इलेक्ट्रोड विद्युत तरंगों के बदलाव को दर्शाते हैं। दिन के समय सतर्कता दिखाने वाली बीटा और गामा तरंगें नींद में धीमी थीटा तरंगों में बदल जाती हैं, और अंततः विशाल डेल्टा तरंगों का रूप ले लेती हैं।",
+        "es": "Los electrodos en el cráneo revelan transformaciones rítmicas. Mientras las ondas beta y gamma marcan el estado de alerta diurna, el sueño introduce ritmos theta más lentos, que finalmente dan paso a enormes ondas delta sincronizadas.",
+        "pt": "Eletrodos colocados sobre o crânio revelam alterações rítmicas. Enquanto as ondas beta e gama marcam o estado de alerta diurno, o sono gradualmente introduz ondas teta mais lentas, que culminam em grandes ondas delta sincronizadas."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "macro medical monitor display heartbeat line",
+          "id": "8460293",
+          "takes": [
+            [
+              0,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro medical monitor display heartbeat line",
+          "id": "6130124",
+          "takes": [
+            [
+              0,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro medical monitor display heartbeat line",
+          "id": "6130550",
+          "takes": [
+            [
+              1,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro medical monitor display heartbeat line",
+          "id": "3099936",
+          "takes": [
+            [
+              0,
+              10
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro medical monitor display heartbeat line",
+          "id": "3099936",
+          "takes": [
+            [
+              12,
+              22
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro medical monitor display heartbeat line"
+        },
+        {
+          "provider": "pixabay",
+          "q": "abstract glowing waveform oscillation dark space"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "eeg machine trace graph rhythmic pulses"
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "shots": 5
+    },
+    {
+      "id": "s10",
+      "longOnly": true,
+      "vo": {
+        "en": "Paradoxically, the brain ignites into desynchronized electrical frenzy during REM sleep. Breathing quickens and eye movements accelerate behind shut eyelids. To prevent you from physically acting out violent dreams, motor commands to your limbs are completely suspended.",
+        "hi": "विरोधाभासी रूप से, रेम नींद में दिमाग अचानक अत्यधिक सक्रिय हो जाता है। सांसें तेज हो जाती हैं और पलकों के नीचे आंखें तेजी से घूमने लगती हैं। सपनों में शरीर को हिलने से रोकने के लिए दिमाग हाथ-पैरों की शक्ति रोक देता है।",
+        "es": "Paradójicamente, el cerebro se activa en un frenesí eléctrico desincronizado durante el sueño MOR. La respiración se acelera y los ojos se mueven bajo los párpados. Para evitar representar físicamente los sueños, las órdenes motoras se bloquean.",
+        "pt": "Paradoxalmente, o cérebro entra em um frenesi elétrico desincronizado durante o sono REM. A respiração acelera e os olhos se movem rapidamente. Para evitar que você encene fisicamente seus sonhos, os comandos motores são suspensos."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "macro extreme closeup eye twitching REM",
+          "id": "36816949",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro extreme closeup eye twitching REM",
+          "id": "36275647",
+          "takes": [
+            [
+              2,
+              7
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro extreme closeup eye twitching REM",
+          "id": "5419496",
+          "takes": [
+            [
+              18,
+              24
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro extreme closeup eye twitching REM",
+          "id": "7298047",
+          "takes": [
+            [
+              0,
+              4
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro extreme closeup eye twitching REM",
+          "id": "5419496",
+          "takes": [
+            [
+              26,
+              30
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro extreme closeup eye twitching REM"
+        },
+        {
+          "provider": "pixabay",
+          "q": "abstract electrical storm glowing inside clouds"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "time lapse shadow creeping across sleeping form"
+        }
+      ],
+      "overlays": [
+        {
+          "kind": "chapter",
+          "text": {
+            "en": "Paradoxical Sleep",
+            "hi": "विरोधाभासी नींद",
+            "es": "Sueño paradójico",
+            "pt": "Sono paradoxal"
+          },
+          "at": 0.4
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "shots": 5
+    },
+    {
+      "id": "s11",
+      "longOnly": true,
+      "vo": {
+        "en": "Waking briefly between these phases is entirely normal. Clinical sleep studies discovered that adults spend just three percent awake time in the first ninety-minute sleep cycle, climbing steadily to thirteen to fourteen percent by the fifth cycle before dawn.",
+        "hi": "इन चरणों के बीच कुछ पलों के लिए जागना स्वाभाविक है। अध्ययनों में पाया गया कि वयस्क पहले नब्बे मिनट के चक्र में केवल तीन प्रतिशत समय जागते हैं, जो भोर से पहले पांचवें चक्र तक तेरह से चौदह प्रतिशत हो जाता है।",
+        "es": "Despertar brevemente entre estas fases es totalmente normal. Los estudios clínicos descubrieron que los adultos pasan apenas un tres por ciento despiertos en el primer ciclo de noventa minutos, subiendo hasta un trece o catorce por ciento en el quinto.",
+        "pt": "Acordar brevemente entre essas fases é inteiramente normal. Estudos clínicos descobriram que adultos passam apenas três por cento do tempo acordados no primeiro ciclo de noventa minutos, subindo para treze a catorze por cento no quinto ciclo."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "cinematic tracking shot moonlight through window",
+          "id": "36489377",
+          "takes": [
+            [
+              0,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "cinematic tracking shot moonlight through window",
+          "id": "39105122",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "cinematic tracking shot moonlight through window",
+          "id": "3846651",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "cinematic tracking shot moonlight through window",
+          "id": "39498763",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "cinematic tracking shot moonlight through window",
+          "id": "36489377",
+          "takes": [
+            [
+              8,
+              14
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "cinematic tracking shot moonlight through window"
+        },
+        {
+          "provider": "pixabay",
+          "q": "macro clock gears ticking slowly dark"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "time lapse stars revolving above bedroom window"
+        }
+      ],
+      "overlays": [
+        {
+          "kind": "stat",
+          "text": {
+            "en": "90",
+            "hi": "90",
+            "es": "90",
+            "pt": "90"
+          },
+          "sub": {
+            "en": "minutes per cycle",
+            "hi": "मिनट प्रति चक्र",
+            "es": "minutos por ciclo",
+            "pt": "minutos por ciclo"
+          },
+          "at": 1.1
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "shots": 5
+    },
+    {
+      "id": "s12",
+      "longOnly": true,
+      "vo": {
+        "en": "What compels you to sleep in the first place? Physiologists identify Process S, the homeostatic pressure that climbs every hour you spend awake. It is driven directly by the depletion of glycogen and accumulation of adenosine in the forebrain.",
+        "hi": "लेकिन हमें सबसे पहले नींद क्यों आती है? वैज्ञानिक इसे प्रोसेस एस कहते हैं, जो जागते रहने पर बढ़ता जाने वाला एक दबाव है। यह ग्लाइकोजन के घटने और दिमाग में एडेनोसिन के जमा होने से संचालित होता है।",
+        "es": "¿Qué te impulsa a dormir en primer lugar? Los fisiólogos identifican el Proceso S, la presión homeostática que aumenta cada hora de vigilia. Está impulsado por el agotamiento del glucógeno y la acumulación de adenosina en el prosencéfalo.",
+        "pt": "O que obriga você a dormir em primeiro lugar? Os fisiologistas identificam o Processo S, a pressão homeostática que cresce a cada hora desperta. Ele é movido pelo esgotamento de glicogênio e acúmulo de adenosina no prosencéfalo."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "macro hourglass sand falling in slow motion",
+          "id": "37127210",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro hourglass sand falling in slow motion",
+          "id": "39488439",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro hourglass sand falling in slow motion",
+          "id": "1188938",
+          "takes": [
+            [
+              4,
+              10
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro hourglass sand falling in slow motion",
+          "id": "36569421",
+          "takes": [
+            [
+              10,
+              16
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro hourglass sand falling in slow motion",
+          "id": "36569421",
+          "takes": [
+            [
+              20,
+              26
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro hourglass sand falling in slow motion"
+        },
+        {
+          "provider": "pixabay",
+          "q": "abstract liquid droplets falling dark background"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "cinematic macro microscopic fluid flow cellular"
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "shots": 5
+    },
+    {
+      "id": "s13",
+      "longOnly": true,
+      "vo": {
+        "en": "Every molecule of caffeine from your morning cup works by tricking this precise counter. Coffee, tea, and other sources of caffeine temporarily block the effect of adenosine, prolong sleep latency, and artificially delay your brain's natural exhaustion signal.",
+        "hi": "सुबह की कॉफी का हर अणु इसी तंत्र को चकमा देता है। कॉफी और चाय में मौजूद कैफीन कुछ समय के लिए एडेनोसिन के असर को रोक देता है, जिससे नींद आने में देरी होती है और थकान का अहसास दब जाता है।",
+        "es": "Cada molécula de cafeína de tu taza mañanera engaña a este contador. El café y el té bloquean temporalmente el efecto de la adenosina, prolongando la latencia del sueño y retrasando artificialmente la señal de agotamiento cerebral.",
+        "pt": "Cada molécula de cafeína do café da manhã funciona enganando esse contador. O café e o chá bloqueiam temporariamente os efeitos da adenosina, adiando o início do sono e camuflando os sinais naturais de cansaço cerebral."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "macro dark roast coffee beans falling",
+          "id": "26885213",
+          "takes": [
+            [
+              0,
+              4
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro dark roast coffee beans falling",
+          "id": "20772455",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro dark roast coffee beans falling",
+          "id": "20534647",
+          "takes": [
+            [
+              28,
+              34
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro dark roast coffee beans falling",
+          "id": "20767022",
+          "takes": [
+            [
+              4,
+              9
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro dark roast coffee beans falling",
+          "id": "20767022",
+          "takes": [
+            [
+              12,
+              17
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro dark roast coffee beans falling"
+        },
+        {
+          "provider": "pixabay",
+          "q": "slow motion pouring hot black coffee cup"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "macro steam rising from dark liquid"
+        }
+      ],
+      "overlays": [
+        {
+          "kind": "lower",
+          "text": {
+            "en": "Source: Sleep Physiology",
+            "hi": "स्रोत: स्लीप फिजियोलॉजी",
+            "es": "Fuente: Fisiología del sueño",
+            "pt": "Fonte: Fisiologia do sono"
+          },
+          "at": 1
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "shots": 5
+    },
+    {
+      "id": "s14",
+      "longOnly": true,
+      "vo": {
+        "en": "Push that exhaustion too far, and cognitive faculties disintegrate. Sleep deprivation causes impaired memory and slower frontal brain waves. Subjectively, however, humans seem to reach maximum sleepiness thirty hours after waking, as homeostatic pressure completely overwhelms the mind.",
+        "hi": "यदि जागते रहने की ज़िद जारी रहे, तो दिमाग जवाब देने लगता है। नींद की कमी से याददाश्त कमज़ोर और मस्तिष्क की तरंगें धीमी हो जाती हैं। इंसान जागने के तीस घंटे बाद अत्यधिक नींद और थकान की पराकाष्ठा पर पहुँच जाता है।",
+        "es": "Si fuerzas ese cansancio, las facultades cognitivas se degradan. La falta de sueño deteriora la memoria y ralentiza las ondas cerebrales frontales. Sin embargo, las personas suelen alcanzar la máxima somnolencia treinta horas después de despertarse.",
+        "pt": "Levar essa exaustão ao extremo degrada o raciocínio. A privação do sono prejudica a memória e desacelera ondas frontais. No entanto, os humanos costumam atingir a sonolência máxima trinta horas após acordar, quando a pressão homeostática vence."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "macro shadow moving across tired face",
+          "id": "12041901",
+          "takes": [
+            [
+              1,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro shadow moving across tired face",
+          "id": "7299503",
+          "takes": [
+            [
+              3,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro shadow moving across tired face",
+          "id": "9902183",
+          "takes": [
+            [
+              10,
+              15
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro shadow moving across tired face",
+          "id": "9902183",
+          "takes": [
+            [
+              16,
+              21
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro shadow moving across tired face",
+          "id": "9902183",
+          "takes": [
+            [
+              26,
+              31
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro shadow moving across tired face"
+        },
+        {
+          "provider": "pixabay",
+          "q": "cinematic tracking shot empty dark hallway"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "macro blurred vision refraction distorted light"
+        }
+      ],
+      "overlays": [
+        {
+          "kind": "stat",
+          "text": {
+            "en": "30",
+            "hi": "30",
+            "es": "30",
+            "pt": "30"
+          },
+          "sub": {
+            "en": "hours to peak sleepiness",
+            "hi": "घंटे: अधिकतम नींद का स्तर",
+            "es": "horas para somnolencia máxima",
+            "pt": "horas até a sonolência máxima"
+          },
+          "at": 1.2
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "shots": 5
+    },
+    {
+      "id": "s15",
+      "longOnly": true,
+      "vo": {
+        "en": "Balancing this build-up is Process C, the internal circadian clock governed by the suprachiasmatic nucleus. Located directly above the optic chiasm, this master pacemaker orchestrates daily biological rhythms, coordinating hormone release and cellular repairs with planetary day and night.",
+        "hi": "इस दबाव को संतुलित करती है प्रोसेस सी, जो सुपरचियास्मैटिक न्यूक्लियस द्वारा संचालित आंतरिक जैविक घड़ी है। यह मास्टर पेसमेकर दिन और रात के अनुसार हार्मोन स्राव और शारीरिक मरम्मत का समय तय करता है।",
+        "es": "Para equilibrar esta acumulación existe el Proceso C, el reloj circadiano interno regido por el núcleo supraquiasmático. Ubicado sobre el quiasma óptico, este marcapasos maestro orquesta los ritmos biológicos, coordinando hormonas y reparaciones celulares.",
+        "pt": "Equilibrando essa pressão está o Processo C, o relógio circadiano interno governado pelo núcleo supraquiasmático. Localizado logo acima do quiasma óptico, esse marcapasso mestre orquestra os ritmos biológicos, coordenando hormônios com o dia e a noite."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "aerial shot sunrise casting long shadows forest",
+          "id": "17944639",
+          "takes": [
+            [
+              6,
+              12
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "aerial shot sunrise casting long shadows forest",
+          "id": "14057076",
+          "takes": [
+            [
+              0,
+              5
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "aerial shot sunrise casting long shadows forest",
+          "id": "29170629",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "aerial shot sunrise casting long shadows forest",
+          "id": "14096474",
+          "takes": [
+            [
+              4,
+              10
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "aerial shot sunrise casting long shadows forest",
+          "id": "17944639",
+          "takes": [
+            [
+              44,
+              50
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "aerial shot sunrise casting long shadows forest"
+        },
+        {
+          "provider": "pixabay",
+          "q": "macro sundial shadow moving across stone"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "time lapse day turning to night horizon"
+        }
+      ],
+      "overlays": [
+        {
+          "kind": "chapter",
+          "text": {
+            "en": "The Master Pacemaker",
+            "hi": "मास्टर पेसमेकर",
+            "es": "El marcapasos maestro",
+            "pt": "O marcapasso mestre"
+          },
+          "at": 0.4
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "shots": 5
+    },
+    {
+      "id": "s16",
+      "longOnly": true,
+      "vo": {
+        "en": "Under circadian command, your body temperature follows a predictable sinusoidal wave between thirty-six point two and thirty-seven point two degrees Celsius. In a healthy adult synced to nature, body temperature hits its lowest minimum at six a.m.",
+        "hi": "जैविक घड़ी के नियंत्रण में आपके शरीर का तापमान छत्तीस दशमलव दो और सैंतीस दशमलव दो डिग्री सेल्सियस के बीच घटता-बढ़ता है। प्रकृति से तालमेल रखने वाले वयस्कों में शरीर का तापमान सुबह छह बजे सबसे कम होता है।",
+        "es": "Bajo la orden circadiana, tu temperatura corporal traza una onda sinusoidal entre treinta y seis con dos y treinta y siete con dos grados Celsius. En un adulto sano, alcanza su mínimo térmico a las seis de la mañana.",
+        "pt": "Sob comando circadiano, a temperatura do seu corpo segue uma onda senoidal entre trinta e seis vírgula dois e trinta e sete vírgula dois graus Celsius. Em um adulto sincronizado, a temperatura atinge o mínimo às seis da manhã."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "macro frost crystals melting on leaf surface",
+          "id": "36810630",
+          "takes": [
+            [
+              10,
+              15
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro frost crystals melting on leaf surface",
+          "id": "36236734",
+          "takes": [
+            [
+              4,
+              10
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro frost crystals melting on leaf surface",
+          "id": "7592168",
+          "takes": [
+            [
+              12,
+              16
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro frost crystals melting on leaf surface",
+          "id": "4188905",
+          "takes": [
+            [
+              2,
+              7
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro frost crystals melting on leaf surface"
+        },
+        {
+          "provider": "pixabay",
+          "q": "macro glowing mercury thermometer vintage glass"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "time lapse fog rolling through blue dawn valley"
+        }
+      ],
+      "overlays": [
+        {
+          "kind": "stat",
+          "text": {
+            "en": "6",
+            "hi": "6",
+            "es": "6",
+            "pt": "6"
+          },
+          "sub": {
+            "en": "a.m. lowest temp",
+            "hi": "बजे सुबह: न्यूनतम तापमान",
+            "es": "a.m. mínima temperatura",
+            "pt": "a.m. temperatura mínima"
+          },
+          "at": 1.1
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "shots": 4
+    },
+    {
+      "id": "s17",
+      "longOnly": true,
+      "slowmo": true,
+      "vo": {
+        "en": "Yet our modern habitats constantly confuse this delicate loop. Exposure to even small amounts of artificial light after dusk suppresses melatonin release from the pineal gland, scrambling the very signals evolved to guide humanity safely into sleep.",
+        "hi": "लेकिन हमारी आधुनिक जीवनशैली इस चक्र को बाधित कर देती है। शाम के बाद कृत्रिम और नीली रोशनी का हल्का सा संपर्क भी मेलाटोनिन हार्मोन के स्राव को रोक देता है, जिससे सदियों पुराना प्राकृतिक नींद चक्र गड़बड़ा जाता है।",
+        "es": "Sin embargo, nuestro entorno moderno altera este delicado bucle. Exponerse incluso a pequeñas dosis de luz artificial tras el anochecer inhibe la liberación de melatonina en la glándula pineal, distorsionando las señales biológicas.",
+        "pt": "Nosso ambiente moderno perturba constantemente esse ciclo delicado. A exposição a pequenas quantidades de luz artificial à noite bloqueia a liberação de melatonina pela glândula pineal, embaralhando sinais evolutivos essenciais para o sono."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "cinematic macro blue light reflecting on eye",
+          "id": "36816949",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "cinematic macro blue light reflecting on eye",
+          "id": "7298045",
+          "takes": [
+            [
+              6,
+              11
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "cinematic macro blue light reflecting on eye",
+          "id": "16478021",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "cinematic macro blue light reflecting on eye",
+          "id": "9783957",
+          "takes": [
+            [
+              4,
+              10
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "cinematic macro blue light reflecting on eye",
+          "id": "9783957",
+          "takes": [
+            [
+              16,
+              22
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "cinematic macro blue light reflecting on eye"
+        },
+        {
+          "provider": "pixabay",
+          "q": "time lapse city neon lights glowing darkness"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "macro dark liquid droplet falling ripple slowmo"
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "shots": 5
+    },
+    {
+      "id": "s18",
+      "longOnly": true,
+      "vo": {
+        "en": "Why endure such vulnerability? Sleep is an ancient adaptation dating back hundreds of millions of years. Researchers now suspect its fundamental purpose is biochemical: flushing harmful waste products from the waking mind, including the systematic removal of toxic amyloid.",
+        "hi": "हम नींद में खुद को इतना असहाय क्यों होने देते हैं? नींद करोड़ों साल पुराना एक विकासवादी नियम है। वैज्ञानिकों का मानना है कि इसका मुख्य उद्देश्य मस्तिष्क की जैविक सफाई करना और हानिकारक एमिलॉयड कचरे को बाहर निकालना है।",
+        "es": "¿Por qué asumir tal vulnerabilidad? El sueño es una conducta ancestral que data de cientos de millones de años. Los investigadores sospechan que su propósito vital es bioquímico: limpiar residuos dañinos, incluyendo la eliminación metódica de amiloide tóxico.",
+        "pt": "Por que arriscar tamanha vulnerabilidade? O sono é um hábito antigo que remonta a centenas de milhões de anos. Pesquisadores suspeitam que sua principal função seja bioquímica: limpar resíduos acumulados, incluindo a remoção criteriosa de amiloide."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "macro clean fresh water stream flowing rocks",
+          "id": "20597713",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro clean fresh water stream flowing rocks",
+          "id": "5624212",
+          "takes": [
+            [
+              0,
+              4
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro clean fresh water stream flowing rocks",
+          "id": "20597715",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro clean fresh water stream flowing rocks",
+          "id": "10882870",
+          "takes": [
+            [
+              10,
+              15
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro clean fresh water stream flowing rocks",
+          "id": "20597713",
+          "takes": [
+            [
+              20,
+              26
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro clean fresh water stream flowing rocks"
+        },
+        {
+          "provider": "pixabay",
+          "q": "macro cellular cleansing fluid flushing particles"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "3d animation molecular cleansing human brain tissue"
+        }
+      ],
+      "overlays": [
+        {
+          "kind": "lower",
+          "text": {
+            "en": "Source: Wikipedia / Sleep",
+            "hi": "स्रोत: विकिपीडिया / स्लीप",
+            "es": "Fuente: Wikipedia / Sueño",
+            "pt": "Fonte: Wikipedia / Sono"
+          },
+          "at": 1.2
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "shots": 5
+    }
+  ],
+  "music": {
+    "mood": "investigate",
+    "styles": [
+      "pulsing ambient bass",
+      "hypnotic modular synth",
+      "subtle organic cello"
+    ],
+    "peak": "s18"
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Wikipedia, Sleep",
+      "url": "https://en.wikipedia.org/wiki/Sleep",
+      "claims": [
+        "In quiet waking, the brain is responsible for 20% of the body's energy use",
+        "The sleep cycle of alternate NREM and REM sleep takes an average of 90 minutes, occurring 4–6 times in a good night's sleep.",
+        "Although REM stands for \"rapid eye movement\", this mode of sleep has many other aspects, including virtual paralysis of the body.",
+        "The American Academy of Sleep Medicine (AASM) divides NREM into three stages: N1, N2, and N3, the last of which is also called delta sleep or slow-wave sleep.",
+        "In areas with reduced activity, the brain restores its supply of adenosine triphosphate (ATP), the molecule used for short-term storage and transport of energy.",
+        "One study found 3% awake time in the first ninety-minute sleep cycle, 8% in the second, 10% in the third, 12% in the fourth, and 13–14% in the fifth.",
+        "Process S is driven by the depletion of glycogen and accumulation of adenosine in the forebrain",
+        "Coffee, tea, and other sources of caffeine temporarily block the effect of adenosine, prolong sleep latency, and reduce total sleep time and quality.",
+        "Subjectively, however, humans seem to reach maximum sleepiness 30 hours after waking.",
+        "The suprachiasmatic nucleus (SCN), a brain area directly above the optic chiasm, is presently considered the most important nexus for this process",
+        "affecting sinusoidal oscillation of body temperature between roughly 36.2 °C and 37.2 °C.",
+        "experience body temperature minimum at 6 a.m.",
+        "Exposure to even small amounts of light during the night can suppress melatonin secretion",
+        "Sleep is a highly conserved behavior across animal evolution, likely going back hundreds of millions of years",
+        "cleansing, including the removal of amyloid, may be a core purpose of sleep."
+      ]
+    }
+  ],
+  "engage": {
+    "ask": {
+      "en": "Have you ever woken up completely unable to move your limbs?",
+      "hi": "क्या आप कभी सोकर उठने पर खुद को हिलने-डुलने में असमर्थ महसूस कर चुके हैं?",
+      "es": "¿Alguna vez te has despertado completamente incapaz de mover tus extremidades?",
+      "pt": "Você já acordou totalmente incapaz de mover seus braços ou pernas?"
+    },
+    "hookText": {
+      "en": "PARALYZED EVERY *NIGHT*",
+      "hi": "हर रात *लकवाग्रस्त* शरीर",
+      "es": "PARALIZADO CADA *NOCHE*",
+      "pt": "PARALISADO TODA *NOITE*"
+    },
+    "loop": {
+      "en": "And tonight, the moment your eyes drift shut, that clock starts all over again...",
+      "hi": "और आज रात, जैसे ही आपकी पलकें झुकेंगी, वह रहस्यमय चक्र फिर से शुरू हो जाएगा...",
+      "es": "Y esta noche, en cuanto tus ojos se cierren, ese reloj volverá a empezar...",
+      "pt": "E esta noite, no instante em que seus olhos se fecharem, esse relógio recomeçará..."
+    },
+    "share": {
+      "en": "Forward this to someone fascinated by the secrets of human dreams.",
+      "hi": "यह उसे भेजें जो सपनों और दिमाग के रहस्यों में गहरी दिलचस्पी रखता है।",
+      "es": "Reenvía esto a quien le apasionen los misterios detrás de los sueños humanos.",
+      "pt": "Encaminhe para quem adora desvendar os mistérios mais profundos dos sonhos."
+    }
+  }
+}

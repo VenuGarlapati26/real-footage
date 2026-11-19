@@ -1,0 +1,822 @@
+{
+  "id": "E007",
+  "status": "approved",
+  "topic": "history",
+  "angle": "what-if",
+  "look": "golden",
+  "title": {
+    "en": "What If a Bicycle Shop Invented the Airplane?",
+    "hi": "क्या होता अगर एक साइकिल दुकान ने हवाई जहाज़ का आविष्कार किया?",
+    "es": "¿Qué pasaría si una tienda de bicicletas inventara el avión?",
+    "pt": "E se uma oficina de bicicletas inventasse o avião?"
+  },
+  "thumb": {
+    "en": "BICYCLES TO WINGS",
+    "hi": "साइकिल से पंख तक",
+    "es": "DE BICICLETAS A ALAS",
+    "pt": "DE BICICLETAS A ASAS"
+  },
+  "music": {
+    "mood": "melancholy",
+    "styles": [
+      "intimate acoustic strings",
+      "haunting cello melody",
+      "subtle historical pulse"
+    ],
+    "peak": "s16"
+  },
+  "scenes": [
+    {
+      "id": "s1",
+      "vo": {
+        "en": "How did your ordinary bicycle chain stop a deadly flight disaster at Kitty Hawk before nineteen-o-three?",
+        "hi": "आपकी साधारण साइकिल चेन ने उन्नीस सौ तीन से पहले किट्टी हॉक में विमान हादसों को कैसे रोका?",
+        "es": "¿Cómo evitó una cadena de bicicleta común un desastre aéreo en Kitty Hawk antes de mil novecientos tres?",
+        "pt": "Como a corrente comum da sua bicicleta evitou um desastre aéreo em Kitty Hawk antes de mil novecentos e três?"
+      },
+      "footage": [
+        {
+          "provider": "wikimedia",
+          "q": "archival early flight biplane gliding"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "aerial wide sand dunes sunrise"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "tracking vintage wood aircraft airborne"
+        }
+      ],
+      "overlays": [
+        {
+          "kind": "kicker",
+          "text": {
+            "en": "The Flying Problem",
+            "hi": "उड़ान की पहेली",
+            "es": "El problema del vuelo",
+            "pt": "O problema do voo"
+          },
+          "sub": {
+            "en": "Kitty Hawk, 1903",
+            "hi": "किट्टी हॉक, 1903",
+            "es": "Kitty Hawk, 1903",
+            "pt": "Kitty Hawk, 1903"
+          },
+          "at": 0.5
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s2",
+      "slowmo": true,
+      "vo": {
+        "en": "In August eighteen ninety-six, aviation pioneer Otto Lilienthal died when his glider plunged to the ground.",
+        "hi": "अगस्त अठारह सौ छियानवे में, विमानन अग्रणी ओटो लिलिएंथल का ग्लाइडर ज़मीन पर गिर गया और उनकी मौत हो गई।",
+        "es": "En agosto de mil ochocientos noventa y seis, el pionero Otto Lilienthal murió al estrellarse su planeador.",
+        "pt": "Em agosto de mil oitocentos e noventa e seis, o pioneiro Otto Lilienthal morreu na queda de seu planador."
+      },
+      "footage": [
+        {
+          "provider": "wikimedia",
+          "q": "historical vintage glider airborne crash"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "black white archival aviation pioneer"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "dramatic slow pan historic glider"
+        }
+      ],
+      "overlays": [
+        {
+          "kind": "stat",
+          "text": {
+            "en": "1896",
+            "hi": "1896",
+            "es": "1896",
+            "pt": "1896"
+          },
+          "sub": {
+            "en": "Lilienthal glider crash",
+            "hi": "लिलिएंथल ग्लाइडर दुर्घटना",
+            "es": "accidente de Lilienthal",
+            "pt": "queda do planador Lilienthal"
+          },
+          "at": 0.3
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s3",
+      "vo": {
+        "en": "Most engineers built heavier engines, but the Wright brothers realized an unstable vehicle needed total pilot balance.",
+        "hi": "अधिकांश इंजीनियरों ने भारी इंजन बनाए, लेकिन राइट बंधुओं ने समझा कि एक अस्थिर वाहन को मानवीय संतुलन की ज़रूरत थी।",
+        "es": "Casi todos construían motores pesados, pero los hermanos Wright comprendieron que un vehículo inestable requería equilibrio del piloto.",
+        "pt": "A maioria construía motores pesados, mas os irmãos Wright perceberam que um veículo instável exigia equilíbrio total do piloto."
+      },
+      "footage": [
+        {
+          "provider": "wikimedia",
+          "q": "close up bicycle sprockets gears"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "macro vintage bicycle chain spinning"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "detail shot wooden wing construction"
+        }
+      ],
+      "overlays": [],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s4",
+      "vo": {
+        "en": "On December seventeenth, nineteen-o-three, four miles south of Kitty Hawk, their piloted flyer lifted into history.",
+        "hi": "सत्रह दिसंबर उन्नीस सौ तीन को, किट्टी हॉक से चार मील दक्षिण, उनका मानव-चालित विमान इतिहास में उड़ गया।",
+        "es": "El diecisiete de diciembre de mil novecientos tres, a cuatro millas al sur de Kitty Hawk, su avión despegó.",
+        "pt": "Em dezessete de dezembro de mil novecentos e três, a quatro milhas ao sul de Kitty Hawk, o avião levantou voo."
+      },
+      "footage": [
+        {
+          "provider": "wikimedia",
+          "q": "wide tracking shot coastal dunes"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "historic first flight Kitty Hawk"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "aerial desolate sand landscape wind"
+        }
+      ],
+      "overlays": [
+        {
+          "kind": "map",
+          "geo": {
+            "lat": 36.017,
+            "lon": -75.669
+          },
+          "text": {
+            "en": "Kitty Hawk, North Carolina",
+            "hi": "किट्टी हॉक, नॉर्थ कैरोलिना",
+            "es": "Kitty Hawk, Carolina del Norte",
+            "pt": "Kitty Hawk, Carolina do Norte"
+          },
+          "at": 0.4
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s5",
+      "vo": {
+        "en": "Their three-axis control system solved the flying problem, and it still directs every modern airplane today.",
+        "hi": "उनके तीन-अक्ष नियंत्रण प्रणाली ने उड़ान की पहेली सुलझा दी, और यह आज भी हर आधुनिक विमान को चलाती है।",
+        "es": "Su sistema de control de tres ejes resolvió el problema del vuelo y aún guía a los aviones modernos.",
+        "pt": "Seu sistema de controle de três eixos resolveu o problema do voo e ainda guia todos os aviões modernos."
+      },
+      "footage": [
+        {
+          "provider": "wikimedia",
+          "q": "close up aircraft rudder moving"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "tracking silhouette modern aircraft banking"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "slow pan vintage patent diagrams"
+        }
+      ],
+      "overlays": [
+        {
+          "kind": "stat",
+          "text": {
+            "en": "3",
+            "hi": "3",
+            "es": "3",
+            "pt": "3"
+          },
+          "sub": {
+            "en": "control axes invented",
+            "hi": "नियंत्रण अक्ष बनाए गए",
+            "es": "ejes de control inventados",
+            "pt": "eixos de controle inventados"
+          },
+          "at": 0.3
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s6",
+      "shortOnly": true,
+      "vo": {
+        "en": "Which leaves one lingering question about what really happened before that first takeoff...",
+        "hi": "जिससे एक बड़ा सवाल उठता है कि उस पहली सफल उड़ान से ठीक पहले वास्तव में क्या हुआ था...",
+        "es": "Lo que deja una gran duda sobre lo que realmente ocurrió antes de ese primer despegue...",
+        "pt": "O que deixa uma dúvida sobre o que realmente aconteceu antes daquela primeira decolagem..."
+      },
+      "footage": [
+        {
+          "provider": "wikimedia",
+          "q": "vintage archival aircraft on rail"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "wind blowing across ocean dunes"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "macro vintage pocket watch ticking"
+        }
+      ],
+      "overlays": [],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s7",
+      "longOnly": true,
+      "vo": {
+        "en": "What would happen if aviation kept chasing sheer horsepower? In the late nineteenth century, experimenters tried mounting massive engines to rigid wings, hoping brute thrust alone would lift them. Instead, courageous pilots crashed because they had no reliable way to steer.",
+        "hi": "क्या होता अगर विमानन केवल भारी हॉर्सपावर के पीछे भागता रहता? उन्नीसवीं सदी के अंत में, प्रयोगकर्ताओं ने भारी इंजनों को पंखों पर लगाया। पर बिना मुड़ने के नियंत्रण के, बहादुर पायलट ज़मीन पर गिरकर तबाह होते रहे।",
+        "es": "¿Qué pasaría si la aviación solo buscara potencia bruta? A finales del siglo diecinueve, los investigadores montaban pesados motores en alas rígidas, esperando que el empuje bastara. En cambio, los pilotos se estrellaban porque no tenían ninguna forma de maniobrar.",
+        "pt": "O que aconteceria se a aviação continuasse buscando apenas potência bruta? No final do século dezenove, inventores instalavam motores pesados em asas rígidas, esperando que o impulso bastasse. Em vez disso, pilotos caíam porque não tinham como manobrar."
+      },
+      "footage": [
+        {
+          "provider": "wikimedia",
+          "q": "archival early steam powered aircraft"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "wide pan historic airframe wreckage"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "vintage blueprint aerodrome drawing tilt"
+        }
+      ],
+      "overlays": [
+        {
+          "kind": "chapter",
+          "text": {
+            "en": "The Lethal Sky",
+            "hi": "घातक आसमान",
+            "es": "El cielo letal",
+            "pt": "O céu letal"
+          },
+          "at": 0.2
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s8",
+      "longOnly": true,
+      "vo": {
+        "en": "When Lilienthal died in August eighteen ninety-six, the tragedy altered history. Wilbur and Orville realized that adding power without control was lethal. They asked what would happen if an aircraft was treated like a bicycle: unstable, but balanced by human reflexes.",
+        "hi": "जब अगस्त अठारह सौ छियानवे में लिलिएंथल की मृत्यु हुई, उस त्रासदी ने इतिहास बदल दिया। विल्बर और ऑरविल समझ गए कि नियंत्रण के बिना शक्ति घातक थी। उन्होंने सोचा: क्या हो अगर हवाई जहाज़ को साइकिल की तरह संतुलित किया जाए?",
+        "es": "Cuando Lilienthal murió en agosto de mil ochocientos noventa y seis, la tragedia cambió la historia. Wilbur y Orville comprendieron que la potencia sin control era letal. Se preguntaron qué pasaría si trataban al avión como a una bicicleta: inestable pero equilibrada.",
+        "pt": "Quando Lilienthal morreu em agosto de mil oitocentos e noventa e seis, a tragédia mudou a história. Wilbur e Orville entenderam que força sem controle era letal. Perguntaram-se o que aconteceria se o avião fosse tratado como uma bicicleta: instável, mas equilibrada."
+      },
+      "footage": [
+        {
+          "provider": "wikimedia",
+          "q": "historic portrait early aviation experimenter"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "macro vintage bicycle wheel spokes"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "black white slow motion glider"
+        }
+      ],
+      "overlays": [
+        {
+          "kind": "kicker",
+          "text": {
+            "en": "A Deadly Warning",
+            "hi": "एक घातक चेतावनी",
+            "es": "Una advertencia mortal",
+            "pt": "Um aviso mortal"
+          },
+          "sub": {
+            "en": "August 1896",
+            "hi": "अगस्त 1896",
+            "es": "Agosto de 1896",
+            "pt": "Agosto de 1896"
+          },
+          "at": 0.4
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s9",
+      "longOnly": true,
+      "vo": {
+        "en": "What if that intuition started with a childhood toy? Back in eighteen seventy-eight, their father brought home a toy helicopter made of paper, bamboo, and cork. The boys played with the fragile rotor until it broke, then immediately built their own copies.",
+        "hi": "क्या हो अगर यह सोच बचपन के एक खिलौने से शुरू हुई हो? अठारह सौ अठहत्तर में, उनके पिता कागज़, बाँस और कॉर्क से बना एक खिलौना हेलीकॉप्टर घर लाए। दोनों भाइयों ने उससे तब तक खेला जब तक वह टूट नहीं गया, फिर खुद बनाया।",
+        "es": "¿Y si esa intuición comenzó con un juguete de infancia? En mil ochocientos setenta y ocho, su padre trajo un helicóptero de juguete hecho de papel, bambú y corcho. Los niños jugaron con él hasta romperlo y luego construyeron los suyos.",
+        "pt": "E se essa intuição começou com um brinquedo de infância? Em mil oitocentos e setenta e oito, o pai trouxe um helicóptero de brinquedo feito de papel, bambu e cortiça. Os meninos brincaram até quebrar e logo construíram os seus."
+      },
+      "footage": [
+        {
+          "provider": "wikimedia",
+          "q": "close up wooden toy rotor spinning"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "macro aged paper and bamboo"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "vintage rubber band propeller twisting"
+        }
+      ],
+      "overlays": [
+        {
+          "kind": "chapter",
+          "text": {
+            "en": "The Toy Spark",
+            "hi": "खिलौने की चिंगारी",
+            "es": "La chispa infantil",
+            "pt": "A faísca infantil"
+          },
+          "at": 0.2
+        },
+        {
+          "kind": "stat",
+          "text": {
+            "en": "1878",
+            "hi": "1878",
+            "es": "1878",
+            "pt": "1878"
+          },
+          "sub": {
+            "en": "toy helicopter inspired brothers",
+            "hi": "खिलौना हेलीकॉप्टर की प्रेरणा",
+            "es": "helicóptero de juguete",
+            "pt": "helicóptero de brinquedo"
+          },
+          "at": 1.2
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s10",
+      "longOnly": true,
+      "vo": {
+        "en": "What happens when mechanic instincts meet flight? In December eighteen ninety-two, the brothers opened their bicycle shop in Ohio. Repairing sprockets and steering forks convinced them that an inherently unstable machine could be kept upright once a rider developed practice and equilibrium.",
+        "hi": "क्या होता है जब यांत्रिक हुनर उड़ान से मिलता है? दिसंबर अठारह सौ बानवे में, भाइयों ने ओहियो में साइकिल की दुकान खोली। गियर और हैंडल की मरम्मत ने उन्हें सिखाया कि अभ्यास और संतुलन से किसी भी अस्थिर मशीन को संभाला जा सकता है।",
+        "es": "¿Qué ocurre cuando la mecánica se une al vuelo? En diciembre de mil ochocientos noventa y dos, abrieron su taller de bicicletas en Ohio. Reparar piezas les convenció de que un vehículo inestable podía dominarse con práctica y equilibrio.",
+        "pt": "O que acontece quando a mecânica encontra o voo? Em dezembro de mil novecentos e dois, os irmãos abriram uma bicicletaria em Ohio. Consertar engrenagens os convenceu de que uma máquina instável podia ser dominada com prática e equilíbrio."
+      },
+      "footage": [
+        {
+          "provider": "wikimedia",
+          "q": "close up antique bicycle workshop tools"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "tracking vintage bicycle rolling street"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "macro metal gears bicycle chain"
+        }
+      ],
+      "overlays": [
+        {
+          "kind": "kicker",
+          "text": {
+            "en": "The Bicycle Shop",
+            "hi": "साइकिल की दुकान",
+            "es": "El taller de bicicletas",
+            "pt": "A oficina de bicicletas"
+          },
+          "sub": {
+            "en": "Dayton, Ohio",
+            "hi": "डेटन, ओहियो",
+            "es": "Dayton, Ohio",
+            "pt": "Dayton, Ohio"
+          },
+          "at": 0.4
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s11",
+      "longOnly": true,
+      "vo": {
+        "en": "How could a mechanical wing mimic balance? Observing birds rolling in flight, Wilbur saw them twisting the tips of their wings. One afternoon, while idly twisting an inner-tube cardboard box at their shop, he solved how to warp wings mechanically.",
+        "hi": "एक यांत्रिक पंख संतुलन की नकल कैसे कर सकता था? उड़ते हुए पक्षियों को देखकर विल्बर ने पाया कि वे पंखों के सिरों को मोड़ते हैं। एक दोपहर, दुकान में कार्डबोर्ड का डिब्बा घुमाते हुए, उन्होंने पंख मोड़ने की तकनीक ढूंढ निकाली।",
+        "es": "¿Cómo imitar el equilibrio en el aire? Al observar pájaros en vuelo, Wilbur notó que torsionaban las puntas de sus alas. Una tarde, girando distraídamente una caja de cartón en el taller, descubrió cómo doblar las alas mecánicamente.",
+        "pt": "Como imitar o equilíbrio no ar? Ao observar pássaros em voo, Wilbur notou que eles torciam as pontas das asas. Certa tarde, ao torcer uma caixa de papelão na oficina, ele descobriu como arquear asas mecanicamente."
+      },
+      "footage": [
+        {
+          "provider": "wikimedia",
+          "q": "slow motion birds gliding banking turn"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "macro hands twisting cardboard box"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "detail shot fabric wing framework"
+        }
+      ],
+      "overlays": [
+        {
+          "kind": "chapter",
+          "text": {
+            "en": "Twisting the Wind",
+            "hi": "हवा को मोड़ना",
+            "es": "Torsión en el viento",
+            "pt": "Torcendo o vento"
+          },
+          "at": 0.2
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s12",
+      "slowmo": true,
+      "longOnly": true,
+      "vo": {
+        "en": "On July twenty-seventh, eighteen ninety-nine, they tested the concept on a biplane kite with a five-foot wingspan. By pulling cords attached to crossed sticks, they twisted the surfaces in midair, proving they could command roll and bank on demand.",
+        "hi": "सत्ताईस जुलाई अठारह सौ निन्यानवे को, उन्होंने पाँच फुट पंखों वाली एक बाइप्लेन पतंग पर यह परीक्षण किया। डंडियों से जुड़े तारों को खींचकर, उन्होंने हवा में पंखों को मोड़ा और साबित किया कि संतुलन पर उनका पूरा नियंत्रण था।",
+        "es": "El veintisiete de julio de mil ochocientos noventa y nueve, probaron el concepto en una cometa biplano de cinco pies. Al tirar de cuerdas cruzadas, torsionaron las alas en el aire, demostrando control total del alabeo.",
+        "pt": "Em vinte e sete de julho de mil oitocentos e noventa e nove, testaram o conceito em uma pipa biplano de cinco pés. Puxando cordas cruzadas, torceram as asas no ar, provando que podiam inclinar e manobrar."
+      },
+      "footage": [
+        {
+          "provider": "wikimedia",
+          "q": "biplane kite tethered in wind"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "slow motion taut cords flexing fabric"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "tracking shot kite banking sky"
+        }
+      ],
+      "overlays": [
+        {
+          "kind": "stat",
+          "text": {
+            "en": "5",
+            "hi": "5",
+            "es": "5",
+            "pt": "5"
+          },
+          "sub": {
+            "en": "foot test wingspan",
+            "hi": "फुट परीक्षण पंख फैलाव",
+            "es": "pies de envergadura",
+            "pt": "pés de envergadura"
+          },
+          "at": 0.4
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s13",
+      "longOnly": true,
+      "vo": {
+        "en": "What happens when you need isolation and steady winds? In nineteen hundred, official weather data directed the brothers to Kitty Hawk, North Carolina. The remote barrier island offered sand dunes for softer landings and ocean breezes away from prying newspaper reporters.",
+        "hi": "क्या होता है जब आपको एकांत और तेज़ हवाओं की ज़रूरत होती है? उन्नीस सौ में, मौसम विभाग के आँकड़ों ने दोनों भाइयों को किट्टी हॉक भेजा। उस दूरदराज द्वीप के रेतीले टीलों ने सुरक्षित लैंडिंग और पत्रकारों से दूर एकांत दिया।",
+        "es": "¿Qué pasa cuando necesitas aislamiento y viento constante? En mil novecientos, datos meteorológicos llevaron a los hermanos a Kitty Hawk, Carolina del Norte. Sus dunas remotas ofrecían aterrizajes suaves y brisa marina lejos de los periodistas.",
+        "pt": "O que acontece quando você precisa de isolamento e vento constante? Em mil novecentos, dados meteorológicos levaram os irmãos a Kitty Hawk. As dunas remotas ofereciam aterrissagens suaves e brisas oceânicas longe dos repórteres."
+      },
+      "footage": [
+        {
+          "provider": "wikimedia",
+          "q": "wide scenic ocean sand dunes"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "wind blowing coastal grasses sand"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "historic camp tent coastal beach"
+        }
+      ],
+      "overlays": [
+        {
+          "kind": "chapter",
+          "text": {
+            "en": "The Outer Banks",
+            "hi": "तटीय टीले",
+            "es": "Los Outer Banks",
+            "pt": "As dunas isoladas"
+          },
+          "at": 0.2
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s14",
+      "longOnly": true,
+      "vo": {
+        "en": "From nineteen hundred until late nineteen-o-three, Wilbur flew glider after glider over the windy dunes. They purposely rejected built-in stability, giving their wings anhedral droop so gusty crosswinds could not flip them, trusting pilot skill over passive mechanical design.",
+        "hi": "उन्नीस सौ से उन्नीस सौ तीन के अंत तक, विल्बर ने हवादार टीलों पर कई ग्लाइडर उड़ाए। उन्होंने जानबूझकर झुके हुए पंख बनाए ताकि अचानक हवा उन्हें पलट न सके, और किस्मत के बजाय पायलट के हुनर पर भरोसा किया।",
+        "es": "Desde mil novecientos hasta finales de mil novecientos tres, Wilbur probó planeadores en las dunas. Rechazaron la estabilidad pasiva y diseñaron alas caídas para que las ráfagas no los voltearan, confiando en la destreza del piloto.",
+        "pt": "De mil novecentos até o final de mil novecentos e três, Wilbur pilotou planadores sobre as dunas. Rejeitaram a estabilidade passiva e desenharam asas caídas para evitar capotamentos com o vento, confiando na habilidade do piloto."
+      },
+      "footage": [
+        {
+          "provider": "wikimedia",
+          "q": "vintage archival glider launch dunes"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "tracking low flight over sand"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "silhouette pilot lying on glider"
+        }
+      ],
+      "overlays": [
+        {
+          "kind": "kicker",
+          "text": {
+            "en": "Inherent Instability",
+            "hi": "जानबूझकर अस्थिरता",
+            "es": "Inestabilidad deliberada",
+            "pt": "Instabilidade deliberada"
+          },
+          "sub": {
+            "en": "Pilot Mastery Over Luck",
+            "hi": "किस्मत पर महारत",
+            "es": "Control del piloto",
+            "pt": "Controle do piloto"
+          },
+          "at": 0.4
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s15",
+      "longOnly": true,
+      "vo": {
+        "en": "What if the breakthrough was never the airplane itself? In March nineteen-o-three, their patent application did not claim a flying machine. It claimed a three-axis control system, using moveable surfaces to master equilibrium, roll, and steering in three dimensions.",
+        "hi": "क्या हो अगर असली क्रांति हवाई जहाज़ नहीं थी? मार्च उन्नीस सौ तीन में, उनके पेटेंट ने किसी उड़ने वाली मशीन का दावा नहीं किया। उन्होंने तीन-अक्ष नियंत्रण प्रणाली का दावा किया, जो पंखों की सतहों को मोड़कर हवा में संतुलन बनाए रखती थी।",
+        "es": "¿Y si el gran logro nunca fue el avión en sí? En marzo de mil novecientos tres, su solicitud de patente no reclamó una máquina voladora. Reclamó un sistema de control de tres ejes para dominar el equilibrio y el viraje.",
+        "pt": "E se a grande conquista nunca foi o avião em si? Em março de mil novecentos e três, a patente deles não reivindicou uma máquina voadora. Reivindicou um sistema de controle de três eixos para dominar o equilíbrio e o voo."
+      },
+      "footage": [
+        {
+          "provider": "wikimedia",
+          "q": "close up antique patent drawing lines"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "macro ink handwriting vintage document"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "tilt wooden model wing controls"
+        }
+      ],
+      "overlays": [
+        {
+          "kind": "chapter",
+          "text": {
+            "en": "The Breakthrough",
+            "hi": "असली सफलता",
+            "es": "El gran avance",
+            "pt": "A grande virada"
+          },
+          "at": 0.2
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s16",
+      "slowmo": true,
+      "longOnly": true,
+      "vo": {
+        "en": "On December seventeenth, nineteen-o-three, four miles south of Kitty Hawk, their engine-driven flyer faced the winter wind. Orville climbed aboard, took direct mechanical control, and sustained powered flight across Kill Devil Hills, proving man could command the air.",
+        "hi": "सत्रह दिसंबर उन्नीस सौ तीन को, किट्टी हॉक से चार मील दक्षिण, उनके इंजन वाले विमान ने ठंडी हवा का सामना किया। ऑरविल ने कमान संभाली, सीधा नियंत्रण रखा और किल डेविल हिल्स पर पहली नियंत्रित उड़ान भरी।",
+        "es": "El diecisiete de diciembre de mil novecientos tres, a cuatro millas al sur de Kitty Hawk, su avión enfrentó el viento. Orville subió a bordo, tomó el control manual y logró un vuelo sostenido sobre Kill Devil Hills.",
+        "pt": "Em dezessete de dezembro de mil novecentos e três, a quatro milhas ao sul de Kitty Hawk, o avião encarou o vento. Orville assumiu o controle manual e realizou o primeiro voo sustentado sobre Kill Devil Hills."
+      },
+      "footage": [
+        {
+          "provider": "wikimedia",
+          "q": "historic footage Wright flyer liftoff"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "slow motion wooden propellers turning"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "wide tracking biplane over ground"
+        }
+      ],
+      "overlays": [
+        {
+          "kind": "stat",
+          "text": {
+            "en": "4",
+            "hi": "4",
+            "es": "4",
+            "pt": "4"
+          },
+          "sub": {
+            "en": "miles south of Kitty Hawk",
+            "hi": "मील दक्षिण किट्टी हॉक से",
+            "es": "millas al sur de Kitty Hawk",
+            "pt": "milhas ao sul de Kitty Hawk"
+          },
+          "at": 0.3
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s17",
+      "longOnly": true,
+      "vo": {
+        "en": "What happens when experimental hops become true transport? In nineteen-o-four, the brothers developed the Wright Flyer Two to master turns. Then, in nineteen-o-five, they built the Wright Flyer Three, the first practical fixed-wing airplane able to stay aloft and bank full circles.",
+        "hi": "क्या होता है जब शुरुआती छलांग एक संपूर्ण परिवहन बन जाती है? उन्नीस सौ चार में, भाइयों ने मुड़ने के लिए राइट फ़्लायर टू बनाया। फिर, उन्नीस सौ पाँच में उन्होंने राइट फ़्लायर थ्री बनाया, जो पूरे चक्कर लगाने वाला पहला व्यावहारिक विमान बना।",
+        "es": "¿Qué sucede cuando los saltos se convierten en transporte real? En mil novecientos cuatro, desarrollaron el Wright Flyer Two para girar. Luego, en mil novecientos cinco, crearon el Wright Flyer Three, el primer avión práctico capaz de completar círculos completos.",
+        "pt": "O que acontece quando pequenos saltos viram transporte de verdade? Em mil novecentos e quatro, criaram o Wright Flyer Two para fazer curvas. Em mil novecentos e cinco, construíram o Wright Flyer Three, o primeiro avião prático a completar círculos."
+      },
+      "footage": [
+        {
+          "provider": "wikimedia",
+          "q": "archival Wright flyer circling field"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "wide shot early aviation spectator crowd"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "tracking biplane flying steady level"
+        }
+      ],
+      "overlays": [
+        {
+          "kind": "chapter",
+          "text": {
+            "en": "Practical Flight",
+            "hi": "व्यावहारिक उड़ान",
+            "es": "Vuelo práctico",
+            "pt": "Voo prático"
+          },
+          "at": 0.2
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s18",
+      "longOnly": true,
+      "vo": {
+        "en": "By asking what happens if human skill controls an unstable craft, two bicycle builders transformed transportation forever. Instead of chasing uncontrollable engine power, their three-axis control system solved the flying problem, and it still steers every airliner traversing our skies today.",
+        "hi": "यह पूछकर कि क्या मानवीय संतुलन एक अस्थिर मशीन को चला सकता है, दो साइकिल निर्माताओं ने दुनिया बदल दी। अनियंत्रित इंजन शक्ति के पीछे भागने के बजाय, उनकी तीन-अक्ष नियंत्रण प्रणाली ने समस्या सुलझाई, जो आज भी हर विमान को उड़ाती है।",
+        "es": "Al preguntarse qué pasaría si la destreza humana dominara un aparato inestable, dos mecánicos cambiaron el mundo. Su sistema de control de tres ejes resolvió el problema del vuelo y todavía guía a todos los aviones que cruzan nuestros cielos.",
+        "pt": "Ao questionar se a habilidade humana podia dominar uma máquina instável, dois mecânicos transformaram o mundo. Seu sistema de controle de três eixos resolveu o problema do voo e ainda guia todos os aviões que cruzam nossos céus."
+      },
+      "footage": [
+        {
+          "provider": "wikimedia",
+          "q": "tracking shot modern passenger jet banking"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "golden sunset over airplane wing tip"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "slow zoom vintage Wright memorial monument"
+        }
+      ],
+      "overlays": [
+        {
+          "kind": "lower",
+          "text": {
+            "en": "Source: Wikipedia, Wright brothers",
+            "hi": "स्रोत: विकिपीडिया, राइट ब्रदर्स",
+            "es": "Fuente: Wikipedia, Hermanos Wright",
+            "pt": "Fonte: Wikipédia, Irmãos Wright"
+          },
+          "at": 1
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    }
+  ],
+  "engage": {
+    "ask": {
+      "en": "If you had to test an unstable flying machine in 1903, would you take the controls?",
+      "hi": "अगर आपको 1903 में एक अस्थिर उड़ने वाली मशीन की कमान संभालनी पड़ती, तो क्या आप उड़ाते?",
+      "es": "Si tuvieras que probar una máquina voladora inestable en 1903, ¿te pondrías a los mandos?",
+      "pt": "Se você tivesse que testar uma máquina voadora instável em 1903, assumiria os controles?"
+    },
+    "hookText": {
+      "en": "*UNSTABLE* BY DESIGN",
+      "hi": "जानबूझकर *अस्थिर* बनाया",
+      "es": "*INESTABLE* POR DISEÑO",
+      "pt": "*INSTÁVEL* POR PROJETO"
+    },
+    "loop": {
+      "en": "Which leaves one lingering question about what really happened before that first takeoff...",
+      "hi": "जिससे एक बड़ा सवाल उठता है कि उस पहली सफल उड़ान से ठीक पहले वास्तव में क्या हुआ था...",
+      "es": "Lo que deja una gran duda sobre lo que realmente ocurrió antes de ese primer despegue...",
+      "pt": "O que deixa uma dúvida sobre o que realmente aconteceu antes daquela primeira decolagem..."
+    },
+    "share": {
+      "en": "Send this to someone who loves aviation history.",
+      "hi": "इसे किसी ऐसे व्यक्ति को भेजें जिसे विमानन का इतिहास पसंद है।",
+      "es": "Envíaselo a alguien que adore la historia de la aviación.",
+      "pt": "Envie para quem é apaixonado por história da aviação."
+    }
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Wikipedia, Wright brothers",
+      "url": "https://en.wikipedia.org/wiki/Wright_brothers",
+      "claims": [
+        "They made the first controlled, sustained flight of an engine-powered, heavier-than-air aircraft with the Wright Flyer on December 17, 1903, four miles (6 km) south of Kitty Hawk, North Carolina, at what is now known as Kill Devil Hills.",
+        "three-axis control system",
+        "1896 brought three important aeronautical events.",
+        "In August, Lilienthal was killed in the plunge of his glider.",
+        "In 1878, when the family lived in Cedar Rapids, Iowa, their father brought home a toy helicopter for his two younger sons.",
+        "in December 1892 the brothers opened a repair and sales shop (the Wright Cycle Exchange, later the Wright Cycle Company)",
+        "On July 27, 1899, the brothers put wing warping to the test by building and flying a biplane kite with a 5-foot (1.5 m) wingspan",
+        "In 1900 the brothers went to Kitty Hawk, North Carolina, to begin their manned gliding experiments.",
+        "From 1900 until their first powered flights in late 1903, the brothers conducted extensive glider tests that also developed their skills as pilots.",
+        "Their first U.S. patent, written in March 1903, before their first flight at Kitty Hawk, did not claim invention of a flying machine, but rather a system of aerodynamic control that manipulated a flying machine's surfaces.",
+        "In 1904 the Wright brothers developed the Wright Flyer II, which made longer-duration flights including the first circle, followed in 1905 by the first truly practical fixed-wing aircraft, the Wright Flyer III."
+      ]
+    }
+  ]
+}

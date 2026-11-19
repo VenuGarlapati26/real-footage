@@ -1,9 +1,23 @@
 {
-  "slots": {},
-  "thumbStyles": {},
+  "slots": {
+    "19:30": {
+      "n": 2,
+      "score": 184
+    },
+    "07:30": {
+      "n": 1,
+      "score": 689
+    }
+  },
+  "thumbStyles": {
+    "stat": {
+      "n": 1,
+      "score": 0
+    }
+  },
   "shotSeconds": 3.2,
   "maxSceneSeconds": 14,
   "hookMin": 60,
   "notes": [],
-  "updated": "2026-11-16T17:38:41.513Z"
+  "updated": "2026-11-19T19:10:41.703Z"
 }

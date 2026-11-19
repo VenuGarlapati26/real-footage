@@ -1,0 +1,710 @@
+{
+  "id": "E008",
+  "status": "approved",
+  "topic": "ocean",
+  "angle": "then-now",
+  "look": "arctic",
+  "title": {
+    "en": "How Whales Evolved From Land To Sea",
+    "hi": "व्हेल जमीन से समुद्र में कैसे विकसित हुईं",
+    "es": "Cómo las ballenas evolucionaron de tierra a mar",
+    "pt": "Como as baleias evoluíram da terra para o mar"
+  },
+  "thumb": {
+    "en": "THEY HAD LEGS",
+    "hi": "उनके पैर थे",
+    "es": "TENÍAN PATAS",
+    "pt": "ELAS TINHAM PERNAS"
+  },
+  "scenes": [
+    {
+      "id": "s1",
+      "vo": {
+        "en": "Before your coffee cools, what land animal became a thirty-metre giant until science found the truth?",
+        "hi": "आपकी कॉफी ठंडी होने से पहले, कौन सा जमीनी जानवर तीस मीटर का विशालकाय जीव बन गया जब तक विज्ञान ने सच नहीं खोजा?",
+        "es": "Antes de que tu café se enfríe, ¿qué animal terrestre se convirtió en un gigante de treinta metros hasta que la ciencia halló la verdad?",
+        "pt": "Antes do seu café esfriar, que animal terrestre se tornou um gigante de trinta metros até que a ciência descobrisse a verdade?"
+      },
+      "footage": [
+        {
+          "provider": "wikimedia",
+          "q": "blue whale underwater footage",
+          "file": "Blue_whale_and_calf_-_Costa_Rica.webm",
+          "height": 720,
+          "credit": "NOAA (Wikimedia Commons)",
+          "license": "Public domain",
+          "takes": [
+            [
+              2,
+              10
+            ]
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "q": "humpback whale breaching ocean",
+          "file": "Humpback_whale_breaching.webm",
+          "height": 720,
+          "credit": "NOAA (Wikimedia Commons)",
+          "license": "Public domain",
+          "takes": [
+            [
+              1,
+              5
+            ]
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "q": "blue whale ocean surface",
+          "file": "Blue_whale_and_calf_-_Costa_Rica.webm",
+          "height": 720,
+          "credit": "NOAA (Wikimedia Commons)",
+          "license": "Public domain",
+          "takes": [
+            [
+              12,
+              18
+            ]
+          ]
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "kicker",
+          "text": {
+            "en": "Then vs Now",
+            "hi": "तब बनाम अब",
+            "es": "Antes y ahora",
+            "pt": "Antes vs Agora"
+          },
+          "sub": {
+            "en": "Baleen Whale Evolution",
+            "hi": "बलीन व्हेल का विकास",
+            "es": "Evolución de las ballenas barbadas",
+            "pt": "Evolução das baleias com barbatanas"
+          },
+          "at": 1.5
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "authentic": true,
+      "slowmo": true
+    },
+    {
+      "id": "s2",
+      "vo": {
+        "en": "Millions of years ago, ancestral cetaceans split from even-toed ungulates and walked on land before entering the water.",
+        "hi": "लाखों साल पहले, प्राचीन सेटेशियंस सम-अंगुली वाले खुर वाले जानवरों से अलग हो गए और पानी में जाने से पहले जमीन पर चले।",
+        "es": "Hace millones de años, los cetáceos ancestrales se separaron de los ungulados de dedos pares y caminaron por la tierra antes de entrar al agua.",
+        "pt": "Milhões de anos atrás, os cetáceos ancestrais se separaram dos ungulados de dedos pares e caminharam em terra antes de entrar na água."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "arid badlands landscape canyon",
+          "id": "17207185",
+          "takes": [
+            [
+              2,
+              12
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "ancient riverbed earth",
+          "id": "17283689",
+          "takes": [
+            [
+              20,
+              30
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "arid badlands landscape canyon",
+          "id": "7895613",
+          "takes": [
+            [
+              2,
+              9
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "arid badlands landscape canyon"
+        },
+        {
+          "provider": "pixabay",
+          "q": "prehistoric desert dry ground"
+        },
+        {
+          "provider": "pexels",
+          "q": "ancient riverbed earth"
+        }
+      ],
+      "shots": 3,
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s3",
+      "vo": {
+        "en": "These early proto-whales were small, with species like Mammalodon measuring no greater than 3 meters.",
+        "hi": "ये शुरुआती प्रोटो-व्हेल छोटी थीं, जिनमें मैमेलोडन जैसी प्रजातियां 3 मीटर से अधिक लंबी नहीं थीं।",
+        "es": "Estas primeras proto-ballenas eran pequeñas, con especies como Mammalodon que no medían más de 3 metros.",
+        "pt": "Essas primeiras proto-baleias eram pequenas, com espécies como o Mammalodon medindo no máximo 3 metros."
+      },
+      "footage": [
+        {
+          "provider": "wikimedia",
+          "q": "pygmy right whale swimming",
+          "file": "Caperea_marginata.webm",
+          "height": 720,
+          "credit": "Department of Conservation (Wikimedia Commons)",
+          "license": "Public domain",
+          "takes": [
+            [
+              0,
+              5
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "small seal swimming close up"
+        },
+        {
+          "provider": "pixabay",
+          "q": "underwater ocean floor detail"
+        }
+      ],
+      "shots": 3,
+      "overlays": [],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s4",
+      "vo": {
+        "en": "Back then, their jaws contained teeth, with incisors and canines built for stabbing and molars built for tearing.",
+        "hi": "तब, उनके जबड़ों में दांत थे, जिनमें चुभने के लिए इनसिज़र और कैनिन और फाड़ने के लिए मोलर्स थे।",
+        "es": "En aquel entonces, sus mandíbulas contenían dientes, con incisivos y caninos hechos para apuñalar y molares hechos para desgarrar.",
+        "pt": "Naquela época, suas mandíbulas continham dentes, com incisivos e caninos feitos para esfaquear e molares feitos para rasgar."
+      },
+      "footage": [
+        {
+          "provider": "wikimedia",
+          "q": "underwater shark teeth close up",
+          "file": "Shark_tooth_fossil.webm",
+          "height": 720,
+          "credit": "User:James.pack (Wikimedia Commons)",
+          "license": "Public domain",
+          "takes": [
+            [
+              0,
+              4
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro close up fish teeth"
+        },
+        {
+          "provider": "pixabay",
+          "q": "ancient fossil bone rock"
+        }
+      ],
+      "shots": 3,
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s5",
+      "vo": {
+        "en": "Baleen whales split from toothed whales around 34 million years ago. Their teeth vanished, replaced by baleen plates for filtering.",
+        "hi": "बलीन व्हेल लगभग 34 मिलियन साल पहले दांतेदार व्हेल से अलग हो गईं। उनके दांत गायब हो गए, और उनकी जगह छानने के लिए बलीन प्लेटों ने ले ली।",
+        "es": "Las ballenas barbadas se separaron de las ballenas dentadas hace unos 34 millones de años. Sus dientes desaparecieron, reemplazados por placas de faneras para filtrar.",
+        "pt": "As baleias com barbatanas separaram-se das baleias com dentes há cerca de 34 milhões de anos. Os seus dentes desapareceram, substituídos por placas de barbatanas para filtrar."
+      },
+      "footage": [
+        {
+          "provider": "wikimedia",
+          "q": "baleen whale mouth filter",
+          "file": "Humpback_whale_underwater.webm",
+          "height": 720,
+          "credit": "NOAA (Wikimedia Commons)",
+          "license": "Public domain",
+          "takes": [
+            [
+              2,
+              7
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "swirling krill in ocean"
+        },
+        {
+          "provider": "pixabay",
+          "q": "plankton floating in water"
+        }
+      ],
+      "shots": 3,
+      "sources": [
+        "S1"
+      ],
+      "longOnly": true
+    },
+    {
+      "id": "s6",
+      "vo": {
+        "en": "As Antarctica and Australia separated, global climate change triggered a massive evolutionary radiation in the mid-Miocene, leading to larger body sizes.",
+        "hi": "जैसे-जैसे अंटार्कटिका और ऑस्ट्रेलिया अलग हुए, वैश्विक जलवायु परिवर्तन ने मध्य-मिशोसीन में एक बड़े विकासवादी विकिरण को ट्रिगर किया, जिससे शरीर का आकार बड़ा हो गया।",
+        "es": "A medida que la Antártida y Australia se separaban, el cambio climático global desencadenó una radiación evolutiva masiva en el Mioceno medio, lo que llevó a tamaños corporales más grandes.",
+        "pt": "À medida que a Antártida e a Austrália se separavam, a mudança climática global desencadeou uma radiação evolutiva massiva no Mioceno médio, levando a tamanhos corporais maiores."
+      },
+      "footage": [
+        {
+          "provider": "wikimedia",
+          "q": "antarctic ice sheet aerial",
+          "file": "Antarctic_ice_shelf.webm",
+          "height": 720,
+          "credit": "NASA (Wikimedia Commons)",
+          "license": "Public domain",
+          "takes": [
+            [
+              1,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "ocean waves crashing storm"
+        },
+        {
+          "provider": "pixabay",
+          "q": "underwater deep blue current"
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "map",
+          "text": {
+            "en": "Antarctic Circumpolar Current",
+            "hi": "अंटार्कटिक परिध्रुवीय धारा",
+            "es": "Corriente Circumpolar Antártica",
+            "pt": "Corrente Circumpolar Antártica"
+          },
+          "geo": {
+            "lat": -60,
+            "lon": 0
+          },
+          "at": 1.2
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "longOnly": true
+    },
+    {
+      "id": "s7",
+      "vo": {
+        "en": "Now, the blue whale is the largest known animal to ever exist, reaching 31 metres in length and 190 tonnes in weight.",
+        "hi": "अब, नीली व्हेल अब तक का सबसे बड़ा ज्ञात जानवर है, जो 31 मीटर लंबा और 190 टन वजनी है।",
+        "es": "Ahora, la ballena azul es el animal más grande conocido que haya existido, alcanzando los 31 metros de longitud y 190 toneladas de peso.",
+        "pt": "Agora, a baleia azul é o maior animal conhecido a ter existido, atingindo 31 metros de comprimento e 190 toneladas de peso."
+      },
+      "footage": [
+        {
+          "provider": "wikimedia",
+          "q": "blue whale massive underwater",
+          "file": "Blue_whale_and_calf_-_Costa_Rica.webm",
+          "height": 720,
+          "credit": "NOAA (Wikimedia Commons)",
+          "license": "Public domain",
+          "takes": [
+            [
+              20,
+              26
+            ]
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "q": "blue whale fluke diving",
+          "file": "Blue_whale_fluke.webm",
+          "height": 720,
+          "credit": "NOAA (Wikimedia Commons)",
+          "license": "Public domain",
+          "takes": [
+            [
+              0,
+              5
+            ]
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "q": "blue whale surface blow",
+          "file": "Blue_whale_and_calf_-_Costa_Rica.webm",
+          "height": 720,
+          "credit": "NOAA (Wikimedia Commons)",
+          "license": "Public domain",
+          "takes": [
+            [
+              28,
+              33
+            ]
+          ]
+        }
+      ],
+      "shots": 3,
+      "overlays": [],
+      "sources": [
+        "S1"
+      ],
+      "authentic": true,
+      "longOnly": true
+    },
+    {
+      "id": "s8",
+      "vo": {
+        "en": "The fin whale is the fastest baleen whale, recorded swimming at 10 metres per second. They use streamlined bodies to reduce drag.",
+        "hi": "फिन व्हेल सबसे तेज बलीन व्हेल है, जिसे 10 मीटर प्रति सेकंड की गति से तैरते हुए दर्ज किया गया है। वे ड्रैग को कम करने के लिए सुव्यवस्थित शरीर का उपयोग करते हैं।",
+        "es": "El rorcual común es la ballena barbada más rápida, registrada nadando a 10 metros por segundo. Utilizan cuerpos estilizados para reducir la resistencia.",
+        "pt": "A baleia-comum é a baleia com barbatanas mais rápida, registrada nadando a 10 metros por segundo. Elas usam corpos aerodinâmicos para reduzir o arrasto."
+      },
+      "footage": [
+        {
+          "provider": "wikimedia",
+          "q": "fin whale underwater glide",
+          "file": "Fin_whale_underwater.webm",
+          "height": 720,
+          "credit": "NOAA (Wikimedia Commons)",
+          "license": "Public domain",
+          "takes": [
+            [
+              8,
+              13
+            ]
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "q": "blue whale accelerating ocean",
+          "file": "Blue_whale_and_calf_-_Costa_Rica.webm",
+          "height": 720,
+          "credit": "NOAA (Wikimedia Commons)",
+          "license": "Public domain",
+          "takes": [
+            [
+              35,
+              40
+            ]
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "q": "sei whale swimming fast",
+          "file": "Sei_whale_surface.webm",
+          "height": 720,
+          "credit": "NOAA (Wikimedia Commons)",
+          "license": "Public domain",
+          "takes": [
+            [
+              1,
+              5
+            ]
+          ]
+        }
+      ],
+      "shots": 3,
+      "overlays": [],
+      "sources": [
+        "S1"
+      ],
+      "authentic": true,
+      "longOnly": true,
+      "slowmo": true
+    },
+    {
+      "id": "s9",
+      "vo": {
+        "en": "Right whales rely on enlarged heads to skim-feed on slow-moving prey. They have thick blubber to keep warm in cold water.",
+        "hi": "राइट व्हेल धीमी गति से चलने वाले शिकार पर भोजन करने के लिए बढ़े हुए सिर पर भरोसा करती हैं। ठंडे पानी में गर्म रहने के लिए उनके पास मोटी चर्बी होती है।",
+        "es": "Las ballenas francas dependen de sus cabezas agrandadas para alimentarse por filtración de presas lentas. Tienen una capa gruesa de grasa para mantenerse calientes en agua fría.",
+        "pt": "As baleias-francas dependem de cabeças aumentadas para se alimentar por filtração de presas lentas. Elas têm uma camada espessa de gordura para se manterem quentes em água fria."
+      },
+      "footage": [
+        {
+          "provider": "wikimedia",
+          "q": "right whale surface feeding",
+          "file": "Right_whale_breaching.webm",
+          "height": 720,
+          "credit": "NOAA (Wikimedia Commons)",
+          "license": "Public domain",
+          "takes": [
+            [
+              10,
+              15
+            ]
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "q": "bowhead whale arctic water",
+          "file": "Bowhead_whale_arctic.webm",
+          "height": 720,
+          "credit": "NOAA (Wikimedia Commons)",
+          "license": "Public domain",
+          "takes": [
+            [
+              2,
+              7
+            ]
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "q": "right whale flukes up",
+          "file": "Right_whale_breaching.webm",
+          "height": 720,
+          "credit": "NOAA (Wikimedia Commons)",
+          "license": "Public domain",
+          "takes": [
+            [
+              18,
+              23
+            ]
+          ]
+        }
+      ],
+      "shots": 3,
+      "sources": [
+        "S1"
+      ],
+      "authentic": true,
+      "longOnly": true
+    },
+    {
+      "id": "s10",
+      "vo": {
+        "en": "There are 16 species of baleen whales. They are now protected by international law after centuries of being hunted for oil and meat.",
+        "hi": "बलीन व्हेल की 16 प्रजातियां हैं। तेल और मांस के लिए सदियों तक शिकार किए जाने के बाद अब वे अंतरराष्ट्रीय कानून द्वारा संरक्षित हैं।",
+        "es": "Existen 16 especies de ballenas barbadas. Ahora están protegidas por el derecho internacional después de siglos de ser cazadas por su aceite y carne.",
+        "pt": "Existem 16 espécies de baleias com barbatanas. Elas estão agora protegidas pelo direito internacional após séculos de caça por óleo e carne."
+      },
+      "footage": [
+        {
+          "provider": "wikimedia",
+          "q": "humpback whale pod ocean",
+          "file": "Humpback_whale_breaching.webm",
+          "height": 720,
+          "credit": "NOAA (Wikimedia Commons)",
+          "license": "Public domain",
+          "takes": [
+            [
+              10,
+              16
+            ]
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "q": "blue whale breathing blow",
+          "file": "Blue_whale_and_calf_-_Costa_Rica.webm",
+          "height": 720,
+          "credit": "NOAA (Wikimedia Commons)",
+          "license": "Public domain",
+          "takes": [
+            [
+              42,
+              47
+            ]
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "q": "grey whale ocean surface",
+          "file": "Gray_whale_breaching.webm",
+          "height": 720,
+          "credit": "NOAA (Wikimedia Commons)",
+          "license": "Public domain",
+          "takes": [
+            [
+              3,
+              8
+            ]
+          ]
+        }
+      ],
+      "shots": 3,
+      "overlays": [],
+      "sources": [
+        "S1"
+      ],
+      "authentic": true,
+      "longOnly": true
+    },
+    {
+      "id": "s11",
+      "vo": {
+        "en": "The North Atlantic right whale is ranked critically endangered. They face threats from marine pollution and ocean acidification every single day.",
+        "hi": "उत्तरी अटलांटिक राइट व्हेल को गंभीर रूप से संकटग्रस्त माना गया है। वे हर दिन समुद्री प्रदूषण और महासागर के अम्लीकरण के खतरों का सामना करते हैं।",
+        "es": "La ballena franca glacial está clasificada como en peligro crítico. Enfrentan amenazas por la contaminación marina y la acidificación del océano todos los días.",
+        "pt": "A baleia-franca-do-atlântico-norte está classificada como criticamente em perigo. Elas enfrentam ameaças da poluição marinha e da acidificação dos oceanos todos os dias."
+      },
+      "footage": [
+        {
+          "provider": "wikimedia",
+          "q": "right whale swimming ocean surface",
+          "file": "Right_whale_breaching.webm",
+          "height": 720,
+          "credit": "NOAA (Wikimedia Commons)",
+          "license": "Public domain",
+          "takes": [
+            [
+              25,
+              30
+            ]
+          ]
+        },
+        {
+          "provider": "nasa",
+          "q": "right whale swimming ocean surface"
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "lower",
+          "text": {
+            "en": "Source: Wikipedia",
+            "hi": "स्रोत: विकिपीडिया",
+            "es": "Fuente: Wikipedia",
+            "pt": "Fonte: Wikipédia"
+          },
+          "at": 1
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "authentic": true,
+      "longOnly": true
+    },
+    {
+      "id": "s12",
+      "shortOnly": true,
+      "vo": {
+        "en": "From tiny land walkers to ocean giants, their transformation is still unfolding.",
+        "hi": "छोटे जमीनी पैदल चलने वालों से लेकर महासागर के दिग्गजों तक, उनका परिवर्तन अभी भी सामने आ रहा है।",
+        "es": "Desde pequeños caminantes terrestres hasta gigantes del océano, su transformación aún se está desplegando.",
+        "pt": "De pequenos caminhantes terrestres a gigantes do oceano, a sua transformação ainda está a decorrer."
+      },
+      "footage": [
+        {
+          "provider": "wikimedia",
+          "q": "blue whale underwater tail fluke",
+          "file": "Blue_whale_fluke.webm",
+          "height": 720,
+          "credit": "NOAA (Wikimedia Commons)",
+          "license": "Public domain",
+          "takes": [
+            [
+              6,
+              11
+            ]
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "q": "humpback whale diving deep",
+          "file": "Humpback_whale_breaching.webm",
+          "height": 720,
+          "credit": "NOAA (Wikimedia Commons)",
+          "license": "Public domain",
+          "takes": [
+            [
+              18,
+              23
+            ]
+          ]
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "authentic": true,
+      "shots": 2
+    }
+  ],
+  "music": {
+    "mood": "mystery",
+    "styles": [
+      "deep cinematic pulse",
+      "ambient orchestral swell",
+      "low sub bass drone"
+    ],
+    "peak": "s7"
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Wikipedia, Baleen whale",
+      "url": "https://en.wikipedia.org/wiki/Baleen_whale",
+      "claims": [
+        "While cetaceans were historically thought to have descended from mesonychians, molecular evidence instead supports them as a clade of even-toed ungulates (Artiodactyla)",
+        "Baleen whales split from toothed whales (Odontoceti) around 34 million years ago",
+        "range in size from the 6 m (20 ft) and 3,000 kg (6,600 lb) pygmy right whale to the 31 m (102 ft) and 190 t (210 short tons) blue whale, the largest known animal to ever exist",
+        "The fin whale is the fastest baleen whale, recorded swimming at 10 m/s (36 km/h; 22 mph)",
+        "There are 16 species of baleen whales",
+        "These early mysticetes were exceedingly small compared to modern baleen whales, with species like Mammalodon measuring no greater than 3 meters (10 ft)",
+        "Its jaw contained teeth, with incisors and canines built for stabbing and molars and premolars built for tearing",
+        "the North Atlantic right whale is ranked critically endangered by the International Union for Conservation of Nature",
+        "Baleen whales experienced their first radiation in the mid-Miocene. It is thought this radiation was caused by global climate change and major tectonic activity when Antarctica and Australia separated from each other, creating the Antarctic Circumpolar Current"
+      ]
+    }
+  ],
+  "engage": {
+    "ask": {
+      "en": "If you could see any stage of whale evolution, would you pick the land walkers or the ocean giants?",
+      "hi": "अगर आप व्हेल के विकास का कोई भी चरण देख सकते, तो क्या आप जमीन पर चलने वालों को चुनते या समुद्र के दिग्गजों को?",
+      "es": "Si pudieras ver cualquier etapa de la evolución de las ballenas, ¿elegirías a los caminantes terrestres o a los gigantes del océano?",
+      "pt": "Se pudesses ver qualquer fase da evolução das baleias, escolherias os caminhantes terrestres ou os gigantes do oceano?"
+    },
+    "hookText": {
+      "en": "WHALES HAD *LEGS*",
+      "hi": "व्हेल के *पैर* थे",
+      "es": "LAS BALLENAS TENÍAN *PATAS*",
+      "pt": "AS BALEIAS TINHAM *PERNAS*"
+    },
+    "loop": {
+      "en": "From tiny land walkers to ocean giants, their transformation is still unfolding.",
+      "hi": "छोटे जमीनी पैदल चलने वालों से लेकर महासागर के दिग्गजों तक, उनका परिवर्तन अभी भी सामने आ रहा है।",
+      "es": "Desde pequeños caminantes terrestres hasta gigantes del océano, su transformación aún se está desplegando.",
+      "pt": "De pequenos caminhantes terrestres a gigantes do oceano, a sua transformação ainda está a decorrer."
+    },
+    "share": {
+      "en": "Whales are wild. They started on land and grew huge.",
+      "hi": "व्हेल जंगली हैं। उन्होंने जमीन पर शुरुआत की और विशाल हो गईं।",
+      "es": "Las ballenas son salvajes. Comenzaron en la tierra y crecieron mucho.",
+      "pt": "As baleias são selvagens. Começaram na terra e cresceram imenso."
+    }
+  }
+}
