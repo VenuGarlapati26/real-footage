@@ -1,0 +1,1364 @@
+{
+  "id": "E009",
+  "status": "approved",
+  "topic": "wildlife",
+  "look": "earth",
+  "title": {
+    "en": "The Fastest Land Animal on Earth (Real Wildlife Footage)",
+    "hi": "धरती का सबसे तेज़ जानवर: चीते का असली सच",
+    "es": "El animal terrestre más rápido (Imágenes reales)",
+    "pt": "O animal terrestre mais rápido da Terra (Imagens reais)"
+  },
+  "thumb": {
+    "en": "104 KM/H SPRINT",
+    "hi": "104 KM/H की रफ़्तार",
+    "es": "104 KM/H CARRERA",
+    "pt": "104 KM/H CORRIDA"
+  },
+  "scenes": [
+    {
+      "id": "s1",
+      "vo": {
+        "en": "Before your day ends, a Serengeti cheetah will never stop running at one hundred and four km/h. Why?",
+        "hi": "आपका दिन ख़त्म होने से पहले, सेरेनगेटी का चीता एक सौ चार किमी/घंटा की रफ़्तार से दौड़ना कभी नहीं रोकेगा। क्यों?",
+        "es": "Antes de que termine tu día, un guepardo del Serengueti nunca dejará de correr a ciento cuatro km/h. ¿Por qué?",
+        "pt": "Antes do seu dia terminar, uma chita do Serengeti nunca vai parar de correr a cem e quatro km/h. Por quê?"
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "tracking shot cheetah running savanna",
+          "id": "32414257",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot cheetah running savanna",
+          "id": "39157033",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot cheetah running savanna",
+          "id": "39157028",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot cheetah running savanna"
+        },
+        {
+          "provider": "pixabay",
+          "q": "slow motion cheetah sprint wilderness"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "wide aerial cheetah running predator"
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "kicker",
+          "text": {
+            "en": "Built for Pure Speed",
+            "hi": "रफ़्तार की मिसाल",
+            "es": "Nacido para la velocidad",
+            "pt": "Nascido para a velocidade"
+          },
+          "sub": {
+            "en": "Serengeti Plains",
+            "hi": "सेरेनगेटी के मैदान",
+            "es": "Llanuras del Serengueti",
+            "pt": "Planícies do Serengeti"
+          },
+          "at": 1.5
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s2",
+      "vo": {
+        "en": "Engineered for raw velocity, this pursuit predator relies on a flexible lumbar spine and extra powerful hindlimb muscles.",
+        "hi": "सिर्फ़ तेज़ी के लिए बना यह शिकारी अपनी लचीली रीढ़ की हड्डी और बेहद ताक़तवर पिछली टांगों पर भरोसा करता है।",
+        "es": "Diseñado para la velocidad pura, este depredador confía en una columna lumbar flexible y potentes músculos traseros.",
+        "pt": "Projetado para velocidade pura, este predador confia em uma coluna lombar flexível e músculos traseiros poderosos."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "macro close up cheetah eyes",
+          "id": "37343833",
+          "takes": [
+            [
+              0,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro close up cheetah eyes"
+        },
+        {
+          "provider": "pixabay",
+          "q": "medium shot cheetah walking grass"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "low angle cheetah stealth movement"
+        }
+      ],
+      "shots": 1,
+      "slowmo": true,
+      "overlays": [
+        {
+          "kind": "stat",
+          "text": {
+            "en": "104",
+            "hi": "104",
+            "es": "104",
+            "pt": "104"
+          },
+          "sub": {
+            "en": "km/h top speed",
+            "hi": "किमी/घंटा अधिकतम रफ़्तार",
+            "es": "km/h velocidad máxima",
+            "pt": "km/h velocidade máxima"
+          },
+          "at": 0.8
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s3",
+      "vo": {
+        "en": "Across its golden coat, each individual displays around two thousand solid black spots that disguise it during a high-stakes hunt.",
+        "hi": "इसकी सुनहरी खाल पर लगभग दो हज़ार काले धब्बे होते हैं जो शिकार के दौरान इसे छुपाने में मदद करते हैं।",
+        "es": "A lo largo de su pelaje dorado, cada individuo muestra unos dos mil puntos negros que lo camuflan en la caza.",
+        "pt": "Ao longo de seu pelo dourado, cada indivíduo exibe cerca de dois mil pontos pretos que o camuflam na caça."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "close up cheetah fur spots",
+          "id": "39158916",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "close up cheetah fur spots",
+          "id": "39158921",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "close up cheetah fur spots",
+          "id": "37219187",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "close up cheetah fur spots"
+        },
+        {
+          "provider": "pixabay",
+          "q": "tracking shot cheetah stalking impala"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "aerial view cheetah dry savanna"
+        }
+      ],
+      "shots": 3,
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s4",
+      "vo": {
+        "en": "It quietly stalks prey within thirty to two hundred metres before triggering a lightning burst that ends in seconds.",
+        "hi": "यह तीस से दो सौ मीटर की दूरी तक दबे पाँव पीछा करता है और फिर सेकंडों में बिजली जैसी रफ़्तार से हमला कर देता है।",
+        "es": "Acecha a su presa entre treinta y doscientos metros antes de desatar una ráfaga relámpago que acaba en segundos.",
+        "pt": "Eles perseguem a presa entre trinta e duzentos metros antes de disparar uma corrida relâmpago que dura segundos."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "slow motion cheetah pouncing prey",
+          "id": "37399014",
+          "takes": [
+            [
+              4,
+              10
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "slow motion cheetah pouncing prey",
+          "id": "39157030",
+          "takes": [
+            [
+              2,
+              7
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "slow motion cheetah pouncing prey",
+          "id": "37788266",
+          "takes": [
+            [
+              0,
+              5
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "slow motion cheetah pouncing prey"
+        },
+        {
+          "provider": "pixabay",
+          "q": "tracking shot gazelle running wild"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "wide shot cheetah hunt dust"
+        }
+      ],
+      "shots": 3,
+      "slowmo": true,
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s5",
+      "vo": {
+        "en": "With global numbers estimated at just six thousand five hundred and seventeen mature individuals, every single wild survival story matters.",
+        "hi": "दुनिया भर में केवल छह हज़ार पाँच सौ सत्रह वयस्क चीते बचे हैं, इसलिए हर एक की रक्षा बेहद अहम है।",
+        "es": "Con una población estimada en solo seis mil quinientos diecisiete adultos, cada historia de supervivencia importa.",
+        "pt": "Com uma população estimada em apenas seis mil quinhentos e dezassete adultos, cada história de sobrevivência importa."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "cinematic wide shot cheetah standing",
+          "id": "39157028",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "cinematic wide shot cheetah standing",
+          "id": "32414253",
+          "takes": [
+            [
+              12,
+              18
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "cinematic wide shot cheetah standing",
+          "id": "4962245",
+          "takes": [
+            [
+              4,
+              9
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "cinematic wide shot cheetah standing"
+        },
+        {
+          "provider": "pixabay",
+          "q": "low angle shot cheetah sunset"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "drone shot african savanna landscape"
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "stat",
+          "text": {
+            "en": "6,517",
+            "hi": "6,517",
+            "es": "6.517",
+            "pt": "6.517"
+          },
+          "sub": {
+            "en": "mature cheetahs remaining",
+            "hi": "बचे हुए वयस्क चीते",
+            "es": "guepardos adultos restantes",
+            "pt": "chitas adultas restantes"
+          },
+          "at": 0.5
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s6",
+      "shortOnly": true,
+      "vo": {
+        "en": "And every sprint begins with the exact same lethal question...",
+        "hi": "और हर एक दौड़ की शुरुआत उसी एक घातक सवाल से होती है...",
+        "es": "Y cada carrera comienza con la misma pregunta letal...",
+        "pt": "E cada corrida começa com a mesma pergunta letal..."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "close up cheetah gaze camera",
+          "id": "37788264",
+          "takes": [
+            [
+              22,
+              26
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "close up cheetah gaze camera",
+          "id": "37343833",
+          "takes": [
+            [
+              0,
+              4
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "close up cheetah gaze camera",
+          "id": "34743201",
+          "takes": [
+            [
+              14,
+              18
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "close up cheetah gaze camera"
+        },
+        {
+          "provider": "pixabay",
+          "q": "tracking shot running cheetah action"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "medium shot cheetah crouching grass"
+        }
+      ],
+      "shots": 3,
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s7",
+      "longOnly": true,
+      "vo": {
+        "en": "Scientific records show that the Puma lineage genetically diverged from other feline groups six point seven million years ago. The modern cheetah stands today as the single surviving member of its unique genus Acinonyx.",
+        "hi": "वैज्ञानिक रिकॉर्ड बताते हैं कि प्यूमा वंश छियासठ लाख वर्ष पहले अन्य बिल्ली समूहों से अलग हुआ था। आधुनिक चीता आज अपने अनोखे वंश एकिनोनिक्स का एकमात्र जीवित सदस्य है।",
+        "es": "Los registros científicos muestran que el linaje del Puma se separó genéticamente de otros felinos hace seis punto siete millones de años. El guepardo moderno es el único superviviente de su género Acinonyx.",
+        "pt": "Registos científicos mostram que a linhagem do Puma se separou geneticamente de outros felinos há seis ponto sete milhões de anos. A chita moderna é a única sobrevivente de seu género Acinonyx."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "wide establishing african wilderness landscape",
+          "id": "16680510",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "wide establishing african wilderness landscape",
+          "id": "33660384",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "wide establishing african wilderness landscape",
+          "id": "33660366",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "wide establishing african wilderness landscape"
+        },
+        {
+          "provider": "pixabay",
+          "q": "detail close up cheetah skull"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "tracking shot solitary cheetah walking"
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "chapter",
+          "text": {
+            "en": "Deep Evolutionary Roots",
+            "hi": "विकासवादी जड़ें",
+            "es": "Raíces evolutivas profundas",
+            "pt": "Raízes evolutivas profundas"
+          },
+          "sub": {
+            "en": "01",
+            "hi": "01",
+            "es": "01",
+            "pt": "01"
+          },
+          "at": 0.5
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s8",
+      "longOnly": true,
+      "vo": {
+        "en": "Fossils excavated across southern Africa suggest that ancient cheetah ancestors roamed grasslands between three point eight to one point nine million years ago, evolving larger bodies before refining their design into pure aerodynamic sprinters.",
+        "hi": "दक्षिण अफ़्रीका में मिले जीवाश्म बताते हैं कि चीते के प्राचीन पूर्वज अडतीस लाख से उन्नीस लाख साल पहले घास के मैदानों में घूमते थे, और समय के साथ बेहद तेज़ दौड़ने वाले शिकारी बन गए।",
+        "es": "Los fósiles excavados en el sur de África sugieren que los ancestros del guepardo deambularon entre tres punto ocho y uno punto nueve millones de años atrás, perfeccionando su diseño para la velocidad.",
+        "pt": "Fósseis escavados na África Austral sugerem que os ancestrais da chita vagueavam há entre três ponto oito e um ponto nove milhões de anos, aprimorando seu corpo para a velocidade."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "aerial shot rugged desert hills",
+          "id": "10937543",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "aerial shot rugged desert hills",
+          "id": "20625606",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "aerial shot rugged desert hills",
+          "id": "9317166",
+          "takes": [
+            [
+              12,
+              18
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "aerial shot rugged desert hills"
+        },
+        {
+          "provider": "pixabay",
+          "q": "medium shot dry earth cracks"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "tracking shot cheetah pacing territory"
+        }
+      ],
+      "shots": 3,
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s9",
+      "longOnly": true,
+      "vo": {
+        "en": "Geneticists discovered that the modern species passed through severe population bottlenecks from about one hundred thousand years and about twelve thousand years ago, leaving living individuals with surprisingly identical genetic markers across the globe.",
+        "hi": "जेनेटिक्स रिसर्च से पता चला है कि यह प्रजाति लगभग एक लाख साल और बारह हज़ार साल पहले दो भयानक जेनेटिक संकटों से गुज़री, जिस वजह से आज इनके जीन बहुत हद तक एक समान हैं।",
+        "es": "Los genetistas descubrieron que la especie sufrió cuellos de botella poblacionales hace unos cien mil y doce mil años, dejando a los individuos actuales con marcadores genéticos casi idénticos.",
+        "pt": "Os geneticistas descobriram que a espécie passou por gargalos populacionais há cerca de cem mil e doze mil anos, deixando indivíduos atuais com marcadores genéticos surpreendentemente idênticos."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "macro shot predator paws walking",
+          "id": "37298004",
+          "takes": [
+            [
+              8,
+              14
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro shot predator paws walking",
+          "id": "39420321",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro shot predator paws walking",
+          "id": "12633848",
+          "takes": [
+            [
+              4,
+              10
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro shot predator paws walking"
+        },
+        {
+          "provider": "pixabay",
+          "q": "slow motion cheetah breathing heavily"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "cinematic wide shot pair cheetahs"
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "stat",
+          "text": {
+            "en": "100,000",
+            "hi": "100,000",
+            "es": "100.000",
+            "pt": "100.000"
+          },
+          "sub": {
+            "en": "years since first bottleneck",
+            "hi": "वर्ष पहले पहला जेनेटिक संकट",
+            "es": "años del primer cuello de botella",
+            "pt": "anos desde o primeiro gargalo"
+          },
+          "at": 1
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s10",
+      "longOnly": true,
+      "vo": {
+        "en": "Studies indicate that their overall genetic variation is around zero point one to four percent of average living species. This extreme uniformity creates severe challenges for captive breeding and disease immunity.",
+        "hi": "अध्ययनों से पता चलता है कि इनकी आनुवंशिक विविधता केवल शून्य दशमलव एक से चार प्रतिशत ही है। यह समानता बीमारियों से लड़ने और संरक्षण में बड़ी चुनौती खड़ी करती है।",
+        "es": "Estudios indican que su variación genética es de solo cero punto uno a cuatro por ciento en comparación con otras especies. Esta uniformidad dificulta la reproducción y la inmunidad.",
+        "pt": "Estudos indicam que sua variação genética é de apenas zero ponto um a quatro por cento em comparação com outras espécies. Essa uniformidade dificulta a reprodução e a imunidade."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "close up cheetah face tear",
+          "id": "7277920",
+          "takes": [
+            [
+              2,
+              12
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "close up cheetah face tear",
+          "id": "6269152",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "close up cheetah face tear",
+          "id": "9063795",
+          "takes": [
+            [
+              2,
+              10
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "close up cheetah face tear"
+        },
+        {
+          "provider": "pixabay",
+          "q": "tracking shot cheetah moving savanna"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "aerial shot cheetah family resting"
+        }
+      ],
+      "shots": 3,
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s11",
+      "longOnly": true,
+      "vo": {
+        "en": "Every cat species possesses unique physical signatures, but the diploid number of chromosomes in the cheetah is thirty-eight. That exact count matches most domestic cats, despite their radical evolutionary separation.",
+        "hi": "बिल्ली की हर प्रजाति में अलग शारीरिक विशेषताएं होती हैं, लेकिन चीते में क्रोमोसोम की संख्या अड़तीस होती है। यह संख्या घरेलू बिल्लियों से बिल्कुल मेल खाती है।",
+        "es": "Cada especie felina posee características físicas únicas, pero el número diploide de cromosomas en el guepardo es treinta y ocho, coincidiendo con los gatos domésticos a pesar de su separación.",
+        "pt": "Cada espécie felina possui características únicas, mas o número diploide de cromossomas na chita é trinta e oito, coincidiendo com os gatos domésticos apesar de sua separação."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "detail close up cheetah claws",
+          "id": "32414260",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "detail close up cheetah claws",
+          "id": "39157032",
+          "takes": [
+            [
+              6,
+              12
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "detail close up cheetah claws",
+          "id": "39157029",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "detail close up cheetah claws"
+        },
+        {
+          "provider": "pixabay",
+          "q": "medium shot cheetah sitting tall"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "wide shot dry acacia tree"
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "stat",
+          "text": {
+            "en": "38",
+            "hi": "38",
+            "es": "38",
+            "pt": "38"
+          },
+          "sub": {
+            "en": "diploid chromosomes",
+            "hi": "क्रोमोसोम की संख्या",
+            "es": "cromosomas diploides",
+            "pt": "cromossomas diploides"
+          },
+          "at": 1.1
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s12",
+      "longOnly": true,
+      "vo": {
+        "en": "Unlike bulky big cats, an adult cheetah weighs between twenty-one and sixty-five kg. Its lightweight frame, narrow torso, and specialized semi-retractable claws function like athletic cleats during high speed turns.",
+        "hi": "भारी बिल्लियों के विपरीत, एक वयस्क चीते का वज़न इक्कीस से पैंसठ किलोग्राम होता है। इसका हल्का शरीर और ख़ास पंजे तेज़ रफ़्तार में मुड़ने में मदद करते हैं।",
+        "es": "A diferencia de otros grandes felinos, un guepardo adulto pesa entre veintiuno y sesenta y cinco kg. Su cuerpo liviano y garras semi-retráctiles funcionan como tacos atléticos.",
+        "pt": "Ao contrário de outros grandes felinos, uma chita adulta pesa entre vinte e um e sessenta e cinco kg. Seu corpo leve e garras semi-retráteis funcionam como cravos atléticos."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "tracking shot running cheetah speed",
+          "id": "39157033",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot running cheetah speed",
+          "id": "39157028",
+          "takes": [
+            [
+              1,
+              7
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot running cheetah speed",
+          "id": "8691728",
+          "takes": [
+            [
+              0,
+              5
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot running cheetah speed"
+        },
+        {
+          "provider": "pixabay",
+          "q": "slow motion cheetah sharp turn"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "wide shot open African plain"
+        }
+      ],
+      "shots": 3,
+      "slowmo": true,
+      "overlays": [
+        {
+          "kind": "chapter",
+          "text": {
+            "en": "Built for the Chase",
+            "hi": "शिकार का ताक़तवर ढाँचा",
+            "es": "Construido para la caza",
+            "pt": "Construído para a caça"
+          },
+          "sub": {
+            "en": "02",
+            "hi": "02",
+            "es": "02",
+            "pt": "02"
+          },
+          "at": 0.4
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s13",
+      "longOnly": true,
+      "vo": {
+        "en": "Reproductive strategy is vital for survival. A mother gives birth to a litter of three or four cubs, who are weaned at around four months and become independent by around twenty months of age.",
+        "hi": "प्रजनन रणनीति इनके जीवन के लिए ज़रूरी है। माँ तीन या चार बच्चों को जन्म देती है, जिन्हें चार महीने में दूध छुड़ाया जाता है और बीस महीने में वे आत्मनिर्भर हो जाते हैं।",
+        "es": "La estrategia reproductiva es vital. Una madre da a luz a una camada de tres o cuatro cachorros, desmamados a los cuatro meses e independientes a los veinte meses.",
+        "pt": "A estratégia reprodutiva é vital. Uma mãe dá à luz uma ninhada de três ou quatro filhotes, desmamados aos quatro meses e independentes aos vinte meses."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "medium shot cheetah mother cubs",
+          "id": "37399014",
+          "takes": [
+            [
+              24,
+              30
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "medium shot cheetah mother cubs",
+          "id": "38708969",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "medium shot cheetah mother cubs",
+          "id": "38754619",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "medium shot cheetah mother cubs"
+        },
+        {
+          "provider": "pixabay",
+          "q": "close up young cheetah cub"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "tracking shot cheetah cubs playing"
+        }
+      ],
+      "shots": 3,
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s14",
+      "longOnly": true,
+      "vo": {
+        "en": "In a historic wild conservation effort, an African cheetah subspecies was introduced to India in twenty twenty-two to reestablish predatory balance in regions where natural wild populations had vanished decades earlier.",
+        "hi": "एक ऐतिहासिक संरक्षण प्रयास में, 2022 में भारत में अफ़्रीकी चीतों को लाया गया ताकि उन क्षेत्रों में संतुलन बहाल किया जा सके जहाँ ये दशकों पहले ग़ायब हो चुके थे।",
+        "es": "En un esfuerzo histórico de conservación, una subespecie africana fue introducida en India en 2022 para reestablecer el equilibrio depredador donde se habían extinguido.",
+        "pt": "Num esforço histórico de conservação, uma subespécie africana foi introduzida na Índia em 2022 para reestabelecer o equilíbrio onde haviam se extinto."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "wide aerial Indian grassland landscape",
+          "id": "17286861",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "wide aerial Indian grassland landscape",
+          "id": "34835755",
+          "takes": [
+            [
+              0,
+              5
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "wide aerial Indian grassland landscape",
+          "id": "34649013",
+          "takes": [
+            [
+              0,
+              5
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "wide aerial Indian grassland landscape"
+        },
+        {
+          "provider": "pixabay",
+          "q": "tracking shot cheetah high grass"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "medium shot solitary cheetah surveying"
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "map",
+          "text": {
+            "en": "Kuno National Park, India",
+            "hi": "कूनो राष्ट्रीय उद्यान, भारत",
+            "es": "Parque Nacional Kuno, India",
+            "pt": "Parque Nacional Kuno, Índia"
+          },
+          "geo": {
+            "lat": 25.5,
+            "lon": 77.3
+          },
+          "at": 1
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s15",
+      "longOnly": true,
+      "vo": {
+        "en": "From high arid mountain ranges to wide open savannahs, these sleek cats battle severe habitat fragmentation, poaching, and fierce competition from larger predators that routinely steal their fresh hunted kills.",
+        "hi": "सूखे पर्वतों से लेकर खुले मैदानों तक, ये चीते अपने शिकार को छीनने वाले बड़े शिकारियों और घटते जंगलों जैसी चुनौतियों का सामना करते हैं।",
+        "es": "Desde rangos montañosos áridos hasta grandes llanuras, estos felinos luchan contra la fragmentación de hábitat, la caza furtiva y competidores que les roban sus presas.",
+        "pt": "De serras áridas a grandes planícies, estes felinos lutam contra a fragmentação do habitat, caça ilegal e competidores que roubam suas presas."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "wide shot arid mountain landscape",
+          "id": "10937543",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "wide shot arid mountain landscape",
+          "id": "9320788",
+          "takes": [
+            [
+              8,
+              14
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "wide shot arid mountain landscape",
+          "id": "9318295",
+          "takes": [
+            [
+              12,
+              18
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "wide shot arid mountain landscape"
+        },
+        {
+          "provider": "pixabay",
+          "q": "medium shot spotted hyena standing"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "tracking shot cheetah alert savanna"
+        }
+      ],
+      "shots": 3,
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s16",
+      "longOnly": true,
+      "vo": {
+        "en": "Distinct black tear streaks channel blinding sunlight away from their eyes during intense daytime hunts, granting these tactical daylight predators a remarkably sharp visual advantage across sunlit open grassland terrain.",
+        "hi": "आँखों के नीचे बनी काली लकीरें दिन के समय सूरज की तेज़ रोशनी को आँखों में जाने से रोकती हैं, जिससे इन्हें दिन में शिकार करने में मदद मिलती है।",
+        "es": "Las franjas negras desvían el sol cegador de sus ojos durante las cacerías diurnas, otorgándoles una ventaja visual táctica en terreno abierto.",
+        "pt": "As marcas pretas desviam o sol cegador de seus olhos durante as caçadas diurnas, concedendo-lhes uma vantagem visual tática em terreno aberto."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "macro close up cheetah streaks",
+          "id": "39157032",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro close up cheetah streaks",
+          "id": "39157031",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro close up cheetah streaks",
+          "id": "39157029",
+          "takes": [
+            [
+              4,
+              10
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro close up cheetah streaks"
+        },
+        {
+          "provider": "pixabay",
+          "q": "medium shot cheetah looking distance"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "cinematic wide shot sunny savanna"
+        }
+      ],
+      "shots": 3,
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s17",
+      "longOnly": true,
+      "vo": {
+        "en": "Physical measurements show these cats reach a height of sixty-seven to ninety-four cm at the shoulder. Their streamlined bodies are precision built to deliver unmatched acceleration across flat savanna terrain.",
+        "hi": "शारीरिक माप से पता चलता है कि ये बिल्ली प्रजाति कंधे तक 67 से 94 सेमी की ऊँचाई तक पहुँचती है। इनका शरीर मैदानों में तेज़ रफ़्तार देने के लिए बना है।",
+        "es": "Las mediciones físicas muestran que estos felinos alcanzan una altura de sesenta y siete a noventa y cuatro cm a la cruz, diseñados para acelerar.",
+        "pt": "As medições físicas mostram que estes felinos atingem uma altura de sessenta e sete a noventa e quatro cm no ombro, projetados para acelerar."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "low angle cheetah standing profile",
+          "id": "37788265",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "low angle cheetah standing profile",
+          "id": "8451567",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "low angle cheetah standing profile",
+          "id": "37343833",
+          "takes": [
+            [
+              2,
+              7
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "low angle cheetah standing profile"
+        },
+        {
+          "provider": "pixabay",
+          "q": "tracking shot cheetah sprinting dry"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "wide aerial view savannah horizon"
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "stat",
+          "text": {
+            "en": "67-94",
+            "hi": "67-94",
+            "es": "67-94",
+            "pt": "67-94"
+          },
+          "sub": {
+            "en": "cm shoulder height",
+            "hi": "सेमी कंधे की ऊँचाई",
+            "es": "cm de altura a la cruz",
+            "pt": "cm de altura no ombro"
+          },
+          "at": 1
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s18",
+      "longOnly": true,
+      "vo": {
+        "en": "Following a gestation of nearly three months, newborn wild cubs weigh between one hundred and fifty to three hundred grams. These tiny sprinters require constant maternal protection from lions and hyenas.",
+        "hi": "लगभग तीन महीने के गर्भकाल के बाद, नवजात बच्चों का वज़न 150 से 300 ग्राम होता है। इन छोटे बच्चों को शेरों और लकड़बग्घों से सुरक्षा की ज़रूरत होती है।",
+        "es": "Tras una gestación de casi tres meses, los cachorros recién nacidos pesan entre ciento cincuenta y trescientos gramos, requiriendo constante protección materna.",
+        "pt": "Após uma gestação de quase três meses, os filhotes recém-nascidos pesam entre cento e cinquenta e trezentos gramas, necessitando de proteção materna."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "close up newborn cheetah cub",
+          "id": "38754619",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "close up newborn cheetah cub",
+          "id": "38708969",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "close up newborn cheetah cub",
+          "id": "37399014",
+          "takes": [
+            [
+              6,
+              12
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "close up newborn cheetah cub"
+        },
+        {
+          "provider": "pixabay",
+          "q": "medium shot lion pride resting"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "tracking shot mother cheetah carrying"
+        }
+      ],
+      "shots": 3,
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s19",
+      "longOnly": true,
+      "vo": {
+        "en": "Understanding the precise evolution and physical biology of Earth's fastest land mammal clearly reveals why preserving their remaining threatened ecosystems is vital for protecting global wild biodiversity worldwide.",
+        "hi": "धरती के सबसे तेज़ जानवर के विकास और शरीर विज्ञान को समझना यह बताता है कि उनके बचे हुए पर्यावरण को बचाना जैव विविधता के लिए क्यों ज़रूरी है।",
+        "es": "Comprender la evolución y biología del mamífero terrestre más rápido del mundo revela por qué preservar sus ecosistemas es vital para la biodiversidad.",
+        "pt": "Compreender a evolução e biologia do mamífero terrestre mais rápido da Terra revela por que preservar seus ecossistemas é vital para a biodiversidade."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "low angle shot cheetah walking",
+          "id": "39157028",
+          "takes": [
+            [
+              2,
+              10
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "low angle shot cheetah walking"
+        },
+        {
+          "provider": "pixabay",
+          "q": "tracking shot cheetah golden light"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "wide aerial view wild savanna"
+        }
+      ],
+      "shots": 1,
+      "overlays": [
+        {
+          "kind": "lower",
+          "text": {
+            "en": "Source: Wikipedia / IUCN Red List",
+            "hi": "स्रोत: विकिपीडिया / IUCN रेड लिस्ट",
+            "es": "Fuente: Wikipedia / Lista Roja UICN",
+            "pt": "Fonte: Wikipédia / Lista Vermelha IUCN"
+          },
+          "at": 1
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    }
+  ],
+  "music": {
+    "mood": "upbeat",
+    "styles": [
+      "kinetic rhythm",
+      "tribal percussion",
+      "cinematic strings"
+    ],
+    "peak": "s2"
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Wikipedia, Cheetah",
+      "url": "https://en.wikipedia.org/wiki/Cheetah",
+      "claims": [
+        "capable of running at 93–104 km/h (58–65 mph)",
+        "global cheetah population was estimated at 6,517 mature individuals in 2021",
+        "covered with around 2,000 evenly spaced, oval or round solid black spots",
+        "stalks and approaches its prey within 30–200 m (98–656 ft)",
+        "diploid number of chromosomes in the cheetah is 38",
+        "bottlenecks from about 100,000 years and about 12,000 years ago",
+        "genetic variation is around 0.1–4% of average living species",
+        "introduced to India in 2022",
+        "litter of three or four cubs, who are weaned at around four months and are independent by around 20 months of age",
+        "Adults weigh between 21 and 65 kg (46 and 143 lb).",
+        "Puma lineage genetically diverged from the rest 6.7 million years ago",
+        "roughly 3.8 to 1.9 million years ago",
+        "height of 67–94 cm (2.20–3.08 ft) at the shoulder",
+        "gestation of nearly three months",
+        "Cubs born in the wild weigh 150–300 g (5.3–10.6 oz) at birth"
+      ]
+    }
+  ],
+  "engage": {
+    "ask": {
+      "en": "Could any animal on Earth outrun a cheetah in a short sprint?",
+      "hi": "क्या धरती पर कोई भी जानवर छोटी दौड़ में चीते को हरा सकता है?",
+      "es": "¿Podría algún animal en la Tierra superar a un guepardo en una carrera corta?",
+      "pt": "Algum animal na Terra conseguiria superar uma chita numa corrida curta?"
+    },
+    "hookText": {
+      "en": "FASTEST *LAND* ANIMAL",
+      "hi": "धरती का *सबसे* तेज़ जानवर",
+      "es": "ANIMAL MÁS *RÁPIDO*",
+      "pt": "ANIMAL MAIS *RÁPIDO*"
+    },
+    "loop": {
+      "en": "And every sprint begins with the exact same lethal question...",
+      "hi": "और हर एक दौड़ की शुरुआत उसी एक घातक सवाल से होती है...",
+      "es": "Y cada carrera comienza con la misma pregunta letal...",
+      "pt": "E cada corrida começa com a mesma pergunta letal..."
+    },
+    "share": {
+      "en": "Pass this along to anyone amazed by nature's top athletes!",
+      "hi": "इसे प्रकृति के सबसे बेहतरीन एथलीटों से हैरान हर इंसान तक पहुँचाएँ!",
+      "es": "¡Pásalo a cualquiera que se asombre con los atletas de la naturaleza!",
+      "pt": "Passe isso para qualquer um que se impressione com os atletas da natureza!"
+    }
+  }
+}

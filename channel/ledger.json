@@ -152,5 +152,32 @@
     "videoId": "oJzPxZeqzO8",
     "url": "https://youtu.be/oJzPxZeqzO8",
     "publishAt": "2026-11-22T13:00:00.000Z"
+  },
+  {
+    "date": "2026-11-23",
+    "episode": "E009",
+    "job": "short",
+    "title": "The Fastest Land Animal on Earth (Real Wildlife Footage) #Shorts",
+    "status": "scheduled",
+    "topic": "wildlife",
+    "voice": "synthetic",
+    "slot": "19:30",
+    "videoId": "MweiI0vOCDo",
+    "url": "https://youtube.com/shorts/MweiI0vOCDo",
+    "publishAt": "2026-11-23T14:00:00.000Z"
+  },
+  {
+    "date": "2026-11-23",
+    "episode": "E009",
+    "job": "long",
+    "title": "The Fastest Land Animal on Earth (Real Wildlife Footage)",
+    "status": "scheduled",
+    "topic": "wildlife",
+    "voice": "synthetic",
+    "slot": "20:30",
+    "thumbStyle": "frame",
+    "videoId": "xaN_WApiVLU",
+    "url": "https://youtu.be/xaN_WApiVLU",
+    "publishAt": "2026-11-23T15:00:00.000Z"
   }
 ]
