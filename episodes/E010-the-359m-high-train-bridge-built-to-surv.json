@@ -1,0 +1,1205 @@
+{
+  "id": "E010",
+  "status": "approved",
+  "topic": "engineering",
+  "title": {
+    "en": "The 359m High Train Bridge Built to Survive Bombs",
+    "hi": "359 मीटर ऊँचा रेल पुल जो विस्फोटों को भी सह सकता है",
+    "es": "El puente de 359 m diseñado para resistir bombas",
+    "pt": "A ponte de 359m feita para resistir a bombas"
+  },
+  "thumb": {
+    "en": "HIGHER THAN EIFFEL",
+    "hi": "एफिल से भी ऊँचा",
+    "es": "MÁS ALTO QUE EIFFEL",
+    "pt": "MAIS ALTO QUE EIFFEL"
+  },
+  "look": "documentary",
+  "scenes": [
+    {
+      "id": "s1",
+      "vo": {
+        "en": "Before your train crosses the Chenab gorge at three hundred fifty-nine metres, engineers risked total failure. How?",
+        "hi": "इससे पहले कि आपकी ट्रेन 359 मीटर ऊँची चिनाब घाटी को पार करे, इंजीनियरों ने भारी असफलता का जोखिम उठाया। कैसे?",
+        "es": "Antes de que tu tren cruce la garganta del Chenab a trescientos cincuenta y nueve metros, los ingenieros arriesgaron un fracaso total. ¿Cómo?",
+        "pt": "Antes do seu trem cruzar a garganta de Chenab a trezentos e cinquenta e nove metros, os engenheiros arriscaram um fracasso total. Como?"
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "aerial drone mountain gorge valley",
+          "id": "6671660",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "aerial drone mountain gorge valley",
+          "id": "28345583",
+          "takes": [
+            [
+              10,
+              16
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "aerial drone mountain gorge valley",
+          "id": "13760996",
+          "takes": [
+            [
+              4,
+              10
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "aerial drone mountain gorge valley"
+        },
+        {
+          "provider": "pixabay",
+          "q": "tracking shot high railway bridge"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "wide shot himalayan mountain range"
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "kicker",
+          "text": {
+            "en": "359 Metres High",
+            "hi": "359 मीटर ऊँचाई",
+            "es": "359 metros de altura",
+            "pt": "359 metros de altura"
+          },
+          "sub": {
+            "en": "Chenab Rail Bridge",
+            "hi": "चिनाब रेल पुल",
+            "es": "Puente ferroviario de Chenab",
+            "pt": "Ponte ferroviária de Chenab"
+          },
+          "at": 1.5
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s2",
+      "vo": {
+        "en": "Suspended higher than the Eiffel Tower, this colossal steel arch spans one thousand three hundred fifteen metres across Kashmir.",
+        "hi": "एफिल टॉवर से भी ऊँचा, यह विशाल स्टील आर्क कश्मीर में 1,315 मीटर की दूरी तय करता है।",
+        "es": "Suspendido más alto que la Torre Eiffel, este colosal arco de acero se extiende mil trescientos quince metros a través de Cachemira.",
+        "pt": "Suspenso mais alto que a Torre Eiffel, este colossal arco de aço se estende por mil trezentos e quinze metros através da Caxemira."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "low angle steel arch construction",
+          "id": "4617024",
+          "takes": [
+            [
+              2,
+              7
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "low angle steel arch construction",
+          "id": "9991145",
+          "takes": [
+            [
+              0,
+              5
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "low angle steel arch construction",
+          "id": "14980349",
+          "takes": [
+            [
+              0,
+              4
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "low angle steel arch construction"
+        },
+        {
+          "provider": "pixabay",
+          "q": "wide pan alpine river canyon"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "close up steel truss bridge structure"
+        }
+      ],
+      "shots": 3,
+      "overlays": [],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s3",
+      "vo": {
+        "en": "It took massive ambition and a budget of fourteen point eight six billion rupees to tame this Himalayan canyon.",
+        "hi": "इस हिमालयी घाटी को पार करने में अपार महत्वाकांक्षा और 14.86 अरब रुपये का बजट लगा।",
+        "es": "Se necesitó una enorme ambición y un presupuesto de catorce punto ochenta y seis mil millones de rupias para domar este cañón del Himalaya.",
+        "pt": "Foi necessária uma enorme ambição e um orçamento de quatorze ponto oitenta e seis bilhões de rúpias para domar este cânion do Himalaia."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "time lapse moving river gorge",
+          "id": "18124825",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "time lapse moving river gorge",
+          "id": "29758725",
+          "takes": [
+            [
+              2,
+              7
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "time lapse moving river gorge",
+          "id": "8970218",
+          "takes": [
+            [
+              4,
+              9
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "time lapse moving river gorge"
+        },
+        {
+          "provider": "pixabay",
+          "q": "drone flyover snow mountain peaks"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "macro shot heavy iron girders"
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "lower",
+          "text": {
+            "en": "Source: Wikipedia / Chenab Rail Bridge",
+            "hi": "स्रोत: विकिपीडिया / चिनाब रेल पुल",
+            "es": "Fuente: Wikipedia / Puente Chenab",
+            "pt": "Fonte: Wikipédia / Ponte Chenab"
+          },
+          "at": 0.8
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s4",
+      "slowmo": true,
+      "vo": {
+        "en": "Built to survive extreme mountain tempests, it can endure wind speeds of up to two hundred sixty-six kilometres per hour.",
+        "hi": "पहाड़ी तूफ़ानों को सहने के लिए निर्मित, यह 266 किलोमीटर प्रति घंटे तक की हवा की रफ़्तार झेल सकता है।",
+        "es": "Construido para sobrevivir a tempestades extremas de montaña, puede soportar vientos de hasta doscientos sesenta y seis kilómetros por hora.",
+        "pt": "Construído para sobreviver a tempestades extremas de montanha, pode suportar ventos de até duzentos e sessenta e seis quilômetros por hora."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "slow motion clouds storm mountains",
+          "id": "14118435",
+          "takes": [
+            [
+              2,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "slow motion clouds storm mountains",
+          "id": "20698169",
+          "takes": [
+            [
+              2,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "slow motion clouds storm mountains",
+          "id": "12634571",
+          "takes": [
+            [
+              4,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "slow motion clouds storm mountains"
+        },
+        {
+          "provider": "pixabay",
+          "q": "tracking shot mountain wind turbulence"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "wide aerial valley fog rolling"
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "stat",
+          "text": {
+            "en": "266",
+            "hi": "266",
+            "es": "266",
+            "pt": "266"
+          },
+          "sub": {
+            "en": "km/h wind resistance",
+            "hi": "किमी/घंटा हवा की रफ़्तार",
+            "es": "km/h resistencia al viento",
+            "pt": "km/h resistência ao vento"
+          },
+          "at": 1
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s5",
+      "vo": {
+        "en": "Standing high above the clouds, this monument of human grit bridges deep divides and redefines modern engineering forever.",
+        "hi": "बादलों के ऊपर खड़ा, इंसानी हौसले का यह प्रतीक गहरी खाइयों को पाटता है और आधुनिक इंजीनियरिंग को नई परिभाषा देता है।",
+        "es": "De pie por encima de las nubes, este monumento de coraje humano une brechas profundas y redefine la ingeniería moderna para siempre.",
+        "pt": "Em pé acima das nuvens, este monumento de coragem humana une abismos profundos e redefine a engenharia moderna para sempre."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "cinematic sunrise mountain valley mist",
+          "id": "5541841",
+          "takes": [
+            [
+              2,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "cinematic sunrise mountain valley mist",
+          "id": "34659098",
+          "takes": [
+            [
+              6,
+              10
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "cinematic sunrise mountain valley mist",
+          "id": "38213472",
+          "takes": [
+            [
+              10,
+              14
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "cinematic sunrise mountain valley mist"
+        },
+        {
+          "provider": "pixabay",
+          "q": "aerial orbit high mountain bridge"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "slow pan steel structure reflection"
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "map",
+          "text": {
+            "en": "Chenab River Gorge",
+            "hi": "चिनाब नदी घाटी",
+            "es": "Garganta del río Chenab",
+            "pt": "Garganta do Rio Chenab"
+          },
+          "geo": {
+            "lat": 33.15,
+            "lon": 74.87
+          },
+          "at": 0.5
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s6",
+      "shortOnly": true,
+      "vo": {
+        "en": "So before your train reaches the Chenab gorge at three hundred fifty-nine metres, remember...",
+        "hi": "तो इससे पहले कि आपकी ट्रेन 359 मीटर ऊँची चिनाब घाटी तक पहुँचे, याद रखें...",
+        "es": "Así que antes de que tu tren llegue a la garganta del Chenab a trescientos cincuenta y nueve metros, recuerda...",
+        "pt": "Então antes do seu trem chegar à garganta de Chenab a trezentos e cinquenta e nove metros, lembre-se..."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "tracking shot train moving valley",
+          "id": "35458735",
+          "takes": [
+            [
+              2,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot train moving valley",
+          "id": "25471824",
+          "takes": [
+            [
+              0,
+              5
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot train moving valley",
+          "id": "34582122",
+          "takes": [
+            [
+              2,
+              7
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot train moving valley"
+        },
+        {
+          "provider": "pixabay",
+          "q": "wide aerial view high bridge"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "slow zoom mountain peak haze"
+        }
+      ],
+      "shots": 3,
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s7",
+      "longOnly": true,
+      "vo": {
+        "en": "Connecting Jammu to the isolated Kashmir valley was a dream decades in the making. Harsh winters routinely blocked mountain roads with severe snowfalls, isolating millions of residents and cutting off critical strategic routes across the rugged Himalayas.",
+        "hi": "जम्मू को अलग-थलग पड़े कश्मीर घाटी से जोड़ना दशकों पुराना सपना था। कड़ाके की सर्दियों में बर्फबारी की वजह से पहाड़ी रास्ते बंद हो जाते थे, जिससे लाखों लोग अलग-थलग पड़ जाते थे।",
+        "es": "Conectar Jammu con el aislado valle de Cachemira era un sueño de décadas. Los duros inviernos bloqueaban rutinariamente las carreteras de montaña con severas nevadas, aislando a millones de residentes y cortando rutas estratégicas en el Himalaya.",
+        "pt": "Conectar Jammu ao isolado vale da Caxemira era um sonho de décadas. Os invernos rigorosos bloqueavam rotineiramente as estradas de montanha com fortes nevadas, isolando milhões de residentes e cortando rotas estratégicas no Himalaia."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "aerial drone snowy mountain valley",
+          "id": "12037073",
+          "takes": [
+            [
+              2,
+              9
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "aerial drone snowy mountain valley",
+          "id": "30659945",
+          "takes": [
+            [
+              6,
+              13
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "aerial drone snowy mountain valley",
+          "id": "28638621",
+          "takes": [
+            [
+              4,
+              11
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "aerial drone snowy mountain valley"
+        },
+        {
+          "provider": "pixabay",
+          "q": "time lapse winter storm clouds"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "wide pan himalayan landscape snow"
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "chapter",
+          "text": {
+            "en": "The Himalayan Challenge",
+            "hi": "हिमालयी चुनौती",
+            "es": "El desafío del Himalaya",
+            "pt": "O Desafio do Himalaia"
+          },
+          "at": 0.5
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s8",
+      "longOnly": true,
+      "vo": {
+        "en": "Conquering this wild topography meant forging a railway directly through Active Seismic Zone Five. The geology was deeply fractured, prone to landslides, and situated in a region where geopolitical tensions made every single step of construction an immense logistical risk.",
+        "hi": "इस कठिन इलाके पर कब्ज़ा करने का मतलब था भूकंपीय क्षेत्र 5 के सीधे बीच से रेल मार्ग बनाना। यहाँ की भूगर्भीय संरचना बेहद संवेदनशील थी और भूस्खलन का ख़तरा हमेशा बना रहता था।",
+        "es": "Conquistar esta topografía salvaje significaba forjar un ferrocarril directamente a través de la Zona Sísmica Cinco. La geología estaba profundamente fracturada, propensa a desprendimientos de tierra y en una región con inmensos riesgos logísticos.",
+        "pt": "Conquistar esta topografia selvagem significava abrir uma ferrovia diretamente através da Zona Sísmica Cinco. A geologia era profundamente fraturada, propensa a deslizamentos de terra e em uma região com imensos riscos logísticos."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "rocky mountain cliff close up",
+          "id": "17676033",
+          "takes": [
+            [
+              0,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "rocky mountain cliff close up",
+          "id": "6328344",
+          "takes": [
+            [
+              0,
+              7
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "rocky mountain cliff close up",
+          "id": "6010492",
+          "takes": [
+            [
+              0,
+              10
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "rocky mountain cliff close up"
+        },
+        {
+          "provider": "pixabay",
+          "q": "aerial view steep mountain gorge"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "slow motion falling rocks river"
+        }
+      ],
+      "shots": 3,
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s9",
+      "longOnly": true,
+      "vo": {
+        "en": "Engineers faced a towering obstacle at the Chenab River gorge. To cross the canyon, they designed a massive steel deck arch supported by steel piers, the highest of which measures one hundred thirty-three point seven metres in height.",
+        "hi": "इंजीनियरों को चिनाब नदी घाटी में एक विशाल बाधा का सामना करना पड़ा। खाई को पार करने के लिए, उन्होंने एक विशाल स्टील आर्क डिज़ाइन किया, जिसके सबसे ऊँचे खंभे की ऊँचाई 133.7 मीटर है।",
+        "es": "Los ingenieros se enfrentaron a un obstáculo enorme en la garganta del río Chenab. Para cruzar el cañón, diseñaron un enorme arco sostenido por pilares de acero, el más alto de los cuales mide ciento treinta y tres punto siete metros.",
+        "pt": "Os engenheiros enfrentaram um obstáculo enorme na garganta do rio Chenab. Para cruzar o cânion, eles projetaram um enorme arco sustentado por pilares de aço, o mais alto dos quais mede cento e trinta e três ponto sete metros."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "low angle steel column structure",
+          "id": "13374172",
+          "takes": [
+            [
+              0,
+              10
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "low angle steel column structure",
+          "id": "7934652",
+          "takes": [
+            [
+              2,
+              12
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "low angle steel column structure"
+        },
+        {
+          "provider": "pixabay",
+          "q": "tracking shot canyon river depth"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "macro detail heavy steel joint"
+        }
+      ],
+      "shots": 2,
+      "overlays": [
+        {
+          "kind": "stat",
+          "text": {
+            "en": "133.7",
+            "hi": "133.7",
+            "es": "133.7",
+            "pt": "133.7"
+          },
+          "sub": {
+            "en": "metres highest pier",
+            "hi": "मीटर सबसे ऊँचा खंभा",
+            "es": "metros pilar más alto",
+            "pt": "metros pilar mais alto"
+          },
+          "at": 1.2
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s10",
+      "slowmo": true,
+      "longOnly": true,
+      "vo": {
+        "en": "Building at such dizzying heights demanded extraordinary materials. The main bridge arch structure weighs ten thousand six hundred nineteen tonnes, assembled piece by piece using giant cable pylons and specialized derrick cranes suspended over the deep abyssal gorge.",
+        "hi": "ऐसी हैरान कर देने वाली ऊँचाई पर निर्माण के लिए असाधारण सामग्रियों की आवश्यकता थी। मुख्य आर्क संरचना का वजन 10,619 टन है, जिसे केबल पायलॉन और क्रेन की मदद से एक-एक टुकड़ा जोड़कर बनाया गया।",
+        "es": "Construir a alturas tan vertiginosas exigía materiales extraordinarios. La estructura del arco principal pesa diez mil seiscientas diecinueve toneladas, ensamblada pieza por pieza usando grúas de cable suspendidas sobre el abismo.",
+        "pt": "Construir em alturas tão vertiginosas exigia materiais extraordinários. A estrutura do arco principal pesa dez mil seiscentas e dezenove toneladas, montada peça por peça usando guindastes suspensos sobre o abismo."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "slow motion crane lifting steel",
+          "id": "6475920",
+          "takes": [
+            [
+              0,
+              10
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "slow motion crane lifting steel",
+          "id": "33855578",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "slow motion crane lifting steel"
+        },
+        {
+          "provider": "pixabay",
+          "q": "extreme high angle bridge construction"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "tracking shot steel cable tension"
+        }
+      ],
+      "shots": 2,
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s11",
+      "longOnly": true,
+      "vo": {
+        "en": "The scale of raw materials used is staggering. The construction used about twenty-eight thousand six hundred sixty tonnes of steel, sixty-six thousand cubic metres of concrete and eighty-four kilometres of heavy bolts and high-strength tension cables.",
+        "hi": "उपयोग की गई कच्ची सामग्री का पैमाना चौंकाने वाला है। निर्माण में लगभग 28,660 टन स्टील, 66,000 घन मीटर कंक्रीट और 84 किलोमीटर लंबे बोल्ट और केबल का उपयोग किया गया।",
+        "es": "La escala de las materias primas utilizadas es asombrosa. La construcción utilizó unas veintiocho mil seiscientas sesenta toneladas de acero, sesenta y seis mil metros cúbicos de hormigón y ochenta y cuatro kilómetros de pernos y cables.",
+        "pt": "A escala das matérias-primas utilizadas é impressionante. A construção usou cerca de vinte e oito mil seiscentas e sessenta toneladas de aço, sessenta e seis mil metros cúbicos de concreto e oitenta e quatro quilômetros de parafusos e cabos."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "close up liquid concrete pouring",
+          "id": "39924269",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "close up liquid concrete pouring",
+          "id": "39924282",
+          "takes": [
+            [
+              1,
+              7
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "close up liquid concrete pouring",
+          "id": "39924248",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "close up liquid concrete pouring"
+        },
+        {
+          "provider": "pixabay",
+          "q": "macro detail massive metal bolts"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "wide tilt raw steel beam"
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "chapter",
+          "text": {
+            "en": "Steel & Mountain",
+            "hi": "स्टील और पहाड़",
+            "es": "Acero y montaña",
+            "pt": "Aço e Montanha"
+          },
+          "at": 0.4
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s12",
+      "longOnly": true,
+      "vo": {
+        "en": "Nature here is unpredictable and brutal. To ensure complete safety, structural engineers designed the bridge arch to withstand powerful earthquakes up to a magnitude of eight on the Richter scale without suffering severe structural failure.",
+        "hi": "यहाँ की प्रकृति अप्रत्याशित है। पूर्ण सुरक्षा सुनिश्चित करने के लिए, इंजीनियरों ने पुल के आर्क को रिक्टर पैमाने पर 8 की तीव्रता वाले शक्तिशाली भूकंपों को बिना ढहे सहने के लिए डिज़ाइन किया।",
+        "es": "La naturaleza aquí es impredecible y brutal. Para garantizar una seguridad total, los ingenieros diseñaron el arco para soportar terremotos de magnitud ocho en la escala de Richter sin sufrir daños estructurales graves.",
+        "pt": "A natureza aqui é imprevisível e brutal. Para garantir total segurança, os engenheiros projetaram o arco para suportar terremotos de magnitude oito na escala Richter sem sofrer falhas estruturais graves."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "time lapse seismic mountain clouds",
+          "id": "8201470",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "time lapse seismic mountain clouds",
+          "id": "8025546",
+          "takes": [
+            [
+              4,
+              10
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "time lapse seismic mountain clouds",
+          "id": "8025691",
+          "takes": [
+            [
+              6,
+              12
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "time lapse seismic mountain clouds"
+        },
+        {
+          "provider": "pixabay",
+          "q": "tracking shot solid mountain foundation"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "wide angle steep rock face"
+        }
+      ],
+      "shots": 3,
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s13",
+      "longOnly": true,
+      "vo": {
+        "en": "Because of the remote terrain and geopolitical sensitivity, defence experts provided specialized blast-proofing designs. The arch can endure high-intensity blasts equivalent to about forty tonnes of TNT, safeguarding trains against severe security threats and sudden explosive impacts.",
+        "hi": "दुर्गम इलाके और सुरक्षा संवेदनशीलता के कारण, रक्षा विशेषज्ञों ने विशेष ब्लास्ट-प्रूफिंग डिज़ाइन प्रदान किए। यह पुल लगभग 40 टन टीएनटी के बराबर विस्फोटों का सामना कर सकता है।",
+        "es": "Debido al terreno remoto y la sensibilidad geopolítica, los expertos brindaron diseños especiales a prueba de explosiones. El arco puede soportar explosiones de alta intensidad equivalentes a unas cuarenta toneladas de TNT.",
+        "pt": "Devido ao terreno remoto e à sensibilidade geopolítica, especialistas forneceram projetos especiais à prova de explosões. O arco pode suportar explosões de alta intensidade equivalentes a cerca de quarenta toneladas de TNT."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "macro steel reinforcement structure",
+          "id": "39924242",
+          "takes": [
+            [
+              0,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro steel reinforcement structure",
+          "id": "39924246",
+          "takes": [
+            [
+              0,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro steel reinforcement structure",
+          "id": "39924273",
+          "takes": [
+            [
+              0,
+              10
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro steel reinforcement structure"
+        },
+        {
+          "provider": "pixabay",
+          "q": "low angle heavy bridge frame"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "wide zoom fortified concrete pier"
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "stat",
+          "text": {
+            "en": "40",
+            "hi": "40",
+            "es": "40",
+            "pt": "40"
+          },
+          "sub": {
+            "en": "tonnes TNT blast limit",
+            "hi": "टन टीएनटी विस्फोट क्षमता",
+            "es": "toneladas TNT límite explosión",
+            "pt": "toneladas TNT limite explosão"
+          },
+          "at": 1.1
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s14",
+      "longOnly": true,
+      "vo": {
+        "en": "High altitudes bring punishing weather extremes. The steel structure is specially alloyed and painted to operate flawlessly in freezing temperatures up to minus twenty degrees Celsius, resisting thermal contraction, brittle fractures, and heavy atmospheric corrosion.",
+        "hi": "अधिक ऊँचाई पर अत्यधिक मौसम झेलना पड़ता है। स्टील संरचना को -20 डिग्री सेल्सियस तक के ज़मा देने वाले तापमान में भी बिना किसी दरार या जंग के काम करने के लिए पेंट और तैयार किया गया है।",
+        "es": "Las grandes altitudes traen condiciones meteorológicas extremas. La estructura de acero está especialmente aleada y pintada para operar perfectamente en temperaturas congelantes de hasta menos veinte grados Celsius.",
+        "pt": "Altitudes elevadas trazem condições meteorológicas extremas. A estrutura de aço é especialmente ligada e pintada para operar perfeitamente em temperaturas congelantes de até menos vinte graus Celsius."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "close up frost on steel beam",
+          "id": "6173909",
+          "takes": [
+            [
+              0,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "close up frost on steel beam"
+        },
+        {
+          "provider": "pixabay",
+          "q": "slow zoom icy mountain peak"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "aerial shot frozen mist river"
+        }
+      ],
+      "shots": 1,
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s15",
+      "longOnly": true,
+      "vo": {
+        "en": "With heavy passenger traffic anticipated, precision was paramount. The arch structure is engineered to handle rail speeds of up to one hundred kilometres per hour, maintaining absolute stability across its seventeen prefabricated deck spans.",
+        "hi": "भारी यात्री यातायात की उम्मीद के साथ, सटीकता सर्वोपरि थी। आर्क संरचना को 100 किलोमीटर प्रति घंटे की गति से चलने वाली ट्रेनों को संभालने और पूर्ण स्थिरता बनाए रखने के लिए इंजीनियर किया गया है।",
+        "es": "Con el intenso tráfico de pasajeros previsto, la precisión era primordial. La estructura está diseñada para soportar velocidades ferroviarias de hasta cien kilómetros por hora, manteniendo una estabilidad absoluta.",
+        "pt": "Com o intenso tráfego de passageiros previsto, a precisão era fundamental. A estrutura foi projetada para suportar velocidades ferroviárias de até cem quilômetros por hora, mantendo estabilidade absoluta."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "tracking shot train tracks vanishing",
+          "id": "9687456",
+          "takes": [
+            [
+              2,
+              9
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot train tracks vanishing",
+          "id": "40623841",
+          "takes": [
+            [
+              4,
+              11
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot train tracks vanishing",
+          "id": "37784193",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot train tracks vanishing"
+        },
+        {
+          "provider": "pixabay",
+          "q": "side profile railway track sleepers"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "wide aerial passenger train moving"
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "chapter",
+          "text": {
+            "en": "The Legacy",
+            "hi": "विरासत",
+            "es": "El legado",
+            "pt": "O Legado"
+          },
+          "at": 0.5
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s16",
+      "longOnly": true,
+      "vo": {
+        "en": "Built for generations to come, the bridge is designed to have a life of one hundred twenty years. Long-lasting protective coatings and self-compacting concrete inside steel boxes guarantee that this monument will endure relentless mountain forces.",
+        "hi": "आने वाली पीढ़ियों के लिए निर्मित, इस पुल की उम्र 120 साल तय की गई है। टिकाऊ कोटिंग और स्टील बक्सों के भीतर भरा कंक्रीट यह सुनिश्चित करता है कि यह ढांचा पहाड़ों की कठोरता को सहेगा।",
+        "es": "Construido para las generaciones venideras, el puente está diseñado para tener una vida útil de ciento veinte años. Los recubrimientos protectores duraderos garantizan que este monumento perdurará.",
+        "pt": "Construído para as futuras gerações, a ponte foi projetada para ter uma vida útil de cento e vinte anos. Revestimentos protetores duradouros garantem que este monumento durará."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "cinematic tilt up high bridge pier",
+          "id": "8301958",
+          "takes": [
+            [
+              0,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "cinematic tilt up high bridge pier",
+          "id": "7311361",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "cinematic tilt up high bridge pier",
+          "id": "8302511",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "cinematic tilt up high bridge pier"
+        },
+        {
+          "provider": "pixabay",
+          "q": "macro shot painted steel surface"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "extreme wide sunset over mountains"
+        }
+      ],
+      "shots": 3,
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s17",
+      "longOnly": true,
+      "vo": {
+        "en": "When trains finally crossed the gorge on six June twenty-twenty-five, a legendary chapter in railway history was written. This sky-high bridge stands as proof that human ingenuity can bridge any gulf on Earth.",
+        "hi": "जब 6 जून 2025 को ट्रेनें इस घाटी से गुजरीं, तो रेलवे इतिहास का एक नया अध्याय लिखा गया। यह पुल साबित करता है कि इंसानी समझ किसी भी दूरी को पाट सकती है।",
+        "es": "Cuando los trenes finalmente cruzaron la garganta el seis de junio de dos mil veinticinco, se escribió un capítulo legendario en la historia ferroviaria. Este puente es prueba del ingenio humano.",
+        "pt": "Quando os trens finalmente cruzaram a garganta em seis de junho de dois mil e vinte e cinco, um capítulo lendário na história ferroviária foi escrito. Esta ponte é a prova do engenho humano."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "aerial tracking shot train crossing bridge",
+          "id": "34241649",
+          "takes": [
+            [
+              2,
+              10
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "aerial tracking shot train crossing bridge",
+          "id": "4336523",
+          "takes": [
+            [
+              10,
+              16
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "aerial tracking shot train crossing bridge",
+          "id": "2450407",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "aerial tracking shot train crossing bridge"
+        },
+        {
+          "provider": "pixabay",
+          "q": "wide pan mountain valley sunburst"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "dramatic view steel arch bridge height"
+        }
+      ],
+      "shots": 3,
+      "sources": [
+        "S1"
+      ]
+    }
+  ],
+  "engage": {
+    "ask": {
+      "en": "Would you dare to travel across this 359-metre high bridge?",
+      "hi": "क्या आप 359 मीटर ऊँचे इस पुल को ट्रेन से पार करने की हिम्मत करेंगे?",
+      "es": "¿Te atreverías a viajar a través de este puente de 359 metros de altura?",
+      "pt": "Você se atreveria a viajar por esta ponte de 359 metros de altura?"
+    },
+    "hookText": {
+      "en": "HIGHER THAN *EIFFEL*",
+      "hi": "एफिल से भी *ऊँचा*",
+      "es": "MÁS ALTO QUE *EIFFEL*",
+      "pt": "MAIS ALTO QUE *EIFFEL*"
+    },
+    "loop": {
+      "en": "So before your train reaches the Chenab gorge at three hundred fifty-nine metres, remember...",
+      "hi": "तो इससे पहले कि आपकी ट्रेन 359 मीटर ऊँची चिनाब घाटी तक पहुँचे, याद रखें...",
+      "es": "Así que antes de que tu tren llegue a la garganta del Chenab a trescientos cincuenta y nueve metros, recuerda...",
+      "pt": "Então antes do seu trem chegar à garganta de Chenab a trezentos e cinquenta e nove metros, lembre-se..."
+    },
+    "share": {
+      "en": "Share this video with your favorite travel partner right now!",
+      "hi": "इस वीडियो को अभी अपने पसंदीदा यात्रा साथी के साथ साझा करें!",
+      "es": "¡Comparte este video con tu compañero de viaje favorito ahora mismo!",
+      "pt": "Compartilhe este vídeo com seu parceiro de viagem favorito agora mesmo!"
+    }
+  },
+  "music": {
+    "mood": "triumph",
+    "styles": [
+      "epic orchestral brass",
+      "soaring dynamic strings",
+      "pounding driving percussion"
+    ],
+    "peak": "s17"
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Wikipedia, Chenab Rail Bridge",
+      "url": "https://en.wikipedia.org/wiki/Chenab_Rail_Bridge",
+      "claims": [
+        "With a deck height of 359 m (1,178 ft) from the river bed, the arch bridge is the highest rail bridge in the world.",
+        "spanning 1,315 m (4,314 ft) across the river gorge.",
+        "The bridge was constructed at a cost of ₹14.86 billion (US$160 million).",
+        "wind speeds of up to 266 km/h (165 mph).",
+        "highest of which measures 133.7 m (439 ft).",
+        "The main bridge arch structure weighs 10,619 tonnes",
+        "The construction used about 28,660 tonnes of steel, 66,000 m3 of concrete and 84 km (52 mi) of bolts and cables.",
+        "earthquakes up to a magnitude of eight on the Richter scale",
+        "high-intensity blasts equivalent to about 40 tonnes of TNT",
+        "temperatures up to −20 °C (−4 °F)",
+        "handle rail speeds of up to 100 km/h (62 mph)",
+        "The bridge consists of 17 spans",
+        "The bridge is designed to have a life of 120 years",
+        "6 June 2025"
+      ]
+    }
+  ]
+}
