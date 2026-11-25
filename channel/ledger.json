@@ -192,5 +192,32 @@
     "videoId": "pX6jWJU94Oo",
     "url": "https://youtube.com/shorts/pX6jWJU94Oo",
     "publishAt": "2026-11-24T02:00:00.000Z"
+  },
+  {
+    "date": "2026-11-25",
+    "episode": "E011",
+    "job": "short",
+    "title": "How Tokyo Keeps 33 Million People Moving #Shorts",
+    "status": "scheduled",
+    "topic": "cities",
+    "voice": "synthetic",
+    "slot": "12:30",
+    "videoId": "TmqkFfLjDHw",
+    "url": "https://youtube.com/shorts/TmqkFfLjDHw",
+    "publishAt": "2026-11-25T07:00:00.000Z"
+  },
+  {
+    "date": "2026-11-25",
+    "episode": "E010",
+    "job": "long",
+    "title": "The 359m High Train Bridge Built to Survive Bombs",
+    "status": "scheduled",
+    "topic": "engineering",
+    "voice": "synthetic",
+    "slot": "18:30",
+    "thumbStyle": "center",
+    "videoId": "HG5Q5-ICfoI",
+    "url": "https://youtu.be/HG5Q5-ICfoI",
+    "publishAt": "2026-11-25T13:00:00.000Z"
   }
 ]

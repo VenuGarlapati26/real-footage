@@ -1,0 +1,1224 @@
+{
+  "id": "E011",
+  "status": "approved",
+  "topic": "cities",
+  "look": "neon",
+  "title": {
+    "en": "How Tokyo Keeps 33 Million People Moving",
+    "hi": "टोक्यो 33 मिलियन लोगों को कैसे चलाता है?",
+    "es": "Cómo Tokio mueve a 33 millones de personas",
+    "pt": "Como Tóquio move 33 milhões de pessoas"
+  },
+  "thumb": {
+    "en": "WORLD'S SAFEST TITAN",
+    "hi": "दुनिया का सबसे सुरक्षित शहर",
+    "es": "EL TITÁN MÁS SEGURO",
+    "pt": "O TITÃ MAIS SEGURO"
+  },
+  "scenes": [
+    {
+      "id": "s1",
+      "vo": {
+        "en": "Before your flight lands in Tokyo, thirty-three million residents never lose power, but why?",
+        "hi": "टोक्यो में आपकी फ्लाइट उतरने से पहले, तैंतीस मिलियन निवासियों की बिजली कभी नहीं जाती, पर क्यों?",
+        "es": "Antes de que aterrices en Tokio, treinta y tres millones de personas nunca pierden la luz, ¿pero por qué?",
+        "pt": "Antes do seu voo pousar em Tóquio, trinta e três milhões de pessoas nunca perdem energia, mas por quê?"
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "hyperlapse aerial neon tokyo night",
+          "id": "10182004",
+          "takes": [
+            [
+              0,
+              5
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "hyperlapse aerial neon tokyo night",
+          "id": "6440104",
+          "takes": [
+            [
+              0,
+              4
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "hyperlapse aerial neon tokyo night",
+          "id": "9396326",
+          "takes": [
+            [
+              0,
+              4
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "hyperlapse aerial neon tokyo night"
+        },
+        {
+          "provider": "pixabay",
+          "q": "drone shot shinjuku skyline twilight"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "cinematic wide tokyo intersection night"
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "kicker",
+          "text": {
+            "en": "Megacity Tokyo",
+            "hi": "मेगासिटी टोक्यो",
+            "es": "Megaciudad Tokio",
+            "pt": "Megacidade Tóquio"
+          },
+          "sub": {
+            "en": "33 Million Residents",
+            "hi": "33 मिलियन निवासी",
+            "es": "33 millones de residentes",
+            "pt": "33 milhões de habitantes"
+          },
+          "at": 1.2
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s2",
+      "vo": {
+        "en": "Down below, Shinjuku Station runs as the world's busiest train station, connected to Asia's oldest underground metro line built in nineteen twenty-seven.",
+        "hi": "नीचे, शिंजुकु स्टेशन दुनिया के सबसे व्यस्त स्टेशन के रूप में चलता है, जो उन्नीस सौ सत्ताईस में बनी एशिया की सबसे पुरानी भूमिगत मेट्रो लाइन से जुड़ा है।",
+        "es": "Abajo, la estación de Shinjuku opera como la más concurrida del mundo, conectada a la línea de metro subterráneo más antigua de Asia, inaugurada en mil novecientos veintisiete.",
+        "pt": "Lá embaixo, a estação de Shinjuku opera como a mais movimentada do mundo, conectada à mais antiga linha de metrô subterrâneo da Ásia, de mil novecentos e vinte e sete."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "time lapse shinjuku station crowd",
+          "id": "3360906",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "time lapse shinjuku station crowd",
+          "id": "17422380",
+          "takes": [
+            [
+              0,
+              5
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "time lapse shinjuku station crowd"
+        },
+        {
+          "provider": "pixabay",
+          "q": "tracking shot subway train arriving"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "low angle shot metro platform"
+        }
+      ],
+      "shots": 2,
+      "overlays": [
+        {
+          "kind": "kicker",
+          "text": {
+            "en": "Shinjuku Station",
+            "hi": "शिंजुकु स्टेशन",
+            "es": "Estación de Shinjuku",
+            "pt": "Estação de Shinjuku"
+          },
+          "sub": {
+            "en": "World's Busiest Station",
+            "hi": "दुनिया का सबसे व्यस्त स्टेशन",
+            "es": "La más concurrida del mundo",
+            "pt": "A mais movimentada do mundo"
+          },
+          "at": 1
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s3",
+      "slowmo": true,
+      "vo": {
+        "en": "Rising above the skyline stands Tokyo Skytree, the world's tallest tower, anchoring an economy worth over two trillion dollars.",
+        "hi": "आसमान छूती टोक्यो स्काईट्री दुनिया की सबसे ऊंची मीनार है, जो दो ट्रिलियन डॉलर से अधिक की अर्थव्यवस्था को संभालती है।",
+        "es": "Elevándose sobre el horizonte se alza la Tokyo Skytree, la torre más alta del mundo, sosteniendo una economía de más de dos billones de dólares.",
+        "pt": "Erguendo-se sobre o horizonte está a Tokyo Skytree, a torre mais alta do mundo, ancorando uma economia de mais de dois trilhões de dólares."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "slow motion tokyo skytree clouds",
+          "id": "7197891",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "slow motion tokyo skytree clouds",
+          "id": "9509917",
+          "takes": [
+            [
+              30,
+              36
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "slow motion tokyo skytree clouds"
+        },
+        {
+          "provider": "pixabay",
+          "q": "aerial drone shot tokyo tower"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "hyperlapse urban metropolis dusk"
+        }
+      ],
+      "shots": 2,
+      "overlays": [
+        {
+          "kind": "stat",
+          "text": {
+            "en": "2.08",
+            "hi": "2.08",
+            "es": "2,08",
+            "pt": "2,08"
+          },
+          "sub": {
+            "en": "Trillion USD Economy",
+            "hi": "ट्रिलियन डॉलर अर्थव्यवस्था",
+            "es": "Billones USD economía",
+            "pt": "Trilhões USD economia"
+          },
+          "at": 0.8
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s4",
+      "vo": {
+        "en": "Yet in nineteen twenty-three, an earthquake killed an estimated one hundred and five thousand citizens, burning two-fifths of the capital.",
+        "hi": "फिर भी उन्नीस सौ तेईस में, एक भूकंप ने अनुमानित एक लाख पांच हज़ार नागरिकों की जान ले ली और राजधानी का दो-पाँचवाँ हिस्सा जला दिया।",
+        "es": "Sin embargo, en mil novecientos veintitrés, un terremoto mató a unas ciento cinco mil personas, quemando dos quintas partes de la capital.",
+        "pt": "No entanto, em mil novecentos e vinte e três, um terremoto matou cerca de cento e cinco mil pessoas, queimando dois quintos da capital."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "slow motion smoke rising city",
+          "id": "39181392",
+          "takes": [
+            [
+              0,
+              24
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "slow motion smoke rising city",
+          "id": "14924849",
+          "takes": [
+            [
+              0,
+              126
+            ]
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "q": "archive historical damage black white"
+        },
+        {
+          "provider": "pexels",
+          "q": "slow motion smoke rising city"
+        },
+        {
+          "provider": "pixabay",
+          "q": "tracking shot stone monument rain"
+        }
+      ],
+      "shots": 2,
+      "overlays": [
+        {
+          "kind": "kicker",
+          "text": {
+            "en": "1923 Great Disaster",
+            "hi": "1923 की महाआपदा",
+            "es": "Gran desastre de 1923",
+            "pt": "Grande desastre de 1923"
+          },
+          "sub": {
+            "en": "Great Kanto Earthquake",
+            "hi": "ग्रेट कांतो भूकंप",
+            "es": "Gran terremoto de Kanto",
+            "pt": "Grande terremoto de Kanto"
+          },
+          "at": 1
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s5",
+      "vo": {
+        "en": "Today, twenty-six of the world's five hundred largest companies call it home, ranked as the safest city in the world.",
+        "hi": "आज, दुनिया की पाँच सौ सबसे बड़ी कंपनियों में से छब्बीस का मुख्यालय यहाँ है, जिसे दुनिया का सबसे सुरक्षित शहर माना गया है।",
+        "es": "Hoy, veintiséis de las quinientas empresas más grandes del mundo tienen aquí su sede, clasificada como la ciudad más segura del mundo.",
+        "pt": "Hoje, vinte e seis das quinhentas maiores empresas do mundo têm sede aqui, classificada como a cidade mais segura do planeta."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "smooth gimbal shot ginza neon",
+          "id": "28912986",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "smooth gimbal shot ginza neon",
+          "id": "18662635",
+          "takes": [
+            [
+              0,
+              4
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "smooth gimbal shot ginza neon",
+          "id": "8470710",
+          "takes": [
+            [
+              14,
+              20
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "smooth gimbal shot ginza neon"
+        },
+        {
+          "provider": "pixabay",
+          "q": "aerial night shot tokyo highway"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "cinematic reflection neon puddle street"
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "stat",
+          "text": {
+            "en": "26",
+            "hi": "26",
+            "es": "26",
+            "pt": "26"
+          },
+          "sub": {
+            "en": "Fortune Global 500 Giants",
+            "hi": "फॉर्च्यून ग्लोबल 500 कंपनियाँ",
+            "es": "Gigantes Fortune Global 500",
+            "pt": "Gigantes Fortune Global 500"
+          },
+          "at": 0.5
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s6",
+      "shortOnly": true,
+      "vo": {
+        "en": "And every single dawn, this colossal mechanical empire restarts from the very beginning...",
+        "hi": "और हर सुबह, यह विशाल मशीनी साम्राज्य फिर से शून्य से अपनी शुरुआत करता है...",
+        "es": "Y con cada amanecer, este colosal imperio mecánico vuelve a empezar desde el principio...",
+        "pt": "E a cada amanhecer, este império mecânico colossal recomeça exatamente do início..."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "sunrise over tokyo bay silhouette",
+          "id": "19232967",
+          "takes": [
+            [
+              0,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "sunrise over tokyo bay silhouette"
+        },
+        {
+          "provider": "pixabay",
+          "q": "time lapse sunrise city buildings"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "wide aerial tokyo golden hour"
+        }
+      ],
+      "shots": 1,
+      "overlays": [
+        {
+          "kind": "lower",
+          "text": {
+            "en": "Source: Wikipedia",
+            "hi": "स्रोत: विकिपीडिया",
+            "es": "Fuente: Wikipedia",
+            "pt": "Fonte: Wikipédia"
+          },
+          "at": 0.5
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s7",
+      "longOnly": true,
+      "vo": {
+        "en": "Long before the steel towers arrived, this land was a quiet inlet along Tokyo Bay. Senso-ji was founded in six hundred and forty-five, and in fourteen fifty-seven, Edo Castle was built to defend the surrounding coastal plains from rival clans.",
+        "hi": "स्टील के टावरों से बहुत पहले, यह ज़मीन टोक्यो खाड़ी के किनारे एक शांत इनलेट थी। सेन्सो-जी की स्थापना छह सौ पैंतालीस में हुई थी, और चौदह सौ सत्तावन में प्रतिद्वंद्वी गुटों से सुरक्षा के लिए ईदो कैसल बनाया गया था।",
+        "es": "Mucho antes de las torres de acero, esta tierra era una ensenada tranquila en la bahía de Tokio. Senso-ji fue fundado en seiscientos cuarenta y cinco, y en mil cuatrocientos cincuenta y siete se construyó el castillo de Edo.",
+        "pt": "Muito antes das torres de aço, esta terra era uma enseada tranquila na Baía de Tóquio. O Senso-ji foi fundado em seiscentos e quarenta e cinco, e em mil quatrocentos e cinquenta e sete o Castelo de Edo foi erguido."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "cinematic wide shot sensoji temple"
+        },
+        {
+          "provider": "pixabay",
+          "q": "drone shot historic castle moat"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "slow motion incense smoke temple"
+        }
+      ],
+      "shots": 2,
+      "overlays": [
+        {
+          "kind": "chapter",
+          "text": {
+            "en": "From Fishing Village to Fortress",
+            "hi": "मछली पकड़ने वाले गाँव से किला",
+            "es": "De aldea pesquera a fortaleza",
+            "pt": "De vila de pescadores a fortaleza"
+          },
+          "at": 0.5
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s8",
+      "longOnly": true,
+      "vo": {
+        "en": "Power shifted decisively in sixteen hundred and three when Edo became the seat of the Tokugawa shogunate. Under a strict national seclusion policy, Edo flourished into one of the largest cities in the world, with a population surpassing one million.",
+        "hi": "सोलह सौ तीन में सत्ता में बड़ा बदलाव आया जब ईदो तोकुगावा शोगुनेट की राजधानी बना। सख्त अलगाव नीति के तहत, ईदो दुनिया के सबसे बड़े शहरों में विकसित हुआ, जिसकी आबादी दस लाख से अधिक हो गई।",
+        "es": "El poder cambió decisivamente en mil seiscientos tres cuando Edo se convirtió en la sede del shogunato Tokugawa. Bajo un estricto aislamiento nacional, Edo floreció hasta superar el millón de habitantes.",
+        "pt": "O poder mudou decisivamente em mil seiscentos e três quando Edo se tornou a sede do xogunato Tokugawa. Sob rígido isolamento nacional, Edo floresceu até ultrapassar um milhão de habitantes."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "tracking shot traditional wooden shrine",
+          "id": "31387565",
+          "takes": [
+            [
+              0,
+              12
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot traditional wooden shrine",
+          "id": "34977694",
+          "takes": [
+            [
+              10,
+              22
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot traditional wooden shrine"
+        },
+        {
+          "provider": "pixabay",
+          "q": "slow motion cherry blossoms garden"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "aerial shot imperial palace gardens"
+        }
+      ],
+      "shots": 2,
+      "overlays": [
+        {
+          "kind": "stat",
+          "text": {
+            "en": "1603",
+            "hi": "1603",
+            "es": "1603",
+            "pt": "1603"
+          },
+          "sub": {
+            "en": "Seat of Tokugawa Shogunate",
+            "hi": "तोकुगावा शोगुनेट की स्थापना",
+            "es": "Sede del shogunato Tokugawa",
+            "pt": "Sede do xogunato Tokugawa"
+          },
+          "at": 0.8
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s9",
+      "longOnly": true,
+      "vo": {
+        "en": "That secluded peace shattered with the arrival of American Commodore Matthew C. Perry in eighteen fifty-three. Rising inflation and rebellion led to the overthrow of the last shogun in eighteen sixty-seven, ending centuries of samurai rule across the Japanese islands.",
+        "hi": "अठारह सौ तिरपन में अमेरिकी कमोडोर मैथ्यू सी. पेरी के आगमन से यह शांति टूट गई। बढ़ती महंगाई और विद्रोह के कारण अठारह सौ सड़सठ में अंतिम शोगुन का पतन हुआ, जिससे सदियों का समुराई शासन समाप्त हो गया।",
+        "es": "Esa paz aislada se rompió con la llegada del comodoro Matthew C. Perry en mil ochocientos cincuenta y tres. La inflación y la rebelión derrocaron al último shogun en mil ochocientos sesenta y siete.",
+        "pt": "Essa paz isolada ruiu com a chegada do comodoro Matthew C. Perry em mil oitocentos e cinquenta e três. A inflação e as revoltas derrubaram o último xogum em mil oitocentos e sessenta e sete."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "dramatic wide ocean bay waves",
+          "id": "32128536",
+          "takes": [
+            [
+              0,
+              10
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "dramatic wide ocean bay waves",
+          "id": "38852111",
+          "takes": [
+            [
+              0,
+              10
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "dramatic wide ocean bay waves"
+        },
+        {
+          "provider": "pixabay",
+          "q": "cinematic tracking shot antique armor"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "time lapse dark clouds harbor"
+        }
+      ],
+      "shots": 2,
+      "overlays": [
+        {
+          "kind": "kicker",
+          "text": {
+            "en": "The Opening of Japan",
+            "hi": "जापान का खुलना",
+            "es": "La apertura de Japón",
+            "pt": "A abertura do Japão"
+          },
+          "sub": {
+            "en": "Fall of the Shogun",
+            "hi": "शोगुन का पतन",
+            "es": "Caída del shogunato",
+            "pt": "Queda do xogunato"
+          },
+          "at": 1.2
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s10",
+      "longOnly": true,
+      "vo": {
+        "en": "In eighteen sixty-eight, the imperial capital moved from Kyoto, and the city was officially renamed Tokyo, meaning Eastern Capital. Brick districts arose, modern rail lines connected Yokohama, and the City of Tokyo was formally established in eighteen eighty-nine.",
+        "hi": "अठारह सौ अड़सठ में शाही राजधानी क्योटो से स्थानांतरित हुई और शहर का नाम बदलकर टोक्यो यानी पूर्वी राजधानी रखा गया। ईंटों के आधुनिक जिले बने और अठारह सौ नवासी में टोक्यो शहर की स्थापना हुई।",
+        "es": "En mil ochocientos sesenta y ocho, la capital imperial se trasladó desde Kioto y pasó a llamarse Tokio, capital del este. La Ciudad de Tokio se estableció oficialmente en mil ochocientos ochenta y nueve.",
+        "pt": "Em mil oitocentos e sessenta e oito, a capital imperial mudou-se de Quioto e foi renomeada para Tóquio, capital do leste. A Cidade de Tóquio foi fundada oficialmente em mil oitocentos e oitenta e nove."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "historic red brick tokyo station",
+          "id": "31120146",
+          "takes": [
+            [
+              0,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "historic red brick tokyo station",
+          "id": "3942467",
+          "takes": [
+            [
+              0,
+              12
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "historic red brick tokyo station"
+        },
+        {
+          "provider": "pixabay",
+          "q": "drone shot tokyo bay modern"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "tracking shot train tracks sunrise"
+        }
+      ],
+      "shots": 2,
+      "overlays": [
+        {
+          "kind": "chapter",
+          "text": {
+            "en": "The Birth of Tokyo",
+            "hi": "टोक्यो का जन्म",
+            "es": "El nacimiento de Tokio",
+            "pt": "O nascimento de Tóquio"
+          },
+          "at": 0.4
+        },
+        {
+          "kind": "map",
+          "geo": {
+            "lat": 35.6762,
+            "lon": 139.6503
+          },
+          "text": {
+            "en": "Tokyo",
+            "hi": "टोक्यो",
+            "es": "Tokio",
+            "pt": "Tóquio"
+          },
+          "at": 1.5
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s11",
+      "longOnly": true,
+      "vo": {
+        "en": "Then disaster struck on September first, nineteen twenty-three. The Great Kanto Earthquake destroyed thirty-seven percent of the country's economic output. Out of the ashes, engineers abandoned timber and brick, pioneering modern earthquake-proof concrete architecture across the rebuilt metropolis.",
+        "hi": "फिर एक सितंबर उन्नीस सौ तेईस को भीषण आपदा आई। ग्रेट कांतो भूकंप ने देश के सैंतीस प्रतिशत आर्थिक उत्पादन को नष्ट कर दिया। राख के बीच से इंजीनियरों ने लकड़ी छोड़कर भूकंपरोधी कंक्रीट की आधुनिक इमारतें बनाईं।",
+        "es": "El desastre golpeó el uno de septiembre de mil novecientos veintitrés. El terremoto destruyó el treinta y siete por ciento del producto económico, impulsando la construcción antisísmica de hormigón.",
+        "pt": "O desastre chegou em primeiro de setembro de mil novecentos e vinte e três. O terremoto destruiu trinta e sete por cento da produção econômica, forçando o surgimento de construções antissísmicas."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "slow motion concrete architecture angles",
+          "id": "9156330",
+          "takes": [
+            [
+              12,
+              20
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "slow motion concrete architecture angles",
+          "id": "5264818",
+          "takes": [
+            [
+              10,
+              18
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "slow motion concrete architecture angles"
+        },
+        {
+          "provider": "pixabay",
+          "q": "cinematic low angle skyscrapers earthquake"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "tracking shot modern bridge suspension"
+        }
+      ],
+      "shots": 2,
+      "overlays": [
+        {
+          "kind": "stat",
+          "text": {
+            "en": "37%",
+            "hi": "37%",
+            "es": "37%",
+            "pt": "37%"
+          },
+          "sub": {
+            "en": "National Economic Loss",
+            "hi": "राष्ट्रीय आर्थिक नुकसान",
+            "es": "Pérdida económica nacional",
+            "pt": "Perda econômica nacional"
+          },
+          "at": 0.8
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s12",
+      "longOnly": true,
+      "vo": {
+        "en": "By nineteen forty-three, Tokyo City merged with Tokyo Prefecture to centralize control during wartime. Following the Doolittle Raid on April eighteenth, nineteen forty-two, massive Allied bombing runs in nineteen forty-four and nineteen forty-five left more than half the city destroyed.",
+        "hi": "उन्नीस सौ तैंतालीस तक, युद्ध के दौरान नियंत्रण मजबूत करने के लिए टोक्यो शहर का विलय प्रान्त में हो गया। अठारह अप्रैल उन्नीस सौ बयालीस के हमले के बाद, मित्र देशों की बमबारी ने आधे से अधिक शहर को नष्ट कर दिया।",
+        "es": "En mil novecientos cuarenta y tres, la ciudad se fusionó con la prefectura durante la guerra. Tras la incursión Doolittle de mil novecientos cuarenta y dos, los bombardeos destruyeron más de la mitad de la urbe.",
+        "pt": "Em mil novecentos e quarenta e três, a cidade fundiu-se com a prefeitura durante a guerra. Após o ataque Doolittle de mil novecentos e quarenta e dois, bombardeios destruíram mais da metade da cidade."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "dramatic aerial clouds dark city",
+          "id": "40369454",
+          "takes": [
+            [
+              2,
+              12
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "dramatic aerial clouds dark city",
+          "id": "39515711",
+          "takes": [
+            [
+              16,
+              26
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "dramatic aerial clouds dark city"
+        },
+        {
+          "provider": "pixabay",
+          "q": "cinematic wide shot river dusk"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "slow motion rain falling asphalt"
+        }
+      ],
+      "shots": 2,
+      "overlays": [
+        {
+          "kind": "chapter",
+          "text": {
+            "en": "Wartime Devastation",
+            "hi": "युद्ध का विनाश",
+            "es": "Devastación de guerra",
+            "pt": "Devastação da guerra"
+          },
+          "at": 0.4
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s13",
+      "slowmo": true,
+      "longOnly": true,
+      "vo": {
+        "en": "During the raid of March nineteen forty-five, nearly seven hundred thousand incendiary bombs fell. More than two hundred and seventy-six thousand buildings were destroyed, killing one hundred thousand civilians in a single night as populations plummeted to less than two point eight million.",
+        "hi": "मार्च उन्नीस सौ पैंतालीस के हमले में लगभग सात लाख आग लगाने वाले बम गिराए गए। दो लाख छिहत्तर हज़ार से अधिक इमारतें नष्ट हो गईं, और शहर की आबादी घटकर अट्ठाईस लाख से भी कम रह गई।",
+        "es": "En el ataque de marzo de mil novecientos cuarenta y cinco cayeron casi setecientas mil bombas incendiarias. Más de doscientas setenta y seis mil estructuras fueron destruidas y la población se desplomó.",
+        "pt": "No bombardeio de março de mil novecentos e quarenta e cinco caíram quase setecentas mil bombas incendiárias. Mais de duzentos e setenta e seis mil prédios foram destruídos e a população desabou."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "cinematic close up flame embers",
+          "id": "5197737",
+          "takes": [
+            [
+              2,
+              12
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "cinematic close up flame embers",
+          "id": "4310188",
+          "takes": [
+            [
+              5,
+              16
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "cinematic close up flame embers"
+        },
+        {
+          "provider": "pixabay",
+          "q": "slow motion smoke rising dark"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "drone shot river industrial canal"
+        }
+      ],
+      "shots": 2,
+      "overlays": [
+        {
+          "kind": "stat",
+          "text": {
+            "en": "700,000",
+            "hi": "700,000",
+            "es": "700.000",
+            "pt": "700.000"
+          },
+          "sub": {
+            "en": "Incendiary Bombs Dropped",
+            "hi": "गिराए गए आग लगाने वाले बम",
+            "es": "Bombas incendiarias lanzadas",
+            "pt": "Bombas incendiarias lançadas"
+          },
+          "at": 0.8
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s14",
+      "longOnly": true,
+      "vo": {
+        "en": "After the war, Allied occupation administered Japan for six years, rebuilding vital transport and industrial infrastructure. Tokyo bounced back with unbelievable speed, becoming the first city in Asia to host the Summer Olympics and Paralympics in nineteen sixty-four.",
+        "hi": "युद्ध के बाद मित्र राष्ट्रों ने छह साल तक शासन किया और बुनियादी ढांचे का पुनर्निर्माण किया। टोक्यो ने अविश्वसनीय गति से वापसी की और उन्नीस सौ चौंसठ में ग्रीष्मकालीन ओलंपिक की मेजबानी करने वाला एशिया का पहला शहर बना।",
+        "es": "Tras la guerra, la ocupación aliada administró Japón durante seis años, reconstruyendo infraestructuras vitales. Tokio resurgió al albergar los Juegos Olímpicos de mil novecientos sesenta y cuatro.",
+        "pt": "Após a guerra, a ocupação aliada administrou o Japão por seis anos, reconstruindo a infraestrutura. Tóquio ressurgiu sediando os Jogos Olímpicos de mil novecentos e sessenta e quatro."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "shinkansen bullet train passing fast",
+          "id": "6799267",
+          "takes": [
+            [
+              2,
+              18
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "shinkansen bullet train passing fast",
+          "id": "41119817",
+          "takes": [
+            [
+              0,
+              16
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "shinkansen bullet train passing fast"
+        },
+        {
+          "provider": "pixabay",
+          "q": "tracking shot vintage modern streets"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "aerial drone shot tokyo highway"
+        }
+      ],
+      "shots": 2,
+      "overlays": [
+        {
+          "kind": "chapter",
+          "text": {
+            "en": "The Miraculous Rebirth",
+            "hi": "चमत्कारी पुनर्जन्म",
+            "es": "El renacimiento milagroso",
+            "pt": "O renascimento milagroso"
+          },
+          "at": 0.4
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s15",
+      "longOnly": true,
+      "vo": {
+        "en": "That momentum ignited the Japanese economic miracle, catapulting the nation into the second-largest economy in the world. Today, the central metropolis alone holds over fourteen million residents, contributing twenty-one point two percent of Japan's total economic output.",
+        "hi": "उस गति ने जापानी आर्थिक चमत्कार को जन्म दिया, जिससे देश दुनिया की दूसरी सबसे बड़ी अर्थव्यवस्था बन गया। आज, केवल केंद्रीय महानगर में चौदह मिलियन से अधिक निवासी हैं, जो देश की अर्थव्यवस्था में इक्कीस प्रतिशत योगदान देते हैं।",
+        "es": "Ese impulso encendió el milagro económico japonés. Hoy en día, la metrópoli central alberga a más de catorce millones de personas y genera el veintiuno coma dos por ciento de la producción de Japón.",
+        "pt": "Esse impulso acendeu o milagre econômico japonês. Hoje, a metrópole central abriga mais de quatorze milhões de habitantes e gera vinte e um vírgula dois por cento da produção nacional."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "time lapse shibuya crossing crowd",
+          "id": "35488258",
+          "takes": [
+            [
+              10,
+              18
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "time lapse shibuya crossing crowd",
+          "id": "35488300",
+          "takes": [
+            [
+              2,
+              10
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "time lapse shibuya crossing crowd"
+        },
+        {
+          "provider": "pixabay",
+          "q": "tracking shot high speed train"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "aerial view financial district night"
+        }
+      ],
+      "shots": 2,
+      "overlays": [
+        {
+          "kind": "stat",
+          "text": {
+            "en": "14",
+            "hi": "14",
+            "es": "14",
+            "pt": "14"
+          },
+          "sub": {
+            "en": "Million Residents (City Proper)",
+            "hi": "मिलियन निवासी (मूल शहर)",
+            "es": "Millones de habitantes (ciudad)",
+            "pt": "Milhões de habitantes (cidade)"
+          },
+          "at": 0.8
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s16",
+      "longOnly": true,
+      "vo": {
+        "en": "With a metropolitan economy generating over two trillion dollars, Tokyo balances extreme density with unprecedented order. Millions navigate the labyrinthine subway lines every morning with pinpoint punctuality, creating the cleanest, safest urban ecosystem on the planet.",
+        "hi": "दो ट्रिलियन डॉलर से अधिक की अर्थव्यवस्था के साथ, टोक्यो भारी भीड़ और अद्वितीय अनुशासन का संतुलन बनाता है। लाखों लोग हर सुबह सटीक समय की पाबंदी के साथ दुनिया के सबसे स्वच्छ और सुरक्षित माहौल में यात्रा करते हैं।",
+        "es": "Con una economía metropolitana de más de dos billones de dólares, Tokio equilibra la densidad extrema con un orden impecable, creando el ecosistema urbano más limpio y seguro del planeta.",
+        "pt": "Com uma economia que ultrapassa dois trilhões de dólares, Tóquio equilibra densidade extrema com ordem impecável, criando o ecossistema urbano mais limpo e seguro do planeta."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "smooth tracking shot subway platform",
+          "id": "20630219",
+          "takes": [
+            [
+              16,
+              24
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "smooth tracking shot subway platform",
+          "id": "19236966",
+          "takes": [
+            [
+              4,
+              12
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "smooth tracking shot subway platform"
+        },
+        {
+          "provider": "pixabay",
+          "q": "low angle neon signs shinjuku"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "time lapse crowd moving orderly"
+        }
+      ],
+      "shots": 2,
+      "overlays": [
+        {
+          "kind": "kicker",
+          "text": {
+            "en": "Precision at Scale",
+            "hi": "विशाल स्तर पर सटीकता",
+            "es": "Precisión a gran escala",
+            "pt": "Precisão em grande escala"
+          },
+          "sub": {
+            "en": "Flawless Urban Transit",
+            "hi": "सटीक शहरी परिवहन",
+            "es": "Transporte urbano impecable",
+            "pt": "Transporte urbano impecável"
+          },
+          "at": 0.8
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s17",
+      "longOnly": true,
+      "vo": {
+        "en": "From a medieval fishing village to an indestructible thirty-three-million-strong titan, Tokyo survived fires, quakes, and war by continually rebuilding the future. When you walk these neon canyons, you are witnessing human resilience engineered into pure perfection.",
+        "hi": "एक छोटे से गाँव से तैंतीस मिलियन लोगों के विशाल महानगर तक, टोक्यो ने आग, भूकंप और युद्धों को झेलते हुए खुद को फिर से गढ़ा है। जब आप इन गलियों में चलते हैं, तो आप इंसानी हौसले की मिसाल देखते हैं।",
+        "es": "De una aldea medieval a un titán de treinta y tres millones de personas, Tokio sobrevivió a fuegos, sismos y guerras reinventando su futuro. Estas calles son la cúspide de la resiliencia humana.",
+        "pt": "De vila medieval a uma metrópole de trinta e três milhões de pessoas, Tóquio sobreviveu a incêndios, terremotos e guerras reinventando seu futuro. É o auge da resiliência humana."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "drone shot neon tokyo skyline",
+          "id": "4711694",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "drone shot neon tokyo skyline",
+          "id": "6440104",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "drone shot neon tokyo skyline",
+          "id": "9396326",
+          "takes": [
+            [
+              10,
+              16
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "drone shot neon tokyo skyline"
+        },
+        {
+          "provider": "pixabay",
+          "q": "cinematic slow motion pedestrian rain"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "aerial zoom out tokyo night"
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "lower",
+          "text": {
+            "en": "Source: Wikipedia",
+            "hi": "स्रोत: विकिपीडिया",
+            "es": "Fuente: Wikipedia",
+            "pt": "Fonte: Wikipédia"
+          },
+          "at": 1
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    }
+  ],
+  "music": {
+    "mood": "upbeat",
+    "styles": [
+      "pulsing synthwave bassline",
+      "cinematic electronic drums",
+      "glossy ambient textures"
+    ],
+    "peak": "s5"
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Wikipedia, Tokyo",
+      "url": "https://en.wikipedia.org/wiki/Tokyo",
+      "claims": [
+        "The population of the city proper was over 14 million as of 2023.",
+        "The Greater Tokyo Area, which includes Tokyo and parts of six neighboring prefectures, is the third-most populous metropolitan area in the world, with 33 million residents as of 2025.",
+        "Tokyo, originally known as Edo, rose to political prominence in 1603 when it became the seat of the Tokugawa shogunate",
+        "by the mid-18th century, Edo had evolved from a small fishing village into one of the largest cities in the world, with a population surpassing one million.",
+        "During the Meiji Restoration in 1868, the name of the city was changed to Tokyo",
+        "Tokyo was greatly damaged by the 1923 Great Kantō earthquake and by Allied bombing raids during World War II.",
+        "Beginning in the late 1940s, Tokyo underwent rapid reconstruction and expansion, which fueled the Japanese economic miracle, in which Japan's economy became the second-largest in the world at the time, behind that of the United States.",
+        "As of 2025, Tokyo is home to 26 of the world's 500 largest companies, as listed in the annual Fortune Global 500.",
+        "Tokyo was the first city in Asia to host the Summer Olympics and Paralympics, in 1964",
+        "the city's Shinjuku Station is the world's busiest train station.",
+        "Tokyo Skytree is the world's tallest tower.",
+        "The Tokyo Metro Ginza Line, which opened in 1927, is the oldest underground metro line in Asia.",
+        "gross metropolitan product estimated at US$2.08 trillion.",
+        "ranked as the safest city in the world by the Economist Intelligence Unit.",
+        "Senso-ji in Asakusa was founded in 645.",
+        "in 1457, Ōta Dōkan built Edo Castle to defend the region from the Chiba clan.",
+        "arrival of American Commodore Matthew C. Perry in 1853.",
+        "overthrow of the last Tokugawa shōgun, Yoshinobu, in 1867",
+        "The City of Tokyo was officially established on May 1, 1889.",
+        "On September 1, 1923, the Great Kanto Earthquake struck the city, and the earthquake and subsequent fire killed an estimated 105,000 citizens.",
+        "The loss amounted to 37 percent of the country's economic output.",
+        "In 1943, Tokyo City merged with Tokyo Prefecture to form the Tokyo Metropolis",
+        "Doolittle Raid on April 18, 1942",
+        "bombing of Tokyo in 1944 and 1945 is estimated to have killed between 75,000 and 200,000 civilians and left more than half of the city destroyed.",
+        "Nearly 700,000 incendiary bombs were dropped on the east end of the city",
+        "Two-fifths of the city were completely burned, more than 276,000 buildings were destroyed, 100,000 civilians were killed, and 110,000 more were injured.",
+        "Between 1940 and 1945, the population of Tokyo dwindled from 6,700,000 to less than 2,800,000",
+        "administered Japan for six years.",
+        "accounted for 21.2% of Japan's economic output"
+      ]
+    }
+  ],
+  "engage": {
+    "ask": {
+      "en": "Would you rather live in a megacity of 33 million, or a quiet village?",
+      "hi": "क्या आप 33 मिलियन लोगों के मेगासिटी में रहना पसंद करेंगे या एक शांत गाँव में?",
+      "es": "¿Preferirías vivir en una megaciudad de 33 millones o en un pueblo tranquilo?",
+      "pt": "Você preferiria viver numa megacidade de 33 milhões ou numa vila tranquila?"
+    },
+    "hookText": {
+      "en": "THE *SAFEST* MEGACITY",
+      "hi": "सबसे *सुरक्षित* मेगासिटी",
+      "es": "LA MEGACIUDAD MÁS *SEGURA*",
+      "pt": "A MEGACIDADE MAIS *SEGURA*"
+    },
+    "loop": {
+      "en": "And every single dawn, this colossal mechanical empire restarts from the very beginning...",
+      "hi": "और हर सुबह, यह विशाल मशीनी साम्राज्य फिर से शून्य से अपनी शुरुआत करता है...",
+      "es": "Y con cada amanecer, este colosal imperio mecánico vuelve a empezar desde el principio...",
+      "pt": "E a cada amanhecer, este império mecânico colossal recomeça exatamente do início..."
+    },
+    "share": {
+      "en": "Send this to a friend who dreams of visiting Japan.",
+      "hi": "यह उस दोस्त को भेजिए जिसका सपना जापान जाने का है।",
+      "es": "Envíaselo a un amigo que sueña con viajar a Japón.",
+      "pt": "Mande para aquele amigo que sonha em conhecer o Japão."
+    }
+  }
+}
