@@ -1,0 +1,1520 @@
+{
+  "id": "E012",
+  "status": "approved",
+  "topic": "extreme-earth",
+  "look": "arctic",
+  "title": {
+    "en": "The Hidden Fire Beneath Our Oceans",
+    "hi": "हमारे महासागरों के नीचे छिपी आग",
+    "es": "El fuego oculto bajo nuestros océanos",
+    "pt": "O fogo oculto sob nossos oceanos"
+  },
+  "thumb": {
+    "en": "EARTH IS BURNING UNDERWATER",
+    "hi": "समुद्र के नीचे धधकती आग",
+    "es": "LA TIERRA ARDE BAJO EL AGUA",
+    "pt": "A TERRA QUEIMA SOB A ÁGUA"
+  },
+  "music": {
+    "mood": "tension",
+    "styles": [
+      "deep tectonic rumble",
+      "haunting cello drone",
+      "ominous orchestral pulse"
+    ],
+    "peak": "s5"
+  },
+  "engage": {
+    "ask": {
+      "en": "If a new volcano erupted in your backyard tomorrow, what would you do first?",
+      "hi": "अगर कल आपके घर के पीछे कोई नया ज्वालामुखी फूट पड़े, तो आप सबसे पहले क्या करेंगे?",
+      "es": "Si mañana apareciera un volcán en tu patio, ¿qué harías primero?",
+      "pt": "Se um vulcão brotasse no seu quintal amanhã, o que você faria primeiro?"
+    },
+    "hookText": {
+      "en": "OCEANS ARE *BURNING*",
+      "hi": "समुद्र *जल* रहे हैं",
+      "es": "LOS OCÉANOS *ARDEN*",
+      "pt": "OS OCEANOS ESTÃO *QUEIMANDO*"
+    },
+    "loop": {
+      "en": "And beneath the ocean crust, the deep engine never stops...",
+      "hi": "और महासागर की गहराई में, यह भीषण प्रक्रिया कभी नहीं रुकती...",
+      "es": "Y bajo la corteza oceánica, este motor profundo nunca se detiene...",
+      "pt": "E sob a crosta oceânica, esse motor profundo nunca para..."
+    },
+    "share": {
+      "en": "Send this to a friend who doesn't know most volcanoes are actually under the ocean.",
+      "hi": "यह उस दोस्त को भेजो जिसे नहीं पता कि ज़्यादातर ज्वालामुखी असल में समुद्र के नीचे हैं।",
+      "es": "Mándaselo a ese amigo que no sabe que casi todos los volcanes están bajo el mar.",
+      "pt": "Manda isso pro seu amigo que não sabe que a maioria dos vulcões fica embaixo d'água."
+    }
+  },
+  "scenes": [
+    {
+      "id": "s1",
+      "vo": {
+        "en": "You could lose your footing on the Pacific Ring of Fire before you notice anything. But how?",
+        "hi": "प्रशांत रिंग ऑफ फायर पर कुछ भी समझ आने से पहले आपकी ज़मीन खिसक सकती है। लेकिन कैसे?",
+        "es": "Podrías perder pie en el Cinturón de Fuego del Pacífico antes de notar nada. Pero ¿cómo?",
+        "pt": "Você poderia perder o chão no Círculo de Fogo do Pacífico antes de perceber qualquer coisa. Mas como?"
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "drone shot glowing volcano caldera",
+          "id": "39594428",
+          "takes": [
+            [
+              1,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "drone shot glowing volcano caldera",
+          "id": "4231752",
+          "takes": [
+            [
+              0,
+              5
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "drone shot glowing volcano caldera"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "aerial shot basalt lava fountain"
+        },
+        {
+          "provider": "pixabay",
+          "q": "slow motion volcanic ash lightning"
+        }
+      ],
+      "slowmo": true,
+      "overlays": [
+        {
+          "kind": "kicker",
+          "text": {
+            "en": "Deep Earth Unleashed",
+            "hi": "धधकती पृथ्वी",
+            "es": "La Tierra profunda desatada",
+            "pt": "A Terra profunda revelada"
+          },
+          "sub": {
+            "en": "Pacific Ring of Fire",
+            "hi": "प्रशांत रिंग ऑफ फायर",
+            "es": "Cinturón de Fuego del Pacífico",
+            "pt": "Círculo de Fogo do Pacífico"
+          },
+          "at": 1.2
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "shots": 2
+    },
+    {
+      "id": "s2",
+      "vo": {
+        "en": "Most volcanic eruptions never touch the open air, because most plate boundaries are entirely underwater.",
+        "hi": "ज़्यादातर ज्वालामुखी विस्फोट कभी खुली हवा को नहीं छूते, क्योंकि अधिकतर प्लेट सीमाएँ पूरी तरह पानी के नीचे हैं।",
+        "es": "La mayoría de las erupciones jamás tocan el aire libre, porque casi todos los límites de placas están bajo el agua.",
+        "pt": "A maioria das erupções nunca toca o ar livre, porque quase todos os limites de placas ficam debaixo d'água."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "deep ocean dark abyssal water",
+          "id": "34448740",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "deep ocean dark abyssal water",
+          "id": "34095975",
+          "takes": [
+            [
+              0,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "q": "underwater hydrothermal vent black smoker"
+        },
+        {
+          "provider": "pexels",
+          "q": "deep ocean dark abyssal water"
+        },
+        {
+          "provider": "pixabay",
+          "q": "underwater submarine glowing basalt crust"
+        }
+      ],
+      "overlays": [
+        {
+          "kind": "kicker",
+          "text": {
+            "en": "Submarine Volcanism",
+            "hi": "समुद्री ज्वालामुखी गतिविधि",
+            "es": "Vulcanismo submarino",
+            "pt": "Vulcanismo submarino"
+          },
+          "sub": {
+            "en": "Mid-Ocean Ridges",
+            "hi": "मध्य-महासागरीय कटक",
+            "es": "Dorsales mediooceánicas",
+            "pt": "Dorsais meso-oceânicas"
+          },
+          "at": 0.8
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "shots": 2
+    },
+    {
+      "id": "s3",
+      "vo": {
+        "en": "Where plates collide in the Pacific Ring of Fire, trapped water triggers violent, explosive mountains.",
+        "hi": "प्रशांत रिंग ऑफ फायर में जहाँ प्लेटें टकराती हैं, फँसा हुआ पानी भीषण और विस्फोटक पहाड़ों को जन्म देता है।",
+        "es": "Donde las placas colisionan en el Cinturón de Fuego del Pacífico, el agua atrapada desata montañas explosivas y violentas.",
+        "pt": "Onde as placas colidem no Círculo de Fogo do Pacífico, a água aprisionada desencadeia montanhas explosivas e violentas."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "aerial shot conical stratovolcano peak",
+          "id": "36382053",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "aerial shot conical stratovolcano peak",
+          "id": "16679243",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "aerial shot conical stratovolcano peak"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "tracking shot pyroclastic ash cloud"
+        },
+        {
+          "provider": "pixabay",
+          "q": "wide angle smoking volcanic crater"
+        }
+      ],
+      "overlays": [
+        {
+          "kind": "map",
+          "geo": {
+            "lat": 35.3606,
+            "lon": 138.7274
+          },
+          "text": {
+            "en": "Pacific Ring of Fire",
+            "hi": "प्रशांत रिंग ऑफ फायर",
+            "es": "Cinturón de Fuego del Pacífico",
+            "pt": "Círculo de Fogo do Pacífico"
+          },
+          "at": 0.5
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "shots": 2
+    },
+    {
+      "id": "s4",
+      "vo": {
+        "en": "Yet other volcanoes rise from plumes three thousand kilometres deep within the Earth, feeding island chains.",
+        "hi": "फिर भी अन्य ज्वालामुखी पृथ्वी के भीतर तीन हज़ार किलोमीटर गहरे प्लूम्स से उभरते हैं, जो द्वीपों की श्रृंखला बनाते हैं।",
+        "es": "Sin embargo, otros volcanes brotan de plumas a tres mil kilómetros de profundidad, formando cadenas de islas.",
+        "pt": "No entanto, outros vulcões surgem de plumas a três mil quilômetros de profundidade, gerando cadeias de ilhas."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "slow motion red hot basalt",
+          "id": "30401545",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "slow motion red hot basalt",
+          "id": "17675069",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "q": "aerial view hawaiian lava ocean"
+        },
+        {
+          "provider": "pexels",
+          "q": "slow motion red hot basalt"
+        },
+        {
+          "provider": "pixabay",
+          "q": "tracking shot active volcanic fissure"
+        }
+      ],
+      "overlays": [
+        {
+          "kind": "stat",
+          "text": {
+            "en": "3,000",
+            "hi": "3,000",
+            "es": "3.000",
+            "pt": "3.000"
+          },
+          "sub": {
+            "en": "kilometres deep",
+            "hi": "किलोमीटर की गहराई",
+            "es": "kilómetros de profundidad",
+            "pt": "quilômetros de profundidade"
+          },
+          "at": 1
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "shots": 2
+    },
+    {
+      "id": "s5",
+      "vo": {
+        "en": "A single supervolcano can blast over one thousand cubic kilometres of rock, cooling the entire planet.",
+        "hi": "एक अकेला सुपरवॉल्केनो एक हज़ार घन किलोमीटर से अधिक चट्टान उड़ा सकता है, जिससे पूरा ग्रह ठंडा पड़ जाता है।",
+        "es": "Un solo supervolcán puede expulsar más de mil kilómetros cúbicos de roca, enfriando el planeta entero.",
+        "pt": "Um único supervulcão pode expelir mais de mil quilômetros cúbicos de rocha, resfriando o planeta inteiro."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "massive caldera lake aerial drone",
+          "id": "29695342",
+          "takes": [
+            [
+              0,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "massive caldera lake aerial drone",
+          "id": "28847644",
+          "takes": [
+            [
+              0,
+              5
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "massive caldera lake aerial drone"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "satellite view sulfur ash cloud"
+        },
+        {
+          "provider": "pixabay",
+          "q": "time lapse volcanic winter sky"
+        }
+      ],
+      "overlays": [
+        {
+          "kind": "kicker",
+          "text": {
+            "en": "Supervolcano Calamity",
+            "hi": "सुपरवॉल्केनो प्रलय",
+            "es": "Calamidad de supervolcán",
+            "pt": "Calamidade de supervulcão"
+          },
+          "sub": {
+            "en": "Atmospheric Cooling",
+            "hi": "वायुमंडलीय ठंडक",
+            "es": "Enfriamiento atmosférico",
+            "pt": "Resfriamento atmosférico"
+          },
+          "at": 1.1
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "shots": 2
+    },
+    {
+      "id": "s6",
+      "shortOnly": true,
+      "vo": {
+        "en": "And beneath the ocean crust, the deep engine never stops...",
+        "hi": "और महासागर की गहराई में, यह भीषण प्रक्रिया कभी नहीं रुकती...",
+        "es": "Y bajo la corteza oceánica, este motor profundo nunca se detiene...",
+        "pt": "E sob a crosta oceânica, esse motor profundo nunca para..."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "drone shot glowing volcano caldera",
+          "id": "4581057",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "q": "underwater hydrothermal vent black smoker"
+        },
+        {
+          "provider": "pexels",
+          "q": "drone shot glowing volcano caldera"
+        },
+        {
+          "provider": "pixabay",
+          "q": "slow motion volcanic ash lightning"
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "shots": 1
+    },
+    {
+      "id": "s7",
+      "longOnly": true,
+      "vo": {
+        "en": "The rigid outer shell of our planet, known as the lithosphere, is broken into sixteen larger plates. Driven by convection currents in the ductile mantle beneath, these massive sections drift constantly, shaping continents and forging deep oceanic abysses.",
+        "hi": "हमारी पृथ्वी की कठोर बाहरी परत, जिसे स्थलमंडल कहा जाता है, सोलह बड़ी प्लेटों में विभाजित है। नीचे मौजूद लचीले मेंटल में संवहन धाराओं से प्रेरित होकर, ये विशाल हिस्से लगातार खिसकते रहते हैं और महाद्वीपों को नया रूप देते हैं।",
+        "es": "La capa exterior rígida de nuestro planeta, llamada litosfera, está fragmentada en dieciséis placas mayores. Impulsadas por corrientes de convección en el manto dúctil inferior, estas enormes secciones se desplazan constantemente, transformando los continentes.",
+        "pt": "A camada externa rígida do nosso planeta, conhecida como litosfera, é dividida em dezesseis placas maiores. Impulsionadas por correntes de convecção no manto dúctil abaixo, essas seções maciças se deslocam sem parar, moldando continentes."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "cinematic globe tectonic fault line",
+          "id": "11056560",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "cinematic globe tectonic fault line",
+          "id": "8817503",
+          "takes": [
+            [
+              0,
+              4
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "cinematic globe tectonic fault line",
+          "id": "11056560",
+          "takes": [
+            [
+              12,
+              18
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "cinematic globe tectonic fault line",
+          "id": "29050934",
+          "takes": [
+            [
+              0,
+              4
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "cinematic globe tectonic fault line",
+          "id": "8817503",
+          "takes": [
+            [
+              6,
+              10
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "cinematic globe tectonic fault line"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "aerial shot rift valley landscape"
+        },
+        {
+          "provider": "pixabay",
+          "q": "time lapse mountain ridge clouds"
+        }
+      ],
+      "overlays": [
+        {
+          "kind": "chapter",
+          "text": {
+            "en": "The Fractured Crust",
+            "hi": "विभाजित भू-पर्पटी",
+            "es": "La corteza fracturada",
+            "pt": "A crosta fraturada"
+          },
+          "sub": {
+            "en": "01",
+            "hi": "01",
+            "es": "01",
+            "pt": "01"
+          },
+          "at": 0.5
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "shots": 5
+    },
+    {
+      "id": "s8",
+      "longOnly": true,
+      "vo": {
+        "en": "At divergent boundaries along mid-ocean ridges, plates pull apart. Hot mantle rock ascends into the widening gap, undergoing adiabatic expansion and partial melting. This continuous submarine volcanism steadily generates fresh oceanic crust miles beneath the sunlit surface.",
+        "hi": "मध्य-महासागरीय कटकों के साथ अपसारी सीमाओं पर, प्लेटें एक-दूसरे से दूर खिंचती हैं। गर्म मेंटल चट्टान ऊपर उठती है और आंशिक रूप से पिघल जाती है। यह निरंतर समुद्री ज्वालामुखी गतिविधि सतह से मीलों नीचे नई महासागरीय परत का निर्माण करती है।",
+        "es": "En los bordes divergentes de las dorsales oceánicas, las placas se separan. La roca caliente del manto asciende, experimentando descompresión y fusión parcial. Este vulcanismo submarino constante crea nueva corteza oceánica a kilómetros de profundidad.",
+        "pt": "Nos limites divergentes ao longo das dorsais oceânicas, as placas se afastam. A rocha quente do manto sobe, passando por descompressão e fusão parcial. Esse vulcanismo submarino contínuo cria nova crosta oceânica quilômetros abaixo da superfície."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "deep ocean dark abyssal water",
+          "id": "34448740",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "q": "underwater hydrothermal vent black smoker"
+        },
+        {
+          "provider": "pexels",
+          "q": "deep ocean dark abyssal water"
+        },
+        {
+          "provider": "pixabay",
+          "q": "submersible submarine exploring ocean trench"
+        }
+      ],
+      "overlays": [
+        {
+          "kind": "kicker",
+          "text": {
+            "en": "Creating New Seafloor",
+            "hi": "नए समुद्री तल का निर्माण",
+            "es": "Creación de nuevo lecho marino",
+            "pt": "Criação de novo assoalho marinho"
+          },
+          "sub": {
+            "en": "Mid-Atlantic Ridge",
+            "hi": "मध्य अटलांटिक कटक",
+            "es": "Dorsal mesoatlántica",
+            "pt": "Dorsal Mesoatlântica"
+          },
+          "at": 1.2
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "shots": 1
+    },
+    {
+      "id": "s9",
+      "longOnly": true,
+      "vo": {
+        "en": "Where two plates collide at subduction zones, one dives beneath the other into a dark oceanic trench. Water squeezed from the descending plate lowers the melting point of the surrounding mantle, generating highly viscous magma that seeks an explosive exit.",
+        "hi": "जब दो प्लेटें सबडक्शन ज़ोन में टकराती हैं, तो एक प्लेट दूसरी के नीचे गहरी समुद्री खाई में धंस जाती है। नीचे जाती प्लेट से निकलने वाला पानी मेंटल के गलनांक को कम कर देता है, जिससे अत्यधिक गाढ़ा मैग्मा बनता है जो विस्फोट के लिए रास्ता तलाशता है।",
+        "es": "Donde dos placas colisionan en zonas de subducción, una se hunde bajo la otra en una profunda fosa oceánica. El agua expulsada reduce el punto de fusión del manto, generando un magma sumamente viscoso que pugna por salir.",
+        "pt": "Onde duas placas colidem em zonas de subducção, uma mergulha sob a outra em uma fossa oceânica profunda. A água liberada reduz o ponto de fusão do manto, gerando magma extremamente viscoso que busca uma saída violenta."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "aerial shot rugged mountain arc",
+          "id": "9813693",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "aerial shot rugged mountain arc",
+          "id": "9320579",
+          "takes": [
+            [
+              0,
+              5
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "aerial shot rugged mountain arc",
+          "id": "9320581",
+          "takes": [
+            [
+              0,
+              5
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "aerial shot rugged mountain arc",
+          "id": "18757923",
+          "takes": [
+            [
+              0,
+              4
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "aerial shot rugged mountain arc",
+          "id": "9320579",
+          "takes": [
+            [
+              6,
+              10
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "aerial shot rugged mountain arc"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "time lapse volcanic smoke plume"
+        },
+        {
+          "provider": "pixabay",
+          "q": "drone shot crashing coastal waves"
+        }
+      ],
+      "overlays": [
+        {
+          "kind": "lower",
+          "text": {
+            "en": "Mechanism: Flux Melting",
+            "hi": "प्रक्रिया: फ्लक्स मेल्टिंग",
+            "es": "Mecanismo: fusión por fundente",
+            "pt": "Mecanismo: fusão por fluxo"
+          },
+          "at": 1.5
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "shots": 5
+    },
+    {
+      "id": "s10",
+      "longOnly": true,
+      "vo": {
+        "en": "Stratovolcanoes, or composite cones, are built from alternating strata of hardened lava and tephra. Their steep flanks, rising at slopes of thirty to thirty-five degrees, contrast sharply with shield volcanoes whose gentle inclines rarely exceed five to ten degrees.",
+        "hi": "स्ट्रेटोवोलकैनो, या मिश्रित शंकु, जमी हुई लावा और टेफ्रा की परतों से बनते हैं। इनकी ढलानें तीस से पैंतीस डिग्री तक खड़ी होती हैं, जो शील्ड ज्वालामुखियों के बिल्कुल विपरीत हैं जिनकी ढलान बमुश्किल पाँच से दस डिग्री होती है।",
+        "es": "Los estratovolcanes están formados por capas alternas de lava endurecida y tefra. Sus laderas empinadas, con pendientes de treinta a treinta y cinco grados, contrastan con los volcanes en escudo, cuyas suaves inclinaciones apenas alcanzan de cinco a diez grados.",
+        "pt": "Os estratovulcões são formados por camadas alternadas de lava endurecida e tefra. Suas encostas íngremes, com inclinações de trinta a trinta e cinco graus, contrastam com os vulcões-escudo, cujos declives suaves raramente passam de cinco a dez graus."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "tracking shot snow covered stratovolcano",
+          "id": "16109591",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot snow covered stratovolcano",
+          "id": "16109591",
+          "takes": [
+            [
+              12,
+              18
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot snow covered stratovolcano",
+          "id": "16110390",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot snow covered stratovolcano",
+          "id": "41162387",
+          "takes": [
+            [
+              0,
+              4
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot snow covered stratovolcano",
+          "id": "3552402",
+          "takes": [
+            [
+              0,
+              5
+            ]
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "q": "wide angle majestic mount fuji"
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot snow covered stratovolcano"
+        },
+        {
+          "provider": "pixabay",
+          "q": "aerial view volcanic cone crater"
+        }
+      ],
+      "overlays": [],
+      "sources": [
+        "S1"
+      ],
+      "shots": 5
+    },
+    {
+      "id": "s11",
+      "longOnly": true,
+      "vo": {
+        "en": "The silica-rich magma inside composite cones traps dangerous dissolved gases. When pressure finally ruptures the volcanic vent, it hurls giant volcanic bombs measuring more than one point two metres across, weighing multiple tons into the surrounding atmosphere.",
+        "hi": "मिश्रित शंकुओं के भीतर सिलिका युक्त मैग्मा ख़तरनाक गैसों को दबाए रखता है। जब दबाव वेंट को तोड़ता है, तो यह एक दशमलव दो मीटर से बड़े और कई टन भारी ज्वालामुखी बम हवा में उछाल देता है।",
+        "es": "El magma rico en sílice dentro de estos conos retiene gases disueltos letales. Al romperse el conducto por la presión, expulsa gigantescas bombas volcánicas de más de uno coma dos metros de ancho que pesan varias toneladas.",
+        "pt": "O magma rico em sílica dentro desses cones aprisiona gases perigosos. Quando a pressão rompe o duto vulcânico, lança bombas vulcânicas gigantes com mais de um vírgula dois metros de largura e pesando toneladas."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "slow motion volcanic bomb explosion",
+          "id": "13438865",
+          "takes": [
+            [
+              8,
+              15
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "slow motion volcanic bomb explosion",
+          "id": "13456698",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "slow motion volcanic bomb explosion",
+          "id": "39798194",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "slow motion volcanic bomb explosion",
+          "id": "35495263",
+          "takes": [
+            [
+              26,
+              33
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "slow motion volcanic bomb explosion"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "macro close up porous volcanic tephra"
+        },
+        {
+          "provider": "pixabay",
+          "q": "aerial shot smoking crater debris"
+        }
+      ],
+      "slowmo": true,
+      "overlays": [
+        {
+          "kind": "stat",
+          "text": {
+            "en": "1.2",
+            "hi": "1.2",
+            "es": "1,2",
+            "pt": "1,2"
+          },
+          "sub": {
+            "en": "metres across volcanic bombs",
+            "hi": "मीटर चौड़े ज्वालामुखी बम",
+            "es": "metros de ancho en bombas",
+            "pt": "metros de diâmetro em bombas"
+          },
+          "at": 1.2
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "shots": 4
+    },
+    {
+      "id": "s12",
+      "longOnly": true,
+      "vo": {
+        "en": "In nineteen hundred and two, an explosive eruption completely devastated the city of Saint-Pierre in Martinique. Deadly pyroclastic surges swept down the volcano slopes within minutes, demonstrating how explosive stratovolcanoes have historically posed the greatest hazards to human civilizations.",
+        "hi": "उन्नीस सौ दो में, एक विनाशकारी विस्फोट ने मार्टीनिक के सेंट-पियरे शहर को तबाह कर दिया। घातक पायरोक्लास्टिक धाराएं कुछ ही मिनटों में ढलानों से नीचे बह गईं, यह दिखाते हुए कि कैसे स्ट्रेटोवोलकैनो मानव सभ्यता के लिए सबसे बड़ा ख़तरा रहे हैं।",
+        "es": "En mil novecientos dos, una erupción destruyó por completo la ciudad de Saint-Pierre en Martinica. Nubes piroclásticas letales arrasaron las laderas en minutos, demostrando el inmenso peligro que los estratovolcanes han supuesto históricamente para las civilizaciones.",
+        "pt": "Em mil novecentos e dois, uma erupção destruiu completamente a cidade de Saint-Pierre, na Martinica. Fluxos piroclásticos letais varreram as encostas em minutos, provando como os estratovulcões representam uma grande ameaça histórica às civilizações."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "gloomy dark volcanic ash landscape",
+          "id": "16679243",
+          "takes": [
+            [
+              0,
+              5
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "gloomy dark volcanic ash landscape",
+          "id": "19526512",
+          "takes": [
+            [
+              0,
+              4
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "gloomy dark volcanic ash landscape",
+          "id": "19526513",
+          "takes": [
+            [
+              3,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "gloomy dark volcanic ash landscape",
+          "id": "15861740",
+          "takes": [
+            [
+              2,
+              7
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "gloomy dark volcanic ash landscape",
+          "id": "16679243",
+          "takes": [
+            [
+              16,
+              22
+            ]
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "q": "historic ruins destroyed volcanic town"
+        },
+        {
+          "provider": "pexels",
+          "q": "gloomy dark volcanic ash landscape"
+        },
+        {
+          "provider": "pixabay",
+          "q": "tracking shot desolate rocky ruins"
+        }
+      ],
+      "overlays": [
+        {
+          "kind": "kicker",
+          "text": {
+            "en": "Historical Disaster",
+            "hi": "ऐतिहासिक आपदा",
+            "es": "Desastre histórico",
+            "pt": "Desastre histórico"
+          },
+          "sub": {
+            "en": "Saint-Pierre, 1902",
+            "hi": "सेंट-पियरे, 1902",
+            "es": "Saint-Pierre, 1902",
+            "pt": "Saint-Pierre, 1902"
+          },
+          "at": 0.8
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "shots": 5
+    },
+    {
+      "id": "s13",
+      "longOnly": true,
+      "vo": {
+        "en": "Cinder cones offer a different spectacle. Formed from accumulations of scoria and pyroclastics around an isolated vent, these steep hills typically reach thirty to four hundred metres high. Most cinder cones erupt only once before permanently losing their magmatic supply.",
+        "hi": "सिंडर शंकु एक अलग दृश्य पेश करते हैं। एक छिद्र के चारों ओर स्कोरिया और पायरोक्लास्टिक्स के जमाव से बनने वाली ये खड़ी पहाड़ियाँ आमतौर पर तीस से चार सौ मीटर ऊँची होती हैं। अधिकांश सिंडर शंकु स्थायी रूप से बुझने से पहले केवल एक बार फटते हैं।",
+        "es": "Los conos de escoria ofrecen un espectáculo diferente. Formados por fragmentos piroclásticos alrededor de un respiradero, estas colinas suelen medir de treinta a cuatrocientos metros de alto. Casi todos hacen erupción una sola vez en su vida.",
+        "pt": "Os cones de escória oferecem um espetáculo diferente. Formados pelo acúmulo de fragmentos piroclásticos ao redor de uma abertura, essas colinas atingem de trinta a quatrocentos metros de altura. A maioria entra em erupção uma única vez."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "tracking shot black volcanic gravel",
+          "id": "34234307",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot black volcanic gravel",
+          "id": "10235359",
+          "takes": [
+            [
+              0,
+              5
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot black volcanic gravel",
+          "id": "17088569",
+          "takes": [
+            [
+              12,
+              17
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot black volcanic gravel",
+          "id": "34289759",
+          "takes": [
+            [
+              4,
+              9
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot black volcanic gravel",
+          "id": "34234307",
+          "takes": [
+            [
+              7,
+              13
+            ]
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "q": "aerial shot basalt cinder cone"
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot black volcanic gravel"
+        },
+        {
+          "provider": "pixabay",
+          "q": "wide angle red scoria hill"
+        }
+      ],
+      "overlays": [
+        {
+          "kind": "stat",
+          "text": {
+            "en": "400",
+            "hi": "400",
+            "es": "400",
+            "pt": "400"
+          },
+          "sub": {
+            "en": "metres maximum height",
+            "hi": "मीटर अधिकतम ऊँचाई",
+            "es": "metros de altura máxima",
+            "pt": "metros de altura máxima"
+          },
+          "at": 1.1
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "shots": 5
+    },
+    {
+      "id": "s14",
+      "longOnly": true,
+      "vo": {
+        "en": "Far from plate boundaries, intraplate volcanism is fueled by buoyant mantle plumes rising from three thousand kilometres deep at the core-mantle boundary. As the moving tectonic plate drifts across this thermal anomaly, successive shield volcanoes form long linear chains across the ocean floor.",
+        "hi": "प्लेट सीमाओं से दूर, कोर-मेंटल सीमा पर तीन हज़ार किलोमीटर की गहराई से उठने वाले मेंटल प्लूम्स इंट्राप्लेट ज्वालामुखी को ऊर्जा देते हैं। जैसे-जैसे विवर्तनिक प्लेट इस गर्म स्थान के ऊपर से गुजरती है, महासागर के तल पर शील्ड ज्वालामुखियों की लंबी श्रृंखलाएँ बनती जाती हैं।",
+        "es": "Lejos de los bordes tectónicos, columnas térmicas que ascienden a tres mil kilómetros de profundidad alimentan el vulcanismo intraplaca. Al desplazarse la placa sobre este punto caliente, se forman extensas cadenas de volcanes en escudo en el lecho marino.",
+        "pt": "Longe dos limites de placas, plumas que sobem a três mil quilômetros de profundidade alimentam o vulcanismo intraplaca. À medida que a placa tectônica desliza sobre esse ponto quente, sucessivos vulcões-escudo formam longas cadeias no fundo oceânico."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "aerial drone tropical volcanic island",
+          "id": "14993663",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "aerial drone tropical volcanic island",
+          "id": "14306931",
+          "takes": [
+            [
+              0,
+              5
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "aerial drone tropical volcanic island",
+          "id": "12628506",
+          "takes": [
+            [
+              10,
+              16
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "aerial drone tropical volcanic island",
+          "id": "6252754",
+          "takes": [
+            [
+              0,
+              5
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "aerial drone tropical volcanic island",
+          "id": "14993663",
+          "takes": [
+            [
+              35,
+              41
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "aerial drone tropical volcanic island"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "slow motion lava pouring ocean"
+        },
+        {
+          "provider": "pixabay",
+          "q": "wide angle volcanic archipelago horizon"
+        }
+      ],
+      "overlays": [
+        {
+          "kind": "chapter",
+          "text": {
+            "en": "Deep Mantle Plumes",
+            "hi": "गहरे मेंटल प्लूम्स",
+            "es": "Plumas del manto profundo",
+            "pt": "Plumas do manto profundo"
+          },
+          "sub": {
+            "en": "02",
+            "hi": "02",
+            "es": "02",
+            "pt": "02"
+          },
+          "at": 0.5
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "shots": 5
+    },
+    {
+      "id": "s15",
+      "longOnly": true,
+      "vo": {
+        "en": "Geologists also classify volcanoes by their historical behaviour. Volcanoes that have remained quiet since the start of the Holocene epoch, roughly twelve thousand years ago, are considered dormant. Yet because magma reservoirs may linger beneath them, dormant peaks remain technically active seismically.",
+        "hi": "भूवैज्ञानिक ज्वालामुखियों को उनके ऐतिहासिक व्यवहार से भी वर्गीकृत करते हैं। जो ज्वालामुखी लगभग बारह हज़ार साल पहले होलोसीन युग की शुरुआत से शांत रहे हैं, उन्हें सुप्त माना जाता है। फिर भी, नीचे मैग्मा मौजूद रहने के कारण वे भूकंपीय रूप से सक्रिय माने जाते हैं।",
+        "es": "Los geólogos también clasifican los volcanes según su historial. Aquellos inactivos desde el inicio del Holoceno, hace unos doce mil años, se consideran dormidos. No obstante, al conservar bolsas magmáticas subterráneas, continúan considerándose sísmicamente activos.",
+        "pt": "Os geólogos também classificam os vulcões por seu histórico. Aqueles inativos desde o início do Holoceno, há cerca de doze mil anos, são considerados dormentes. Contudo, como retêm reservatórios de magma, continuam tecnicamente ativos do ponto de vista sísmico."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "drone shot silent volcanic crater",
+          "id": "18856395",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "drone shot silent volcanic crater",
+          "id": "4581057",
+          "takes": [
+            [
+              0,
+              10
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "drone shot silent volcanic crater",
+          "id": "5966213",
+          "takes": [
+            [
+              0,
+              10
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "drone shot silent volcanic crater",
+          "id": "5966213",
+          "takes": [
+            [
+              20,
+              30
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "drone shot silent volcanic crater",
+          "id": "28847649",
+          "takes": [
+            [
+              6,
+              16
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "drone shot silent volcanic crater"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "time lapse mountain mist caldera"
+        },
+        {
+          "provider": "pixabay",
+          "q": "wide angle tranquil alpine volcano"
+        }
+      ],
+      "overlays": [
+        {
+          "kind": "stat",
+          "text": {
+            "en": "12,000",
+            "hi": "12,000",
+            "es": "12.000",
+            "pt": "12.000"
+          },
+          "sub": {
+            "en": "years since Holocene start",
+            "hi": "वर्ष पहले होलोसीन की शुरुआत",
+            "es": "años desde el Holoceno",
+            "pt": "anos desde o Holoceno"
+          },
+          "at": 1.2
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "shots": 5
+    },
+    {
+      "id": "s16",
+      "longOnly": true,
+      "vo": {
+        "en": "Supervolcanoes represent the most extreme volcanic category on Earth. By scientific definition, a supervolcano eruption must produce over one thousand cubic kilometres of volcanic deposits in a single catastrophic event, collapsing immense calderas and reshaping vast regional landscapes.",
+        "hi": "सुपरवॉल्केनो पृथ्वी पर ज्वालामुखियों की सबसे चरम श्रेणी हैं। वैज्ञानिक परिभाषा के अनुसार, एक सुपरवॉल्केनो विस्फोट को एक ही प्रलयंकारी घटना में एक हज़ार घन किलोमीटर से अधिक मलबा निकालना चाहिए, जिससे विशाल काल्डेरा धंस जाते हैं।",
+        "es": "Los supervolcanes representan la categoría más extrema del planeta. Por definición científica, una erupción de supervolcán debe arrojar más de mil kilómetros cúbicos de depósitos en un solo evento catastrófico, colapsando calderas inmensas y transformando paisajes enteros.",
+        "pt": "Os supervulcões representam a categoria mais extrema da Terra. Por definição científica, a erupção de um supervulcão deve produzir mais de mil quilômetros cúbicos de depósitos em um único evento catastrófico, colapsando caldeiras imensas."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "tracking shot canyon ash deposit",
+          "id": "36185228",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot canyon ash deposit",
+          "id": "31884311",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot canyon ash deposit",
+          "id": "36347082",
+          "takes": [
+            [
+              0,
+              5
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot canyon ash deposit",
+          "id": "8552841",
+          "takes": [
+            [
+              0,
+              4
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot canyon ash deposit",
+          "id": "31884311",
+          "takes": [
+            [
+              16,
+              22
+            ]
+          ]
+        },
+        {
+          "provider": "wikimedia",
+          "q": "massive caldera lake aerial drone"
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot canyon ash deposit"
+        },
+        {
+          "provider": "pixabay",
+          "q": "aerial view yellowstone geothermal steam"
+        }
+      ],
+      "overlays": [
+        {
+          "kind": "chapter",
+          "text": {
+            "en": "Global Supervolcanoes",
+            "hi": "वैश्विक सुपरवॉल्केनो",
+            "es": "Supervolcanes globales",
+            "pt": "Supervulcões globais"
+          },
+          "sub": {
+            "en": "03",
+            "hi": "03",
+            "es": "03",
+            "pt": "03"
+          },
+          "at": 0.5
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "shots": 5
+    },
+    {
+      "id": "s17",
+      "longOnly": true,
+      "vo": {
+        "en": "Cataclysmic super-eruptions are exceptionally rare, with only four recognized in the past million years. Geologists have identified about sixty historical VEI eight eruptions, each releasing massive sulfur veils that triggered severe volcanic winters and catastrophic continental famines.",
+        "hi": "प्रलयंकारी सुपर-विस्फोट बेहद दुर्लभ हैं, पिछले दस लाख वर्षों में केवल चार ऐसे विस्फोटों की पहचान की गई है। भूवैज्ञानिकों ने लगभग साठ ऐतिहासिक VEI आठ विस्फोटों की पहचान की है, जिन्होंने भीषण सर्दियाँ और महाद्वीपों में अकाल उत्पन्न किए।",
+        "es": "Estas supererupciones son excepcionalmente raras; solo se conocen cuatro en el último millón de años. Se han identificado unas sesenta erupciones históricas VEI ocho, cada una liberando mantos de azufre que desataron severos inviernos volcánicos y hambrunas.",
+        "pt": "Essas supererupções são extremamente raras, com apenas quatro identificadas no último milhão de anos. Geólogos identificaram cerca de sessenta erupções históricas VEI oito, liberando mantos de enxofre que provocaram invernos rigorosos e fome generalizada."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "dark gloomy frozen landscape drone",
+          "id": "26081709",
+          "takes": [
+            [
+              0,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "dark gloomy frozen landscape drone",
+          "id": "20480083",
+          "takes": [
+            [
+              0,
+              10
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "dark gloomy frozen landscape drone",
+          "id": "15390975",
+          "takes": [
+            [
+              0,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "dark gloomy frozen landscape drone",
+          "id": "36634485",
+          "takes": [
+            [
+              0,
+              7
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "dark gloomy frozen landscape drone",
+          "id": "20480083",
+          "takes": [
+            [
+              12,
+              20
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "dark gloomy frozen landscape drone"
+        },
+        {
+          "provider": "wikimedia",
+          "q": "time lapse dark storm clouds"
+        },
+        {
+          "provider": "pixabay",
+          "q": "tracking shot barren volcanic desert"
+        }
+      ],
+      "overlays": [
+        {
+          "kind": "stat",
+          "text": {
+            "en": "60",
+            "hi": "60",
+            "es": "60",
+            "pt": "60"
+          },
+          "sub": {
+            "en": "historical VEI 8 eruptions",
+            "hi": "ऐतिहासिक VEI 8 विस्फोट",
+            "es": "erupciones históricas VEI 8",
+            "pt": "erupções históricas VEI 8"
+          },
+          "at": 1
+        }
+      ],
+      "sources": [
+        "S1"
+      ],
+      "shots": 5
+    },
+    {
+      "id": "s18",
+      "longOnly": true,
+      "vo": {
+        "en": "Volcanoes are not unique to Earth. The ancient shield volcano Olympus Mons towers on Mars as the largest volcano in the Solar System, while distant icy moons erupt plumes of frozen gas, proving that the planetary drive to vent internal energy is universal.",
+        "hi": "ज्वालामुखी केवल पृथ्वी तक सीमित नहीं हैं। मंगल ग्रह पर प्राचीन शील्ड ज्वालामुखी ओलंपस मॉन्स सौर मंडल का सबसे बड़ा ज्वालामुखी है, जबकि दूर के बर्फीले चंद्रमा जमे हुए गैस के फव्वारे छोड़ते हैं, यह साबित करते हुए कि आंतरिक ऊर्जा को बाहर निकालने की यह प्रक्रिया सार्वभौमिक है।",
+        "es": "Los volcanes no son exclusivos de la Tierra. El antiguo volcán en escudo Olympus Mons en Marte es el más grande del sistema solar, mientras lunas heladas expulsan gases congelados, demostrando que esta fuerza geológica es universal.",
+        "pt": "Os vulcões não são exclusivos da Terra. O antigo vulcão-escudo Olympus Mons em Marte é o maior do Sistema Solar, enquanto luas distantes e congeladas expelem plumas de gelo, provando que a força geológica é universal."
+      },
+      "footage": [
+        {
+          "provider": "wikimedia",
+          "q": "mars olympus mons topography animation"
+        },
+        {
+          "provider": "nasa",
+          "q": "mars surface crater satellite view"
+        },
+        {
+          "provider": "pixabay",
+          "q": "starry night sky milky way"
+        }
+      ],
+      "overlays": [
+        {
+          "kind": "lower",
+          "text": {
+            "en": "Source: Wikipedia, Volcano",
+            "hi": "स्रोत: विकिपीडिया, ज्वालामुखी",
+            "es": "Fuente: Wikipedia, Volcán",
+            "pt": "Fonte: Wikipédia, Vulcão"
+          },
+          "at": 1
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Wikipedia, Volcano",
+      "url": "https://en.wikipedia.org/wiki/Volcano",
+      "claims": [
+        "sixteen larger and several smaller plates",
+        "3,000 kilometres (1,900 mi) deep within Earth",
+        "about 12,000 years ago",
+        "30 to 400 metres (100 to 1,300 ft) high",
+        "slopes of 30–35° compared to slopes of generally 5–10°",
+        "more than 1.2 metres (4 ft) across",
+        "over 1,000 cubic kilometres (240 cu mi) of volcanic deposits in a single explosive event",
+        "four are known from the last million years",
+        "about 60 historical VEI 8 eruptions have been identified in the geologic record over millions of years",
+        "destroyed the city of Saint-Pierre in Martinique in 1902"
+      ]
+    }
+  ]
+}
