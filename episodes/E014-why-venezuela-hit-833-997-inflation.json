@@ -1,0 +1,1185 @@
+{
+  "id": "E014",
+  "status": "approved",
+  "topic": "money",
+  "title": {
+    "en": "Why Venezuela Hit 833,997% Inflation",
+    "hi": "वेनेजुएला में 833,997% मुद्रास्फीति क्यों हुई",
+    "es": "Por qué Venezuela llegó al 833.997% de inflación",
+    "pt": "Por que a Venezuela atingiu 833.997% de inflação"
+  },
+  "thumb": {
+    "en": "SILENT WEALTH KILLER",
+    "hi": "अदृश्य संपत्ति विनाशक",
+    "es": "DESTRUCTOR DE RIQUEZA",
+    "pt": "DESTRUIDOR DE RIQUEZA"
+  },
+  "look": "noir",
+  "scenes": [
+    {
+      "id": "s1",
+      "vo": {
+        "en": "Before your money loses buying power, how did Mansa Musa stop Egypt's economy for twelve years with gold?",
+        "hi": "इससे पहले कि आपका पैसा क्रय शक्ति खो दे, मंसा मूसा ने सोने से मिस्र की अर्थव्यवस्था को बारह वर्षों के लिए कैसे प्रभावित किया?",
+        "es": "Antes de que tu dinero pierda poder adquisitivo, ¿cómo paralizó Mansa Musa la economía de Egipto durante doce años con oro?",
+        "pt": "Antes que seu dinheiro perca o poder de compra, como Mansa Musa afetou a economia do Egito por doze anos com ouro?"
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "macro close up burning currency bill flame darkness",
+          "id": "6546905",
+          "takes": [
+            [
+              12,
+              16
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot empty city street dark atmospheric",
+          "id": "6527129",
+          "takes": [
+            [
+              10,
+              15
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro close up burning currency bill flame darkness"
+        },
+        {
+          "provider": "pixabay",
+          "q": "slow motion printing press cash bills moving"
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot empty city street dark atmospheric"
+        }
+      ],
+      "shots": 2,
+      "overlays": [
+        {
+          "kind": "stat",
+          "text": {
+            "en": "833,997%",
+            "hi": "833,997%",
+            "es": "833.997%",
+            "pt": "833.997%"
+          },
+          "sub": {
+            "en": "Annual Inflation Rate",
+            "hi": "वार्षिक मुद्रास्फीति दर",
+            "es": "Tasa de inflación anual",
+            "pt": "Taxa de inflação anual"
+          },
+          "at": 1.2
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s2",
+      "vo": {
+        "en": "In three hundred thirty BC, Alexander the Great captured massive Persian gold treasures. Flooding his empire with precious metal caused one of the earliest documented price explosions in human history.",
+        "hi": "330 ईसा पूर्व में, सिकंदर महान ने विशाल फ़ारसी सोने का खजाना जब्त कर लिया था। अपने साम्राज्य में कीमती धातुओं की बाढ़ लाने से मानव इतिहास में दर्ज सबसे शुरुआती मूल्य विस्फोटों में से एक हुआ।",
+        "es": "En el trescientos treinta a. C., Alejandro Magno capturó masivos tesoros de oro persa. Inundar su imperio con metal precioso causó una de las primeras explosiones de precios documentadas en la historia humana.",
+        "pt": "Em trezentos e trinta a.C., Alexandre, o Grande, capturou massivos tesouros de ouro persas. Inundar seu império com metal precioso causou uma das primeiras explosões de preços documentadas na história humana."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "tracking shot sandy desert dunes sunlight shadows",
+          "id": "6573940",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "aerial drone ancient stone temple ruins sunset",
+          "id": "16706270",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot sandy desert dunes sunlight shadows",
+          "id": "6573936",
+          "takes": [
+            [
+              4,
+              10
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "aerial drone ancient stone temple ruins sunset"
+        },
+        {
+          "provider": "pixabay",
+          "q": "macro close up gold coins falling slow motion"
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot sandy desert dunes sunlight shadows"
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "map",
+          "geo": {
+            "lat": 32.5364,
+            "lon": 44.4208
+          },
+          "text": {
+            "en": "Babylon (330 BC)",
+            "hi": "बेबीलोन (330 ईसा पूर्व)",
+            "es": "Babilonia (330 a. C.)",
+            "pt": "Babilônia (330 a.C.)"
+          },
+          "at": 0.5
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s3",
+      "vo": {
+        "en": "When the total money supply expands faster than the actual production of goods, every paper note you hold buys progressively less than it did before.",
+        "hi": "जब कुल धन की आपूर्ति वस्तुओं के वास्तविक उत्पादन से अधिक तेजी से बढ़ती है, तो आपके पास मौजूद प्रत्येक कागजी नोट पहले की तुलना में कम खरीदारी कर पाता है।",
+        "es": "Cuando la oferta total de dinero se expande más rápido que la producción real de bienes, cada billete de papel que tienes compra progresivamente menos que antes.",
+        "pt": "Quando a oferta total de dinheiro se expande mais rápido do que a produção real de bens, cada nota de papel que você possui compra progressivamente menos do que antes."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "detail close up high speed currency counting machine",
+          "id": "31597204",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "detail close up high speed currency counting machine",
+          "id": "31593748",
+          "takes": [
+            [
+              2,
+              7
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "slow motion empty store shelves dark lighting pan",
+          "id": "35226314",
+          "takes": [
+            [
+              10,
+              15
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "detail close up high speed currency counting machine"
+        },
+        {
+          "provider": "pixabay",
+          "q": "wide establishing shot industrial shipping container yard"
+        },
+        {
+          "provider": "pexels",
+          "q": "slow motion empty store shelves dark lighting pan"
+        }
+      ],
+      "shots": 3,
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s4",
+      "vo": {
+        "en": "At the ascent of Nero as Roman emperor in AD fifty-four, silver coins contained over ninety percent silver. By the two hundred seventies, rulers diluted them until hardly any silver remained.",
+        "hi": "ईस्वी 54 में रोमन सम्राट के रूप में नीरो के सत्ता में आने पर, चांदी के सिक्कों में नब्बे प्रतिशत से अधिक चांदी थी। 270 के दशक तक, शासकों ने उन्हें तब तक मिलावटी बनाया जब तक कि मुश्किल से चांदी बची।",
+        "es": "Al ascender Nerón como emperador romano en el año cincuenta y cuatro d. C., las monedas contenían más del noventa por ciento de plata. Para los años doscientos setenta, casi no quedaba plata.",
+        "pt": "Na ascensão de Nero como imperador romano no ano cinquenta e quatro d.C., as moedas de prata continham mais de noventa por cento de prata. Na década de duzentos e setenta, quase não restava prata."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "macro detail ancient Roman silver coins dark background",
+          "id": "5651766",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro detail ancient Roman silver coins dark background",
+          "id": "7534448",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "wide tilt down ancient Roman colosseum arches shadows",
+          "id": "20606533",
+          "takes": [
+            [
+              0,
+              12
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro detail ancient Roman silver coins dark background"
+        },
+        {
+          "provider": "pixabay",
+          "q": "slow motion molten metal pouring foundry heat glow"
+        },
+        {
+          "provider": "pexels",
+          "q": "wide tilt down ancient Roman colosseum arches shadows"
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "stat",
+          "text": {
+            "en": "90%",
+            "hi": "90%",
+            "es": "90%",
+            "pt": "90%"
+          },
+          "sub": {
+            "en": "Silver Content in AD 54",
+            "hi": "ईस्वी 54 में चांदी की मात्रा",
+            "es": "Contenido de plata en 54 d. C.",
+            "pt": "Conteúdo de prata em 54 d.C."
+          },
+          "at": 1
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s5",
+      "vo": {
+        "en": "Today central banks attempt to keep inflation low and stable, but historical supply shocks and unbacked printing continue to threaten the purchasing power of your hard-earned money.",
+        "hi": "आज केंद्रीय बैंक मुद्रास्फीति को कम और स्थिर रखने का प्रयास करते हैं, लेकिन ऐतिहासिक आपूर्ति झटके और अत्यधिक छपाई आपकी मेहनत की कमाई की क्रय शक्ति को खतरे में डालती है।",
+        "es": "Hoy los bancos centrales intentan mantener la inflación baja y estable, pero los shocks de oferta y la impresión masiva siguen amenazando el poder adquisitivo de tu dinero.",
+        "pt": "Hoje os bancos centrais tentam manter a inflação baixa e estável, mas choques de oferta e a impressão sem lastro continuam a ameaçar o poder de compra do seu dinheiro."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "aerial view financial district skyscrapers sunset reflection",
+          "id": "15315769",
+          "takes": [
+            [
+              12,
+              18
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "aerial view financial district skyscrapers sunset reflection",
+          "id": "27048521",
+          "takes": [
+            [
+              10,
+              16
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot modern automated factory robotic arm moving",
+          "id": "32386590",
+          "takes": [
+            [
+              3,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "aerial view financial district skyscrapers sunset reflection"
+        },
+        {
+          "provider": "pixabay",
+          "q": "macro shot vault door heavy steel lock spinning"
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot modern automated factory robotic arm moving"
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "lower",
+          "text": {
+            "en": "Source: Wikipedia - Inflation",
+            "hi": "स्रोत: विकिपीडिया - मुद्रास्फीति",
+            "es": "Fuente: Wikipedia - Inflación",
+            "pt": "Fonte: Wikipédia - Inflação"
+          },
+          "at": 0.8
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s6",
+      "shortOnly": true,
+      "vo": {
+        "en": "So before your cash loses even more value tomorrow, understand the silent economic machine that is melting it right now...",
+        "hi": "इसलिए कल आपकी नकदी का मूल्य और कम होने से पहले, उस मौन आर्थिक तंत्र को समझें जो इसे अभी पिघला रहा है...",
+        "es": "Así que antes de que tu efectivo pierda aún más valor mañana, comprende la máquina económica silenciosa que lo está derritiendo ahora mismo...",
+        "pt": "Portanto, antes que o seu dinheiro perca ainda mais valor amanhã, entenda a máquina econômica silenciosa que o está derretendo agora mesmo..."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "macro extreme close up ticking clock gears turning",
+          "id": "4824781",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "aerial shot metropolis skyline mist night moody",
+          "id": "36244314",
+          "takes": [
+            [
+              0,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro extreme close up ticking clock gears turning",
+          "id": "4601287",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro extreme close up ticking clock gears turning"
+        },
+        {
+          "provider": "pixabay",
+          "q": "cinematic burning paper bill ash floating darkness"
+        },
+        {
+          "provider": "pexels",
+          "q": "aerial shot metropolis skyline mist night moody"
+        }
+      ],
+      "shots": 3,
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s7",
+      "longOnly": true,
+      "vo": {
+        "en": "To understand why prices rise across entire societies, we must examine the fundamental definition of currency itself. Originally, inflation referred specifically to an increase in the total supply of paper money, rather than just rising store prices.",
+        "hi": "यह समझने के लिए कि पूरे समाज में कीमतें क्यों बढ़ती हैं, हमें मुद्रा की मूल परिभाषा की जांच करनी होगी। मूल रूप से, मुद्रास्फीति का तात्पर्य केवल बढ़ती हुई कीमतों के बजाय कागजी धन की कुल आपूर्ति में वृद्धि से था।",
+        "es": "Para comprender por qué los precios aumentan en toda la sociedad, debemos examinar la definición fundamental de la moneda. Originalmente, la inflación se refería específicamente a un aumento en la oferta total de dinero en papel.",
+        "pt": "Para entender por que os preços sobem em toda a sociedade, devemos examinar a definição fundamental da moeda. Originalmente, a inflação se referia especificamente a um aumento na oferta total de dinheiro em papel."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "tracking shot vintage printing machinery cogs rotating",
+          "id": "4824781",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro close up antique parchment document ink writing",
+          "id": "6980366",
+          "takes": [
+            [
+              4,
+              12
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro close up antique parchment document ink writing",
+          "id": "4061896",
+          "takes": [
+            [
+              2,
+              9
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro close up antique parchment document ink writing"
+        },
+        {
+          "provider": "pixabay",
+          "q": "slow motion gold bullions stacked inside bank vault"
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot vintage printing machinery cogs rotating"
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "chapter",
+          "text": {
+            "en": "The Origins of Monetary Expansion",
+            "hi": "मौद्रिक विस्तार की उत्पत्ति",
+            "es": "Los orígenes de la expansión monetaria",
+            "pt": "As origens da expansão monetária"
+          }
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s8",
+      "longOnly": true,
+      "vo": {
+        "en": "In the year thirteen twenty-four, the Malian king Mansa Musa embarked on his famous pilgrimage to Mecca, traveling with thousands of attendants and nearly a hundred camels laden with vast quantities of pure gold across North Africa.",
+        "hi": "वर्ष 1324 में, मालियन राजा मंसा मूसा ने मक्का की अपनी प्रसिद्ध तीर्थयात्रा शुरू की, जिसमें उन्होंने उत्तरी अफ्रीका में शुद्ध सोने से लदे लगभग सौ ऊंटों और हजारों सेवकों के साथ यात्रा की।",
+        "es": "En el año trece veinticuatro, el rey de Mali, Mansa Musa, emprendió su famosa peregrinación a la Meca, viajando con miles de acompañantes y casi cien camellos cargados con vastas cantidades de oro puro.",
+        "pt": "No ano de treze vinte e quatro, o rei de Mali, Mansa Musa, embarcou em sua famosa peregrinação a Meca, viajando com milhares de acompanhantes e quase cem camelos carregados com vastas quantidades de ouro puro."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "wide shot desert caravan walking sand dunes sunset",
+          "id": "15405842",
+          "takes": [
+            [
+              0,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "wide shot desert caravan walking sand dunes sunset",
+          "id": "34535419",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot historic Cairo architecture arches shadows",
+          "id": "11169169",
+          "takes": [
+            [
+              2,
+              9
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "wide shot desert caravan walking sand dunes sunset"
+        },
+        {
+          "provider": "pixabay",
+          "q": "macro detail shimmering gold dust particles falling slow motion"
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot historic Cairo architecture arches shadows"
+        }
+      ],
+      "slowmo": true,
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "map",
+          "geo": {
+            "lat": 30.0444,
+            "lon": 31.2357
+          },
+          "text": {
+            "en": "Cairo (1324)",
+            "hi": "काहिरा (1324)",
+            "es": "El Cairo (1324)",
+            "pt": "Cairo (1324)"
+          },
+          "at": 0.5
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s9",
+      "longOnly": true,
+      "vo": {
+        "en": "As he passed through Cairo, Mansa Musa spent and gave away so much gold that he dramatically depressed its relative value. Historical accounts record that one gold mithqal previously traded above twenty-five dirhams before his arrival.",
+        "hi": "जब वह काहिरा से गुज़रे, मंसा मूसा ने इतना सोना खर्च किया और दान दिया कि सोने का आपेक्षित मूल्य गिर गया। ऐतिहासिक अभिलेख बताते हैं कि उनके आगमन से पहले एक स्वर्ण मिथकाल 25 दिरहम से ऊपर कारोबार करता था।",
+        "es": "Al pasar por El Cairo, Mansa Musa gastó y regaló tanto oro que redujo drásticamente su valor relativo. Los relatos históricos registran que un mitqal de oro cotizaba previamente por encima de veinticinco dirhams.",
+        "pt": "Ao passar pelo Cairo, Mansa Musa gastou e doou tanto ouro que reduziu drasticamente seu valor relativo. Relatos históricos registram que um mitqal de ouro era negociado acima de vinte e cinco dirhams."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "aerial view ancient stone bazaar market alleyways rays",
+          "id": "30528144",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "aerial view ancient stone bazaar market alleyways rays",
+          "id": "40968246",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "aerial view ancient stone bazaar market alleyways rays",
+          "id": "20143641",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "aerial view ancient stone bazaar market alleyways rays"
+        },
+        {
+          "provider": "pixabay",
+          "q": "macro close up ancient silver coins pouring onto table"
+        },
+        {
+          "provider": "pexels",
+          "q": "slow motion dust particles glowing in dark room window light"
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "stat",
+          "text": {
+            "en": "25",
+            "hi": "25",
+            "es": "25",
+            "pt": "25"
+          },
+          "sub": {
+            "en": "Dirhams per Mithqal (Before)",
+            "hi": "प्रति मिथकाल दिरहम (पहले)",
+            "es": "Dirhams por mitqal (Antes)",
+            "pt": "Dirhams por Mithqal (Antes)"
+          },
+          "at": 1
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s10",
+      "longOnly": true,
+      "vo": {
+        "en": "Following his sudden influx, the value fell so sharply that the mithqal did not exceed twenty-two dirhams or less. That gold devalued local purchasing power across Egypt for about twelve years by reason of the massive supply.",
+        "hi": "उनकी अचानक सोने की आवक के बाद, मूल्य इतनी तेजी से गिरा कि मिथकाल 22 दिरहम या उससे भी कम रह गया। उस सोने ने भारी आपूर्ति के कारण लगभग बारह वर्षों तक पूरे मिस्र में स्थानीय क्रय शक्ति को कम कर दिया।",
+        "es": "Tras esa repentina afluencia, el valor cayó tanto que el mitqal no superó los veintidós dirhams. Ese oro devaluó el poder adquisitivo local en todo Egipto durante unos doce años debido a la enorme oferta.",
+        "pt": "Após essa afluência repentina, o valor caiu tanto que o mitqal não passou de vinte e dois dirhams. Aquele ouro desvalorizou o poder de compra local em todo o Egito por cerca de doze anos devido à oferta massiva."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "tracking shot ancient Egyptian pyramids horizon silhouette",
+          "id": "10719349",
+          "takes": [
+            [
+              12,
+              20
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot ancient Egyptian pyramids horizon silhouette",
+          "id": "10719817",
+          "takes": [
+            [
+              30,
+              38
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot ancient Egyptian pyramids horizon silhouette",
+          "id": "4174115",
+          "takes": [
+            [
+              2,
+              10
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot ancient Egyptian pyramids horizon silhouette"
+        },
+        {
+          "provider": "pixabay",
+          "q": "macro close up scale balancing metallic weights balance"
+        },
+        {
+          "provider": "pexels",
+          "q": "cinematic tilt down empty stone courtyard sunlight"
+        }
+      ],
+      "shots": 3,
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s11",
+      "longOnly": true,
+      "vo": {
+        "en": "Centuries later, Western Europe experienced another massive inflationary cycle known as the price revolution. Driven by Spanish treasure fleets importing tons of silver from Latin America, overall prices surged sixfold over one hundred fifty years.",
+        "hi": "सदियों बाद, पश्चिमी यूरोप ने मूल्य क्रांति के रूप में जाना जाने वाला एक और विशाल मुद्रास्फीति चक्र का अनुभव किया। लैटिन अमेरिका से चांदी का आयात करने वाले स्पेनिश खजाना बेड़ों द्वारा प्रेरित, कुल कीमतें 150 वर्षों में छह गुना बढ़ गईं।",
+        "es": "Siglos después, Europa occidental experimentó otro ciclo inflacionario conocido como la revolución de los precios. Impulsados por barcos españoles que importaban plata de Latinoamérica, los precios se sextuplicaron en ciento cincuenta años.",
+        "pt": "Séculos mais tarde, a Europa Ocidental experimentou outro ciclo inflacionário conhecido como a revolução dos preços. Impulsionados por frotas espanholas importando prata da América Latina, os preços sextuplicaram em cento e cinquenta anos."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "tracking shot medieval European stone castle fortress exterior",
+          "id": "26568656",
+          "takes": [
+            [
+              0,
+              10
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "wide aerial shot ocean waves crashing dark storm horizon",
+          "id": "14548015",
+          "takes": [
+            [
+              2,
+              12
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot medieval European stone castle fortress exterior",
+          "id": "9659277",
+          "takes": [
+            [
+              0,
+              5
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "wide aerial shot ocean waves crashing dark storm horizon"
+        },
+        {
+          "provider": "pixabay",
+          "q": "macro shot silver bullion bars shimmering light reflection"
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot medieval European stone castle fortress exterior"
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "chapter",
+          "text": {
+            "en": "The Price Revolution",
+            "hi": "मूल्य क्रांति",
+            "es": "La revolución de los precios",
+            "pt": "A revolução dos preços"
+          }
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s12",
+      "longOnly": true,
+      "vo": {
+        "en": "Modern hyperinflations represent extreme monetary spirals where inflation rates surpass fifty percent monthly. When public trust in national currency vanishes entirely, citizens rush to trade paper bills for physical commodities before prices change again.",
+        "hi": "आधुनिक अति-मुद्रास्फीति अत्यधिक मौद्रिक सर्पिल का प्रतिनिधित्व करती है जहां मुद्रास्फीति की दर प्रति माह पचास प्रतिशत से अधिक हो जाती है। जब राष्ट्रीय मुद्रा में जनता का विश्वास पूरी तरह से गायब हो जाता है, तो नागरिक सामान खरीदने के लिए दौड़ते हैं।",
+        "es": "Las hiperinflaciones modernas representan espirales extremas donde las tasas superan el cincuenta por ciento mensual. Cuando la confianza en la moneda desaparece, los ciudadanos corren a cambiar papel por bienes físicos.",
+        "pt": "As hiperinflações modernas representam espirais extremas onde as taxas ultrapassam cinquenta por cento ao mês. Quando a confiança na moeda desaparece, os cidadãos correm para trocar papel por bens físicos."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "slow motion stack of worthless paper money falling floor",
+          "id": "8209044",
+          "takes": [
+            [
+              3,
+              9
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "slow motion stack of worthless paper money falling floor",
+          "id": "31750574",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro close up digital financial charts fluctuating dark monitor",
+          "id": "7578632",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "slow motion stack of worthless paper money falling floor"
+        },
+        {
+          "provider": "pixabay",
+          "q": "tracking shot abandoned urban industrial factory decay moody"
+        },
+        {
+          "provider": "pexels",
+          "q": "macro close up digital financial charts fluctuating dark monitor"
+        }
+      ],
+      "slowmo": true,
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "stat",
+          "text": {
+            "en": "50%",
+            "hi": "50%",
+            "es": "50%",
+            "pt": "50%"
+          },
+          "sub": {
+            "en": "Monthly Hyperinflation Threshold",
+            "hi": "मासिक अति-मुद्रास्फीति सीमा",
+            "es": "Umbral mensual de hiperinflación",
+            "pt": "Limiar mensal de hiperinflação"
+          },
+          "at": 0.8
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s13",
+      "longOnly": true,
+      "vo": {
+        "en": "To measure these shifts, economists track broader price indexes such as the Consumer Price Index. For instance, in January two thousand seven, the United States Consumer Price Index stood at two hundred two point four one six.",
+        "hi": "इन बदलावों को मापने के लिए, अर्थशास्त्री उपभोक्ता मूल्य सूचकांक जैसे व्यापक मूल्य सूचकांकों को ट्रैक करते हैं। उदाहरण के लिए, जनवरी 2007 में, संयुक्त राज्य अमेरिका का उपभोक्ता मूल्य सूचकांक 202.416 था।",
+        "es": "Para medir estos cambios, los economistas rastrean índices como el Índice de Precios al Consumidor. Por ejemplo, en enero de dos mil siete, el índice estadounidense se situó en doscientos dos punto cuatro uno seis.",
+        "pt": "Para medir essas mudanças, os economistas acompanham índices como o Índice de Preços ao Consumidor. Por exemplo, em janeiro de dois mil e sete, o índice americano estava em duzentos e dois ponto quatro um seis."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "aerial view city traffic grid intersection night time lapse",
+          "id": "13009670",
+          "takes": [
+            [
+              10,
+              16
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot dark corridor glass office reflection geometry",
+          "id": "5971048",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "aerial view city traffic grid intersection night time lapse",
+          "id": "14458864",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot dark corridor glass office reflection geometry"
+        },
+        {
+          "provider": "pixabay",
+          "q": "macro shot calculator keys mechanical pressing shadow"
+        },
+        {
+          "provider": "pexels",
+          "q": "aerial view city traffic grid intersection night time lapse"
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "chapter",
+          "text": {
+            "en": "Measuring the Invisible Erosion",
+            "hi": "अदृश्य क्षरण का मापन",
+            "es": "Midiendo la erosión invisible",
+            "pt": "Medindo a erosão invisível"
+          }
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s14",
+      "longOnly": true,
+      "vo": {
+        "en": "Just twelve months later, in January two thousand eight, that exact same metric rose to two hundred eleven point zero eight zero. This steady percentage change reflects how purchasing power steadily erodes across entire national economies over time.",
+        "hi": "ठीक बारह महीने बाद, जनवरी 2008 में, वही मीट्रिक बढ़कर 211.080 हो गया। यह निरंतर प्रतिशत परिवर्तन दर्शाता है कि कैसे समय के साथ पूरे राष्ट्रीय अर्थशास्त्र में क्रय शक्ति धीरे-धीरे समाप्त होती है।",
+        "es": "Solo doce meses después, en enero de dos mil ocho, esa misma métrica subió a doscientos once punto cero ocho cero. Este cambio continuo refleja cómo el poder adquisitivo se erosiona en toda la economía.",
+        "pt": "Apenas doze meses depois, em janeiro de dois mil e oitava, essa mesma métrica subiu para duzentos e onze ponto zero oito zero. Essa mudança reflete como o poder de compra se corrói ao longo do tempo."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "macro detail glass sand hourglass flowing slow motion",
+          "id": "39488455",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot financial skyscraper glass exterior dark overcast",
+          "id": "3641672",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot financial skyscraper glass exterior dark overcast",
+          "id": "20208606",
+          "takes": [
+            [
+              4,
+              10
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro detail glass sand hourglass flowing slow motion"
+        },
+        {
+          "provider": "pixabay",
+          "q": "cinematic wide shot empty stock exchange floor low angle"
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot financial skyscraper glass exterior dark overcast"
+        }
+      ],
+      "shots": 3,
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s15",
+      "longOnly": true,
+      "vo": {
+        "en": "While severe inflation forces workers into risky wage negotiations and causes rapid hoarding, most central banks today favor a low and steady rate. Controlled price growth prevents recessions while avoiding the devastating paralysis of deflation.",
+        "hi": "जबकि गंभीर मुद्रास्फीति श्रमिकों को जोखिम भरी मजदूरी वार्ता के लिए मजबूर करती है, आज अधिकांश केंद्रीय बैंक कम और स्थिर दर का समर्थन करते हैं। नियंत्रित मूल्य वृद्धि अवसाद को रोकती है और अपस्फीति से बचाती है।",
+        "es": "Mientras que la inflación severa obliga a negociaciones salariales arriesgadas, la mayoría de los bancos centrales prefieren una tasa baja y constante. El crecimiento controlado evita recesiones y la parálisis de la deflación.",
+        "pt": "Enquanto a inflação grave força negociações salariais arriscadas, a maioria dos bancos centrais prefere uma taxa baixa e estável. O crescimento controlado evita recessões e a paralisia da deflação."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "aerial drone shot bank headquarters building reflective glass",
+          "id": "8301961",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "aerial drone shot bank headquarters building reflective glass",
+          "id": "19141601",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot empty subway station platform moody lighting",
+          "id": "41050626",
+          "takes": [
+            [
+              12,
+              18
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "aerial drone shot bank headquarters building reflective glass"
+        },
+        {
+          "provider": "pixabay",
+          "q": "macro detail mechanical clock balance wheel spinning precision"
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot empty subway station platform moody lighting"
+        }
+      ],
+      "shots": 3,
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s16",
+      "longOnly": true,
+      "vo": {
+        "en": "Ultimately, currency is only as powerful as the goods it can command. Understanding how central banks regulate supply gives you the clarity needed to protect your real wealth against the constant, quiet erosion of price inflation.",
+        "hi": "अंततः, मुद्रा केवल उतनी ही शक्तिशाली है जितनी वस्तुएँ वह प्राप्त कर सकती है। यह समझना कि केंद्रीय बैंक आपूर्ति को कैसे नियंत्रित करते हैं, आपको अपने वास्तविक धन की रक्षा करने के लिए आवश्यक स्पष्टता प्रदान करता है।",
+        "es": "En última instancia, la moneda solo es tan poderosa como los bienes que puede obtener. Entender cómo los bancos centrales regulan la oferta te da la claridad para proteger tu riqueza real.",
+        "pt": "Em última análise, a moeda é apenas tão poderosa quanto os bens que pode adquirir. Entender como os bancos centrais regulam a oferta dá a clareza necessária para proteger sua verdadeira riqueza."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "cinematic macro flame extinguishing slow motion dark background",
+          "id": "6546905",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "cinematic macro flame extinguishing slow motion dark background",
+          "id": "37012024",
+          "takes": [
+            [
+              10,
+              16
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot vault heavy steel mechanism closing slow",
+          "id": "35451865",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "cinematic macro flame extinguishing slow motion dark background"
+        },
+        {
+          "provider": "pixabay",
+          "q": "wide establishing shot financial city lights twilight aerial"
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot vault heavy steel mechanism closing slow"
+        }
+      ],
+      "shots": 3,
+      "sources": [
+        "S1"
+      ]
+    }
+  ],
+  "music": {
+    "mood": "investigate",
+    "styles": [
+      "dark synth bass",
+      "subtle tension pulse",
+      "cinematic strings"
+    ],
+    "peak": "s8"
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Wikipedia, Inflation",
+      "url": "https://en.wikipedia.org/wiki/Inflation",
+      "claims": [
+        "The hyperinflation in Venezuela is the highest in the world, with an annual inflation rate of 833,997% as of October 2018.",
+        "One of the earliest documented inflations occurred in Alexander the Great's empire 330 BC.",
+        "At the ascent of Nero as Roman emperor in AD 54, the denarius contained more than 90% silver, but by the 270s hardly any silver was left.",
+        "During the Malian king Mansa Musa's hajj to Mecca in 1324, he was reportedly accompanied by a camel train that included thousands of people and nearly a hundred camels.",
+        "The mithqal did not go below 25 dirhams and was generally above, but from that time its value fell and it cheapened in price and has remained cheap till now.",
+        "The mithqal does not exceed 22 dirhams or less.",
+        "This has been the state of affairs for about twelve years until this day by reason of the large amount of gold which they brought into Egypt and spent there",
+        "prices on average rising perhaps sixfold over 150 years.",
+        "surpass 50 percent monthly.",
+        "In January 2007, the U.S. Consumer Price Index was 202.416, and in January 2008 it was 211.080."
+      ]
+    }
+  ],
+  "engage": {
+    "ask": {
+      "en": "If your cash keeps losing value, what are you buying to protect it?",
+      "hi": "अगर आपकी नकदी की कीमत लगातार गिर रही है, तो आप इसे बचाने के लिए क्या खरीद रहे हैं?",
+      "es": "Si tu efectivo sigue perdiendo valor, ¿qué estás comprando para protegerlo?",
+      "pt": "Se o seu dinheiro continua perdendo valor, o que você está comprando para se proteger?"
+    },
+    "hookText": {
+      "en": "YOUR CASH IS *MELTING*",
+      "hi": "आपका पैसा *पिघल* रहा है",
+      "es": "TU DINERO SE *DERRITE*",
+      "pt": "SEU DINHEIRO ESTÁ *DERRETENDO*"
+    },
+    "loop": {
+      "en": "So before your cash loses even more value tomorrow, understand the silent economic machine that is melting it right now...",
+      "hi": "इसलिए कल आपकी नकदी का मूल्य और कम होने से पहले, उस मौन आर्थिक तंत्र को समझें जो इसे अभी पिघला रहा है...",
+      "es": "Así que antes de que tu efectivo pierda aún más valor mañana, comprende la máquina económica silenciosa que lo está derritiendo ahora mismo...",
+      "pt": "Portanto, antes que o seu dinheiro perca ainda mais valor amanhã, entenda a máquina econômica silenciosa que o está derretendo agora mesmo..."
+    },
+    "share": {
+      "en": "Share this with someone who still thinks holding cash is completely safe.",
+      "hi": "इसे किसी ऐसे व्यक्ति के साथ साझा करें जो सोचता है कि नकदी रखना बिल्कुल सुरक्षित है।",
+      "es": "Comparte esto con alguien que cree que tener efectivo es seguro.",
+      "pt": "Compartilhe isso com alguém que acha que guardar dinheiro é seguro."
+    }
+  }
+}
