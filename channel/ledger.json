@@ -232,5 +232,32 @@
     "videoId": "Sneez2kPGL8",
     "url": "https://youtube.com/shorts/Sneez2kPGL8",
     "publishAt": "2026-11-26T14:00:00.000Z"
+  },
+  {
+    "date": "2026-11-27",
+    "episode": "E013",
+    "job": "short",
+    "title": "Why Concorde Died at Mach 2 #Shorts",
+    "status": "scheduled",
+    "topic": "tech",
+    "voice": "synthetic",
+    "slot": "07:30",
+    "videoId": "7Rawd-RfVuE",
+    "url": "https://youtube.com/shorts/7Rawd-RfVuE",
+    "publishAt": "2026-11-27T02:00:00.000Z"
+  },
+  {
+    "date": "2026-11-27",
+    "episode": "E011",
+    "job": "long",
+    "title": "How Tokyo Keeps 33 Million People Moving",
+    "status": "scheduled",
+    "topic": "cities",
+    "voice": "synthetic",
+    "slot": "19:30",
+    "thumbStyle": "stat",
+    "videoId": "0K8vMr0ZnJM",
+    "url": "https://youtu.be/0K8vMr0ZnJM",
+    "publishAt": "2026-11-27T14:00:00.000Z"
   }
 ]

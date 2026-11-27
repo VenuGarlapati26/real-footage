@@ -1,0 +1,1450 @@
+{
+  "id": "E013",
+  "status": "approved",
+  "topic": "tech",
+  "title": {
+    "en": "Why Concorde Died at Mach 2",
+    "hi": "माक 2 पर कॉनकॉर्ड क्यों ख़त्म हुआ",
+    "es": "Por qué murió el Concorde a Mach 2",
+    "pt": "Por que o Concorde morreu a Mach 2"
+  },
+  "thumb": {
+    "en": "BANNED OVER LAND",
+    "hi": "ज़मीन पर पाबंदी",
+    "es": "PROHIBIDO EN TIERRA",
+    "pt": "PROIBIDO EM TERRA"
+  },
+  "look": "neon",
+  "scenes": [
+    {
+      "id": "s1",
+      "vo": {
+        "en": "Before your generation flies Mach two, twenty-seven years of supersonic history vanished, but why did airlines fail?",
+        "hi": "आपकी पीढ़ी के माक दो पर उड़ने से पहले, सुपरसोनिक इतिहास गायब हो गया, लेकिन एयरलाइंस क्यों विफल रहीं?",
+        "es": "Antes de que tu generación vuele a Mach dos, desapareció esa historia, pero ¿por qué fracasaron las aerolíneas?",
+        "pt": "Antes de sua geração voar a Mach dois, essa história sumiu, mas por que as companhias aéreas falharam?"
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "aerial cinematic sunset airplane cruising",
+          "id": "10612387",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "low angle supersonic jet takeoff",
+          "id": "11044452",
+          "takes": [
+            [
+              10,
+              14
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "aerial cinematic sunset airplane cruising",
+          "id": "15911525",
+          "takes": [
+            [
+              1,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "low angle supersonic jet takeoff"
+        },
+        {
+          "provider": "pixabay",
+          "q": "tracking shot commercial airliner clouds"
+        },
+        {
+          "provider": "pexels",
+          "q": "aerial cinematic sunset airplane cruising"
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "kicker",
+          "text": {
+            "en": "Speed of Sound",
+            "hi": "ध्वनि की गति",
+            "es": "Velocidad del sonido",
+            "pt": "Velocidade do som"
+          },
+          "sub": {
+            "en": "Commercial Aviation",
+            "hi": "व्यावसायिक विमानन",
+            "es": "Aviación comercial",
+            "pt": "Aviação comercial"
+          },
+          "at": 1.2
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s2",
+      "vo": {
+        "en": "In October two thousand and three, Concorde made its final commercial flight, ending twenty-seven years of passenger service.",
+        "hi": "अक्टूबर दो हज़ार तीन में, कॉनकॉर्ड ने अपनी आखिरी व्यावसायिक उड़ान भरी, और सत्ताईस साल की सेवा समाप्त हुई।",
+        "es": "En octubre de dos mil tres, el Concorde realizó su último vuelo comercial, cerrando veintisiete años de servicio.",
+        "pt": "Em outubro de dois mil e três, o Concorde fez seu último voo comercial, encerrando vinte e sete anos de serviço."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "slow motion heat haze runway",
+          "id": "3571541",
+          "takes": [
+            [
+              24,
+              32
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "wide angle vintage airplane runway",
+          "id": "16244778",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "slow motion heat haze runway",
+          "id": "10893616",
+          "takes": [
+            [
+              10,
+              16
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "wide angle vintage airplane runway"
+        },
+        {
+          "provider": "pixabay",
+          "q": "telephoto view airplane landing runway"
+        },
+        {
+          "provider": "pexels",
+          "q": "slow motion heat haze runway"
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "stat",
+          "text": {
+            "en": "27",
+            "hi": "27",
+            "es": "27",
+            "pt": "27"
+          },
+          "sub": {
+            "en": "years of commercial operations",
+            "hi": "व्यावसायिक उड़ानों के वर्ष",
+            "es": "años de operaciones comerciales",
+            "pt": "anos de operações comerciais"
+          },
+          "at": 1.5
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s3",
+      "vo": {
+        "en": "At Mach one, wave drag spikes to four times the drag felt below the speed of sound.",
+        "hi": "माक एक की रफ़्तार पर, वायु अवरोध सामान्य से चार गुना बढ़ जाता है।",
+        "es": "A Mach uno, la resistencia de onda se multiplica por cuatro frente a la subsónica.",
+        "pt": "A Mach um, o arrasto de onda sobe para quatro vezes o valor subsônico."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "aerial top down breaking cloud layer",
+          "id": "40193251",
+          "takes": [
+            [
+              2,
+              10
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro close up jet turbine intake",
+          "id": "28586476",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro close up jet turbine intake",
+          "id": "36971603",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro close up jet turbine intake"
+        },
+        {
+          "provider": "pixabay",
+          "q": "dramatic sky clouds time lapse"
+        },
+        {
+          "provider": "pexels",
+          "q": "aerial top down breaking cloud layer"
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "kicker",
+          "text": {
+            "en": "Mach 1 Barrier",
+            "hi": "माक 1 अवरोध",
+            "es": "Barrera de Mach 1",
+            "pt": "Barreira de Mach 1"
+          },
+          "sub": {
+            "en": "4x Wave Drag Spike",
+            "hi": "4 गुना वायु अवरोध",
+            "es": "Cuádruple resistencia",
+            "pt": "Quádruplo do arrasto"
+          },
+          "at": 0.8
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s4",
+      "slowmo": true,
+      "vo": {
+        "en": "Shockwaves rattle the ground below, while burning massive quantities of jet fuel through afterburning engines.",
+        "hi": "सोनिक बूम ज़मीन को हिला देता है, जबकि विशेष इंजन भारी मात्रा में ईंधन जलाते हैं।",
+        "es": "Las ondas de choque sacuden la superficie mientras los motores devoran enormes cantidades de combustible.",
+        "pt": "Ondas de choque sacodem o solo enquanto os motores devoram imensos volumes de combustível."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "slow motion vapor cone shockwave",
+          "id": "33359108",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "slow motion vapor cone shockwave",
+          "id": "7122120",
+          "takes": [
+            [
+              4,
+              10
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro exhaust fire engine glow",
+          "id": "14071614",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "slow motion vapor cone shockwave"
+        },
+        {
+          "provider": "pixabay",
+          "q": "low angle airplane flying overhead"
+        },
+        {
+          "provider": "pexels",
+          "q": "macro exhaust fire engine glow"
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "kicker",
+          "text": {
+            "en": "Sonic Boom",
+            "hi": "सोनिक बूम",
+            "es": "Explosión sónica",
+            "pt": "Estrondo sônico"
+          },
+          "sub": {
+            "en": "Overland Flight Ban",
+            "hi": "भूमि पर उड़ान प्रतिबंध",
+            "es": "Prohibición sobre tierra",
+            "pt": "Proibição sobre a terra"
+          },
+          "at": 0.5
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s5",
+      "vo": {
+        "en": "Yet engineers claim new designs could bring commercial supersonic passenger travel back around twenty twenty-nine.",
+        "hi": "फिर भी इंजीनियरों का मानना है कि दो हज़ार उनतीस के आसपास सुपरसोनिक यात्री उड़ानें वापस लौट सकती हैं।",
+        "es": "Sin embargo, nuevos diseños podrían revivir los vuelos comerciales de pasajeros hacia dos mil veintinueve.",
+        "pt": "Contudo, novos projetos prometem trazer o voo comercial de passageiros de volta por volta de dois mil e vinte e nove."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "futuristic aircraft model wind tunnel",
+          "id": "7615675",
+          "takes": [
+            [
+              0,
+              4
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "futuristic aircraft model wind tunnel",
+          "id": "13671860",
+          "takes": [
+            [
+              2,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "telephoto shot jet climbing sky",
+          "id": "34278877",
+          "takes": [
+            [
+              8,
+              13
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "futuristic aircraft model wind tunnel"
+        },
+        {
+          "provider": "pixabay",
+          "q": "aerial drone modern airport runway"
+        },
+        {
+          "provider": "pexels",
+          "q": "telephoto shot jet climbing sky"
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "stat",
+          "text": {
+            "en": "2029",
+            "hi": "2029",
+            "es": "2029",
+            "pt": "2029"
+          },
+          "sub": {
+            "en": "projected return to service",
+            "hi": "अनुमानित वापसी वर्ष",
+            "es": "regreso estimado al servicio",
+            "pt": "retorno estimado ao serviço"
+          },
+          "at": 1.2
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s6",
+      "shortOnly": true,
+      "vo": {
+        "en": "Before your next ticket is booked, the race across the sound barrier starts again...",
+        "hi": "अगली टिकट बुक होने से पहले, ध्वनि की सीमा पार करने की दौड़ फिर शुरू हो रही है...",
+        "es": "Antes de comprar tu próximo billete, la carrera del sonido comienza otra vez...",
+        "pt": "Antes da sua próxima passagem, a corrida da barreira do som recomeça..."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "cinematic silhouette airplane descending runway",
+          "id": "37243532",
+          "takes": [
+            [
+              2,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot airplane above clouds",
+          "id": "6156696",
+          "takes": [
+            [
+              4,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot airplane above clouds",
+          "id": "4275409",
+          "takes": [
+            [
+              4,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot airplane above clouds"
+        },
+        {
+          "provider": "pixabay",
+          "q": "dramatic orange sunset sky clouds"
+        },
+        {
+          "provider": "pexels",
+          "q": "cinematic silhouette airplane descending runway"
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "lower",
+          "text": {
+            "en": "Source: Supersonic transport records",
+            "hi": "स्रोत: सुपरसोनिक परिवहन रिकॉर्ड",
+            "es": "Fuente: Registros de transporte supersónico",
+            "pt": "Fonte: Registros de transporte supersônico"
+          },
+          "at": 0.5
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s7",
+      "longOnly": true,
+      "vo": {
+        "en": "Building an airliner that moves faster than sound required reimagining aerodynamics from scratch. Supersonic aircraft have roughly one-half the lift-to-drag ratio of subsonic planes, demanding twice the thrust just to maintain level cruising speed.",
+        "hi": "ध्वनि से तेज़ यात्री विमान बनाना विज्ञान की सबसे बड़ी चुनौतियों में से एक था। सुपरसोनिक विमानों का लिफ्ट-टू-ड्रैग अनुपात सामान्य से आधा होता है, जिससे गति बनाए रखने के लिए दोगुने थ्रस्ट की आवश्यकता पड़ती है।",
+        "es": "Construir un avión de pasajeros más rápido que el sonido exigió reinventar la aerodinámica. Las aeronaves supersónicas tienen casi la mitad del ratio sustentación-resistencia que las subsónicas, requiriendo el doble de empuje.",
+        "pt": "Construir um avião de passageiros mais rápido que o som exigiu reinventar a aerodinâmica. Aeronaves supersônicas têm quase metade da razão sustentação-arrasto dos aviões comuns, exigindo o dobro de empuxo."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "tracking shot airplane wing sunrise",
+          "id": "34003531",
+          "takes": [
+            [
+              6,
+              12
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro technical wind tunnel smoke",
+          "id": "4320605",
+          "takes": [
+            [
+              16,
+              22
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot airplane wing sunrise",
+          "id": "3712318",
+          "takes": [
+            [
+              32,
+              38
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro technical wind tunnel smoke"
+        },
+        {
+          "provider": "pixabay",
+          "q": "close up metal aircraft wing"
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot airplane wing sunrise"
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "chapter",
+          "text": {
+            "en": "The Drag Barrier",
+            "hi": "अवरोध की दीवार",
+            "es": "La barrera del arrastre",
+            "pt": "A barreira do arrasto"
+          },
+          "sub": {
+            "en": "01",
+            "hi": "01",
+            "es": "01",
+            "pt": "01"
+          },
+          "at": 0.5
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s8",
+      "longOnly": true,
+      "vo": {
+        "en": "Concorde managed an aerodynamic lift-to-drag ratio of just seven point one four. In contrast, the wide-body subsonic Boeing seven forty-seven cuts cleanly through the atmosphere with a far superior ratio of seventeen.",
+        "hi": "कॉनकॉर्ड का लिफ्ट-टू-ड्रैग अनुपात मात्र सात दशमलव एक चार था। इसके विपरीत, सामान्य बोइंग सात सौ सैंतालीस सत्रह के अनुपात के साथ हवा को आसानी से चीरते हुए उड़ता है।",
+        "es": "El Concorde apenas alcanzó un ratio aerodinámico de siete coma catorce. En contraste, el Boeing setecientos cuarenta y siete surca la atmósfera con un ratio muy superior de diecisiete.",
+        "pt": "O Concorde alcançou uma razão aerodinâmica de apenas sete vírgula catorze. Em contrapartida, o Boeing setecentos e quarenta e sete corta a atmosfera com uma razão superior de dezessete."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "aerial shot giant passenger jet",
+          "id": "34923852",
+          "takes": [
+            [
+              2,
+              10
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "aerial shot giant passenger jet",
+          "id": "38303724",
+          "takes": [
+            [
+              2,
+              10
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro jet wing vortex condensation",
+          "id": "30570933",
+          "takes": [
+            [
+              1,
+              7
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "aerial shot giant passenger jet"
+        },
+        {
+          "provider": "pixabay",
+          "q": "tracking shot commercial airplane banking"
+        },
+        {
+          "provider": "pexels",
+          "q": "macro jet wing vortex condensation"
+        }
+      ],
+      "shots": 3,
+      "overlays": [],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s9",
+      "longOnly": true,
+      "vo": {
+        "en": "Even when accelerating far beyond the sound barrier to Mach two point five, air resistance remains twenty percent higher than at subsonic speeds. Pushing through that persistent barrier consumed massive volumes of fuel every transatlantic crossing.",
+        "hi": "माक दो दशमलव पांच की तीव्र गति पर भी, वायु प्रतिरोध सामान्य उड़ानों से बीस प्रतिशत अधिक बना रहता है। इस घर्षण को पार करने में अटलांटिक पार करते समय अत्यधिक ईंधन खर्च होता था।",
+        "es": "Incluso acelerando a Mach dos coma cinco, la resistencia del aire sigue siendo un veinte por ciento más alta. Superar esa barrera requería quemar ingentes cantidades de combustible en cada cruce atlántico.",
+        "pt": "Mesmo acelerando a Mach dois vírgula cinco, a resistência do ar permanece vinte por cento maior que em voo subsônico. Vencer esse atrito exigia imensos volumes de combustível a cada travessia."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "aerial drone flying high altitude",
+          "id": "38794023",
+          "takes": [
+            [
+              6,
+              12
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "aerial drone flying high altitude",
+          "id": "6216472",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro detail aircraft fuel nozzle",
+          "id": "6739597",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "aerial drone flying high altitude"
+        },
+        {
+          "provider": "pixabay",
+          "q": "telephoto jet contrail blue sky"
+        },
+        {
+          "provider": "pexels",
+          "q": "macro detail aircraft fuel nozzle"
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "stat",
+          "text": {
+            "en": "20%",
+            "hi": "20%",
+            "es": "20%",
+            "pt": "20%"
+          },
+          "sub": {
+            "en": "higher drag at Mach 2.5",
+            "hi": "माक 2.5 पर अधिक अवरोध",
+            "es": "mayor resistencia a Mach 2.5",
+            "pt": "mais arrasto a Mach 2.5"
+          },
+          "at": 1.5
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s10",
+      "longOnly": true,
+      "vo": {
+        "en": "The United States planned its own ambitious rival, selecting the Boeing twenty-seven zero-seven to carry three hundred passengers at cruising speed near to Mach three. But soaring development costs and intense environmental resistance doomed the venture.",
+        "hi": "अमेरिका ने अपने महत्वाकांक्षी बोइंग सत्ताईस शून्य सात की योजना बनाई, जो माक तीन की गति से तीन सौ यात्रियों को ले जा सके। लेकिन बढ़ती लागत और विरोध ने परियोजना को रद्द करवा दिया।",
+        "es": "Estados Unidos planeó su propio rival, el Boeing veintisiete cero siete, para transportar trescientos pasajeros cerca de Mach tres. Sin embargo, los enormes costes y el rechazo ambiental cancelaron el proyecto.",
+        "pt": "Os Estados Unidos planejaram seu próprio rival, o Boeing vinte e sete zero sete, para transportar trezentos passageiros perto de Mach três. Contudo, custos astronômicos e pressões ambientais cancelaram o projeto."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "wide establishing vintage aircraft hangar",
+          "id": "14109776",
+          "takes": [
+            [
+              20,
+              26
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "wide establishing vintage aircraft hangar",
+          "id": "14109774",
+          "takes": [
+            [
+              4,
+              10
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot model aerodynamic wing",
+          "id": "4396425",
+          "takes": [
+            [
+              12,
+              18
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "wide establishing vintage aircraft hangar"
+        },
+        {
+          "provider": "pixabay",
+          "q": "time lapse stormy dark clouds"
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot model aerodynamic wing"
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "chapter",
+          "text": {
+            "en": "The American Ambition",
+            "hi": "अमेरिकी महत्वाकांक्षा",
+            "es": "La ambición estadounidense",
+            "pt": "A ambição americana"
+          },
+          "sub": {
+            "en": "02",
+            "hi": "02",
+            "es": "02",
+            "pt": "02"
+          },
+          "at": 0.5
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s11",
+      "longOnly": true,
+      "vo": {
+        "en": "Scientists raised urgent alarms about upper atmosphere damage. In March nineteen seventy-one, Congress dropped funding for the American supersonic program, immediately shutting down domestic prototypes and banning civilian supersonic routes across continental territory.",
+        "hi": "वैज्ञानिकों ने वायुमंडल को होने वाले नुकसान पर चेतावनी दी। मार्च उन्नीस सौ इकहत्तर में, अमेरिकी कांग्रेस ने बजट रोक दिया, जिससे प्रोटोटाइप बंद हो गए और ज़मीन के ऊपर ऐसी उड़ानों पर रोक लग गई।",
+        "es": "Científicos alertaron sobre daños en la alta atmósfera. En marzo de mil novecientos setenta y uno, el Congreso retiró los fondos, cancelando los prototipos y prohibiendo vuelos supersónicos sobre su territorio continental.",
+        "pt": "Cientistas alertaram para os perigos na alta atmosfera. Em março de mil novecentos e setenta e um, o Congresso cortou as verbas, cancelando protótipos e proibindo voos supersônicos civis sobre o território continental."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "slow motion thunder storm clouds",
+          "id": "3433955",
+          "takes": [
+            [
+              0,
+              9
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "telephoto view abandoned runway tarmac",
+          "id": "32067538",
+          "takes": [
+            [
+              0,
+              11
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "slow motion thunder storm clouds",
+          "id": "17311357",
+          "takes": [
+            [
+              0,
+              5
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "slow motion thunder storm clouds"
+        },
+        {
+          "provider": "pixabay",
+          "q": "aerial shot empty arid desert"
+        },
+        {
+          "provider": "pexels",
+          "q": "telephoto view abandoned runway tarmac"
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "lower",
+          "text": {
+            "en": "Funding Terminated: March 1971",
+            "hi": "वित्त पोषण समाप्त: मार्च 1971",
+            "es": "Financiación cancelada: marzo de 1971",
+            "pt": "Financiamento cancelado: março de 1971"
+          },
+          "at": 1.2
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s12",
+      "longOnly": true,
+      "vo": {
+        "en": "Advisors warned that a fleet of five hundred supersonic airliners operating at sixty-five thousand feet could increase stratospheric water vapor by fifty to one hundred percent, threatening ozone formation and triggering ground-level heating.",
+        "hi": "सलाहकारों ने आगाह किया कि पैंसठ हज़ार फीट की ऊंचाई पर उड़ने वाले पांच सौ सुपरसोनिक विमानों का बेड़ा समताप मंडल में पचास से सौ प्रतिशत तक जलवाष्प बढ़ा सकता है।",
+        "es": "Los asesores advirtieron que quinientos aviones supersónicos volando a sesenta y cinco mil pies podrían aumentar el vapor estratosférico entre un cincuenta y un cien por ciento.",
+        "pt": "Consultores alertaram que quinhentos aviões supersônicos a sessenta e cinco mil pés poderiam elevar o vapor estratosférico entre cinquenta e cem por cento, prejudicando o ozônio."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "cinematic sunlight reflecting atmosphere edge",
+          "id": "35997575",
+          "takes": [
+            [
+              4,
+              10
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro vapor wisps rising atmospheric",
+          "id": "4320602",
+          "takes": [
+            [
+              12,
+              24
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "cinematic sunlight reflecting atmosphere edge",
+          "id": "36878404",
+          "takes": [
+            [
+              10,
+              18
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro vapor wisps rising atmospheric"
+        },
+        {
+          "provider": "pixabay",
+          "q": "aerial high altitude thin clouds"
+        },
+        {
+          "provider": "pexels",
+          "q": "cinematic sunlight reflecting atmosphere edge"
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "stat",
+          "text": {
+            "en": "500",
+            "hi": "500",
+            "es": "500",
+            "pt": "500"
+          },
+          "sub": {
+            "en": "projected fleet size",
+            "hi": "अनुमानित विमानों की संख्या",
+            "es": "flota proyectada de aviones",
+            "pt": "frota projetada de aviões"
+          },
+          "at": 1
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s13",
+      "longOnly": true,
+      "vo": {
+        "en": "Across the curtain, the Soviet Union fielded its own supersonic transport, the Tupolev Tu-one-forty-four. But frequent technical malfunctions cut passenger service short, ending regular civilian passenger operations in June nineteen seventy-eight.",
+        "hi": "सोवियत संघ ने अपना टुपोलेव तू-एक सौ चौवालीस तैयार किया। लेकिन बार-बार आने वाली तकनीकी समस्याओं के कारण जून उन्नीस सौ अठहत्तर में इसकी यात्री सेवाएं हमेशा के लिए बंद कर दी गईं।",
+        "es": "La Unión Soviética construyó su propio transporte supersónico, el Tupolev Tu-ciento cuarenta y cuatro. No obstante, fallos técnicos recurrentes cancelaron su servicio de pasajeros en junio de mil novecientos setenta y ocho.",
+        "pt": "A União Soviética desenvolveu o Tupolev Tu-cento e quarenta e quatro. No entanto, constantes falhas mecânicas encurtaram suas operações de passageiros, encerradas em junho de mil novecentos e setenta e oito."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "wide aerial snow covered airfield",
+          "id": "6646528",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "wide aerial snow covered airfield",
+          "id": "36085060",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "close up mechanical aircraft rudder",
+          "id": "36971603",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "wide aerial snow covered airfield"
+        },
+        {
+          "provider": "pixabay",
+          "q": "tracking shot cold runway landing"
+        },
+        {
+          "provider": "pexels",
+          "q": "close up mechanical aircraft rudder"
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "chapter",
+          "text": {
+            "en": "The Soviet Competitor",
+            "hi": "सोवियत प्रतिद्वंद्वी",
+            "es": "El rival soviético",
+            "pt": "O concorrente soviético"
+          },
+          "sub": {
+            "en": "03",
+            "hi": "03",
+            "es": "03",
+            "pt": "03"
+          },
+          "at": 0.5
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s14",
+      "longOnly": true,
+      "vo": {
+        "en": "That Soviet jet was later repurposed for scientific research and last flown in nineteen ninety-nine by NASA. Concorde stood entirely alone on premier transatlantic routes connecting London and Paris with New York.",
+        "hi": "उस सोवियत विमान को बाद में वैज्ञानिक शोध के लिए इस्तेमाल किया गया और नासा ने उन्नीस सौ निन्यानवे में इसकी अंतिम उड़ान भरी। तब कॉनकॉर्ड लंदन और न्यूयॉर्क के बीच अकेला राजा बना रहा।",
+        "es": "Aquel reactor soviético fue reutilizado para investigación científica y la NASA lo voló por última vez en mil novecientos noventa y nueve. El Concorde quedó como el único rey transatlántico.",
+        "pt": "Aquele jato soviético foi adaptado para pesquisas científicas e voou pela última vez em mil novecentos e noventa e nove pela NASA. O Concorde permaneceu sozinho nas rotas transatlânticas."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "aerial shot new york skyline",
+          "id": "36244245",
+          "takes": [
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "aerial shot new york skyline",
+          "id": "11471275",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro cockpit flight instrument gauges",
+          "id": "15462822",
+          "takes": [
+            [
+              1,
+              6
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "aerial shot new york skyline"
+        },
+        {
+          "provider": "pixabay",
+          "q": "tracking shot jet taking off"
+        },
+        {
+          "provider": "pexels",
+          "q": "macro cockpit flight instrument gauges"
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "map",
+          "geo": {
+            "lat": 40.6413,
+            "lon": -73.7781
+          },
+          "text": {
+            "en": "JFK Airport, New York",
+            "hi": "जेएफके हवाई अड्डा, न्यूयॉर्क",
+            "es": "Aeropuerto JFK, Nueva York",
+            "pt": "Aeropuerto JFK, Nova York"
+          },
+          "at": 1.2
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s15",
+      "longOnly": true,
+      "vo": {
+        "en": "Contrary to widespread myth, supersonic flight did generate profit. Over nearly twenty-eight years of commercial flight, Concorde incurred operating costs of approximately one billion pounds while generating revenues of one point seven five billion pounds.",
+        "hi": "आम धारणा के उलट, सुपरसोनिक उड़ानें लाभदायक रहीं। लगभग अट्ठाईस वर्षों में कॉनकॉर्ड पर करीब एक अरब पाउंड का परिचालन खर्च आया, जबकि इसने एक दशमलव सात पांच अरब पाउंड का राजस्व कमाया।",
+        "es": "Pese a las dudas, el vuelo supersónico generó ganancias. Durante casi veintiocho años de operaciones, el Concorde costó cerca de mil millones de libras frente a ingresos de mil setecientos cincuenta millones.",
+        "pt": "Ao contrário dos mitos, o voo supersônico gerou lucros. Em quase vinte e oito anos de voo, o Concorde custou cerca de um bilhão de libras e faturou um vírgula setenta e cinco bilhões."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "cinematic aerial financial district night",
+          "id": "37179127",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "cinematic aerial financial district night",
+          "id": "6403411",
+          "takes": [
+            [
+              10,
+              16
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot luxury jet cabin",
+          "id": "5778853",
+          "takes": [
+            [
+              6,
+              12
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "cinematic aerial financial district night"
+        },
+        {
+          "provider": "pixabay",
+          "q": "macro close up gold texture"
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot luxury jet cabin"
+        }
+      ],
+      "shots": 3,
+      "overlays": [],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s16",
+      "slowmo": true,
+      "longOnly": true,
+      "vo": {
+        "en": "Tragedy struck on twenty-five July two thousand. Air France Flight forty-five ninety crashed shortly after take-off with all one hundred and nine occupants and four on ground killed, shattering consumer confidence and hastening retirement.",
+        "hi": "पच्चीस जुलाई दो हज़ार को हादसा हुआ। एयर फ्रांस की उड़ान संख्या पैंतालीस नब्बे उड़ान भरते ही दुर्घटनाग्रस्त हो गई, जिसमें सवार सभी एक सौ नौ यात्रियों और ज़मीन पर चार लोगों की मृत्यु हो गई।",
+        "es": "El veinticinco de julio de dos mil ocurrió la tragedia. El vuelo cuarenta y cinco noventa se estrelló tras despegar, falleciendo los ciento nueve ocupantes y cuatro personas en tierra.",
+        "pt": "Em vinte e cinco de julho de dois mil, a tragédia aconteceu. O voo quarenta e cinco noventa caiu após a decolagem, matando todos os cento e nove ocupantes e quatro no solo."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "telephoto lonely runway boundary fence",
+          "id": "32067538",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "telephoto lonely runway boundary fence",
+          "id": "3602486",
+          "takes": [
+            [
+              4,
+              10
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "slow motion emergency flashing lights tarmac",
+          "id": "4632573",
+          "takes": [
+            [
+              2,
+              7
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "slow motion emergency flashing lights tarmac"
+        },
+        {
+          "provider": "pixabay",
+          "q": "dramatic smoke rising dark sky"
+        },
+        {
+          "provider": "pexels",
+          "q": "telephoto lonely runway boundary fence"
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "kicker",
+          "text": {
+            "en": "25 July 2000",
+            "hi": "25 जुलाई 2000",
+            "es": "25 de julio de 2000",
+            "pt": "25 de julho de 2000"
+          },
+          "sub": {
+            "en": "Flight 4590 Disaster",
+            "hi": "फ्लाइट 4590 दुर्घटना",
+            "es": "Desastre del vuelo 4590",
+            "pt": "Desastre do voo 4590"
+          },
+          "at": 0.8
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s17",
+      "longOnly": true,
+      "vo": {
+        "en": "Later atmospheric simulations eased environmental fears. Modern computer models suggest that five hundred supersonic airliners would reduce stratospheric ozone by no more than one to two percent, especially if sulfur is entirely removed from aviation jet fuels.",
+        "hi": "बाद के अध्ययनों ने पर्यावरणीय चिंताओं को कम किया। कंप्यूटर सिमुलेशन दिखाते हैं कि पांच सौ सुपरसोनिक विमानों से ओजोन में केवल एक से दो प्रतिशत की कमी आएगी, खासकर यदि ईंधन से सल्फर हटा दिया जाए।",
+        "es": "Simulaciones posteriores mitigaron los temores ecológicos. Modelos recientes indican que quinientos aviones supersónicos reducirían el ozono estratosférico en no más de uno o dos por ciento al eliminar el azufre.",
+        "pt": "Simulações posteriores aliviaram os temores ecológicos. Modelos modernos mostram que quinhentos jatos supersônicos reduziriam o ozônio estratosférico em no máximo um a dois por cento se o enxofre for removido."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "macro blue glowing digital grid",
+          "id": "34339183",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro blue glowing digital grid",
+          "id": "15439974",
+          "takes": [
+            [
+              4,
+              12
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot modern laboratory cleanroom",
+          "id": "8381264",
+          "takes": [
+            [
+              2,
+              10
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "macro blue glowing digital grid"
+        },
+        {
+          "provider": "pixabay",
+          "q": "time lapse pristine high atmosphere"
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot modern laboratory cleanroom"
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "stat",
+          "text": {
+            "en": "1-2%",
+            "hi": "1-2%",
+            "es": "1-2%",
+            "pt": "1-2%"
+          },
+          "sub": {
+            "en": "modeled ozone impact",
+            "hi": "अनुमानित ओजोन प्रभाव",
+            "es": "impacto estimado en ozono",
+            "pt": "impacto estimado no ozônio"
+          },
+          "at": 1.2
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    },
+    {
+      "id": "s18",
+      "longOnly": true,
+      "vo": {
+        "en": "Today, aerospace innovators are harnessing composite carbon airframes and quiet boom shaping to overcome past barriers. If next-generation airliners enter service around twenty twenty-nine, supersonic civilian travel will finally rise from the ashes of history.",
+        "hi": "आज नए एयरोस्पेस इंजीनियर शांत सुपरसोनिक डिज़ाइन तैयार कर रहे हैं। यदि दो हज़ार उनतीस के आसपास नई पीढ़ी के विमान सेवा में आते हैं, तो सुपरसोनिक यात्रा इतिहास के पन्नों से निकलकर फिर हकीकत बन जाएगी।",
+        "es": "Hoy, los ingenieros emplean fuselajes de carbono y diseños silenciosos para mitigar estampidos. Si entran en servicio hacia dos mil veintinueve, los viajes supersónicos renacerán finalmente de las cenizas del pasado.",
+        "pt": "Hoje, engenheiros utilizam fuselagens de carbono e aerodinâmica silenciosa para conter estrondos. Se entrarem em operação perto de dois mil e vinte e nove, as viagens supersônicas finalmente renascerão das cinzas."
+      },
+      "footage": [
+        {
+          "provider": "pexels",
+          "q": "tracking shot sleek supersonic jet",
+          "id": "32610111",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot sleek supersonic jet",
+          "id": "3571541",
+          "takes": [
+            [
+              42,
+              48
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot sleek supersonic jet",
+          "id": "6187626",
+          "takes": [
+            [
+              2,
+              8
+            ]
+          ]
+        },
+        {
+          "provider": "pexels",
+          "q": "tracking shot sleek supersonic jet"
+        },
+        {
+          "provider": "pixabay",
+          "q": "aerial view futuristic airport dusk"
+        },
+        {
+          "provider": "pexels",
+          "q": "cinematic wide airplane climbing stars"
+        }
+      ],
+      "shots": 3,
+      "overlays": [
+        {
+          "kind": "chapter",
+          "text": {
+            "en": "The Second Dawn",
+            "hi": "नया सवेरा",
+            "es": "El segundo amanecer",
+            "pt": "O segundo amanhecer"
+          },
+          "sub": {
+            "en": "04",
+            "hi": "04",
+            "es": "04",
+            "pt": "04"
+          },
+          "at": 0.5
+        }
+      ],
+      "sources": [
+        "S1"
+      ]
+    }
+  ],
+  "music": {
+    "mood": "investigate",
+    "styles": [
+      "pulsing synth bass",
+      "taiko rhythm tension",
+      "cinematic tech pads"
+    ],
+    "peak": "s15"
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Wikipedia, Supersonic transport",
+      "url": "https://en.wikipedia.org/wiki/Supersonic_transport",
+      "claims": [
+        "Concorde's last commercial flight was in October 2003",
+        "The last passenger flight of the Tu-144 was in June 1978",
+        "last flown in 1999 by NASA",
+        "Overture SST may succeed in starting service around 2029",
+        "retired in 2003 after 27 years of commercial operations",
+        "Around Mach 1, the peak coefficient of drag is four times that of subsonic drag.",
+        "aircraft operating at supersonic speeds have approximately one-half the lift-to-drag ratio of subsonic aircraft",
+        "Concorde managed a ratio of 7.14, whereas the subsonic Boeing 747 has an L/D ratio of 17",
+        "remains 20% higher by Mach 2.5 than at subsonic speeds",
+        "The Boeing 2707 design was eventually selected for continued work, with design goals of ferrying around 300 passengers and having a cruising speed near to Mach 3.",
+        "Congress dropped funding for the US SST program in March 1971",
+        "Presidential advisor Russell Train warned that a fleet of 500 SSTs flying at 65,000 ft (20 km) for a period of years could raise stratospheric water content by as much as 50% to 100%.",
+        "Concorde operating costs over nearly 28 years of operation were approximately £1 billion, with revenues of £1.75 billion.",
+        "On 25 July 2000, Air France Flight 4590 crashed shortly after take-off with all 109 occupants and four on ground killed; the only fatal incident involving Concorde.",
+        "suggest that the drop in ozone would be at most, \"no more\" than 1 to 2% if a fleet of 500 supersonic aircraft [were] operated."
+      ]
+    }
+  ],
+  "engage": {
+    "ask": {
+      "en": "Would you pay triple the fare to cross the Atlantic twice as fast?",
+      "hi": "क्या आप दोगुनी तेज़ी से अटलांटिक पार करने के लिए तीन गुना किराया देंगे?",
+      "es": "¿Pagarías el triple de pasaje para cruzar el Atlántico el doble de rápido?",
+      "pt": "Você pagaria o triplo da passagem para cruzar o Atlântico duas vezes mais rápido?"
+    },
+    "hookText": {
+      "en": "THE SPEED *TRAP*",
+      "hi": "रफ़्तार का *जाल*",
+      "es": "LA TRAMPA DE LA *VELOCIDAD*",
+      "pt": "A ARMADILHA DA *VELOCIDADE*"
+    },
+    "loop": {
+      "en": "Before your next ticket is booked, the race across the sound barrier starts again...",
+      "hi": "अगली टिकट बुक होने से पहले, ध्वनि की सीमा पार करने की दौड़ फिर शुरू हो रही है...",
+      "es": "Antes de comprar tu próximo billete, la carrera del sonido comienza otra vez...",
+      "pt": "Antes da sua próxima passagem, a corrida da barreira do som recomeça..."
+    },
+    "share": {
+      "en": "Share this with someone who misses the golden age of Concorde.",
+      "hi": "इसे उसके साथ साझा करें जो कॉनकॉर्ड के सुनहरे दौर को याद करता है।",
+      "es": "Compártelo con quien echa de menos la era dorada del Concorde.",
+      "pt": "Compartilhe com alguém que sente saudades da era dourada do Concorde."
+    }
+  }
+}
