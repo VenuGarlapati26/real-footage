@@ -20,7 +20,7 @@ Order: do Part A, run a rehearsal (private uploads), then Part B, then Part C. E
 ## Part A: YouTube (new channel)
 
 **1. The channel.** On YouTube, switch to your Google account -> profile picture -> Settings -> **Add or manage your
-channel(s)** -> Create a channel (a Brand Account, so it is separate from Hoppadooo). Pick the name and handle.
+channel(s)** -> Create a channel (a Brand Account, so it is separate from your other channels). Pick the name and handle.
 Then: Studio -> Settings -> Channel -> Advanced: "No, it's not made for kids". Studio -> Settings -> Upload defaults:
 category Science & Technology, language English. Verify the channel with a phone number (needed for custom
 thumbnails and videos over 15 minutes).
@@ -40,7 +40,7 @@ Project 1 already uses ~6,800, this channel needs up to ~6,600):
 YT_CLIENT_ID=...apps.googleusercontent.com
 YT_CLIENT_SECRET=...
 ```
-Then `npm install && npm run auth`. A browser opens: pick **the new channel** (Hoppadooo is always refused). It prints
+Then `npm install && npm run auth`. A browser opens: pick **the new channel** (Project 1's channel is always refused). It prints
 `YT_REFRESH_TOKEN` and writes the channel's handle into `channel/settings.json` -> `channelHandle`, which locks the
 autopilot to that channel. **Commit and push `channel/settings.json`.**
 

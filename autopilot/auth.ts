@@ -1,7 +1,7 @@
 // One-time YouTube sign-in for the NEW channel (run on your computer): npm run auth
 // Needs YT_CLIENT_ID and YT_CLIENT_SECRET in .env (a Google Cloud "Desktop app" OAuth client, ideally its own
 // Cloud project so Project 2 has its own 10,000-unit daily quota). Prints YT_REFRESH_TOKEN for GitHub Secrets.
-// Refuses Project 1's channel (Hoppadooo), and any channel other than channel/settings.json -> channelHandle when that
+// Refuses Project 1's channel, and any channel other than channel/settings.json -> channelHandle when that
 // is set. When channelHandle is empty, it fills it in with the channel you picked: commit + push channel/settings.json.
 import http from "node:http";
 import { readFileSync, writeFileSync } from "node:fs";

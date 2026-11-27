@@ -97,9 +97,11 @@ console.log("premium tests: all passed");
 
 // --- channel lock: Project 1's channel is always refused; empty handle = any other channel; set handle = only that one
 {
-  const { channelProblem } = await import("../autopilot/youtube");
-  assert.match(channelProblem("@Hoppadooo", "Hoppadooo", "")!, /Project 1/);
-  assert.match(channelProblem("@hoppadooo", "Hoppadooo", "@hoppadooo")!, /Project 1/, "even if someone types it in");
+  const { channelProblem, BLOCKED_HANDLE_HASHES } = await import("../autopilot/youtube");
+  const { createHash } = await import("node:crypto"), blocked = [createHash("sha256").update("@kids-test").digest("hex")];
+  assert.match(channelProblem("@Kids-Test", "Kids", "", blocked)!, /Project 1/);
+  assert.match(channelProblem("@kids-test", "Kids", "@kids-test", blocked)!, /Project 1/, "even if someone types it in");
+  assert.equal(BLOCKED_HANDLE_HASHES.length, 1); assert.match(BLOCKED_HANDLE_HASHES[0], /^[0-9a-f]{64}$/);
   assert.equal(channelProblem("@realfootage", "Real Footage", ""), null);
   assert.equal(channelProblem("@RealFootage", "Real Footage", "realfootage"), null);
   assert.match(channelProblem("@other", "Other", "@realfootage")!, /WRONG CHANNEL/);

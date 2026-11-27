@@ -30,7 +30,7 @@ Also run **Music bank** once by hand; it then fills itself on Saturdays.
   "YouTube Data API v3" + "YouTube Analytics API" -> OAuth client -> `npm run auth` signed in as the **new channel**
   -> secrets `YT_CLIENT_ID`, `YT_CLIENT_SECRET`, `YT_REFRESH_TOKEN`.
 - Channel lock: `npm run auth` writes the new channel's handle into `channel/settings.json` -> `channelHandle`; commit
-  and push it. Uploads are locked to that channel, and Hoppadooo is always refused.
+  and push it. Uploads are locked to that channel, and Project 1's channel is always refused.
 - Already switched on: `enabled: true`, `mode: "live"`, `dev.fullRenders: true`, `fullVideosConfirmed: true`,
   `autoApprove: true`, E001 and E002 approved. (`mode: "rehearsal"` = private uploads, if you ever want a trial.)
   The Samples workflow always makes 8-second previews (`--preview`), whatever these switches say.

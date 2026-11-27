@@ -1,3 +1,4 @@
+import { createHash } from "node:crypto";
 // YouTube Data API v3 + Analytics v2 with plain fetch. Adapted from Project 1 (autopilot/youtube.ts) for a
 // general-audience channel: NOT made for kids, honest synthetic-media disclosure, and subtitle tracks (hi + en).
 // Credentials: YT_CLIENT_ID, YT_CLIENT_SECRET, YT_REFRESH_TOKEN (get the token once with `npm run auth`).
@@ -110,12 +111,14 @@ export async function myChannel() {
 }
 
 /** Safety lock: refuse to upload unless signed in to the expected channel (never Project 1's or a personal one). */
-/** Channels Project 2 must NEVER upload to (Project 1's kids' channel). */
-export const BLOCKED_HANDLES = ["@hoppadooo"];
+/** Channels Project 2 must NEVER upload to (Project 1's kids' channel), stored as SHA-256 of the lower-case handle so
+ *  the public code does not name the other channel. */
+export const BLOCKED_HANDLE_HASHES = ["25cd3938a63b8a64f36c8b2d66e10b52e5456ae2de7ba7ffbdec63f1c7f7261b"];
 const normHandle = (h: string) => h.trim().toLowerCase().replace(/^@?/, "@");
+const sha = (x: string) => createHash("sha256").update(x).digest("hex");
 /** Pure: is this the right channel? Locked to channelHandle when set; while it is empty, any channel except the blocked ones. */
-export function channelProblem(handle: string, title: string, expected: string): string | null {
-  if (BLOCKED_HANDLES.includes(normHandle(handle))) return `WRONG CHANNEL: signed in to "${title}" (${handle}), which is Project 1's channel. Project 2 never uploads there. Run npm run auth again and pick the new channel.`;
+export function channelProblem(handle: string, title: string, expected: string, blocked = BLOCKED_HANDLE_HASHES): string | null {
+  if (blocked.includes(sha(normHandle(handle)))) return `WRONG CHANNEL: signed in to "${title}" (${handle}), which is Project 1's channel. Project 2 never uploads there. Run npm run auth again and pick the new channel.`;
   if (expected && normHandle(handle) !== normHandle(expected)) return `WRONG CHANNEL: signed in to "${title}" (${handle}) but this autopilot is locked to ${expected}. Nothing was uploaded.`;
   return null;
 }
